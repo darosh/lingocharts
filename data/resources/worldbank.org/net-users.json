@@ -1,0 +1,3442 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": "300",
+    "total": 264
+  },
+  [
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "1A",
+        "value": "Arab World"
+      },
+      "value": "39.5261540659397",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "S3",
+        "value": "Caribbean small states"
+      },
+      "value": "51.9169995201878",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "B8",
+        "value": "Central Europe and the Baltics"
+      },
+      "value": "68.1565862177866",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "V2",
+        "value": "Early-demographic dividend"
+      },
+      "value": "29.7923425468531",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "Z4",
+        "value": "East Asia & Pacific"
+      },
+      "value": "49.8247157803774",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "4E",
+        "value": "East Asia & Pacific (excluding high income)"
+      },
+      "value": "44.9820489707828",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "T4",
+        "value": "East Asia & Pacific (IDA & IBRD countries)"
+      },
+      "value": "44.9820489707828",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XC",
+        "value": "Euro area"
+      },
+      "value": "80.280283969454",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "Z7",
+        "value": "Europe & Central Asia"
+      },
+      "value": "71.7441292126694",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "7E",
+        "value": "Europe & Central Asia (excluding high income)"
+      },
+      "value": "59.9320644594073",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "T7",
+        "value": "Europe & Central Asia (IDA & IBRD countries)"
+      },
+      "value": "60.7187464806964",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "EU",
+        "value": "European Union"
+      },
+      "value": "79.6258146075023",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "F1",
+        "value": "Fragile and conflict affected situations"
+      },
+      "value": "14.98630874699",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XE",
+        "value": "Heavily indebted poor countries (HIPC)"
+      },
+      "value": "12.1335183726839",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XD",
+        "value": "High income"
+      },
+      "value": "81.0147435830839",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XF",
+        "value": "IBRD only"
+      },
+      "value": "42.5624927917813",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZT",
+        "value": "IDA & IBRD total"
+      },
+      "value": "37.1141533061658",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XH",
+        "value": "IDA blend"
+      },
+      "value": "35.0408617964624",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XI",
+        "value": "IDA only"
+      },
+      "value": "15.1737595007416",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XG",
+        "value": "IDA total"
+      },
+      "value": "22.23873864008",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "V3",
+        "value": "Late-demographic dividend"
+      },
+      "value": "54.0592557700003",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZJ",
+        "value": "Latin America & Caribbean"
+      },
+      "value": "54.4583843034657",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XJ",
+        "value": "Latin America & Caribbean (excluding high income)"
+      },
+      "value": "53.8839339917845",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "T2",
+        "value": "Latin America & the Caribbean (IDA & IBRD countries)"
+      },
+      "value": "54.7037176765572",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XL",
+        "value": "Least developed countries: UN classification"
+      },
+      "value": "12.628601218278",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XO",
+        "value": "Low & middle income"
+      },
+      "value": "36.7986475240125",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XM",
+        "value": "Low income"
+      },
+      "value": "9.46034205257496",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XN",
+        "value": "Lower middle income"
+      },
+      "value": "28.6320615312121",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZQ",
+        "value": "Middle East & North Africa"
+      },
+      "value": "43.707533366815",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XQ",
+        "value": "Middle East & North Africa (excluding high income)"
+      },
+      "value": "38.2062538479483",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "T3",
+        "value": "Middle East & North Africa (IDA & IBRD countries)"
+      },
+      "value": "37.9589815831978",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XP",
+        "value": "Middle income"
+      },
+      "value": "39.7963632949121",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XU",
+        "value": "North America"
+      },
+      "value": "75.9372515632806",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XY",
+        "value": "Not classified"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "OE",
+        "value": "OECD members"
+      },
+      "value": "77.243487456501",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "S4",
+        "value": "Other small states"
+      },
+      "value": "40.3955638254411",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "S2",
+        "value": "Pacific island small states"
+      },
+      "value": "29.7828414639424",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "V4",
+        "value": "Post-demographic dividend"
+      },
+      "value": "79.7749533624375",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "V1",
+        "value": "Pre-demographic dividend"
+      },
+      "value": "21.0710908041732",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "S1",
+        "value": "Small states"
+      },
+      "value": "41.9345509745761",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "8S",
+        "value": "South Asia"
+      },
+      "value": "23.6279411151014",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "T5",
+        "value": "South Asia (IDA & IBRD)"
+      },
+      "value": "23.6279411151014",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZG",
+        "value": "Sub-Saharan Africa"
+      },
+      "value": "22.3880597098621",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZF",
+        "value": "Sub-Saharan Africa (excluding high income)"
+      },
+      "value": "22.384664533935",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "T6",
+        "value": "Sub-Saharan Africa (IDA & IBRD countries)"
+      },
+      "value": "22.3880597098621",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XT",
+        "value": "Upper middle income"
+      },
+      "value": "52.1378691585815",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "1W",
+        "value": "World"
+      },
+      "value": "43.9983147914322",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AF",
+        "value": "Afghanistan"
+      },
+      "value": "8.26",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AL",
+        "value": "Albania"
+      },
+      "value": "63.252932696931",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "value": "38.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AS",
+        "value": "American Samoa"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AD",
+        "value": "Andorra"
+      },
+      "value": "96.91",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AO",
+        "value": "Angola"
+      },
+      "value": "12.4",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AG",
+        "value": "Antigua and Barbuda"
+      },
+      "value": "65.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AR",
+        "value": "Argentina"
+      },
+      "value": "69.40092102179",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AM",
+        "value": "Armenia"
+      },
+      "value": "58.2493322231746",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AW",
+        "value": "Aruba"
+      },
+      "value": "88.661226932496",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AU",
+        "value": "Australia"
+      },
+      "value": "84.560519347399",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AT",
+        "value": "Austria"
+      },
+      "value": "83.9263",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AZ",
+        "value": "Azerbaijan"
+      },
+      "value": "77",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BS",
+        "value": "Bahamas, The"
+      },
+      "value": "78",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "value": "93.4783011354165",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BD",
+        "value": "Bangladesh"
+      },
+      "value": "14.4",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BB",
+        "value": "Barbados"
+      },
+      "value": "76.11",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BY",
+        "value": "Belarus"
+      },
+      "value": "62.230360906803",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BE",
+        "value": "Belgium"
+      },
+      "value": "85.0529",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BZ",
+        "value": "Belize"
+      },
+      "value": "41.589999999835",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BJ",
+        "value": "Benin"
+      },
+      "value": "6.787702956098",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BM",
+        "value": "Bermuda"
+      },
+      "value": "98.3236096537251",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BT",
+        "value": "Bhutan"
+      },
+      "value": "39.8",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BO",
+        "value": "Bolivia"
+      },
+      "value": "45.1",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BA",
+        "value": "Bosnia and Herzegovina"
+      },
+      "value": "65.065502803344",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BW",
+        "value": "Botswana"
+      },
+      "value": "27.5",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BR",
+        "value": "Brazil"
+      },
+      "value": "59.079477910505",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "VG",
+        "value": "British Virgin Islands"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BN",
+        "value": "Brunei Darussalam"
+      },
+      "value": "71.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BG",
+        "value": "Bulgaria"
+      },
+      "value": "56.6563",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BF",
+        "value": "Burkina Faso"
+      },
+      "value": "11.387646166247",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "BI",
+        "value": "Burundi"
+      },
+      "value": "4.86622446359511",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CV",
+        "value": "Cabo Verde"
+      },
+      "value": "43.019626357101",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KH",
+        "value": "Cambodia"
+      },
+      "value": "19",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CM",
+        "value": "Cameroon"
+      },
+      "value": "20.6801476606263",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CA",
+        "value": "Canada"
+      },
+      "value": "88.47",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KY",
+        "value": "Cayman Islands"
+      },
+      "value": "77",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CF",
+        "value": "Central African Republic"
+      },
+      "value": "4.563264351542",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TD",
+        "value": "Chad"
+      },
+      "value": "2.70000000055",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "JG",
+        "value": "Channel Islands"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CL",
+        "value": "Chile"
+      },
+      "value": "64.289",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CN",
+        "value": "China"
+      },
+      "value": "50.3",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CO",
+        "value": "Colombia"
+      },
+      "value": "55.9049725142924",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KM",
+        "value": "Comoros"
+      },
+      "value": "7.459161385649",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CD",
+        "value": "Congo, Dem. Rep."
+      },
+      "value": "3.799999507273",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CG",
+        "value": "Congo, Rep."
+      },
+      "value": "7.61597466209",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CR",
+        "value": "Costa Rica"
+      },
+      "value": "59.7629501371681",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CI",
+        "value": "Cote d'Ivoire"
+      },
+      "value": "21",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "HR",
+        "value": "Croatia"
+      },
+      "value": "69.8031",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CU",
+        "value": "Cuba"
+      },
+      "value": "31.107970210145",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CW",
+        "value": "Curacao"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CY",
+        "value": "Cyprus"
+      },
+      "value": "71.7159",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CZ",
+        "value": "Czech Republic"
+      },
+      "value": "81.2986",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "DK",
+        "value": "Denmark"
+      },
+      "value": "96.3305",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "DJ",
+        "value": "Djibouti"
+      },
+      "value": "11.9224314345",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "DM",
+        "value": "Dominica"
+      },
+      "value": "67.6",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "DO",
+        "value": "Dominican Republic"
+      },
+      "value": "51.9302327383135",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "EC",
+        "value": "Ecuador"
+      },
+      "value": "48.9404337892669",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "value": "35.9",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SV",
+        "value": "El Salvador"
+      },
+      "value": "26.915075328277",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GQ",
+        "value": "Equatorial Guinea"
+      },
+      "value": "21.319999985207",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ER",
+        "value": "Eritrea"
+      },
+      "value": "1.083733115675",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "EE",
+        "value": "Estonia"
+      },
+      "value": "88.4066",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ET",
+        "value": "Ethiopia"
+      },
+      "value": "11.6",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "FO",
+        "value": "Faroe Islands"
+      },
+      "value": "94.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "FJ",
+        "value": "Fiji"
+      },
+      "value": "46.32872894627",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "FI",
+        "value": "Finland"
+      },
+      "value": "92.6513",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "FR",
+        "value": "France"
+      },
+      "value": "84.6945",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PF",
+        "value": "French Polynesia"
+      },
+      "value": "64.560209747212",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GA",
+        "value": "Gabon"
+      },
+      "value": "23.5",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GM",
+        "value": "Gambia, The"
+      },
+      "value": "17.119820502123",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GE",
+        "value": "Georgia"
+      },
+      "value": "45.1583744140752",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "DE",
+        "value": "Germany"
+      },
+      "value": "87.5898",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GH",
+        "value": "Ghana"
+      },
+      "value": "23.478128435343",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GI",
+        "value": "Gibraltar"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GR",
+        "value": "Greece"
+      },
+      "value": "66.835",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GL",
+        "value": "Greenland"
+      },
+      "value": "67.600443481006",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GD",
+        "value": "Grenada"
+      },
+      "value": "53.81",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GU",
+        "value": "Guam"
+      },
+      "value": "73.139999947043",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GT",
+        "value": "Guatemala"
+      },
+      "value": "27.100000000275",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GN",
+        "value": "Guinea"
+      },
+      "value": "4.7",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GW",
+        "value": "Guinea-Bissau"
+      },
+      "value": "3.540706917021",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GY",
+        "value": "Guyana"
+      },
+      "value": "38.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "HT",
+        "value": "Haiti"
+      },
+      "value": "12.197766377036",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "HN",
+        "value": "Honduras"
+      },
+      "value": "20.356867428881",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "HK",
+        "value": "Hong Kong SAR, China"
+      },
+      "value": "84.9483529634062",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "HU",
+        "value": "Hungary"
+      },
+      "value": "72.8347",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IS",
+        "value": "Iceland"
+      },
+      "value": "98.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IN",
+        "value": "India"
+      },
+      "value": "26",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ID",
+        "value": "Indonesia"
+      },
+      "value": "21.9760677113476",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "value": "44.082875016875",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "value": "17.22",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IE",
+        "value": "Ireland"
+      },
+      "value": "80.1224",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IM",
+        "value": "Isle of Man"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IL",
+        "value": "Israel"
+      },
+      "value": "78.88517910353",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "IT",
+        "value": "Italy"
+      },
+      "value": "65.5716",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "JM",
+        "value": "Jamaica"
+      },
+      "value": "43.1758971872",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "JP",
+        "value": "Japan"
+      },
+      "value": "93.329411063737",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "value": "53.4",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KZ",
+        "value": "Kazakhstan"
+      },
+      "value": "72.8660129673921",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KE",
+        "value": "Kenya"
+      },
+      "value": "45.6228006060586",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KI",
+        "value": "Kiribati"
+      },
+      "value": "12.99748389414",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KP",
+        "value": "Korea, Dem. Peopleâs Rep."
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KR",
+        "value": "Korea, Rep."
+      },
+      "value": "89.8962557995106",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "XK",
+        "value": "Kosovo"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "value": "82.0791147627883",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KG",
+        "value": "Kyrgyz Republic"
+      },
+      "value": "30.247042775311",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LA",
+        "value": "Lao PDR"
+      },
+      "value": "18.2",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LV",
+        "value": "Latvia"
+      },
+      "value": "79.2006",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "value": "74",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LS",
+        "value": "Lesotho"
+      },
+      "value": "16.071707703394",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LR",
+        "value": "Liberia"
+      },
+      "value": "5.903867602799",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "value": "19.016079781565",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LI",
+        "value": "Liechtenstein"
+      },
+      "value": "96.6411950959488",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LT",
+        "value": "Lithuania"
+      },
+      "value": "71.378",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LU",
+        "value": "Luxembourg"
+      },
+      "value": "97.3341",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MO",
+        "value": "Macao SAR, China"
+      },
+      "value": "77.6001318608868",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MK",
+        "value": "Macedonia, FYR"
+      },
+      "value": "70.3802",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MG",
+        "value": "Madagascar"
+      },
+      "value": "4.173972190007",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MW",
+        "value": "Malawi"
+      },
+      "value": "9.2981483471244",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MY",
+        "value": "Malaysia"
+      },
+      "value": "71.0640678111957",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MV",
+        "value": "Maldives"
+      },
+      "value": "54.461955146942",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ML",
+        "value": "Mali"
+      },
+      "value": "10.33692498389",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MT",
+        "value": "Malta"
+      },
+      "value": "76.184",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MH",
+        "value": "Marshall Islands"
+      },
+      "value": "19.282441803511",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MR",
+        "value": "Mauritania"
+      },
+      "value": "15.199126690825",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MU",
+        "value": "Mauritius"
+      },
+      "value": "50.1393184766711",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MX",
+        "value": "Mexico"
+      },
+      "value": "57.4310429923633",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "FM",
+        "value": "Micronesia, Fed. Sts."
+      },
+      "value": "31.501081275309",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MD",
+        "value": "Moldova"
+      },
+      "value": "49.8369395415",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MC",
+        "value": "Monaco"
+      },
+      "value": "93.3633020180933",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MN",
+        "value": "Mongolia"
+      },
+      "value": "21.4360311065255",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ME",
+        "value": "Montenegro"
+      },
+      "value": "64.564993139872",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "value": "57.08",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MZ",
+        "value": "Mozambique"
+      },
+      "value": "9",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "value": "21.8",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NA",
+        "value": "Namibia"
+      },
+      "value": "22.3070147912325",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NR",
+        "value": "Nauru"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NP",
+        "value": "Nepal"
+      },
+      "value": "17.58161800656",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NL",
+        "value": "Netherlands"
+      },
+      "value": "93.0965",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NC",
+        "value": "New Caledonia"
+      },
+      "value": "74.00175279141",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NZ",
+        "value": "New Zealand"
+      },
+      "value": "88.22288881795",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NI",
+        "value": "Nicaragua"
+      },
+      "value": "19.704291498993",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NE",
+        "value": "Niger"
+      },
+      "value": "2.220165349673",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NG",
+        "value": "Nigeria"
+      },
+      "value": "47.442550294429",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MP",
+        "value": "Northern Mariana Islands"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "NO",
+        "value": "Norway"
+      },
+      "value": "96.8103",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "value": "74.174165970433",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PK",
+        "value": "Pakistan"
+      },
+      "value": "18",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PW",
+        "value": "Palau"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PA",
+        "value": "Panama"
+      },
+      "value": "51.2054249948687",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PG",
+        "value": "Papua New Guinea"
+      },
+      "value": "7.9",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PY",
+        "value": "Paraguay"
+      },
+      "value": "44.381596919184",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PE",
+        "value": "Peru"
+      },
+      "value": "40.9",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PH",
+        "value": "Philippines"
+      },
+      "value": "40.7",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PL",
+        "value": "Poland"
+      },
+      "value": "67.997",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PT",
+        "value": "Portugal"
+      },
+      "value": "68.6329",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PR",
+        "value": "Puerto Rico"
+      },
+      "value": "79.46876882531",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "value": "92.8848264535481",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "RO",
+        "value": "Romania"
+      },
+      "value": "55.7632",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "RU",
+        "value": "Russian Federation"
+      },
+      "value": "73.41",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "RW",
+        "value": "Rwanda"
+      },
+      "value": "18",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "WS",
+        "value": "Samoa"
+      },
+      "value": "25.407009766593",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SM",
+        "value": "San Marino"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ST",
+        "value": "Sao Tome and Principe"
+      },
+      "value": "25.822248798856",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "value": "69.6162358014004",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SN",
+        "value": "Senegal"
+      },
+      "value": "21.690264133037",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "RS",
+        "value": "Serbia"
+      },
+      "value": "65.3170254003801",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SC",
+        "value": "Seychelles"
+      },
+      "value": "58.118697567706",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SL",
+        "value": "Sierra Leone"
+      },
+      "value": "2.5",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SG",
+        "value": "Singapore"
+      },
+      "value": "82.103",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SX",
+        "value": "Sint Maarten (Dutch part)"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SK",
+        "value": "Slovak Republic"
+      },
+      "value": "85.019514056785",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SI",
+        "value": "Slovenia"
+      },
+      "value": "73.0987",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SB",
+        "value": "Solomon Islands"
+      },
+      "value": "10.000464982561",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SO",
+        "value": "Somalia"
+      },
+      "value": "1.76",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZA",
+        "value": "South Africa"
+      },
+      "value": "51.919115722747",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SS",
+        "value": "South Sudan"
+      },
+      "value": "17.9297872340426",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ES",
+        "value": "Spain"
+      },
+      "value": "78.6896",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LK",
+        "value": "Sri Lanka"
+      },
+      "value": "29.988737549341",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "KN",
+        "value": "St. Kitts and Nevis"
+      },
+      "value": "75.7",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "LC",
+        "value": "St. Lucia"
+      },
+      "value": "52.35",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "MF",
+        "value": "St. Martin (French part)"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "VC",
+        "value": "St. Vincent and the Grenadines"
+      },
+      "value": "51.77",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SD",
+        "value": "Sudan"
+      },
+      "value": "26.614928545846",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SR",
+        "value": "Suriname"
+      },
+      "value": "42.763827782511",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SZ",
+        "value": "Swaziland"
+      },
+      "value": "30.382700656117",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SE",
+        "value": "Sweden"
+      },
+      "value": "90.6102",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "CH",
+        "value": "Switzerland"
+      },
+      "value": "87.97",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "SY",
+        "value": "Syrian Arab Republic"
+      },
+      "value": "29.979797235769",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TJ",
+        "value": "Tajikistan"
+      },
+      "value": "18.980000000495",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TZ",
+        "value": "Tanzania"
+      },
+      "value": "5.355144064127",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TH",
+        "value": "Thailand"
+      },
+      "value": "39.3161267365004",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TL",
+        "value": "Timor-Leste"
+      },
+      "value": "13.4",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TG",
+        "value": "Togo"
+      },
+      "value": "7.12",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TO",
+        "value": "Tonga"
+      },
+      "value": "44.999518833326",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TT",
+        "value": "Trinidad and Tobago"
+      },
+      "value": "69.198470608693",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TN",
+        "value": "Tunisia"
+      },
+      "value": "48.519835991689",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TR",
+        "value": "Turkey"
+      },
+      "value": "53.7449791423583",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TM",
+        "value": "Turkmenistan"
+      },
+      "value": "14.996774820447",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TC",
+        "value": "Turks and Caicos Islands"
+      },
+      "value": null,
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "TV",
+        "value": "Tuvalu"
+      },
+      "value": "42.7",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "UG",
+        "value": "Uganda"
+      },
+      "value": "19.221099634407",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "UA",
+        "value": "Ukraine"
+      },
+      "value": "49.26",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "value": "91.2434057753709",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "GB",
+        "value": "United Kingdom"
+      },
+      "value": "92.0003",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "US",
+        "value": "United States"
+      },
+      "value": "74.55",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "UY",
+        "value": "Uruguay"
+      },
+      "value": "64.6",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "UZ",
+        "value": "Uzbekistan"
+      },
+      "value": "42.8",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "VU",
+        "value": "Vanuatu"
+      },
+      "value": "22.351404582536",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "VE",
+        "value": "Venezuela, RB"
+      },
+      "value": "61.869248094278",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "VN",
+        "value": "Vietnam"
+      },
+      "value": "52.720000000055",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "VI",
+        "value": "Virgin Islands (U.S.)"
+      },
+      "value": "54.839137296",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "PS",
+        "value": "West Bank and Gaza"
+      },
+      "value": "57.42419241388",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "YE",
+        "value": "Yemen, Rep."
+      },
+      "value": "25.09951439988",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZM",
+        "value": "Zambia"
+      },
+      "value": "21",
+      "decimal": "1",
+      "date": "2015"
+    },
+    {
+      "indicator": {
+        "id": "IT.NET.USER.P2",
+        "value": "Internet users (per 100 people)"
+      },
+      "country": {
+        "id": "ZW",
+        "value": "Zimbabwe"
+      },
+      "value": "16.36",
+      "decimal": "1",
+      "date": "2015"
+    }
+  ]
+]

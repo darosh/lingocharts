@@ -1,0 +1,36 @@
+{
+  "name": "lingocharts",
+  "description": "A language related data and charts",
+  "version": "0.0.0",
+  "author": "Jan Forst",
+  "devDependencies": {
+    "cldr-core": "31.0.1",
+    "cldr-localenames-modern": "31.0.1",
+    "cldr-numbers-modern": "31.0.1",
+    "d3-dsv": "1.0.5",
+    "d3-geo-projection": "2.1.0",
+    "emojione": "2.2.7",
+    "json-stringify-pretty-compact": "1.0.3",
+    "jsurl": "0.1.5",
+    "ndjson": "1.5.0",
+    "nhx.js": "0.0.2",
+    "topojson-client": "3.0.0",
+    "topojson-server": "3.0.0",
+    "wikitable": "0.2.3",
+    "world-countries": "1.8.1"
+  },
+  "license": "MIT",
+  "main": "data/index.json",
+  "private": true,
+  "scripts": {
+    "data": "node data/tools/index.js data",
+    "flags": "node data/tools/flags.js | svgo -p 3 --disable cleanupIDs --disable convertTransform --disable moveGroupAttrsToElems -i - > data/flags.svg",
+    "map": "npm run map:geo && npm run map:topo && npm run map:data",
+    "map:data": "shp2json -n data/resources/naturalearthdata.com/ne_110m_admin_0_countries.shp | ndjson-map \"d.properties.iso_a2 = {Kosovo:'XK', Somaliland: 'SO', 'N. Cyprus': 'CY'}[d.properties.name] || d.properties.iso_a2, d.properties\" | ndjson-reduce > data/map.data.json",
+    "map:geo": "shp2json -n data/resources/naturalearthdata.com/ne_110m_admin_0_countries.shp | ndjson-map \"d.id = {Kosovo:'XK', Somaliland: '*Somaliland', 'N. Cyprus': '*Northern Cyprus'}[d.properties.name] || d.properties.iso_a2, delete d.properties, d\" | geostitch -n > data/map.geo.json",
+    "map:topo": "geo2topo -q 1e5 -n countries=data/map.geo.json > data/map.topo.json",
+    "wb:cell": "jsurl \"http://api.worldbank.org/countries/indicators/IT.CEL.SETS.P2?per_page=300&format=json&date=2015:2015\" > data/cell-users.json",
+    "wb:net": "jsurl \"http://api.worldbank.org/countries/indicators/IT.NET.USER.P2?per_page=300&format=json&date=2015:2015\" > data/net-users.json",
+    "wiki:script": "node -e \"require('wikitable')({url:'https://en.wikipedia.org/wiki/ISO_15924',format:'array'}).then(data=>(data.push({_version: new Date()}),console.log(JSON.stringify(data,null,2))))\" > data/resources/wikipedia.org/iso-script.json"
+  }
+}

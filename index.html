@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LingoCharts!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 40px;
+            color: rgba(0, 0, 0, .87);
+        }
+
+        a {
+            color: #1a0dab;
+        }
+
+        a:visited {
+            color: #609;
+        }
+
+        hr {
+            border: 0;
+            background: #e0e0e0;
+            height: 1px;
+            margin: 40px 0;
+        }
+
+        h1, h2, h3 {
+            padding: 2px 6px;
+        }
+
+        h3 > a, h3 > a:visited,
+        h2 > a, h2 > a:visited,
+        h1 > a, h1 > a:visited {
+            text-decoration: none;
+            color: rgba(0, 0, 0, .87);
+        }
+
+        h3 > a:hover, h2 > a:hover, h1 > a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            padding: 2px 8px;
+        }
+
+        tr > * {
+            text-align: left;
+            padding: 0 8px;
+            line-height: 24px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr:not(:last-child) > *,
+        thead > tr > * {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody > tr:hover > * {
+            background-color: #f4f4f4;
+        }
+
+        .expanded + a {
+            background: #d0ffff;
+        }
+
+        tbody > tr:target > *, h3:target, h2:target, a:target {
+            background-color: #ffffc0;
+            outline: none;
+        }
+
+        svg {
+            /*display: block;*/
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .mono {
+            font-family: monospace;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .double {
+            border-bottom: 3px double black;
+        }
+
+        .single {
+            border-bottom: 1px solid black;
+        }
+
+        .chars {
+            font-size: 14px;
+            line-height: 16px;
+            word-spacing: -1px;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+            word-break: keep-all;
+        }
+
+        .sample {
+            font-size: 20px;
+        }
+
+        a.noline {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        a:not('.noline') {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        a.click {
+            cursor: pointer;
+        }
+
+        a.click:hover {
+            text-decoration: underline;
+        }
+
+        a.glot, a.eth {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.87);
+            /*font-size: 20px;*/
+            /*line-height: 24px;*/
+            vertical-align: inherit;
+        }
+
+        .glot, .eth {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            /*padding: 1px;*/
+        }
+
+        .glot:after {
+            /*width: 20px;*/
+            /*display: inline-block;*/
+            background-color: rgba(0, 0, 0, 0.87);
+            color: #fff;
+            padding: 0 2px;
+            content: '\0D17';
+        }
+
+        .eth:after {
+            /*width: 20px;*/
+            /*display: inline-block;*/
+            padding: 0 4px;
+            background-color: #006599;
+            color: #fff;
+            /*color: #fffd30;*/
+            /*font-family: serif;*/
+            /*font-weight: normal;*/
+            content: 'E';
+        }
+
+        .wiki {
+            position: relative;
+            top: -2px;
+            vertical-align: text-top;
+        }
+
+        .family {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .family li {
+            padding: 0;
+            margin: 0 0 0 20px;
+        }
+
+        .expander {
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 20px;
+            width: 20px;
+            display: inline-block;
+        }
+
+        .expander:after {
+            content: '\025b6';
+        }
+
+        .expander.expanded:after {
+            content: '\025bc';
+        }
+
+        .bullet {
+            width: 20px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .bullet:after {
+            content: '\025cf';
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        [v-cloac] {
+            display: none;
+        }
+
+        [target="_blank"]:not(.icon):after {
+            content: ' ⤢';
+            opacity: 0.5;
+            /*font-size: 12px;*/
+            /*line-height: 20px;*/
+            /*vertical-align: super;*/
+            /*text-decoration: none;*/
+        }
+    </style>
+</head>
+<body>
+<script id="template-family" type="text/html">
+    <ul v-if="nd && nd.id" class="family">
+        <span v-if="nd.depth !== 0 && nd.children" @click="expanded = !expanded"
+              :class="{expander: true, expanded: expanded}"></span>
+        <span v-else-if="(nd.depth > 0) && !nd.children" class="bullet"></span>
+        <a :href="'#family-' + nd.id" :id="'family-' + nd.id">
+            <b v-if="nd.depth === 1">{{nd.data.data.name}}</b>
+            <span v-else-if="nd.data && nd.data.data">{{nd.data.data.name}}</span>
+        </a>
+        <span v-if="nd.depth && nd.children">({{nd.leaves().length}})</span>
+        <a v-if="(expanded || !nd.children) && nd.depth > 0"
+           :href="'http://glottolog.org/resource/languoid/id/' + nd.data.id"
+           target="_blank" class="icon glot"></a>
+        <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.iso3"
+           :href="'https://www.ethnologue.com/language/' + nd.data.data.iso3" target="_blank" class="icon eth"></a>
+        <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.name"
+           :href="'https://en.wikipedia.org/wiki/' + nd.data.data.name + (!nd.children ? ' language' : '')" target="_blank" class="icon">
+            <wiki size="24" style="margin: -2px -3px -4px -3px"></wiki>
+        </a>
+        <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.iso23"
+           :href="'#language-' + nd.data.data.iso23">{{nd.data.data.iso23}}</a>
+        <li v-for="i in nd.children" :style="{display: (expanded || nd.depth === 0) ? null : 'none'}">
+            <family :node="i"></family>
+        </li>
+    </ul>
+</script>
+<div id="app">
+    <h1 id="contents"><a href="#contents">LingoCharts!</a></h1>
+    <p>A language related data and charts. <i>Under construction.</i></p>
+
+    <p v-if="!data"><i>Loading&hellip;</i></p>
+
+    <div v-if="data" v-cloac>
+
+        <!--<svg width="960" height="480">-->
+        <!--<g>-->
+        <!--<path v-for=""></path>-->
+        <!--</g>-->
+        <!--</svg>-->
+
+        <ul>
+            <!--<li>-->
+            <!--Maps-->
+            <!--<ul>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <li>
+                Tables
+                <ul>
+                    <li><a href="#countries">Countries</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#scripts">Scripts</a></li>
+                    <li><a href="#numbers">Numbers</a></li>
+                    <li><a href="#families">Families</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#plurals">Plurals</a></li>
+                    <li><a href="#ordinals">Ordinal</a></li>
+                    <!--<li><a href="#groups">Groups</a></li>-->
+                </ul>
+            </li>
+            <li>
+                About
+                <ul>
+                    <li><a href="#notes">Notes</a></li>
+                    <!--<li><a href="#counts">Counts</a></li>-->
+                    <li><a href="#source-code">Source code and data</a></li>
+                    <li><a href="#data-sources">Data sources</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="countries"><a href="#countries">Countries</a></h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Flag</th>
+                <th>Code</th>
+                <th style="width: 180px">Name</th>
+                <th>Wiki</th>
+                <th>Likely</th>
+                <th>Population</th>
+                <th>Literacy</th>
+                <th>GDP</th>
+                <th>Internet</th>
+                <th>Mobile</th>
+                <th>Currency<br>
+                <th>Language (population / literacy)
+                    <br>
+                    <small style="font-weight: normal">
+                        <span>de facto official</span>,
+                        <span class="single">official regional</span>,
+                        <span class="double">official</span>,
+                        <b>CLDR</b>
+                    </small>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.country" :id="'country-' + k">
+                <td>
+                    <flag :code="k" style="width: 32px; height: 32px"></flag>
+                </td>
+                <td><a :href="'#country-' + k">{{k}}</a></td>
+                <td><b>{{i.name}}</b></td>
+                <td><a class="icon" :href="'https://en.wikipedia.org/wiki/' + i.name" target="_blank">
+                    <wiki size="24"></wiki>
+                </a></td>
+                <td>{{i.likely}}</td>
+                <td class="right">{{i.population | number}}</td>
+                <td class="right">{{i.literacy | percent}}</td>
+                <td class="right">{{i.gdp | money}}</td>
+                <td class="right">{{i.net | percent}}</td>
+                <td class="right">{{i.cell | percent}}</td>
+                <td>{{i.currency}}</td>
+                <td>
+                    <div v-for="(i, k) in i.language"><a :href="'#language-' + k"
+                                                         :class="{noline: 1, double: i.status === 0, single: i.status === 1, bold: i.cldr}">{{k}}</a>
+                        ({{i.percent}}%{{i.literacy ? (' / ' + i.literacy) + '%' : ''}})
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="languages"><a href="#languages">Languages</a></h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Wiki</th>
+                <th>ISO</th>
+                <th>Glottolog</th>
+                <th>Likely</th>
+                <th>Population</th>
+                <th>Literacy</th>
+                <th>Plural</th>
+                <th></th>
+                <th>Ordinal</th>
+                <th></th>
+                <th>Family</th>
+                <th>Numbers</th>
+                <th>Script</th>
+                <th>RTL</th>
+                <th>Quotes</th>
+                <th>Sample</th>
+                <th>Characters</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.language" :id="'language-' + k">
+                <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
+                <td><b>{{i.name}}</b></td>
+                <td>
+                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'">
+                        <wiki size="24"></wiki>
+                    </a>
+                </td>
+                <td><a :href="'http://www-01.sil.org/iso639-3/documentation.asp?id=' + i.iso3"
+                       target="_blank">{{i.iso3}}</a></td>
+                <td><a :href="'http://glottolog.org/resource/languoid/id/' + i.gl" target="_blank">{{i.gl}}</a></td>
+                <td class="nowrap">{{i.likely}}</td>
+                <td class="right">{{i.population | number}}</td>
+                <td class="right">{{i.literacy | percent}}</td>
+                <td class="right"><span v-if="i.plural >= 0">{{data.plural[i.plural].forms.length}}</span></td>
+                <td><a v-if="i.plural >= 0" :href="'#plural-'+(i.plural + 1)">p{{i.plural + 1}}</a></td>
+                <td class="right"><span v-if="i.ordinal >= 0">{{data.ordinal[i.ordinal].forms.length}}</span></td>
+                <td><a v-if="i.ordinal >= 0" :href="'#ordinal-'+(i.ordinal + 1)">o{{i.ordinal + 1}}</a></td>
+                <td class="nowrap"><a :href="'#family-' + i.gl">{{data.family[i.family].name}}</a></td>
+                <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
+                <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{i.script}}</a></td>
+                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes}}</span></td>
+                <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
+                <td class="sample"><span v-if="data.script[i.script]">{{data.script[i.script].sample}}</span></td>
+                <td><a v-if="i.chars >= 0" :href="'#characters-' + i.script + (i.chars + 1) + k">{{i.script + (i.chars +
+                    1)}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="scripts"><a href="#scripts">Scripts</a></h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Sample</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>RTL</th>
+                <th>Cased</th>
+                <th>Line break letters</th>
+                <th>IME</th>
+                <th>Density</th>
+                <th>Characters</th>
+                <th>Origin</th>
+                <th>Language</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.script" :id="'script-' + k">
+                <td class="sample">{{i.sample}}</td>
+                <td><a :href="'#script-' + k">{{k}}</a></td>
+                <td><b>{{i.name}}</b></td>
+                <td>{{i.rtl | yes}}</td>
+                <td>{{i.cased | yes}}</td>
+                <td>{{i.lbl | yes}}</td>
+                <td>{{i.ime | yes}}</td>
+                <td class="right">{{i.density}}</td>
+                <td class="right" v-if="i.chars">{{i.chars | number}}</td>
+                <td class="right" v-else>?</td>
+                <td><a :href="'#country-'+i.country">{{i.country}}</a></td>
+                <td><a :href="'#language-'+i.language">{{i.language}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="numbers"><a href="#numbers">Numbers</a></h2>
+
+        <table>
+            <thead>
+            <th>Sample</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Digits</th>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.num" :id="'number-' + k">
+                <td class="sample">{{i.digits[8]}}</td>
+                <td><a :href="'#number-' + k">{{k}}</a></td>
+                <td><b>{{i.name}}</b></td>
+                <td>{{i.type}}</td>
+                <td>{{i.digits}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="families"><a href="#families">Families</a></h2>
+
+        <family :db="data"></family>
+
+        <hr>
+        <h2 id="characters"><a href="#characters">Characters</a></h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Language</th>
+                <th>Name</th>
+                <th>Population</th>
+                <th>Literacy</th>
+                <th>Numbers</th>
+                <th>Script</th>
+                <th>RTL</th>
+                <th>Quotes</th>
+                <th>Count</th>
+                <th style="min-width: 180px">Characters</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.language" :id="'characters-' + i.script + (i.chars + 1) + k" v-if="i.chars >= 0">
+                <td>{{i.script + (i.chars + 1)}}</td>
+                <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
+                <td><b>{{i.name}}</b></td>
+                <td class="right">{{i.population | number}}</td>
+                <td class="right">{{i.literacy | percent}}</td>
+                <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
+                <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{data.script[i.script].name}}</a></td>
+                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes}}</span></td>
+                <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
+                <td class="right"><span v-if="i.chars >= 0">{{data.char[i.script][i.chars].count | number}}</span></td>
+                <td>
+                    <div class="chars" v-if="i.chars >= 0"
+                         v-text="data.char[i.script][i.chars].chars.substr(0, !i.$chars ? 600: undefined)"></div>
+                    <a class="click" v-if="!i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
+                       @click="Vue.set(i, '$chars', true)">&#x25b6;</a>
+                    <a class="click" v-if="i.$chars"
+                       @click="Vue.set(i, '$chars', false)">&#x25c0;</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="plurals"><a href="#plurals">Plurals</a></h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Count</th>
+                <th>Forms</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.plural" :id="'plural-' + (k + 1)">
+                <td><a :href="'#plural-' + (k + 1)">p{{k + 1}}</a></td>
+                <td>{{i.forms.length}}</td>
+                <td><span v-for="(j, k) in i.forms">{{data.form[j]}}<span
+                        v-if="(k + 1) < i.forms.length">, </span></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--<hr>-->
+        <!--<h2 id="groups"><a href="#groups">Groups</a></h2>-->
+        <!---->
+        <!--...-->
+
+        <hr>
+        <h2 id="ordinals"><a href="#ordinals">Ordinals</a></h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Count</th>
+                <th>Forms</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(i, k) in data.ordinal" :id="'ordinal-' + (k + 1)">
+                <td><a :href="'#ordinal-' + (k + 1)">o{{k + 1}}</a></td>
+                <td>{{i.forms.length}}</td>
+                <td><span v-for="(j, k) in i.forms">{{data.form[j]}}<span
+                        v-if="(k + 1) < i.forms.length">, </span></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="notes"><a href="#notes">Notes</a></h2>
+
+        <p>Most data come from CLDR see <a href="#data-sources">Data sources</a> section.</p>
+        <p>Only languages with <i class="double">official</i>, <i class="single">regional official</i> and <i>de facto
+            official</i> status are included.</p>
+
+        <!--<hr>-->
+        <!--<h2 id="counts"><a href="#counts">Counts</a></h2>-->
+
+        <hr>
+        <h2 id="source-code"><a href="#source-code">Source code and data</a></h2>
+        <p>Releases under MIT license on GitHub: <a href="https://github.com/darosh/lingocharts" target="_blank">https://github.com/darosh/lingocharts</a>.
+        </p>
+
+        <hr>
+        <h2 id="data-sources"><a href="#data-sources">Data sources</a></h2>
+
+        <div v-for="(i, k) in data.version">
+            <h3 :id="'data-source-' + k"><a :href="'#data-source-' + k">{{i.name}}</a></h3>
+            <p v-if="i.notes">{{i.notes}}</p>
+            <ul>
+                <li>version: {{i.version}} {{i.build}}</li>
+                <li>home: <a :href="i.home" target="_blank">{{i.home}}</a></li>
+                <li v-if="i.source">source: <a :href="i.source" target="_blank">{{i.source}}</a></li>
+                <li v-if="i.api">api:
+                    <ul>
+                        <li v-for="j in i.api"><a :href="j" target="_blank">{{j}}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="//unpkg.com/d3@4.7.4/build/d3.min.js"></script>
+<script src="//unpkg.com/topojson-client@3.0.0/dist/topojson-client.min.js"></script>
+<script src="//unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
+<script>
+    var config = {
+        format: d3.format(','),
+        money: d3.format(',.0f'),
+        hash: ''
+    };
+
+    Vue.filter('number', function (n) {
+        return config.format(n);
+    });
+
+    Vue.filter('percent', function (n) {
+        return isNaN(n) ? '' : (n + '%');
+    });
+
+    Vue.filter('money', function (n) {
+        return isNaN(n) ? '' : ('$' + config.money(n));
+    });
+
+    Vue.filter('yes', function (n) {
+        return n ? 'yes' : '';
+    });
+
+    Vue.component('flag', {
+        template: '<div>',
+        props: ['code'],
+        mounted() {
+            this.$el.appendChild(getFlag(this.code, config.flags));
+        }
+    });
+
+    Vue.component('wiki', {
+        // https://en.wikipedia.org/wiki/File:Wikipedia's_W.svg
+        template: '<svg class="wiki" :width="size" :height="size" viewBox="0 0 128 128" stroke-miterlimit="10" shape-rendering="geometricPrecision" fill-rule="evenodd"><path d="M120.8 29.2c0 .4 0 .8-.3 1-.3.5-.6.6-1 .6-2.4.3-4.4 1-6 2.4-1.6 1.4-3.2 4-5 7.8L83 99.3c-.2.5-.6.8-1.4.8-.6 0-1-.3-1.4-.8L65.5 69 49 99c-.5.5-1 .8-1.6.8-.7 0-1.2-.3-1.4-.8L20.6 41c-1.6-3.6-3.2-6-5-7.5-1.8-1.4-4.2-2.3-7.3-2.7-.3 0-.6 0-.8-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.8-1.4 2.2 0 4.6 0 7 .3l6.5.3c2 0 4.5 0 7.3-.3l7.8-.3c.5 0 .8.5.8 1.4 0 1-.2 1.4-.5 1.4-2.4.2-4 .8-5.4 1.7-1.3 1-2 2.3-2 4 0 .7.3 1.7.8 3l21 47.2 12-22.4L52 41c-2-4-3.6-6.8-5-8-1.2-1.2-3-2-5.7-2.2-.3 0-.5 0-.7-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.7-1.4 2.2 0 4.3 0 6.2.3 1.8.2 3.7.3 5.8.3 2 0 4.2 0 6.4-.3 2.4-.2 4.6-.3 7-.3.4 0 .7.5.7 1.4 0 1 0 1.4-.5 1.4-4.5.3-6.8 1.6-6.8 4 0 1 .5 2.5 1.6 4.6l7.3 15L76 40.5c1-2 1.5-3.5 1.5-4.8 0-3-2.2-4.8-6.7-5-.5 0-.7-.4-.7-1.4 0-.3.2-.6.4-1 .2-.3.4-.4.6-.4 1.6 0 3.6 0 6 .3l5.5.3c1 0 2.6 0 4.6-.3l6.4-.3c.4 0 .6.4.6 1.2 0 1-.3 1.6-1 1.6-2.7.3-4.8 1-6.4 2.2-1.6 1.2-3.6 4-6 8l-9.7 18 13 26.8 19.5-45c.7-1.8 1-3.3 1-4.7 0-3.2-2.2-5-6.7-5.2-.3 0-.5-.4-.5-1.4 0-1 .3-1.4 1-1.4 1.5 0 3.5 0 5.8.3l5.2.3c1.5 0 3.2 0 5.2-.3l5.4-.3c.6 0 .8.4.8 1.2z"/></svg>',
+        props: ['size']
+    });
+
+    Vue.component('family', {
+        template: document.getElementById('template-family').innerHTML,
+        props: ['db', 'node'],
+        data(){
+            return {
+                expanded: false,
+                config: config
+            }
+        },
+        computed: {
+            nd() {
+                return this.node || d3.stratify()
+                        .id(function (d) {
+                            return d.id;
+                        })
+                        .parentId(function (d) {
+                            return d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root';
+                        })
+                        (d3.merge([Object.keys(this.db.family).map(k => ({
+                            id: k,
+                            expanded: false,
+                            data: this.db.family[k]
+                        })), [{id: 'root'}]]))
+            }
+        },
+        watch: {
+            'config.hash': function (newVal) {
+                if (this.node && (newVal === ('family-' + this.node.id))) {
+                    this.expanded = true;
+                    var p = this;
+
+                    while ((p = p.$parent) && p.$vnode && p.$vnode.componentOptions.tag === 'family') {
+                        p.expanded = true;
+                    }
+
+                    Vue.nextTick(() => {
+                        var u = location.href;
+                        location.href = u;
+                    });
+                }
+            }
+        }
+    });
+
+    new Vue({
+        el: '#app',
+        data() {
+            d3.queue()
+                .defer(d3.json, './data/index.json')
+                .defer(d3.json, './data/map.topo.json')
+                .defer(d3.xml, './data/flags.svg')
+                .await((err, data, map, flags) => {
+                    config.flags = flags;
+                    config.map = map;
+                    config.data = data;
+                    this.data = data;
+
+                    Vue.nextTick(function () {
+                        var h = location.hash;
+                        var u = location.href;
+
+                        if (h.length > 1) {
+                            var e = document.querySelector(h);
+
+                            if (e) {
+                                e.scrollIntoView();
+                            }
+
+                            location.href = u;
+                        }
+
+                        config.hash = h.substr(1);
+
+                        window.addEventListener('hashchange', () => {
+                            var h = location.hash;
+                            config.hash = h.substr(1);
+                            document.querySelector(h).scrollIntoView();
+                        }, false);
+
+                    });
+                });
+
+            return {
+                data: null,
+                map: null
+            }
+        }
+    });
+
+    function getFlag(iso, flags) {
+        var node = flags.getElementById(iso).cloneNode(true);
+        node.removeAttribute('id');
+        node.removeAttribute('transform');
+        var svg = document.createElementNS(d3.namespaces.svg, 'svg');
+        svg.setAttribute('width', '100%');
+        svg.setAttribute('height', '100%');
+        svg.setAttribute('viewBox', '0 0 64 64');
+        svg.setAttribute('preserveAspectRatio', 'xMaxYMax');
+        svg.appendChild(node);
+        return svg;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "latn": {"name": "Western Digits", "type": "numeric", "digits": "0123456789"},
+  "arab": {"name": "Arabic-Indic Digits", "type": "numeric", "digits": "٠١٢٣٤٥٦٧٨٩"},
+  "beng": {"name": "Bangla Digits", "type": "numeric", "digits": "০১২৩৪৫৬৭৮৯"},
+  "arabext": {"name": "Extended Arabic-Indic Digits", "type": "numeric", "digits": "۰۱۲۳۴۵۶۷۸۹"},
+  "deva": {"name": "Devanagari Digits", "type": "numeric", "digits": "०१२३४५६७८९"},
+  "mymr": {"name": "Myanmar Digits", "type": "numeric", "digits": "၀၁၂၃၄၅၆၇၈၉"}
+}

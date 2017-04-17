@@ -1,0 +1,3074 @@
+{
+  "AC": {
+    "name": "Ascension Island",
+    "population": 940,
+    "gdp": 40680000,
+    "literacy": 99,
+    "currency": "SHP"
+  },
+  "AD": {
+    "name": "Andorra",
+    "likely": "ca-Latn-AD",
+    "population": 85660,
+    "gdp": 3163000000,
+    "literacy": 100,
+    "net": 96.9,
+    "cell": 88.1,
+    "language": {"ca": {"percent": 51, "status": 0, "cldr": "ca-AD"}},
+    "currency": "EUR"
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "likely": "ar-Arab-AE",
+    "population": 5927480,
+    "gdp": 667200000000,
+    "literacy": 90,
+    "net": 91.2,
+    "cell": 187,
+    "language": {"ar": {"percent": 78, "status": 0, "cldr": "ar-AE"}},
+    "currency": "AED"
+  },
+  "AF": {
+    "name": "Afghanistan",
+    "likely": "fa-Arab-AF",
+    "population": 33332000,
+    "gdp": 64080000000,
+    "literacy": 28.1,
+    "net": 8.26,
+    "cell": 61.6,
+    "language": {
+      "bal": {"percent": 0.67, "status": 1},
+      "fa": {"percent": 50, "status": 0, "cldr": "fa-AF"},
+      "ps": {"percent": 43, "status": 0, "cldr": "ps"},
+      "tk": {"percent": 1.7, "status": 1},
+      "uz-Arab": {"percent": 4.7, "status": 1, "cldr": "uz-Arab", "parent": "root"}
+    },
+    "currency": "AFN"
+  },
+  "AG": {
+    "name": "Antigua & Barbuda",
+    "population": 93581,
+    "gdp": 2171000000,
+    "literacy": 99,
+    "net": 65.2,
+    "cell": 137,
+    "language": {"en": {"percent": 86, "status": 0, "cldr": "en-AG", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "AI": {
+    "name": "Anguilla",
+    "population": 16752,
+    "gdp": 175400000,
+    "literacy": 95,
+    "language": {"en": {"percent": 95, "status": 0, "cldr": "en-AI", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "AL": {
+    "name": "Albania",
+    "likely": "sq-Latn-AL",
+    "population": 3038590,
+    "gdp": 34210000000,
+    "literacy": 96.8,
+    "net": 63.3,
+    "cell": 106,
+    "language": {"sq": {"percent": 100, "status": 0, "cldr": "sq"}},
+    "currency": "ALL"
+  },
+  "AM": {
+    "name": "Armenia",
+    "likely": "hy-Armn-AM",
+    "population": 3051250,
+    "gdp": 26560000000,
+    "literacy": 99.6,
+    "net": 58.2,
+    "cell": 115,
+    "language": {"hy": {"percent": 98, "status": 0, "cldr": "hy"}},
+    "currency": "AMD"
+  },
+  "AO": {
+    "name": "Angola",
+    "likely": "pt-Latn-AO",
+    "population": 20172300,
+    "gdp": 187300000000,
+    "literacy": 70.4,
+    "net": 12.4,
+    "cell": 60.8,
+    "language": {"pt": {"percent": 67, "status": 0, "cldr": "pt-AO", "parent": "pt-PT"}},
+    "currency": "AOA"
+  },
+  "AQ": {
+    "name": "Antarctica",
+    "likely": "und-Latn-AQ",
+    "population": 300,
+    "gdp": 17190000,
+    "literacy": 99
+  },
+  "AR": {
+    "name": "Argentina",
+    "likely": "es-Latn-AR",
+    "population": 43886700,
+    "gdp": 879400000000,
+    "literacy": 97.9,
+    "net": 69.4,
+    "cell": 144,
+    "language": {"es": {"percent": 100, "status": 0, "cldr": "es-AR", "parent": "es-419"}},
+    "currency": "ARS"
+  },
+  "AS": {
+    "name": "American Samoa",
+    "likely": "sm-Latn-AS",
+    "population": 54194,
+    "gdp": 711000000,
+    "literacy": 97,
+    "language": {
+      "en": {"percent": 97, "status": 2, "cldr": "en-AS"},
+      "sm": {"percent": 99, "status": 0}
+    },
+    "currency": "USD"
+  },
+  "AT": {
+    "name": "Austria",
+    "likely": "de-Latn-AT",
+    "population": 8711770,
+    "gdp": 415900000000,
+    "literacy": 98,
+    "net": 83.9,
+    "cell": 157,
+    "language": {
+      "de": {"percent": 97, "status": 0, "cldr": "de-AT"},
+      "hr": {"percent": 1.2, "status": 1},
+      "hu": {"percent": 0.27, "status": 1},
+      "sl": {"percent": 0.37, "status": 1}
+    },
+    "currency": "EUR"
+  },
+  "AU": {
+    "name": "Australia",
+    "population": 22992700,
+    "gdp": 1189000000000,
+    "literacy": 99,
+    "net": 84.6,
+    "cell": 133,
+    "language": {"en": {"percent": 96, "status": 2, "cldr": "en-AU", "parent": "en-001"}},
+    "currency": "AUD"
+  },
+  "AW": {
+    "name": "Aruba",
+    "likely": "nl-Latn-AW",
+    "population": 113648,
+    "gdp": 2516000000,
+    "literacy": 96.8,
+    "net": 88.7,
+    "cell": 136,
+    "language": {
+      "nl": {"percent": 97, "status": 0, "cldr": "nl-AW"},
+      "pap": {"percent": 61, "status": 0}
+    },
+    "currency": "AWG"
+  },
+  "AX": {
+    "name": "Åland Islands",
+    "likely": "sv-Latn-AX",
+    "population": 26200,
+    "gdp": 929800000,
+    "literacy": 100,
+    "language": {"sv": {"percent": 99, "status": 0, "cldr": "sv-AX"}},
+    "currency": "EUR"
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "likely": "az-Latn-AZ",
+    "population": 9872770,
+    "gdp": 167900000000,
+    "literacy": 99.8,
+    "net": 77,
+    "cell": 111,
+    "language": {
+      "az": {"percent": 89, "status": 0, "cldr": "az"},
+      "az-Cyrl": {"percent": 9.9, "status": 0, "cldr": "az-Cyrl", "parent": "root"}
+    },
+    "currency": "AZN"
+  },
+  "BA": {
+    "name": "Bosnia & Herzegovina",
+    "likely": "bs-Latn-BA",
+    "population": 3861910,
+    "gdp": 42530000000,
+    "literacy": 98,
+    "net": 65.1,
+    "cell": 90.2,
+    "language": {
+      "bs": {"percent": 99, "status": 0, "cldr": "bs"},
+      "bs-Cyrl": {"percent": 99, "status": 0, "cldr": "bs-Cyrl", "parent": "root"},
+      "hr": {"percent": 12, "status": 0, "cldr": "hr-BA"},
+      "sr": {"percent": 10, "status": 0},
+      "sr-Latn": {"percent": 10, "status": 0, "cldr": "sr-Latn-BA"}
+    },
+    "currency": "BAM"
+  },
+  "BB": {
+    "name": "Barbados",
+    "population": 291495,
+    "gdp": 4804000000,
+    "literacy": 99.7,
+    "net": 76.1,
+    "cell": 116,
+    "language": {"en": {"percent": 100, "status": 0, "cldr": "en-BB", "parent": "en-001"}},
+    "currency": "BBD"
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "likely": "bn-Beng-BD",
+    "population": 156187000,
+    "gdp": 628400000000,
+    "literacy": 57.7,
+    "net": 14.4,
+    "cell": 83.4,
+    "language": {"bn": {"percent": 98, "status": 0, "cldr": "bn"}},
+    "currency": "BDT"
+  },
+  "BE": {
+    "name": "Belgium",
+    "likely": "nl-Latn-BE",
+    "population": 11409100,
+    "gdp": 508600000000,
+    "literacy": 99,
+    "net": 85.1,
+    "cell": 116,
+    "language": {
+      "de": {"percent": 22, "status": 0, "cldr": "de-BE"},
+      "fr": {"percent": 38, "status": 0, "cldr": "fr-BE"},
+      "nl": {"percent": 55, "status": 0, "cldr": "nl-BE"}
+    },
+    "currency": "EUR"
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "likely": "fr-Latn-BF",
+    "population": 19512500,
+    "gdp": 32990000000,
+    "literacy": 28.7,
+    "net": 11.4,
+    "cell": 80.6,
+    "language": {"fr": {"percent": 22, "status": 0, "cldr": "fr-BF"}},
+    "currency": "XOF"
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "likely": "bg-Cyrl-BG",
+    "population": 7144650,
+    "gdp": 143100000000,
+    "literacy": 98.4,
+    "net": 56.7,
+    "cell": 129,
+    "language": {"bg": {"percent": 100, "status": 0, "cldr": "bg"}},
+    "currency": "BGN"
+  },
+  "BH": {
+    "name": "Bahrain",
+    "likely": "ar-Arab-BH",
+    "population": 1378900,
+    "gdp": 66370000000,
+    "literacy": 94.6,
+    "net": 93.5,
+    "cell": 185,
+    "language": {"ar": {"percent": 87, "status": 0, "cldr": "ar-BH"}},
+    "currency": "BHD"
+  },
+  "BI": {
+    "name": "Burundi",
+    "likely": "rn-Latn-BI",
+    "population": 11099300,
+    "gdp": 7892000000,
+    "literacy": 67.2,
+    "net": 4.87,
+    "cell": 46.2,
+    "language": {
+      "en": {"percent": 0.056, "status": 0, "cldr": "en-BI"},
+      "fr": {"percent": 59, "status": 0, "cldr": "fr-BI"},
+      "rn": {"percent": 63, "status": 0, "cldr": "rn"}
+    },
+    "currency": "BIF"
+  },
+  "BJ": {
+    "name": "Benin",
+    "likely": "fr-Latn-BJ",
+    "population": 10741500,
+    "gdp": 24310000000,
+    "literacy": 42.4,
+    "net": 6.79,
+    "cell": 85.6,
+    "language": {"fr": {"percent": 35, "status": 0, "cldr": "fr-BJ"}},
+    "currency": "XOF"
+  },
+  "BL": {
+    "name": "St. Barthélemy",
+    "likely": "fr-Latn-BL",
+    "population": 7209,
+    "gdp": 255000000,
+    "literacy": 99,
+    "language": {"fr": {"percent": 95, "status": 0, "cldr": "fr-BL"}},
+    "currency": "EUR"
+  },
+  "BM": {
+    "name": "Bermuda",
+    "population": 70537,
+    "gdp": 5198000000,
+    "literacy": 98,
+    "net": 98.3,
+    "cell": 57.9,
+    "language": {"en": {"percent": 92, "status": 0, "cldr": "en-BM", "parent": "en-001"}},
+    "currency": "BMD"
+  },
+  "BN": {
+    "name": "Brunei",
+    "likely": "ms-Latn-BN",
+    "population": 436620,
+    "gdp": 33730000000,
+    "literacy": 95.4,
+    "net": 71.2,
+    "cell": 108,
+    "language": {
+      "ms": {"percent": 93, "status": 0, "cldr": "ms-BN"},
+      "ms-Arab": {"percent": 5, "status": 0}
+    },
+    "currency": "BND"
+  },
+  "BO": {
+    "name": "Bolivia",
+    "likely": "es-Latn-BO",
+    "population": 10969600,
+    "gdp": 78350000000,
+    "literacy": 91.2,
+    "net": 45.1,
+    "cell": 92.2,
+    "language": {
+      "ay": {"percent": 20, "status": 0},
+      "es": {"percent": 61, "status": 0, "cldr": "es-BO", "parent": "es-419"},
+      "qu": {"percent": 32, "status": 0}
+    },
+    "currency": "BOB"
+  },
+  "BQ": {
+    "name": "Caribbean Netherlands",
+    "likely": "pap-Latn-BQ",
+    "population": 20000,
+    "gdp": 419800000,
+    "literacy": 99,
+    "language": {"nl": {"percent": 8, "status": 0, "cldr": "nl-BQ"}},
+    "currency": "USD"
+  },
+  "BR": {
+    "name": "Brazil",
+    "likely": "pt-Latn-BR",
+    "population": 205824000,
+    "gdp": 3135000000000,
+    "literacy": 90.4,
+    "net": 59.1,
+    "cell": 127,
+    "language": {"pt": {"percent": 91, "status": 0, "cldr": "pt"}},
+    "currency": "BRL"
+  },
+  "BS": {
+    "name": "Bahamas",
+    "population": 327316,
+    "gdp": 9066000000,
+    "literacy": 95.6,
+    "net": 78,
+    "cell": 80.3,
+    "language": {"en": {"percent": 100, "status": 0, "cldr": "en-BS", "parent": "en-001"}},
+    "currency": "BSD"
+  },
+  "BT": {
+    "name": "Bhutan",
+    "likely": "dz-Tibt-BT",
+    "population": 750125,
+    "gdp": 6432000000,
+    "literacy": 52.8,
+    "net": 39.8,
+    "cell": 87.1,
+    "language": {"dz": {"percent": 47, "status": 0, "cldr": "dz"}},
+    "currency": "INR"
+  },
+  "BV": {
+    "name": "Bouvet Island",
+    "likely": "und-Latn-BV",
+    "population": 1,
+    "gdp": 43270,
+    "literacy": 99,
+    "currency": "NOK"
+  },
+  "BW": {
+    "name": "Botswana",
+    "population": 2209210,
+    "gdp": 36510000000,
+    "literacy": 85.1,
+    "net": 27.5,
+    "cell": 169,
+    "language": {
+      "en": {"percent": 81, "status": 0, "cldr": "en-BW", "parent": "en-001"},
+      "tn": {"percent": 62, "status": 0}
+    },
+    "currency": "BWP"
+  },
+  "BY": {
+    "name": "Belarus",
+    "likely": "be-Cyrl-BY",
+    "population": 9570380,
+    "gdp": 165400000000,
+    "literacy": 99.6,
+    "net": 62.2,
+    "cell": 124,
+    "language": {
+      "be": {"percent": 100, "status": 0, "cldr": "be"},
+      "ru": {"percent": 12, "status": 0, "cldr": "ru-BY"}
+    },
+    "currency": "BYN"
+  },
+  "BZ": {
+    "name": "Belize",
+    "population": 353858,
+    "gdp": 3088000000,
+    "literacy": 76.9,
+    "net": 41.6,
+    "cell": 48.9,
+    "language": {"en": {"percent": 100, "status": 0, "cldr": "en-BZ", "parent": "en-001"}},
+    "currency": "BZD"
+  },
+  "CA": {
+    "name": "Canada",
+    "population": 35362900,
+    "gdp": 1674000000000,
+    "literacy": 99,
+    "net": 88.5,
+    "cell": 81.9,
+    "language": {
+      "en": {"percent": 86, "status": 0, "cldr": "en-CA", "parent": "en-001"},
+      "fr": {"percent": 22, "status": 0, "cldr": "fr-CA"},
+      "ikt": {"percent": 0.011, "literacy": 30, "status": 1},
+      "iu": {"percent": 0.042, "literacy": 30, "status": 1},
+      "iu-Latn": {"percent": 0.042, "literacy": 30, "status": 1}
+    },
+    "currency": "CAD"
+  },
+  "CC": {
+    "name": "Cocos (Keeling) Islands",
+    "population": 596,
+    "gdp": 30820000,
+    "literacy": 99,
+    "language": {"en": {"percent": 17, "status": 2, "cldr": "en-CC", "parent": "en-001"}},
+    "currency": "AUD"
+  },
+  "CD": {
+    "name": "Congo - Kinshasa",
+    "likely": "sw-Latn-CD",
+    "population": 81331100,
+    "gdp": 66010000000,
+    "literacy": 66.8,
+    "net": 3.8,
+    "cell": 53,
+    "language": {
+      "fr": {"percent": 3.8, "status": 0, "cldr": "fr-CD"},
+      "kg": {"percent": 1.5, "status": 1},
+      "ln": {"percent": 3.1, "status": 1, "cldr": "ln"},
+      "lua": {"percent": 9.6, "status": 1},
+      "sw": {"percent": 50, "status": 1, "cldr": "sw-CD"}
+    },
+    "currency": "CDF"
+  },
+  "CF": {
+    "name": "Central African Republic",
+    "likely": "fr-Latn-CF",
+    "population": 5507260,
+    "gdp": 3206000000,
+    "literacy": 56.6,
+    "net": 4.56,
+    "cell": 20.4,
+    "language": {
+      "fr": {"percent": 49, "status": 0, "cldr": "fr-CF"},
+      "sg": {"percent": 49, "status": 0, "cldr": "sg"}
+    },
+    "currency": "XAF"
+  },
+  "CG": {
+    "name": "Congo - Brazzaville",
+    "likely": "fr-Latn-CG",
+    "population": 4852410,
+    "gdp": 30270000000,
+    "literacy": 83.8,
+    "net": 7.62,
+    "cell": 112,
+    "language": {"fr": {"percent": 84, "status": 0, "cldr": "fr-CG"}},
+    "currency": "XAF"
+  },
+  "CH": {
+    "name": "Switzerland",
+    "likely": "de-Latn-CH",
+    "population": 8179290,
+    "gdp": 494300000000,
+    "literacy": 99,
+    "net": 88,
+    "cell": 142,
+    "language": {
+      "de": {"percent": 73, "status": 0, "cldr": "de-CH"},
+      "fr": {"percent": 21, "status": 0, "cldr": "fr-CH"},
+      "gsw": {"percent": 65, "status": 2, "cldr": "gsw"},
+      "it": {"percent": 4.3, "status": 0, "cldr": "it-CH"},
+      "rm": {"percent": 0.5, "status": 1, "cldr": "rm"}
+    },
+    "currency": "CHF"
+  },
+  "CI": {
+    "name": "Côte d’Ivoire",
+    "likely": "fr-Latn-CI",
+    "population": 23740400,
+    "gdp": 87120000000,
+    "literacy": 56.9,
+    "net": 21,
+    "cell": 119,
+    "language": {"fr": {"percent": 49, "status": 0, "cldr": "fr-CI"}},
+    "currency": "XOF"
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "population": 9556,
+    "gdp": 244100000,
+    "literacy": 95,
+    "language": {"en": {"percent": 95, "status": 0, "cldr": "en-CK", "parent": "en-001"}},
+    "currency": "NZD"
+  },
+  "CL": {
+    "name": "Chile",
+    "likely": "es-Latn-CL",
+    "population": 17650100,
+    "gdp": 436100000000,
+    "literacy": 98.6,
+    "net": 64.3,
+    "cell": 129,
+    "language": {"es": {"percent": 98, "status": 0, "cldr": "es-CL", "parent": "es-419"}},
+    "currency": "CLP"
+  },
+  "CM": {
+    "name": "Cameroon",
+    "likely": "fr-Latn-CM",
+    "population": 24360800,
+    "gdp": 77240000000,
+    "literacy": 71.3,
+    "net": 20.7,
+    "cell": 71.8,
+    "language": {
+      "en": {"percent": 38, "status": 0, "cldr": "en-CM", "parent": "en-001"},
+      "fr": {"percent": 68, "status": 0, "cldr": "fr-CM"}
+    },
+    "currency": "XAF"
+  },
+  "CN": {
+    "name": "China",
+    "likely": "zh-Hans-CN",
+    "population": 1373540000,
+    "gdp": 21270000000000,
+    "literacy": 95.1,
+    "net": 50.3,
+    "cell": 93.2,
+    "language": {
+      "bo": {"percent": 0.2, "status": 1, "cldr": "bo"},
+      "ko": {"percent": 0.15, "status": 1},
+      "mn-Mong": {"percent": 0.26, "status": 1},
+      "ug": {"percent": 0.55, "status": 1, "cldr": "ug"},
+      "za": {"percent": 0.31, "status": 1},
+      "zh": {"percent": 90, "status": 0, "cldr": "zh"}
+    },
+    "currency": "CNY"
+  },
+  "CO": {
+    "name": "Colombia",
+    "likely": "es-Latn-CO",
+    "population": 47220900,
+    "gdp": 690400000000,
+    "literacy": 93.6,
+    "net": 55.9,
+    "cell": 116,
+    "language": {"es": {"percent": 93, "status": 0, "cldr": "es-CO", "parent": "es-419"}},
+    "currency": "COP"
+  },
+  "CP": {
+    "name": "Clipperton Island",
+    "likely": "und-Latn-CP",
+    "population": 1,
+    "gdp": 40950,
+    "literacy": 99
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "likely": "es-Latn-CR",
+    "population": 4872540,
+    "gdp": 79260000000,
+    "literacy": 96.3,
+    "net": 59.8,
+    "cell": 151,
+    "language": {"es": {"percent": 95, "status": 0, "cldr": "es-CR", "parent": "es-419"}},
+    "currency": "CRC"
+  },
+  "CU": {
+    "name": "Cuba",
+    "likely": "es-Latn-CU",
+    "population": 11180000,
+    "gdp": 128500000000,
+    "literacy": 99.8,
+    "net": 31.1,
+    "cell": 29.7,
+    "language": {"es": {"percent": 100, "status": 0, "cldr": "es-CU", "parent": "es-419"}},
+    "currency": "CUP"
+  },
+  "CV": {
+    "name": "Cape Verde",
+    "likely": "pt-Latn-CV",
+    "population": 553432,
+    "gdp": 3583000000,
+    "literacy": 84.9,
+    "net": 43,
+    "cell": 127,
+    "language": {"pt": {"percent": 76, "status": 0, "cldr": "pt-CV", "parent": "pt-PT"}},
+    "currency": "CVE"
+  },
+  "CW": {
+    "name": "Curaçao",
+    "likely": "pap-Latn-CW",
+    "population": 149035,
+    "gdp": 3128000000,
+    "literacy": 99,
+    "cell": 114,
+    "language": {
+      "nl": {"percent": 8, "status": 0, "cldr": "nl-CW"},
+      "pap": {"percent": 81, "status": 2}
+    },
+    "currency": "ANG"
+  },
+  "CX": {
+    "name": "Christmas Island",
+    "population": 2205,
+    "gdp": 114000000,
+    "literacy": 99,
+    "language": {"en": {"percent": 63, "status": 0, "cldr": "en-CX", "parent": "en-001"}},
+    "currency": "AUD"
+  },
+  "CY": {
+    "name": "Cyprus",
+    "likely": "el-Grek-CY",
+    "population": 1205580,
+    "gdp": 29260000000,
+    "literacy": 98.7,
+    "net": 71.7,
+    "cell": 95.4,
+    "language": {
+      "el": {"percent": 95, "status": 0, "cldr": "el-CY"},
+      "tr": {"percent": 23, "status": 0, "cldr": "tr-CY"}
+    },
+    "currency": "EUR"
+  },
+  "CZ": {
+    "name": "Czechia",
+    "likely": "cs-Latn-CZ",
+    "population": 10644800,
+    "gdp": 350900000000,
+    "literacy": 99,
+    "net": 81.3,
+    "cell": 129,
+    "language": {"cs": {"percent": 98, "status": 0, "cldr": "cs"}},
+    "currency": "CZK"
+  },
+  "DE": {
+    "name": "Germany",
+    "likely": "de-Latn-DE",
+    "population": 80722800,
+    "gdp": 3979000000000,
+    "literacy": 99,
+    "net": 87.6,
+    "cell": 117,
+    "language": {"de": {"percent": 91, "status": 0, "cldr": "de"}},
+    "currency": "EUR"
+  },
+  "DG": {
+    "name": "Diego Garcia",
+    "population": 500,
+    "gdp": 21640000,
+    "literacy": 99,
+    "language": {"en": {"percent": 99, "status": 2, "cldr": "en-DG", "parent": "en-001"}},
+    "currency": "USD"
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "likely": "aa-Latn-DJ",
+    "population": 846687,
+    "gdp": 3345000000,
+    "literacy": 67.9,
+    "net": 11.9,
+    "cell": 34.7,
+    "language": {
+      "ar": {"percent": 7.3, "status": 0, "cldr": "ar-DJ"},
+      "fr": {"percent": 2.1, "status": 0, "cldr": "fr-DJ"}
+    },
+    "currency": "DJF"
+  },
+  "DK": {
+    "name": "Denmark",
+    "likely": "da-Latn-DK",
+    "population": 5593790,
+    "gdp": 264800000000,
+    "literacy": 99,
+    "net": 96.3,
+    "cell": 128,
+    "language": {
+      "da": {"percent": 93, "status": 0, "cldr": "da"},
+      "de": {"percent": 47, "status": 1},
+      "kl": {"percent": 0.13, "status": 1}
+    },
+    "currency": "DKK"
+  },
+  "DM": {
+    "name": "Dominica",
+    "population": 73757,
+    "gdp": 812000000,
+    "literacy": 94,
+    "net": 67.6,
+    "cell": 106,
+    "language": {"en": {"percent": 94, "status": 0, "cldr": "en-DM", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "DO": {
+    "name": "Dominican Republic",
+    "likely": "es-Latn-DO",
+    "population": 10606900,
+    "gdp": 160900000000,
+    "literacy": 90.1,
+    "net": 51.9,
+    "cell": 82.6,
+    "language": {"es": {"percent": 78, "status": 0, "cldr": "es-DO", "parent": "es-419"}},
+    "currency": "DOP"
+  },
+  "DZ": {
+    "name": "Algeria",
+    "likely": "ar-Arab-DZ",
+    "population": 40263700,
+    "gdp": 609400000000,
+    "literacy": 72.6,
+    "net": 38.2,
+    "cell": 113,
+    "language": {
+      "ar": {"percent": 74, "status": 0, "cldr": "ar-DZ"},
+      "fr": {"percent": 20, "status": 0, "cldr": "fr-DZ"}
+    },
+    "currency": "DZD"
+  },
+  "EA": {
+    "name": "Ceuta & Melilla",
+    "likely": "es-Latn-EA",
+    "population": 150000,
+    "gdp": 5220000000,
+    "literacy": 97.7,
+    "language": {"es": {"percent": 98, "status": 0, "cldr": "es-EA"}},
+    "currency": "EUR"
+  },
+  "EC": {
+    "name": "Ecuador",
+    "likely": "es-Latn-EC",
+    "population": 16080800,
+    "gdp": 182400000000,
+    "literacy": 91.6,
+    "net": 48.9,
+    "cell": 79.4,
+    "language": {
+      "es": {"percent": 96, "status": 0, "cldr": "es-EC", "parent": "es-419"},
+      "qu": {"percent": 17, "status": 0}
+    },
+    "currency": "USD"
+  },
+  "EE": {
+    "name": "Estonia",
+    "likely": "et-Latn-EE",
+    "population": 1258550,
+    "gdp": 38700000000,
+    "literacy": 99.8,
+    "net": 88.4,
+    "cell": 149,
+    "language": {"et": {"percent": 71, "status": 0, "cldr": "et"}},
+    "currency": "EUR"
+  },
+  "EG": {
+    "name": "Egypt",
+    "likely": "ar-Arab-EG",
+    "population": 94667000,
+    "gdp": 1105000000000,
+    "literacy": 73.9,
+    "net": 35.9,
+    "cell": 111,
+    "language": {"ar": {"percent": 94, "status": 0, "cldr": "ar-EG"}},
+    "currency": "EGP"
+  },
+  "EH": {
+    "name": "Western Sahara",
+    "likely": "ar-Arab-EH",
+    "population": 587020,
+    "gdp": 906500000,
+    "literacy": 50,
+    "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-EH"}},
+    "currency": "MAD"
+  },
+  "ER": {
+    "name": "Eritrea",
+    "likely": "ti-Ethi-ER",
+    "population": 5869870,
+    "gdp": 9169000000,
+    "literacy": 68.9,
+    "net": 1.08,
+    "cell": 7.05,
+    "language": {
+      "ar": {"percent": 4.9, "status": 0, "cldr": "ar-ER"},
+      "en": {"percent": 59, "status": 0, "cldr": "en-ER", "parent": "en-001"},
+      "ti": {"percent": 60, "status": 2}
+    },
+    "currency": "ERN"
+  },
+  "ES": {
+    "name": "Spain",
+    "likely": "es-Latn-ES",
+    "population": 48563500,
+    "gdp": 1690000000000,
+    "literacy": 97.7,
+    "net": 78.7,
+    "cell": 108,
+    "language": {
+      "ast": {"percent": 1.3, "status": 1, "cldr": "ast"},
+      "ca": {"percent": 17, "status": 1, "cldr": "ca"},
+      "es": {"percent": 99, "status": 0, "cldr": "es"},
+      "eu": {"percent": 2, "status": 1, "cldr": "eu"},
+      "gl": {"percent": 7, "status": 1, "cldr": "gl"}
+    },
+    "currency": "EUR"
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "likely": "am-Ethi-ET",
+    "population": 102374000,
+    "gdp": 174700000000,
+    "literacy": 39,
+    "net": 11.6,
+    "cell": 42.8,
+    "language": {"am": {"percent": 33, "status": 0, "cldr": "am"}},
+    "currency": "ETB"
+  },
+  "FI": {
+    "name": "Finland",
+    "likely": "fi-Latn-FI",
+    "population": 5498210,
+    "gdp": 230000000000,
+    "literacy": 100,
+    "net": 92.7,
+    "cell": 135,
+    "language": {
+      "fi": {"percent": 94, "status": 0, "cldr": "fi"},
+      "sv": {"percent": 44, "status": 0, "cldr": "sv-FI"}
+    },
+    "currency": "EUR"
+  },
+  "FJ": {
+    "name": "Fiji",
+    "population": 915303,
+    "gdp": 8374000000,
+    "literacy": 93.7,
+    "net": 46.3,
+    "cell": 108,
+    "language": {
+      "en": {"percent": 94, "status": 0, "cldr": "en-FJ", "parent": "en-001"},
+      "fj": {"percent": 39, "status": 0},
+      "hif": {"percent": 41, "status": 0}
+    },
+    "currency": "FJD"
+  },
+  "FK": {
+    "name": "Falkland Islands",
+    "population": 2931,
+    "gdp": 164500000,
+    "literacy": 99,
+    "language": {"en": {"percent": 96, "status": 0, "cldr": "en-FK", "parent": "en-001"}},
+    "currency": "FKP"
+  },
+  "FM": {
+    "name": "Micronesia",
+    "population": 104719,
+    "gdp": 314000000,
+    "literacy": 89,
+    "net": 31.5,
+    "language": {"en": {"percent": 57, "status": 0, "cldr": "en-FM", "parent": "en-001"}},
+    "currency": "USD"
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "likely": "fo-Latn-FO",
+    "population": 50456,
+    "gdp": 1831000000,
+    "literacy": 99,
+    "net": 94.2,
+    "cell": 127,
+    "language": {"fo": {"percent": 95, "status": 0, "cldr": "fo"}},
+    "currency": "DKK"
+  },
+  "FR": {
+    "name": "France",
+    "likely": "fr-Latn-FR",
+    "population": 66836200,
+    "gdp": 2737000000000,
+    "literacy": 99,
+    "net": 84.7,
+    "cell": 103,
+    "language": {"fr": {"percent": 99, "status": 0, "cldr": "fr"}},
+    "currency": "EUR"
+  },
+  "GA": {
+    "name": "Gabon",
+    "likely": "fr-Latn-GA",
+    "population": 1738540,
+    "gdp": 36220000000,
+    "literacy": 89,
+    "net": 23.5,
+    "cell": 169,
+    "language": {"fr": {"percent": 63, "status": 0, "cldr": "fr-GA"}},
+    "currency": "XAF"
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "population": 64430400,
+    "gdp": 2788000000000,
+    "literacy": 99,
+    "net": 92,
+    "cell": 126,
+    "language": {
+      "cy": {"percent": 0.77, "status": 1, "cldr": "cy"},
+      "en": {"percent": 99, "status": 0, "cldr": "en-GB", "parent": "en-001"},
+      "ga": {"percent": 0.026, "status": 1},
+      "gd": {"percent": 0.099, "status": 1, "cldr": "gd"}
+    },
+    "currency": "GBP"
+  },
+  "GD": {
+    "name": "Grenada",
+    "population": 111219,
+    "gdp": 1511000000,
+    "literacy": 96,
+    "net": 53.8,
+    "cell": 112,
+    "language": {"en": {"percent": 96, "status": 0, "cldr": "en-GD", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "GE": {
+    "name": "Georgia",
+    "likely": "ka-Geor-GE",
+    "population": 4928050,
+    "gdp": 37380000000,
+    "literacy": 99.7,
+    "net": 45.2,
+    "cell": 129,
+    "language": {
+      "ab": {"percent": 2.2, "status": 1},
+      "ka": {"percent": 86, "status": 0, "cldr": "ka"},
+      "os": {"percent": 2.2, "status": 1, "cldr": "os"}
+    },
+    "currency": "GEL"
+  },
+  "GF": {
+    "name": "French Guiana",
+    "likely": "fr-Latn-GF",
+    "population": 199509,
+    "gdp": 1551000000,
+    "literacy": 83,
+    "language": {"fr": {"percent": 77, "status": 0, "cldr": "fr-GF"}},
+    "currency": "EUR"
+  },
+  "GG": {
+    "name": "Guernsey",
+    "population": 66297,
+    "gdp": 3451000000,
+    "literacy": 100,
+    "language": {"en": {"percent": 100, "status": 0, "cldr": "en-GG", "parent": "en-001"}},
+    "currency": "GBP"
+  },
+  "GH": {
+    "name": "Ghana",
+    "likely": "ak-Latn-GH",
+    "population": 26908300,
+    "gdp": 120800000000,
+    "literacy": 71.5,
+    "net": 23.5,
+    "cell": 130,
+    "language": {
+      "ak": {"percent": 39, "status": 1, "cldr": "ak"},
+      "ee": {"percent": 11, "status": 1, "cldr": "ee"},
+      "en": {"percent": 21, "status": 0, "cldr": "en-GH", "parent": "en-001"},
+      "gaa": {"percent": 2.8, "status": 1}
+    },
+    "currency": "GHS"
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "population": 29328,
+    "gdp": 1850000000,
+    "literacy": 80,
+    "language": {"en": {"percent": 80, "status": 0, "cldr": "en-GI", "parent": "en-001"}},
+    "currency": "GIP"
+  },
+  "GL": {
+    "name": "Greenland",
+    "likely": "kl-Latn-GL",
+    "population": 57728,
+    "gdp": 2173000000,
+    "literacy": 100,
+    "net": 67.6,
+    "cell": 107,
+    "language": {"kl": {"percent": 84, "status": 0, "cldr": "kl"}},
+    "currency": "DKK"
+  },
+  "GM": {
+    "name": "Gambia",
+    "population": 2009650,
+    "gdp": 3387000000,
+    "literacy": 51.1,
+    "net": 17.1,
+    "cell": 131,
+    "language": {"en": {"percent": 40, "status": 0, "cldr": "en-GM", "parent": "en-001"}},
+    "currency": "GMD"
+  },
+  "GN": {
+    "name": "Guinea",
+    "likely": "fr-Latn-GN",
+    "population": 12093300,
+    "gdp": 16080000000,
+    "literacy": 41,
+    "net": 4.7,
+    "cell": 87.2,
+    "language": {"fr": {"percent": 29, "status": 0, "cldr": "fr-GN"}},
+    "currency": "GNF"
+  },
+  "GP": {
+    "name": "Guadeloupe",
+    "likely": "fr-Latn-GP",
+    "population": 452776,
+    "gdp": 3513000000,
+    "literacy": 90,
+    "language": {"fr": {"percent": 90, "status": 0, "cldr": "fr-GP"}},
+    "currency": "EUR"
+  },
+  "GQ": {
+    "name": "Equatorial Guinea",
+    "likely": "es-Latn-GQ",
+    "population": 759451,
+    "gdp": 31770000000,
+    "literacy": 94.2,
+    "net": 21.3,
+    "cell": 66.7,
+    "language": {
+      "es": {"percent": 87, "status": 0, "cldr": "es-GQ"},
+      "fr": {"percent": 8.8, "status": 0, "cldr": "fr-GQ"},
+      "pt": {"percent": 0.0001, "status": 0, "cldr": "pt-GQ", "parent": "pt-PT"}
+    },
+    "currency": "XAF"
+  },
+  "GR": {
+    "name": "Greece",
+    "likely": "el-Grek-GR",
+    "population": 10773300,
+    "gdp": 290500000000,
+    "literacy": 97.3,
+    "net": 66.8,
+    "cell": 114,
+    "language": {"el": {"percent": 99, "status": 0, "cldr": "el"}},
+    "currency": "EUR"
+  },
+  "GS": {
+    "name": "South Georgia & South Sandwich Islands",
+    "likely": "und-Latn-GS",
+    "population": 20,
+    "gdp": 865400,
+    "literacy": 99,
+    "currency": "GBP"
+  },
+  "GT": {
+    "name": "Guatemala",
+    "likely": "es-Latn-GT",
+    "population": 15190000,
+    "gdp": 132300000000,
+    "literacy": 75.9,
+    "net": 27.1,
+    "cell": 111,
+    "language": {
+      "es": {"percent": 93, "status": 0, "cldr": "es-GT", "parent": "es-419"},
+      "quc": {"percent": 7, "status": 1}
+    },
+    "currency": "GTQ"
+  },
+  "GU": {
+    "name": "Guam",
+    "population": 162742,
+    "gdp": 4882000000,
+    "literacy": 99,
+    "net": 73.1,
+    "language": {
+      "ch": {"percent": 22, "status": 0},
+      "en": {"percent": 91, "status": 2, "cldr": "en-GU"}
+    },
+    "currency": "USD"
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "likely": "pt-Latn-GW",
+    "population": 1759160,
+    "gdp": 2851000000,
+    "literacy": 55.3,
+    "net": 3.54,
+    "cell": 69.3,
+    "language": {"pt": {"percent": 100, "status": 0, "cldr": "pt-GW", "parent": "pt-PT"}},
+    "currency": "XOF"
+  },
+  "GY": {
+    "name": "Guyana",
+    "population": 735909,
+    "gdp": 6093000000,
+    "literacy": 91.8,
+    "net": 38.2,
+    "cell": 67.2,
+    "language": {"en": {"percent": 100, "status": 0, "cldr": "en-GY", "parent": "en-001"}},
+    "currency": "GYD"
+  },
+  "HK": {
+    "name": "Hong Kong SAR China",
+    "likely": "zh-Hant-HK",
+    "population": 7167400,
+    "gdp": 427400000000,
+    "literacy": 93.5,
+    "net": 84.9,
+    "cell": 229,
+    "language": {
+      "en": {"percent": 51, "status": 0, "cldr": "en-HK", "parent": "en-001"},
+      "zh-Hant": {"percent": 95, "status": 0, "cldr": "zh-Hant-HK"}
+    },
+    "currency": "HKD"
+  },
+  "HM": {
+    "name": "Heard & McDonald Islands",
+    "likely": "und-Latn-HM",
+    "population": 1,
+    "gdp": 51710,
+    "literacy": 99,
+    "currency": "AUD"
+  },
+  "HN": {
+    "name": "Honduras",
+    "likely": "es-Latn-HN",
+    "population": 8893260,
+    "gdp": 43190000000,
+    "literacy": 85.1,
+    "net": 20.4,
+    "cell": 95.5,
+    "language": {"es": {"percent": 78, "status": 0, "cldr": "es-HN", "parent": "es-419"}},
+    "currency": "HNL"
+  },
+  "HR": {
+    "name": "Croatia",
+    "likely": "hr-Latn-HR",
+    "population": 4313710,
+    "gdp": 94240000000,
+    "literacy": 98.9,
+    "net": 69.8,
+    "cell": 104,
+    "language": {
+      "hr": {"percent": 99, "status": 0, "cldr": "hr"},
+      "it": {"percent": 1.6, "status": 1}
+    },
+    "currency": "HRK"
+  },
+  "HT": {
+    "name": "Haiti",
+    "likely": "ht-Latn-HT",
+    "population": 10485800,
+    "gdp": 19360000000,
+    "literacy": 48.7,
+    "net": 12.2,
+    "cell": 69.9,
+    "language": {
+      "fr": {"percent": 4.7, "literacy": 100, "status": 0, "cldr": "fr-HT"},
+      "ht": {"percent": 81, "status": 0}
+    },
+    "currency": "HTG"
+  },
+  "HU": {
+    "name": "Hungary",
+    "likely": "hu-Latn-HU",
+    "population": 9874780,
+    "gdp": 267600000000,
+    "literacy": 99,
+    "net": 72.8,
+    "cell": 119,
+    "language": {"hu": {"percent": 100, "status": 0, "cldr": "hu"}},
+    "currency": "HUF"
+  },
+  "IC": {
+    "name": "Canary Islands",
+    "likely": "es-Latn-IC",
+    "population": 2098590,
+    "gdp": 73030000000,
+    "literacy": 97.7,
+    "language": {"es": {"percent": 98, "status": 0, "cldr": "es-IC"}},
+    "currency": "EUR"
+  },
+  "ID": {
+    "name": "Indonesia",
+    "likely": "id-Latn-ID",
+    "population": 258316000,
+    "gdp": 3028000000000,
+    "literacy": 92.8,
+    "net": 22,
+    "cell": 132,
+    "language": {"id": {"percent": 64, "status": 0, "cldr": "id"}},
+    "currency": "IDR"
+  },
+  "IE": {
+    "name": "Ireland",
+    "population": 4952470,
+    "gdp": 324300000000,
+    "literacy": 99,
+    "net": 80.1,
+    "cell": 104,
+    "language": {
+      "en": {"percent": 98, "status": 0, "cldr": "en-IE", "parent": "en-001"},
+      "ga": {"percent": 22, "status": 0, "cldr": "ga"}
+    },
+    "currency": "EUR"
+  },
+  "IL": {
+    "name": "Israel",
+    "likely": "he-Hebr-IL",
+    "population": 8174530,
+    "gdp": 297000000000,
+    "literacy": 97.1,
+    "net": 78.9,
+    "cell": 133,
+    "language": {
+      "ar": {"percent": 20, "status": 0, "cldr": "ar-IL"},
+      "he": {"percent": 100, "status": 0, "cldr": "he"}
+    },
+    "currency": "ILS"
+  },
+  "IM": {
+    "name": "Isle of Man",
+    "population": 88195,
+    "gdp": 6298000000,
+    "literacy": 99,
+    "language": {
+      "en": {"percent": 100, "status": 0, "cldr": "en-IM", "parent": "en-001"},
+      "gv": {"percent": 1.9, "status": 0, "cldr": "gv"}
+    },
+    "currency": "GBP"
+  },
+  "IN": {
+    "name": "India",
+    "likely": "hi-Deva-IN",
+    "population": 1266880000,
+    "gdp": 8721000000000,
+    "literacy": 62.8,
+    "net": 26,
+    "cell": 78.8,
+    "language": {
+      "as": {"percent": 1.3, "status": 1, "cldr": "as"},
+      "bn": {"percent": 8.1, "status": 1, "cldr": "bn-IN"},
+      "en": {"percent": 19, "status": 0, "cldr": "en-IN", "parent": "en-001"},
+      "gu": {"percent": 4.5, "status": 1, "cldr": "gu"},
+      "hi": {"percent": 41, "status": 0, "cldr": "hi"},
+      "kha": {"percent": 0.08, "literacy": 29, "status": 1},
+      "kn": {"percent": 3.7, "status": 1, "cldr": "kn"},
+      "kok": {"percent": 0.37, "status": 1, "cldr": "kok"},
+      "ks": {"percent": 0.41, "status": 1, "cldr": "ks"},
+      "mai": {"percent": 1.2, "status": 1},
+      "ml": {"percent": 3.2, "status": 1, "cldr": "ml"},
+      "mr": {"percent": 7, "status": 1, "cldr": "mr"},
+      "ne": {"percent": 0.56, "status": 1, "cldr": "ne-IN"},
+      "or": {"percent": 3.2, "status": 1, "cldr": "or"},
+      "pa": {"percent": 2.8, "status": 1, "cldr": "pa"},
+      "sa": {"percent": 0.0012, "status": 1},
+      "sat": {"percent": 0.55, "status": 1},
+      "sd": {"percent": 0.26, "status": 1},
+      "sd-Deva": {"percent": 0.026, "status": 1},
+      "ta": {"percent": 5.9, "status": 1, "cldr": "ta"},
+      "te": {"percent": 7.2, "status": 1, "cldr": "te"},
+      "ur": {"percent": 5, "status": 1, "cldr": "ur-IN"}
+    },
+    "currency": "INR"
+  },
+  "IO": {
+    "name": "British Indian Ocean Territory",
+    "population": 3500,
+    "gdp": 151500000,
+    "literacy": 99,
+    "language": {
+      "en": {"percent": 100, "literacy": 100, "status": 0, "cldr": "en-IO", "parent": "en-001"}
+    },
+    "currency": "USD"
+  },
+  "IQ": {
+    "name": "Iraq",
+    "likely": "ar-Arab-IQ",
+    "population": 38146000,
+    "gdp": 596700000000,
+    "literacy": 78.5,
+    "net": 17.2,
+    "cell": 93.8,
+    "language": {
+      "ar": {"percent": 68, "status": 0, "cldr": "ar-IQ"},
+      "az-Arab": {"percent": 1.8, "status": 1},
+      "ckb": {"percent": 20, "status": 1, "cldr": "ckb"}
+    },
+    "currency": "IQD"
+  },
+  "IR": {
+    "name": "Iran",
+    "likely": "fa-Arab-IR",
+    "population": 82801600,
+    "gdp": 1459000000000,
+    "literacy": 85,
+    "net": 44.1,
+    "cell": 93.4,
+    "language": {"fa": {"percent": 75, "status": 0, "cldr": "fa"}},
+    "currency": "IRR"
+  },
+  "IS": {
+    "name": "Iceland",
+    "likely": "is-Latn-IS",
+    "population": 335878,
+    "gdp": 16150000000,
+    "literacy": 99,
+    "net": 98.2,
+    "cell": 114,
+    "language": {"is": {"percent": 100, "status": 0, "cldr": "is"}},
+    "currency": "ISK"
+  },
+  "IT": {
+    "name": "Italy",
+    "likely": "it-Latn-IT",
+    "population": 62007500,
+    "gdp": 2221000000000,
+    "literacy": 99,
+    "net": 65.6,
+    "cell": 151,
+    "language": {
+      "fr": {"percent": 6.3, "status": 1},
+      "it": {"percent": 95, "status": 0, "cldr": "it"}
+    },
+    "currency": "EUR"
+  },
+  "JE": {
+    "name": "Jersey",
+    "population": 98069,
+    "gdp": 5771000000,
+    "literacy": 99,
+    "language": {"en": {"percent": 95, "status": 0, "cldr": "en-JE", "parent": "en-001"}},
+    "currency": "GBP"
+  },
+  "JM": {
+    "name": "Jamaica",
+    "population": 2970340,
+    "gdp": 25390000000,
+    "literacy": 87,
+    "net": 43.2,
+    "cell": 112,
+    "language": {"en": {"percent": 98, "status": 0, "cldr": "en-JM", "parent": "en-001"}},
+    "currency": "JMD"
+  },
+  "JO": {
+    "name": "Jordan",
+    "likely": "ar-Arab-JO",
+    "population": 8185380,
+    "gdp": 86190000000,
+    "literacy": 95.9,
+    "net": 53.4,
+    "cell": 179,
+    "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-JO"}},
+    "currency": "JOD"
+  },
+  "JP": {
+    "name": "Japan",
+    "likely": "ja-Jpan-JP",
+    "population": 126702000,
+    "gdp": 4932000000000,
+    "literacy": 99,
+    "net": 93.3,
+    "cell": 125,
+    "language": {"ja": {"percent": 95, "status": 0, "cldr": "ja"}},
+    "currency": "JPY"
+  },
+  "KE": {
+    "name": "Kenya",
+    "likely": "sw-Latn-KE",
+    "population": 46790800,
+    "gdp": 152700000000,
+    "literacy": 87.4,
+    "net": 45.6,
+    "cell": 80.7,
+    "language": {
+      "en": {"percent": 19, "status": 0, "cldr": "en-KE", "parent": "en-001"},
+      "sw": {"percent": 66, "status": 0, "cldr": "sw-KE"}
+    },
+    "currency": "KES"
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "likely": "ky-Cyrl-KG",
+    "population": 5727550,
+    "gdp": 21010000000,
+    "literacy": 99.2,
+    "net": 30.2,
+    "cell": 133,
+    "language": {
+      "ky": {"percent": 48, "status": 0, "cldr": "ky"},
+      "ru": {"percent": 36, "status": 0, "cldr": "ru-KG"}
+    },
+    "currency": "KGS"
+  },
+  "KH": {
+    "name": "Cambodia",
+    "likely": "km-Khmr-KH",
+    "population": 15957200,
+    "gdp": 58940000000,
+    "literacy": 73.9,
+    "net": 19,
+    "cell": 133,
+    "language": {"km": {"percent": 89, "status": 0, "cldr": "km"}},
+    "currency": "KHR"
+  },
+  "KI": {
+    "name": "Kiribati",
+    "population": 106925,
+    "gdp": 211000000,
+    "literacy": 90,
+    "net": 13,
+    "cell": 38.8,
+    "language": {
+      "en": {"percent": 100, "status": 0, "cldr": "en-KI", "parent": "en-001"},
+      "gil": {"percent": 60, "status": 0}
+    },
+    "currency": "AUD"
+  },
+  "KM": {
+    "name": "Comoros",
+    "likely": "ar-Arab-KM",
+    "population": 794678,
+    "gdp": 1259000000,
+    "literacy": 75.5,
+    "net": 7.46,
+    "cell": 54.8,
+    "language": {
+      "ar": {"percent": 66, "status": 0, "cldr": "ar-KM"},
+      "fr": {"percent": 56, "status": 0, "cldr": "fr-KM"},
+      "wni": {"percent": 34, "status": 0},
+      "zdj": {"percent": 37, "status": 0}
+    },
+    "currency": "KMF"
+  },
+  "KN": {
+    "name": "St. Kitts & Nevis",
+    "population": 52329,
+    "gdp": 1427000000,
+    "literacy": 97.8,
+    "net": 75.7,
+    "cell": 132,
+    "language": {"en": {"percent": 98, "status": 0, "cldr": "en-KN", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "KP": {
+    "name": "North Korea",
+    "likely": "ko-Kore-KP",
+    "population": 25115300,
+    "gdp": 40000000000,
+    "literacy": 100,
+    "cell": 12.9,
+    "language": {"ko": {"percent": 88, "status": 0, "cldr": "ko-KP"}},
+    "currency": "KPW"
+  },
+  "KR": {
+    "name": "South Korea",
+    "likely": "ko-Kore-KR",
+    "population": 50924200,
+    "gdp": 1929000000000,
+    "literacy": 97.9,
+    "net": 89.9,
+    "cell": 118,
+    "language": {"ko": {"percent": 100, "status": 0, "cldr": "ko"}},
+    "currency": "KRW"
+  },
+  "KW": {
+    "name": "Kuwait",
+    "likely": "ar-Arab-KW",
+    "population": 2832780,
+    "gdp": 301100000000,
+    "literacy": 93.9,
+    "net": 82.1,
+    "cell": 232,
+    "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-KW"}},
+    "currency": "KWD"
+  },
+  "KY": {
+    "name": "Cayman Islands",
+    "population": 57268,
+    "gdp": 2507000000,
+    "literacy": 98.9,
+    "net": 77,
+    "cell": 155,
+    "language": {"en": {"percent": 98, "status": 0, "cldr": "en-KY", "parent": "en-001"}},
+    "currency": "KYD"
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "likely": "ru-Cyrl-KZ",
+    "population": 18360400,
+    "gdp": 460700000000,
+    "literacy": 99.7,
+    "net": 72.9,
+    "cell": 187,
+    "language": {
+      "kk": {"percent": 64, "status": 0, "cldr": "kk"},
+      "ru": {"percent": 72, "status": 0, "cldr": "ru-KZ"}
+    },
+    "currency": "KZT"
+  },
+  "LA": {
+    "name": "Laos",
+    "likely": "lo-Laoo-LA",
+    "population": 7019070,
+    "gdp": 40960000000,
+    "literacy": 72.7,
+    "net": 18.2,
+    "cell": 53.1,
+    "language": {"lo": {"percent": 69, "status": 0, "cldr": "lo"}},
+    "currency": "LAK"
+  },
+  "LB": {
+    "name": "Lebanon",
+    "likely": "ar-Arab-LB",
+    "population": 6237740,
+    "gdp": 85160000000,
+    "literacy": 89.6,
+    "net": 74,
+    "cell": 87.1,
+    "language": {"ar": {"percent": 86, "status": 0, "cldr": "ar-LB"}},
+    "currency": "LBP"
+  },
+  "LC": {
+    "name": "St. Lucia",
+    "population": 164464,
+    "gdp": 2083000000,
+    "literacy": 90.1,
+    "net": 52.4,
+    "cell": 102,
+    "language": {"en": {"percent": 90, "status": 0, "cldr": "en-LC", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "likely": "de-Latn-LI",
+    "population": 37937,
+    "gdp": 3200000000,
+    "literacy": 100,
+    "net": 96.6,
+    "cell": 109,
+    "language": {
+      "de": {"percent": 100, "status": 0, "cldr": "de-LI"},
+      "gsw": {"percent": 85, "status": 2}
+    },
+    "currency": "CHF"
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "likely": "si-Sinh-LK",
+    "population": 22235000,
+    "gdp": 237800000000,
+    "literacy": 91.2,
+    "net": 30,
+    "cell": 113,
+    "language": {
+      "si": {"percent": 68, "status": 0, "cldr": "si"},
+      "ta": {"percent": 15, "status": 0, "cldr": "ta-LK"}
+    },
+    "currency": "LKR"
+  },
+  "LR": {
+    "name": "Liberia",
+    "population": 4299940,
+    "gdp": 3881000000,
+    "literacy": 60.8,
+    "net": 5.9,
+    "cell": 81.1,
+    "language": {"en": {"percent": 83, "status": 0, "cldr": "en-LR", "parent": "en-001"}},
+    "currency": "LRD"
+  },
+  "LS": {
+    "name": "Lesotho",
+    "likely": "st-Latn-LS",
+    "population": 1953070,
+    "gdp": 6019000000,
+    "literacy": 89.6,
+    "net": 16.1,
+    "cell": 106,
+    "language": {
+      "en": {"percent": 27, "status": 0, "cldr": "en-LS", "parent": "en-001"},
+      "st": {"percent": 98, "status": 0}
+    },
+    "currency": "ZAR"
+  },
+  "LT": {
+    "name": "Lithuania",
+    "likely": "lt-Latn-LT",
+    "population": 2854240,
+    "gdp": 85790000000,
+    "literacy": 99.7,
+    "net": 71.4,
+    "cell": 140,
+    "language": {"lt": {"percent": 86, "status": 0, "cldr": "lt"}},
+    "currency": "EUR"
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "likely": "fr-Latn-LU",
+    "population": 582291,
+    "gdp": 58740000000,
+    "literacy": 100,
+    "net": 97.3,
+    "cell": 149,
+    "language": {
+      "de": {"percent": 63, "status": 0, "cldr": "de-LU"},
+      "fr": {"percent": 87, "status": 0, "cldr": "fr-LU"},
+      "lb": {"percent": 67, "status": 0, "cldr": "lb"}
+    },
+    "currency": "EUR"
+  },
+  "LV": {
+    "name": "Latvia",
+    "likely": "lv-Latn-LV",
+    "population": 1965690,
+    "gdp": 50870000000,
+    "literacy": 99.8,
+    "net": 79.2,
+    "cell": 127,
+    "language": {"lv": {"percent": 61, "status": 0, "cldr": "lv"}},
+    "currency": "EUR"
+  },
+  "LY": {
+    "name": "Libya",
+    "likely": "ar-Arab-LY",
+    "population": 6541950,
+    "gdp": 90890000000,
+    "literacy": 89.5,
+    "net": 19,
+    "cell": 157,
+    "language": {"ar": {"percent": 74, "status": 0, "cldr": "ar-LY"}},
+    "currency": "LYD"
+  },
+  "MA": {
+    "name": "Morocco",
+    "likely": "ar-Arab-MA",
+    "population": 33655800,
+    "gdp": 282800000000,
+    "literacy": 67.1,
+    "net": 57.1,
+    "cell": 127,
+    "language": {
+      "ar": {"percent": 62, "status": 0, "cldr": "ar-MA"},
+      "fr": {"percent": 20, "status": 2, "cldr": "fr-MA"},
+      "tzm": {"percent": 9.8, "literacy": 25, "status": 0, "cldr": "tzm"}
+    },
+    "currency": "MAD"
+  },
+  "MC": {
+    "name": "Monaco",
+    "likely": "fr-Latn-MC",
+    "population": 30581,
+    "gdp": 6790000000,
+    "literacy": 99,
+    "net": 93.4,
+    "cell": 88.8,
+    "language": {"fr": {"percent": 99, "status": 0, "cldr": "fr-MC"}},
+    "currency": "EUR"
+  },
+  "MD": {
+    "name": "Moldova",
+    "likely": "ro-Latn-MD",
+    "population": 3510490,
+    "gdp": 18540000000,
+    "literacy": 99,
+    "net": 49.8,
+    "cell": 108,
+    "language": {"ro": {"percent": 63, "status": 0, "cldr": "ro-MD"}},
+    "currency": "MDL"
+  },
+  "ME": {
+    "name": "Montenegro",
+    "likely": "sr-Latn-ME",
+    "population": 644578,
+    "gdp": 10610000000,
+    "literacy": 98.5,
+    "net": 64.6,
+    "cell": 162,
+    "language": {"sr-Latn": {"percent": 100, "status": 0, "cldr": "sr-Latn-ME"}},
+    "currency": "EUR"
+  },
+  "MF": {
+    "name": "St. Martin",
+    "likely": "fr-Latn-MF",
+    "population": 31949,
+    "gdp": 561500000,
+    "literacy": 99,
+    "language": {"fr": {"percent": 100, "status": 0, "cldr": "fr-MF"}},
+    "currency": "EUR"
+  },
+  "MG": {
+    "name": "Madagascar",
+    "likely": "mg-Latn-MG",
+    "population": 24430300,
+    "gdp": 37490000000,
+    "literacy": 64.5,
+    "net": 4.17,
+    "cell": 46,
+    "language": {
+      "en": {"percent": 18, "status": 0, "cldr": "en-MG", "parent": "en-001"},
+      "fr": {"percent": 69, "status": 0, "cldr": "fr-MG"},
+      "mg": {"percent": 90, "status": 0, "cldr": "mg"}
+    },
+    "currency": "MGA"
+  },
+  "MH": {
+    "name": "Marshall Islands",
+    "population": 73376,
+    "gdp": 180000000,
+    "literacy": 93.7,
+    "net": 19.3,
+    "cell": 29.2,
+    "language": {
+      "en": {"percent": 93, "status": 0, "cldr": "en-MH"},
+      "mh": {"percent": 73, "status": 0}
+    },
+    "currency": "USD"
+  },
+  "MK": {
+    "name": "Macedonia",
+    "likely": "mk-Cyrl-MK",
+    "population": 2100030,
+    "gdp": 30130000000,
+    "literacy": 97.4,
+    "net": 70.4,
+    "cell": 105,
+    "language": {
+      "mk": {"percent": 67, "status": 0, "cldr": "mk"},
+      "sq": {"percent": 25, "status": 1, "cldr": "sq-MK"}
+    },
+    "currency": "MKD"
+  },
+  "ML": {
+    "name": "Mali",
+    "likely": "bm-Latn-ML",
+    "population": 17467100,
+    "gdp": 38090000000,
+    "literacy": 33.4,
+    "net": 10.3,
+    "cell": 140,
+    "language": {"fr": {"percent": 46, "status": 0, "cldr": "fr-ML"}},
+    "currency": "XOF"
+  },
+  "MM": {
+    "name": "Myanmar (Burma)",
+    "likely": "my-Mymr-MM",
+    "population": 56890400,
+    "gdp": 311100000000,
+    "literacy": 92.7,
+    "net": 21.8,
+    "cell": 76.7,
+    "language": {"my": {"percent": 64, "status": 0, "cldr": "my"}},
+    "currency": "MMK"
+  },
+  "MN": {
+    "name": "Mongolia",
+    "likely": "mn-Cyrl-MN",
+    "population": 3031330,
+    "gdp": 36650000000,
+    "literacy": 97.4,
+    "net": 21.4,
+    "cell": 105,
+    "language": {"mn": {"percent": 93, "status": 0, "cldr": "mn"}},
+    "currency": "MNT"
+  },
+  "MO": {
+    "name": "Macau SAR China",
+    "likely": "zh-Hant-MO",
+    "population": 597425,
+    "gdp": 63220000000,
+    "literacy": 95.6,
+    "net": 77.6,
+    "cell": 324,
+    "language": {
+      "pt": {"percent": 5, "status": 0, "cldr": "pt-MO", "parent": "pt-PT"},
+      "zh-Hant": {"percent": 98, "status": 0, "cldr": "zh-Hant-MO", "parent": "zh-Hant-HK"}
+    },
+    "currency": "MOP"
+  },
+  "MP": {
+    "name": "Northern Mariana Islands",
+    "population": 53467,
+    "gdp": 682000000,
+    "literacy": 97,
+    "language": {"en": {"percent": 97, "status": 2, "cldr": "en-MP"}},
+    "currency": "USD"
+  },
+  "MQ": {
+    "name": "Martinique",
+    "likely": "fr-Latn-MQ",
+    "population": 436131,
+    "gdp": 6117000000,
+    "literacy": 98,
+    "language": {"fr": {"percent": 98, "status": 0, "cldr": "fr-MQ"}},
+    "currency": "EUR"
+  },
+  "MR": {
+    "name": "Mauritania",
+    "likely": "ar-Arab-MR",
+    "population": 3677290,
+    "gdp": 16710000000,
+    "literacy": 58.6,
+    "net": 15.2,
+    "cell": 89.3,
+    "language": {"ar": {"percent": 85, "status": 0, "cldr": "ar-MR"}},
+    "currency": "MRO"
+  },
+  "MS": {
+    "name": "Montserrat",
+    "population": 5267,
+    "gdp": 43780000,
+    "literacy": 97,
+    "language": {"en": {"percent": 66, "status": 0, "cldr": "en-MS", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "MT": {
+    "name": "Malta",
+    "likely": "mt-Latn-MT",
+    "population": 415196,
+    "gdp": 16320000000,
+    "literacy": 92.4,
+    "net": 76.2,
+    "cell": 129,
+    "language": {
+      "en": {"percent": 88, "status": 0, "cldr": "en-MT", "parent": "en-001"},
+      "mt": {"percent": 100, "status": 0, "cldr": "mt"}
+    },
+    "currency": "EUR"
+  },
+  "MU": {
+    "name": "Mauritius",
+    "likely": "mfe-Latn-MU",
+    "population": 1348240,
+    "gdp": 25850000000,
+    "literacy": 88.8,
+    "net": 50.1,
+    "cell": 141,
+    "language": {
+      "en": {"percent": 72, "status": 0, "cldr": "en-MU", "parent": "en-001"},
+      "fr": {"percent": 3, "status": 0, "cldr": "fr-MU"}
+    },
+    "currency": "MUR"
+  },
+  "MV": {
+    "name": "Maldives",
+    "likely": "dv-Thaa-MV",
+    "population": 392960,
+    "gdp": 5407000000,
+    "literacy": 98.4,
+    "net": 54.5,
+    "cell": 207,
+    "language": {"dv": {"percent": 94, "status": 0}},
+    "currency": "MVR"
+  },
+  "MW": {
+    "name": "Malawi",
+    "population": 18570300,
+    "gdp": 21230000000,
+    "literacy": 74.8,
+    "net": 9.3,
+    "cell": 35.3,
+    "language": {
+      "en": {"percent": 63, "status": 0, "cldr": "en-MW", "parent": "en-001"},
+      "ny": {"percent": 63, "status": 0}
+    },
+    "currency": "MWK"
+  },
+  "MX": {
+    "name": "Mexico",
+    "likely": "es-Latn-MX",
+    "population": 123167000,
+    "gdp": 2307000000000,
+    "literacy": 93.5,
+    "net": 57.4,
+    "cell": 85.3,
+    "language": {"es": {"percent": 83, "status": 2, "cldr": "es-MX", "parent": "es-419"}},
+    "currency": "MXN"
+  },
+  "MY": {
+    "name": "Malaysia",
+    "likely": "ms-Latn-MY",
+    "population": 30950000,
+    "gdp": 863800000000,
+    "literacy": 93.1,
+    "net": 71.1,
+    "cell": 144,
+    "language": {"ms": {"percent": 75, "status": 0, "cldr": "ms"}},
+    "currency": "MYR"
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "likely": "pt-Latn-MZ",
+    "population": 25930200,
+    "gdp": 35310000000,
+    "literacy": 56.1,
+    "net": 9,
+    "cell": 74.2,
+    "language": {"pt": {"percent": 27, "status": 0, "cldr": "pt-MZ", "parent": "pt-PT"}},
+    "currency": "MZN"
+  },
+  "NA": {
+    "name": "Namibia",
+    "likely": "af-Latn-NA",
+    "population": 2436470,
+    "gdp": 27040000000,
+    "literacy": 88.8,
+    "net": 22.3,
+    "cell": 102,
+    "language": {"en": {"percent": 7, "status": 0, "cldr": "en-NA", "parent": "en-001"}},
+    "currency": "ZAR"
+  },
+  "NC": {
+    "name": "New Caledonia",
+    "likely": "fr-Latn-NC",
+    "population": 275355,
+    "gdp": 11100000000,
+    "literacy": 96.2,
+    "net": 74,
+    "cell": 93.5,
+    "language": {"fr": {"percent": 96, "status": 0, "cldr": "fr-NC"}},
+    "currency": "XPF"
+  },
+  "NE": {
+    "name": "Niger",
+    "likely": "ha-Latn-NE",
+    "population": 18638600,
+    "gdp": 20270000000,
+    "literacy": 28.7,
+    "net": 2.22,
+    "cell": 46.5,
+    "language": {"fr": {"percent": 29, "status": 0, "cldr": "fr-NE"}},
+    "currency": "XOF"
+  },
+  "NF": {
+    "name": "Norfolk Island",
+    "population": 2210,
+    "gdp": 114300000,
+    "literacy": 99,
+    "language": {"en": {"percent": 76, "status": 0, "cldr": "en-NF", "parent": "en-001"}},
+    "currency": "AUD"
+  },
+  "NG": {
+    "name": "Nigeria",
+    "population": 186053000,
+    "gdp": 1089000000000,
+    "literacy": 61.3,
+    "net": 47.4,
+    "cell": 82.2,
+    "language": {
+      "en": {"percent": 53, "status": 0, "cldr": "en-NG", "parent": "en-001"},
+      "yo": {"percent": 13, "status": 0, "cldr": "yo"}
+    },
+    "currency": "NGN"
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "likely": "es-Latn-NI",
+    "population": 5966800,
+    "gdp": 33490000000,
+    "literacy": 78,
+    "net": 19.7,
+    "cell": 116,
+    "language": {"es": {"percent": 78, "status": 0, "cldr": "es-NI", "parent": "es-419"}},
+    "currency": "NIO"
+  },
+  "NL": {
+    "name": "Netherlands",
+    "likely": "nl-Latn-NL",
+    "population": 17017000,
+    "gdp": 865900000000,
+    "literacy": 99,
+    "net": 93.1,
+    "cell": 124,
+    "language": {
+      "fy": {"percent": 4.3, "status": 1, "cldr": "fy"},
+      "nl": {"percent": 100, "status": 0, "cldr": "nl"}
+    },
+    "currency": "EUR"
+  },
+  "NO": {
+    "name": "Norway",
+    "likely": "nb-Latn-NO",
+    "population": 5265160,
+    "gdp": 364700000000,
+    "literacy": 100,
+    "net": 96.8,
+    "cell": 114,
+    "language": {
+      "nb": {"percent": 100, "status": 0, "cldr": "nb"},
+      "nn": {"percent": 25, "status": 0, "cldr": "nn"},
+      "se": {"percent": 3.3, "status": 1, "cldr": "se"}
+    },
+    "currency": "NOK"
+  },
+  "NP": {
+    "name": "Nepal",
+    "likely": "ne-Deva-NP",
+    "population": 29033900,
+    "gdp": 71520000000,
+    "literacy": 57.4,
+    "net": 17.6,
+    "cell": 96.7,
+    "language": {"ne": {"percent": 44, "status": 0, "cldr": "ne"}},
+    "currency": "NPR"
+  },
+  "NR": {
+    "name": "Nauru",
+    "population": 9591,
+    "gdp": 150800000,
+    "literacy": 99,
+    "language": {
+      "en": {"percent": 98, "status": 0, "cldr": "en-NR", "parent": "en-001"},
+      "na": {"percent": 72, "status": 0}
+    },
+    "currency": "AUD"
+  },
+  "NU": {
+    "name": "Niue",
+    "population": 1190,
+    "gdp": 10010000,
+    "literacy": 95,
+    "language": {
+      "en": {"percent": 95, "status": 0, "cldr": "en-NU", "parent": "en-001"},
+      "niu": {"percent": 95, "status": 0}
+    },
+    "currency": "NZD"
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "population": 4474550,
+    "gdp": 174800000000,
+    "literacy": 99,
+    "net": 88.2,
+    "cell": 122,
+    "language": {
+      "en": {"percent": 98, "status": 2, "cldr": "en-NZ", "parent": "en-001"},
+      "mi": {"percent": 2.8, "status": 0}
+    },
+    "currency": "NZD"
+  },
+  "OM": {
+    "name": "Oman",
+    "likely": "ar-Arab-OM",
+    "population": 3355260,
+    "gdp": 173100000000,
+    "literacy": 86.9,
+    "net": 74.2,
+    "cell": 160,
+    "language": {"ar": {"percent": 81, "status": 0, "cldr": "ar-OM"}},
+    "currency": "OMR"
+  },
+  "PA": {
+    "name": "Panama",
+    "likely": "es-Latn-PA",
+    "population": 3705250,
+    "gdp": 93120000000,
+    "literacy": 94.1,
+    "net": 51.2,
+    "cell": 174,
+    "language": {"es": {"percent": 69, "status": 0, "cldr": "es-PA", "parent": "es-419"}},
+    "currency": "PAB"
+  },
+  "PE": {
+    "name": "Peru",
+    "likely": "es-Latn-PE",
+    "population": 30741100,
+    "gdp": 409900000000,
+    "literacy": 89.6,
+    "net": 40.9,
+    "cell": 110,
+    "language": {
+      "es": {"percent": 73, "status": 0, "cldr": "es-PE", "parent": "es-419"},
+      "qu": {"percent": 15, "status": 0, "cldr": "qu"}
+    },
+    "currency": "PEN"
+  },
+  "PF": {
+    "name": "French Polynesia",
+    "likely": "fr-Latn-PF",
+    "population": 285321,
+    "gdp": 7150000000,
+    "literacy": 98,
+    "net": 64.6,
+    "cell": 94.9,
+    "language": {
+      "fr": {"percent": 61, "status": 0, "cldr": "fr-PF"},
+      "ty": {"percent": 31, "status": 0}
+    },
+    "currency": "XPF"
+  },
+  "PG": {
+    "name": "Papua New Guinea",
+    "likely": "tpi-Latn-PG",
+    "population": 6791320,
+    "gdp": 28020000000,
+    "literacy": 62.4,
+    "net": 7.9,
+    "cell": 46.6,
+    "language": {
+      "en": {"percent": 50, "status": 0, "cldr": "en-PG", "parent": "en-001"},
+      "ho": {"percent": 2.1, "status": 0},
+      "tpi": {"percent": 71, "literacy": 45, "status": 0}
+    },
+    "currency": "PGK"
+  },
+  "PH": {
+    "name": "Philippines",
+    "likely": "fil-Latn-PH",
+    "population": 102624000,
+    "gdp": 801900000000,
+    "literacy": 95.4,
+    "net": 40.7,
+    "cell": 118,
+    "language": {
+      "ceb": {"percent": 24, "literacy": 13, "status": 1},
+      "en": {"percent": 64, "status": 0, "cldr": "en-PH", "parent": "en-001"},
+      "fil": {"percent": 60, "status": 0, "cldr": "fil"},
+      "hil": {"percent": 8.4, "literacy": 8, "status": 1},
+      "ilo": {"percent": 9.6, "literacy": 10, "status": 1},
+      "mdh": {"percent": 1.2, "status": 1},
+      "pag": {"percent": 1.4, "status": 1},
+      "tsg": {"percent": 1.1, "status": 1},
+      "war": {"percent": 2.9, "status": 1}
+    },
+    "currency": "PHP"
+  },
+  "PK": {
+    "name": "Pakistan",
+    "likely": "ur-Arab-PK",
+    "population": 201996000,
+    "gdp": 988200000000,
+    "literacy": 54.9,
+    "net": 18,
+    "cell": 66.9,
+    "language": {
+      "en": {"percent": 50, "status": 0, "cldr": "en-PK", "parent": "en-001"},
+      "ur": {"percent": 95, "status": 0, "cldr": "ur"}
+    },
+    "currency": "PKR"
+  },
+  "PL": {
+    "name": "Poland",
+    "likely": "pl-Latn-PL",
+    "population": 38523300,
+    "gdp": 1052000000000,
+    "literacy": 99.7,
+    "net": 68,
+    "cell": 149,
+    "language": {
+      "csb": {"percent": 0.13, "status": 1},
+      "de": {"percent": 19, "status": 1},
+      "lt": {"percent": 0.021, "status": 1},
+      "pl": {"percent": 96, "status": 0, "cldr": "pl"}
+    },
+    "currency": "PLN"
+  },
+  "PM": {
+    "name": "St. Pierre & Miquelon",
+    "likely": "fr-Latn-PM",
+    "population": 5595,
+    "gdp": 215300000,
+    "literacy": 99,
+    "language": {"fr": {"percent": 91, "status": 0, "cldr": "fr-PM"}},
+    "currency": "EUR"
+  },
+  "PN": {
+    "name": "Pitcairn Islands",
+    "population": 54,
+    "gdp": 2337000,
+    "literacy": 99,
+    "language": {"en": {"percent": 85, "status": 0, "cldr": "en-PN", "parent": "en-001"}},
+    "currency": "NZD"
+  },
+  "PR": {
+    "name": "Puerto Rico",
+    "likely": "es-Latn-PR",
+    "population": 3578060,
+    "gdp": 131000000000,
+    "literacy": 90.3,
+    "net": 79.5,
+    "cell": 87.1,
+    "language": {
+      "en": {"percent": 49, "status": 2, "cldr": "en-PR"},
+      "es": {"percent": 87, "status": 0, "cldr": "es-PR", "parent": "es-419"}
+    },
+    "currency": "USD"
+  },
+  "PS": {
+    "name": "Palestinian Territories",
+    "likely": "ar-Arab-PS",
+    "population": 4451010,
+    "gdp": 21220000000,
+    "literacy": 95.3,
+    "net": 57.4,
+    "cell": 77.6,
+    "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-PS"}},
+    "currency": "ILS"
+  },
+  "PT": {
+    "name": "Portugal",
+    "likely": "pt-Latn-PT",
+    "population": 10833800,
+    "gdp": 297100000000,
+    "literacy": 95.4,
+    "net": 68.6,
+    "cell": 110,
+    "language": {"pt": {"percent": 96, "status": 0, "cldr": "pt-PT"}},
+    "currency": "EUR"
+  },
+  "PW": {
+    "name": "Palau",
+    "likely": "pau-Latn-PW",
+    "population": 21347,
+    "gdp": 276000000,
+    "literacy": 92,
+    "cell": 112,
+    "language": {
+      "en": {"percent": 8.8, "status": 0, "cldr": "en-PW", "parent": "en-001"},
+      "pau": {"percent": 74, "status": 0}
+    },
+    "currency": "USD"
+  },
+  "PY": {
+    "name": "Paraguay",
+    "likely": "gn-Latn-PY",
+    "population": 6862810,
+    "gdp": 64120000000,
+    "literacy": 93.9,
+    "net": 44.4,
+    "cell": 105,
+    "language": {
+      "es": {"percent": 3.2, "status": 0, "cldr": "es-PY", "parent": "es-419"},
+      "gn": {"percent": 80, "status": 0}
+    },
+    "currency": "PYG"
+  },
+  "QA": {
+    "name": "Qatar",
+    "likely": "ar-Arab-QA",
+    "population": 2258280,
+    "gdp": 334500000000,
+    "literacy": 96.3,
+    "net": 92.9,
+    "cell": 154,
+    "language": {"ar": {"percent": 89, "status": 0, "cldr": "ar-QA"}},
+    "currency": "QAR"
+  },
+  "RE": {
+    "name": "Réunion",
+    "likely": "fr-Latn-RE",
+    "population": 787584,
+    "gdp": 4791000000,
+    "literacy": 88,
+    "language": {"fr": {"percent": 89, "status": 0, "cldr": "fr-RE"}},
+    "currency": "EUR"
+  },
+  "RO": {
+    "name": "Romania",
+    "likely": "ro-Latn-RO",
+    "population": 21599700,
+    "gdp": 441000000000,
+    "literacy": 97.7,
+    "net": 55.8,
+    "cell": 107,
+    "language": {"ro": {"percent": 90, "status": 0, "cldr": "ro"}},
+    "currency": "RON"
+  },
+  "RS": {
+    "name": "Serbia",
+    "likely": "sr-Cyrl-RS",
+    "population": 7143920,
+    "gdp": 101500000000,
+    "literacy": 98,
+    "net": 65.3,
+    "cell": 121,
+    "language": {
+      "hr": {"percent": 0.93, "status": 1},
+      "hu": {"percent": 4.8, "status": 1},
+      "ro": {"percent": 2.1, "status": 1},
+      "sk": {"percent": 0.85, "status": 1},
+      "sr": {"percent": 99, "status": 0, "cldr": "sr"},
+      "sr-Latn": {"percent": 99, "status": 0, "cldr": "sr-Latn", "parent": "root"},
+      "uk": {"percent": 0, "status": 1}
+    },
+    "currency": "RSD"
+  },
+  "RU": {
+    "name": "Russia",
+    "likely": "ru-Cyrl-RU",
+    "population": 142355000,
+    "gdp": 3745000000000,
+    "literacy": 99.7,
+    "net": 73.4,
+    "cell": 160,
+    "language": {
+      "ady": {"percent": 0.088, "status": 1},
+      "av": {"percent": 0.39, "status": 1},
+      "az-Cyrl": {"percent": 0.093, "status": 1},
+      "ba": {"percent": 1.3, "status": 1},
+      "ce": {"percent": 0.66, "status": 1, "cldr": "ce"},
+      "inh": {"percent": 0.16, "status": 1},
+      "kbd": {"percent": 0.31, "status": 1},
+      "koi": {"percent": 0.045, "status": 1},
+      "krc": {"percent": 0.16, "status": 1},
+      "kum": {"percent": 0.2, "status": 1},
+      "kv": {"percent": 0.18, "status": 1},
+      "lbe": {"percent": 0.078, "status": 1},
+      "lez": {"percent": 0.18, "status": 1},
+      "mdf": {"percent": 0.21, "status": 1},
+      "myv": {"percent": 0.31, "status": 1},
+      "ru": {"percent": 94, "status": 0, "cldr": "ru"},
+      "sah": {"percent": 0.32, "status": 1, "cldr": "sah"},
+      "tt": {"percent": 1.4, "status": 1},
+      "tyv": {"percent": 0.13, "status": 1},
+      "udm": {"percent": 0.38, "status": 1}
+    },
+    "currency": "RUB"
+  },
+  "RW": {
+    "name": "Rwanda",
+    "likely": "rw-Latn-RW",
+    "population": 12988400,
+    "gdp": 21970000000,
+    "literacy": 71.1,
+    "net": 18,
+    "cell": 70.5,
+    "language": {
+      "en": {"percent": 15, "status": 0, "cldr": "en-RW", "parent": "en-001"},
+      "fr": {"percent": 0.018, "status": 0, "cldr": "fr-RW"},
+      "rw": {"percent": 77, "status": 0, "cldr": "rw"}
+    },
+    "currency": "RWF"
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "likely": "ar-Arab-SA",
+    "population": 28160300,
+    "gdp": 1731000000000,
+    "literacy": 87.2,
+    "net": 69.6,
+    "cell": 177,
+    "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-SA"}},
+    "currency": "SAR"
+  },
+  "SB": {
+    "name": "Solomon Islands",
+    "population": 635027,
+    "gdp": 1198000000,
+    "literacy": 84.1,
+    "net": 10,
+    "cell": 72.7,
+    "language": {"en": {"percent": 100, "status": 0, "cldr": "en-SB", "parent": "en-001"}},
+    "currency": "SBD"
+  },
+  "SC": {
+    "name": "Seychelles",
+    "likely": "fr-Latn-SC",
+    "population": 93186,
+    "gdp": 2608000000,
+    "literacy": 91.8,
+    "net": 58.1,
+    "cell": 158,
+    "language": {
+      "en": {"percent": 38, "status": 0, "cldr": "en-SC", "parent": "en-001"},
+      "fr": {"percent": 60, "status": 0, "cldr": "fr-SC"}
+    },
+    "currency": "SCR"
+  },
+  "SD": {
+    "name": "Sudan",
+    "likely": "ar-Arab-SD",
+    "population": 36729500,
+    "gdp": 176300000000,
+    "literacy": 71.9,
+    "net": 26.6,
+    "cell": 70.5,
+    "language": {
+      "ar": {"percent": 61, "status": 0, "cldr": "ar-SD"},
+      "en": {"percent": 61, "status": 0, "cldr": "en-SD", "parent": "en-001"}
+    },
+    "currency": "SDG"
+  },
+  "SE": {
+    "name": "Sweden",
+    "likely": "sv-Latn-SE",
+    "population": 9880600,
+    "gdp": 498100000000,
+    "literacy": 99,
+    "net": 90.6,
+    "cell": 130,
+    "language": {
+      "fi": {"percent": 2.2, "status": 1},
+      "sv": {"percent": 95, "status": 0, "cldr": "sv"}
+    },
+    "currency": "SEK"
+  },
+  "SG": {
+    "name": "Singapore",
+    "population": 5781730,
+    "gdp": 486900000000,
+    "literacy": 95.9,
+    "net": 82.1,
+    "cell": 146,
+    "language": {
+      "en": {"percent": 93, "status": 0, "cldr": "en-SG", "parent": "en-001"},
+      "ms": {"percent": 14, "status": 0, "cldr": "ms-SG"},
+      "ta": {"percent": 2.1, "status": 0, "cldr": "ta-SG"},
+      "zh": {"percent": 77, "status": 0}
+    },
+    "currency": "SGD"
+  },
+  "SH": {
+    "name": "St. Helena",
+    "population": 7795,
+    "gdp": 31100000,
+    "literacy": 97,
+    "language": {"en": {"percent": 69, "status": 0, "cldr": "en-SH", "parent": "en-001"}},
+    "currency": "SHP"
+  },
+  "SI": {
+    "name": "Slovenia",
+    "likely": "sl-Latn-SI",
+    "population": 1978030,
+    "gdp": 66130000000,
+    "literacy": 99.7,
+    "net": 73.1,
+    "cell": 113,
+    "language": {"sl": {"percent": 87, "status": 0, "cldr": "sl"}},
+    "currency": "EUR"
+  },
+  "SJ": {
+    "name": "Svalbard & Jan Mayen",
+    "likely": "nb-Latn-SJ",
+    "population": 1872,
+    "gdp": 129700000,
+    "literacy": 100,
+    "language": {"nb": {"percent": 80, "status": 0, "cldr": "nb-SJ"}},
+    "currency": "NOK"
+  },
+  "SK": {
+    "name": "Slovakia",
+    "likely": "sk-Latn-SK",
+    "population": 5445800,
+    "gdp": 169100000000,
+    "literacy": 99.6,
+    "net": 85,
+    "cell": 122,
+    "language": {"sk": {"percent": 90, "status": 0, "cldr": "sk"}},
+    "currency": "EUR"
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "population": 6018890,
+    "gdp": 10640000000,
+    "literacy": 43.3,
+    "net": 2.5,
+    "cell": 89.5,
+    "language": {"en": {"percent": 35, "status": 0, "cldr": "en-SL", "parent": "en-001"}},
+    "currency": "SLL"
+  },
+  "SM": {
+    "name": "San Marino",
+    "likely": "it-Latn-SM",
+    "population": 33285,
+    "gdp": 2023000000,
+    "literacy": 96,
+    "cell": 115,
+    "language": {"it": {"percent": 89, "status": 0, "cldr": "it-SM"}},
+    "currency": "EUR"
+  },
+  "SN": {
+    "name": "Senegal",
+    "likely": "fr-Latn-SN",
+    "population": 14320100,
+    "gdp": 39720000000,
+    "literacy": 49.7,
+    "net": 21.7,
+    "cell": 99.9,
+    "language": {
+      "bjt": {"percent": 0.61, "literacy": 100, "status": 1},
+      "bsc": {"percent": 0.098, "literacy": 10, "status": 1},
+      "dyo": {"percent": 2.6, "literacy": 10, "status": 1, "cldr": "dyo"},
+      "ff": {"percent": 21, "status": 1, "cldr": "ff"},
+      "fr": {"percent": 39, "literacy": 100, "status": 0, "cldr": "fr-SN"},
+      "knf": {"percent": 0.21, "literacy": 10, "status": 1},
+      "mey": {"percent": 0.05, "literacy": 10, "status": 1},
+      "mfv": {"percent": 0.77, "literacy": 10, "status": 1},
+      "sav": {"percent": 1.5, "status": 1},
+      "snf": {"percent": 0.24, "literacy": 10, "status": 1},
+      "srr": {"percent": 11, "status": 1},
+      "tnr": {"percent": 0.024, "literacy": 10, "status": 1},
+      "wo": {"percent": 70, "status": 2}
+    },
+    "currency": "XOF"
+  },
+  "SO": {
+    "name": "Somalia",
+    "likely": "so-Latn-SO",
+    "population": 10817400,
+    "gdp": 4431000000,
+    "literacy": 37.8,
+    "net": 1.76,
+    "cell": 52.5,
+    "language": {
+      "ar": {"percent": 34, "literacy": 99, "status": 0, "cldr": "ar-SO"},
+      "so": {"percent": 78, "status": 0, "cldr": "so"}
+    },
+    "currency": "SOS"
+  },
+  "SR": {
+    "name": "Suriname",
+    "likely": "nl-Latn-SR",
+    "population": 585824,
+    "gdp": 8547000000,
+    "literacy": 94.7,
+    "net": 42.8,
+    "cell": 181,
+    "language": {"nl": {"percent": 90, "status": 0, "cldr": "nl-SR"}},
+    "currency": "SRD"
+  },
+  "SS": {
+    "name": "South Sudan",
+    "population": 12530700,
+    "gdp": 20880000000,
+    "literacy": 27,
+    "net": 17.9,
+    "cell": 23.9,
+    "language": {"en": {"percent": 27, "status": 0, "cldr": "en-SS", "parent": "en-001"}},
+    "currency": "SSP"
+  },
+  "ST": {
+    "name": "São Tomé & Príncipe",
+    "likely": "pt-Latn-ST",
+    "population": 197541,
+    "gdp": 694000000,
+    "literacy": 69.5,
+    "net": 25.8,
+    "cell": 65.1,
+    "language": {"pt": {"percent": 85, "status": 0, "cldr": "pt-ST", "parent": "pt-PT"}},
+    "currency": "STD"
+  },
+  "SV": {
+    "name": "El Salvador",
+    "likely": "es-Latn-SV",
+    "population": 6156670,
+    "gdp": 54790000000,
+    "literacy": 84.5,
+    "net": 26.9,
+    "cell": 145,
+    "language": {"es": {"percent": 89, "status": 0, "cldr": "es-SV", "parent": "es-419"}},
+    "currency": "USD"
+  },
+  "SX": {
+    "name": "Sint Maarten",
+    "population": 41486,
+    "gdp": 365800000,
+    "literacy": 99,
+    "language": {
+      "en": {"percent": 68, "status": 0, "cldr": "en-SX", "parent": "en-001"},
+      "nl": {"percent": 3.8, "status": 0, "cldr": "nl-SX"}
+    },
+    "currency": "ANG"
+  },
+  "SY": {
+    "name": "Syria",
+    "likely": "ar-Arab-SY",
+    "population": 17185200,
+    "gdp": 55800000000,
+    "literacy": 84.1,
+    "net": 30,
+    "cell": 62.4,
+    "language": {
+      "ar": {"percent": 80, "status": 0, "cldr": "ar-SY"},
+      "fr": {"percent": 5.9, "status": 0, "cldr": "fr-SY"}
+    },
+    "currency": "SYP"
+  },
+  "SZ": {
+    "name": "Swaziland",
+    "population": 1451430,
+    "gdp": 11060000000,
+    "literacy": 87.8,
+    "net": 30.4,
+    "cell": 73.2,
+    "language": {
+      "en": {"percent": 80, "status": 0, "cldr": "en-SZ", "parent": "en-001"},
+      "ss": {"percent": 58, "status": 0}
+    },
+    "currency": "SZL"
+  },
+  "TA": {
+    "name": "Tristan da Cunha",
+    "population": 275,
+    "gdp": 11900000,
+    "literacy": 99,
+    "currency": "GBP"
+  },
+  "TC": {
+    "name": "Turks & Caicos Islands",
+    "population": 51430,
+    "gdp": 632000000,
+    "literacy": 98,
+    "language": {"en": {"percent": 98, "status": 0, "cldr": "en-TC", "parent": "en-001"}},
+    "currency": "USD"
+  },
+  "TD": {
+    "name": "Chad",
+    "likely": "fr-Latn-TD",
+    "population": 11852500,
+    "gdp": 30590000000,
+    "literacy": 35.4,
+    "net": 2.7,
+    "cell": 40.2,
+    "language": {
+      "ar": {"percent": 17, "status": 0, "cldr": "ar-TD"},
+      "fr": {"percent": 26, "status": 0, "cldr": "fr-TD"}
+    },
+    "currency": "XAF"
+  },
+  "TF": {
+    "name": "French Southern Territories",
+    "likely": "fr-Latn-TF",
+    "population": 140,
+    "gdp": 5733000,
+    "literacy": 99,
+    "currency": "EUR"
+  },
+  "TG": {
+    "name": "Togo",
+    "likely": "fr-Latn-TG",
+    "population": 7756940,
+    "gdp": 11610000000,
+    "literacy": 60.4,
+    "net": 7.12,
+    "cell": 64.9,
+    "language": {"fr": {"percent": 61, "status": 0, "cldr": "fr-TG"}},
+    "currency": "XOF"
+  },
+  "TH": {
+    "name": "Thailand",
+    "likely": "th-Thai-TH",
+    "population": 68200800,
+    "gdp": 1161000000000,
+    "literacy": 93.5,
+    "net": 39.3,
+    "cell": 126,
+    "language": {"th": {"percent": 80, "literacy": 93, "status": 0, "cldr": "th"}},
+    "currency": "THB"
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "likely": "tg-Cyrl-TJ",
+    "population": 8330950,
+    "gdp": 25810000000,
+    "literacy": 99.7,
+    "net": 19,
+    "cell": 98.6,
+    "language": {"tg": {"percent": 100, "status": 0}},
+    "currency": "TJS"
+  },
+  "TK": {
+    "name": "Tokelau",
+    "likely": "tkl-Latn-TK",
+    "population": 1337,
+    "gdp": 1500000,
+    "literacy": 94,
+    "language": {
+      "en": {"percent": 100, "status": 0, "cldr": "en-TK", "parent": "en-001"},
+      "tkl": {"percent": 100, "status": 0}
+    },
+    "currency": "NZD"
+  },
+  "TL": {
+    "name": "Timor-Leste",
+    "likely": "pt-Latn-TL",
+    "population": 1261070,
+    "gdp": 4975000000,
+    "literacy": 58.3,
+    "net": 13.4,
+    "cell": 117,
+    "language": {
+      "pt": {"percent": 59, "literacy": 100, "status": 0, "cldr": "pt-TL", "parent": "pt-PT"},
+      "tet": {"percent": 59, "status": 0}
+    },
+    "currency": "USD"
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "likely": "tk-Latn-TM",
+    "population": 5291320,
+    "gdp": 94770000000,
+    "literacy": 99.6,
+    "net": 15,
+    "cell": 146,
+    "language": {"tk": {"percent": 70, "status": 0, "cldr": "tk"}},
+    "currency": "TMT"
+  },
+  "TN": {
+    "name": "Tunisia",
+    "likely": "ar-Arab-TN",
+    "population": 11134600,
+    "gdp": 130800000000,
+    "literacy": 79.1,
+    "net": 48.5,
+    "cell": 130,
+    "language": {
+      "ar": {"percent": 90, "status": 0, "cldr": "ar-TN"},
+      "fr": {"percent": 74, "status": 0, "cldr": "fr-TN"}
+    },
+    "currency": "TND"
+  },
+  "TO": {
+    "name": "Tonga",
+    "likely": "to-Latn-TO",
+    "population": 106513,
+    "gdp": 557000000,
+    "literacy": 99,
+    "net": 45,
+    "cell": 65.6,
+    "language": {
+      "en": {"percent": 28, "status": 0, "cldr": "en-TO", "parent": "en-001"},
+      "to": {"percent": 95, "status": 0, "cldr": "to"}
+    },
+    "currency": "TOP"
+  },
+  "TR": {
+    "name": "Turkey",
+    "likely": "tr-Latn-TR",
+    "population": 80274600,
+    "gdp": 1670000000000,
+    "literacy": 94.1,
+    "net": 53.7,
+    "cell": 96,
+    "language": {"tr": {"percent": 93, "status": 0, "cldr": "tr"}},
+    "currency": "TRY"
+  },
+  "TT": {
+    "name": "Trinidad & Tobago",
+    "population": 1220480,
+    "gdp": 43570000000,
+    "literacy": 98.8,
+    "net": 69.2,
+    "cell": 158,
+    "language": {"en": {"percent": 88, "status": 0, "cldr": "en-TT", "parent": "en-001"}},
+    "currency": "TTD"
+  },
+  "TV": {
+    "name": "Tuvalu",
+    "likely": "tvl-Latn-TV",
+    "population": 10959,
+    "gdp": 39000000,
+    "literacy": 95,
+    "net": 42.7,
+    "cell": 40.3,
+    "language": {
+      "en": {"percent": 9.8, "status": 0, "cldr": "en-TV", "parent": "en-001"},
+      "tvl": {"percent": 91, "status": 0}
+    },
+    "currency": "AUD"
+  },
+  "TW": {
+    "name": "Taiwan",
+    "likely": "zh-Hant-TW",
+    "population": 23464800,
+    "gdp": 1125000000000,
+    "literacy": 96.1,
+    "language": {"zh-Hant": {"percent": 95, "status": 0, "cldr": "zh-Hant", "parent": "root"}},
+    "currency": "TWD"
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "likely": "sw-Latn-TZ",
+    "population": 52482700,
+    "gdp": 150600000000,
+    "literacy": 67.8,
+    "net": 5.36,
+    "cell": 75.9,
+    "language": {
+      "en": {"percent": 69, "status": 0, "cldr": "en-TZ", "parent": "en-001"},
+      "sw": {"percent": 90, "status": 0, "cldr": "sw"}
+    },
+    "currency": "TZS"
+  },
+  "UA": {
+    "name": "Ukraine",
+    "likely": "uk-Cyrl-UA",
+    "population": 44209700,
+    "gdp": 349800000000,
+    "literacy": 99.7,
+    "net": 49.3,
+    "cell": 144,
+    "language": {
+      "ru": {"percent": 46, "status": 2, "cldr": "ru-UA"},
+      "uk": {"percent": 65, "status": 0, "cldr": "uk"}
+    },
+    "currency": "UAH"
+  },
+  "UG": {
+    "name": "Uganda",
+    "likely": "sw-Latn-UG",
+    "population": 38319200,
+    "gdp": 84930000000,
+    "literacy": 73.2,
+    "net": 19.2,
+    "cell": 50.4,
+    "language": {
+      "en": {"percent": 3.9, "status": 0, "cldr": "en-UG", "parent": "en-001"},
+      "sw": {"percent": 75, "status": 0, "cldr": "sw-UG"}
+    },
+    "currency": "UGX"
+  },
+  "UM": {
+    "name": "U.S. Outlying Islands",
+    "population": 316,
+    "gdp": 18100000,
+    "literacy": 99,
+    "language": {"en": {"percent": 100, "status": 2, "cldr": "en-UM"}},
+    "currency": "USD"
+  },
+  "US": {
+    "name": "United States",
+    "population": 323996000,
+    "gdp": 18560000000000,
+    "literacy": 99,
+    "net": 74.5,
+    "cell": 118,
+    "language": {
+      "en": {"percent": 96, "status": 2, "cldr": "en"},
+      "es": {"percent": 9.6, "status": 1, "cldr": "es-US", "parent": "es-419"},
+      "haw": {"percent": 0.0089, "status": 1, "cldr": "haw"}
+    },
+    "currency": "USD"
+  },
+  "UY": {
+    "name": "Uruguay",
+    "likely": "es-Latn-UY",
+    "population": 3351020,
+    "gdp": 73930000000,
+    "literacy": 98.1,
+    "net": 64.6,
+    "cell": 160,
+    "language": {"es": {"percent": 88, "status": 0, "cldr": "es-UY", "parent": "es-419"}},
+    "currency": "UYU"
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "likely": "uz-Latn-UZ",
+    "population": 29473600,
+    "gdp": 202300000000,
+    "literacy": 99.4,
+    "net": 42.8,
+    "cell": 73.3,
+    "language": {
+      "uz": {"percent": 85, "status": 0, "cldr": "uz"},
+      "uz-Cyrl": {"percent": 15, "status": 0, "cldr": "uz-Cyrl", "parent": "root"}
+    },
+    "currency": "UZS"
+  },
+  "VA": {
+    "name": "Vatican City",
+    "likely": "it-Latn-VA",
+    "population": 1000,
+    "gdp": 35820000,
+    "literacy": 100,
+    "language": {"it": {"percent": 82, "status": 2, "cldr": "it-VA"}},
+    "currency": "EUR"
+  },
+  "VC": {
+    "name": "St. Vincent & Grenadines",
+    "population": 102350,
+    "gdp": 1241000000,
+    "literacy": 96,
+    "net": 51.8,
+    "cell": 104,
+    "language": {"en": {"percent": 96, "status": 0, "cldr": "en-VC", "parent": "en-001"}},
+    "currency": "XCD"
+  },
+  "VE": {
+    "name": "Venezuela",
+    "likely": "es-Latn-VE",
+    "population": 30912300,
+    "gdp": 468600000000,
+    "literacy": 95.5,
+    "net": 61.9,
+    "cell": 93,
+    "language": {"es": {"percent": 82, "status": 0, "cldr": "es-VE", "parent": "es-419"}},
+    "currency": "VEF"
+  },
+  "VG": {
+    "name": "British Virgin Islands",
+    "population": 34232,
+    "gdp": 500000000,
+    "literacy": 97.8,
+    "cell": 146,
+    "language": {"en": {"percent": 98, "status": 0, "cldr": "en-VG", "parent": "en-001"}},
+    "currency": "USD"
+  },
+  "VI": {
+    "name": "U.S. Virgin Islands",
+    "population": 102951,
+    "gdp": 3792000000,
+    "literacy": 99,
+    "net": 54.8,
+    "language": {"en": {"percent": 75, "status": 2, "cldr": "en-VI"}},
+    "currency": "USD"
+  },
+  "VN": {
+    "name": "Vietnam",
+    "likely": "vi-Latn-VN",
+    "population": 95261000,
+    "gdp": 594900000000,
+    "literacy": 93.4,
+    "net": 52.7,
+    "cell": 131,
+    "language": {"vi": {"percent": 86, "status": 0, "cldr": "vi"}},
+    "currency": "VND"
+  },
+  "VU": {
+    "name": "Vanuatu",
+    "likely": "bi-Latn-VU",
+    "population": 277554,
+    "gdp": 723000000,
+    "literacy": 83.2,
+    "net": 22.4,
+    "cell": 66.2,
+    "language": {
+      "bi": {"percent": 90, "status": 0},
+      "en": {"percent": 83, "status": 0, "cldr": "en-VU", "parent": "en-001"},
+      "fr": {"percent": 50, "status": 0, "cldr": "fr-VU"}
+    },
+    "currency": "VUV"
+  },
+  "WF": {
+    "name": "Wallis & Futuna",
+    "likely": "fr-Latn-WF",
+    "population": 15664,
+    "gdp": 60000000,
+    "literacy": 50,
+    "language": {"fr": {"percent": 49, "status": 0, "cldr": "fr-WF"}},
+    "currency": "XPF"
+  },
+  "WS": {
+    "name": "Samoa",
+    "likely": "sm-Latn-WS",
+    "population": 198926,
+    "gdp": 1046000000,
+    "literacy": 98.8,
+    "net": 25.4,
+    "cell": 58.5,
+    "language": {
+      "en": {"percent": 2.2, "status": 0, "cldr": "en-WS", "parent": "en-001"},
+      "sm": {"percent": 100, "status": 0}
+    },
+    "currency": "WST"
+  },
+  "XK": {
+    "name": "Kosovo",
+    "likely": "sq-Latn-XK",
+    "population": 1883020,
+    "gdp": 18490000000,
+    "literacy": 91.9,
+    "language": {
+      "sq": {"percent": 92, "status": 0, "cldr": "sq-XK"},
+      "sr": {"percent": 5, "status": 0},
+      "sr-Latn": {"percent": 5, "status": 0, "cldr": "sr-Latn-XK"}
+    },
+    "currency": "EUR"
+  },
+  "YE": {
+    "name": "Yemen",
+    "likely": "ar-Arab-YE",
+    "population": 27392800,
+    "gdp": 73450000000,
+    "literacy": 65.3,
+    "net": 25.1,
+    "cell": 68,
+    "language": {"ar": {"percent": 74, "status": 0, "cldr": "ar-YE"}},
+    "currency": "YER"
+  },
+  "YT": {
+    "name": "Mayotte",
+    "likely": "fr-Latn-YT",
+    "population": 194000,
+    "gdp": 953600000,
+    "literacy": 92,
+    "language": {"fr": {"percent": 57, "status": 0, "cldr": "fr-YT"}},
+    "currency": "EUR"
+  },
+  "ZA": {
+    "name": "South Africa",
+    "population": 54300700,
+    "gdp": 736300000000,
+    "literacy": 93,
+    "net": 51.9,
+    "cell": 159,
+    "language": {
+      "af": {"percent": 13, "literacy": 99, "status": 1, "cldr": "af"},
+      "en": {"percent": 31, "literacy": 99, "status": 0, "cldr": "en-ZA", "parent": "en-001"},
+      "nr": {"percent": 1.6, "literacy": 50, "status": 1},
+      "nso": {"percent": 9.4, "literacy": 50, "status": 1},
+      "ss": {"percent": 2.7, "literacy": 50, "status": 1},
+      "st": {"percent": 7.9, "literacy": 50, "status": 1},
+      "tn": {"percent": 8.2, "literacy": 50, "status": 1},
+      "ts": {"percent": 4.4, "literacy": 50, "status": 1},
+      "ve": {"percent": 2.3, "literacy": 50, "status": 1},
+      "xh": {"percent": 18, "literacy": 50, "status": 1},
+      "zu": {"percent": 24, "literacy": 50, "status": 1, "cldr": "zu"}
+    },
+    "currency": "ZAR"
+  },
+  "ZM": {
+    "name": "Zambia",
+    "population": 15510700,
+    "gdp": 65170000000,
+    "literacy": 61.4,
+    "net": 21,
+    "cell": 74.5,
+    "language": {"en": {"percent": 16, "status": 0, "cldr": "en-ZM", "parent": "en-001"}},
+    "currency": "ZMW"
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "likely": "sn-Latn-ZW",
+    "population": 14547000,
+    "gdp": 28330000000,
+    "literacy": 83.6,
+    "net": 16.4,
+    "cell": 84.8,
+    "language": {
+      "en": {"percent": 42, "status": 0, "cldr": "en-ZW", "parent": "en-001"},
+      "nd": {"percent": 12, "status": 0, "cldr": "nd"},
+      "sn": {"percent": 81, "status": 0, "cldr": "sn"}
+    },
+    "currency": "USD"
+  }
+}
