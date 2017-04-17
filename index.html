@@ -286,9 +286,9 @@
                     <li><a href="#numbers">Numbers</a></li>
                     <li><a href="#families">Families</a></li>
                     <li><a href="#characters">Characters</a></li>
+                    <li><a href="#groups">Groups</a></li>
                     <li><a href="#plurals">Plurals</a></li>
                     <li><a href="#ordinals">Ordinal</a></li>
-                    <!--<li><a href="#groups">Groups</a></li>-->
                 </ul>
             </li>
             <li>
@@ -523,6 +523,31 @@
         </table>
 
         <hr>
+        <h2 id="groups"><a href="#groups">Groups</a></h2>
+
+        <div v-for="k in ['001', '419', 'EU', 'EZ', 'UN']">
+            <h3 :id="'group-' + k">
+                <a :href="'#group-' + k">{{k}} {{data.group[k].name}}</a>
+                <flag :code="k"
+                      style="width: 32px; height: 32px; display: inline-block; position: relative; top: 10px; margin: -16px 0"></flag>
+            </h3>
+            <table>
+                <tbody>
+                <tr v-for="i in groupTable(k)">
+                    <td v-for="j in i" :rowspan="j.span" v-if="j && j.span">
+                        <a :href="'#group-' + k + '-' + j.id" v-if="!j.data.group" :id="'group-' + k + '-' + j.id"
+                           v-if="!j.data.group">{{j.id}}</a>
+                        <b v-if="data.group[j.id]">{{data.group[j.id].name}}</b>
+                        <span v-if="data.group[j.id]">({{j.items}})</span>
+                        <span v-for="(l, n) in j.data.group"><a :href="'#country-' + l">{{l}}</a><span
+                                v-if="(n + 1) < j.data.group.length">, </span></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
         <h2 id="plurals"><a href="#plurals">Plurals</a></h2>
 
         <table>
@@ -543,11 +568,6 @@
             </tr>
             </tbody>
         </table>
-
-        <!--<hr>-->
-        <!--<h2 id="groups"><a href="#groups">Groups</a></h2>-->
-        <!---->
-        <!--...-->
 
         <hr>
         <h2 id="ordinals"><a href="#ordinals">Ordinals</a></h2>
@@ -635,7 +655,11 @@
         template: '<div>',
         props: ['code'],
         mounted() {
-            this.$el.appendChild(getFlag(this.code, config.flags));
+            var f = getFlag(this.code, config.flags);
+
+            if (f) {
+                this.$el.appendChild(f);
+            }
         }
     });
 
@@ -657,12 +681,7 @@
         computed: {
             nd() {
                 return this.node || d3.stratify()
-                        .id(function (d) {
-                            return d.id;
-                        })
-                        .parentId(function (d) {
-                            return d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root';
-                        })
+                        .parentId(d => d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root')
                         (d3.merge([Object.keys(this.db.family).map(k => ({
                             id: k,
                             expanded: false,
@@ -742,20 +761,79 @@
                 data: null,
                 map: null
             }
+        },
+        methods: {
+            groupTable(code) {
+                var a = [];
+
+                iter(code, this.data);
+
+                function iter(code, data, parent = null) {
+                    a.push({
+                        id: code,
+                        parentId: parent
+                    });
+
+                    if (data.group[data.group[code].contains[0]]) {
+                        (data.group[code] ? data.group[code].contains : []).forEach(d => {
+                            iter(d, data, code);
+                        });
+                    } else {
+                        a.push({
+                            id: code + '-group',
+                            parentId: code,
+                            group: data.group[code].contains
+                        });
+                    }
+                }
+
+                a = d3.stratify()(a);
+
+                var b = [];
+
+                a.descendants().forEach(d => {
+                    if (d.parent) {
+                        var j = d.depth - 1;
+                        b[j] = b[j] || [];
+                        var l = d.leaves();
+                        d.span = l.length;
+                        d.items = 0;
+                        l.forEach(e => d.items += e.data.group.length);
+                        b[j].push(d);
+                    }
+                });
+
+                var c = [];
+                var ii = [];
+                b[b.length - 1].forEach((v, i) => {
+                    b.forEach((v, j) => {
+                        ii[j] = ii[j] || 0;
+                        c[ii[j]] = c[ii[j]] || [];
+                        c[ii[j]][j] = b[j][i];
+                        ii[j] += b[j][i] ? b[j][i].span : 0;
+                    });
+                });
+
+                return c;
+            }
         }
     });
 
     function getFlag(iso, flags) {
-        var node = flags.getElementById(iso).cloneNode(true);
-        node.removeAttribute('id');
-        node.removeAttribute('transform');
-        var svg = document.createElementNS(d3.namespaces.svg, 'svg');
-        svg.setAttribute('width', '100%');
-        svg.setAttribute('height', '100%');
-        svg.setAttribute('viewBox', '0 0 64 64');
-        svg.setAttribute('preserveAspectRatio', 'xMaxYMax');
-        svg.appendChild(node);
-        return svg;
+        var node = flags.getElementById(iso);
+
+        if (node) {
+            node = node.cloneNode(true);
+            node.removeAttribute('id');
+            node.removeAttribute('transform');
+            var svg = document.createElementNS(d3.namespaces.svg, 'svg');
+            svg.setAttribute('width', '100%');
+            svg.setAttribute('height', '100%');
+            svg.setAttribute('viewBox', '0 0 64 64');
+            svg.setAttribute('preserveAspectRatio', 'xMaxYMax');
+            svg.appendChild(node);
+            return svg;
+        }
     }
 </script>
 </body>
