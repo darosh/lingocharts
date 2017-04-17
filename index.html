@@ -243,7 +243,8 @@
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.iso3"
            :href="'https://www.ethnologue.com/language/' + nd.data.data.iso3" target="_blank" class="icon eth"></a>
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.name"
-           :href="'https://en.wikipedia.org/wiki/' + nd.data.data.name + (!nd.children ? ' language' : '')" target="_blank" class="icon">
+           :href="'https://en.wikipedia.org/wiki/' + nd.data.data.name + (!nd.children ? ' language' : '')"
+           target="_blank" class="icon">
             <wiki size="24" style="margin: -2px -3px -4px -3px"></wiki>
         </a>
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.iso23"
@@ -511,7 +512,8 @@
                 <td>
                     <div class="chars" v-if="i.chars >= 0"
                          v-text="data.char[i.script][i.chars].chars.substr(0, !i.$chars ? 600: undefined)"></div>
-                    <a class="click" v-if="!i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
+                    <a class="click"
+                       v-if="!i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
                        @click="Vue.set(i, '$chars', true)">&#x25b6;</a>
                     <a class="click" v-if="i.$chars"
                        @click="Vue.set(i, '$chars', false)">&#x25c0;</a>
@@ -670,6 +672,17 @@
         },
         watch: {
             'config.hash': function (newVal) {
+                if (this.db && (newVal.indexOf('family-') > -1)) {
+                    iter(this);
+
+                    function iter(node) {
+                        node.$children.forEach(c => {
+                            c.expanded = false;
+                            iter(c);
+                        });
+                    }
+                }
+
                 if (this.node && (newVal === ('family-' + this.node.id))) {
                     this.expanded = true;
                     var p = this;
