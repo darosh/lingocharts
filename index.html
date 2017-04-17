@@ -527,7 +527,7 @@
 
         <div v-for="k in ['001', '419', 'EU', 'EZ', 'UN']">
             <h3 :id="'group-' + k">
-                <a :href="'#group-' + k">{{k}} {{data.group[k].name}}</a>
+                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a>
                 <flag :code="k"
                       style="width: 32px; height: 32px; display: inline-block; position: relative; top: 10px; margin: -16px 0"></flag>
             </h3>
