@@ -533,13 +533,15 @@
             </h3>
             <table>
                 <tbody>
-                <tr v-for="i in groupTable(k)">
+                <tr v-for="i in groups[k]">
                     <td v-for="j in i" :rowspan="j.span" v-if="j && j.span">
                         <a :href="'#group-' + k + '-' + j.id" v-if="!j.data.group" :id="'group-' + k + '-' + j.id"
                            v-if="!j.data.group">{{j.id}}</a>
                         <b v-if="data.group[j.id]">{{data.group[j.id].name}}</b>
                         <span v-if="data.group[j.id]">({{j.items}})</span>
-                        <span v-for="(l, n) in j.data.group"><a :href="'#country-' + l">{{l}}</a><span
+                        <span v-if="j.data.group" @click="Vue.set(j, 'expanded', !j.expanded)"
+                              :class="{expander: true, expanded: j.expanded}"></span>
+                        <span v-for="(l, n) in j.data.group"><a :href="'#country-' + l">{{l}}</a><span v-show="j.expanded"> {{data.country[l].name}}</span><span
                                 v-if="(n + 1) < j.data.group.length">, </span></span>
                     </td>
                 </tr>
@@ -732,6 +734,14 @@
                     config.data = data;
                     this.data = data;
 
+                    this.groups = {
+                        '001': this.groupTable('001'),
+                        '419': this.groupTable('419'),
+                        EU: this.groupTable('EU'),
+                        EZ: this.groupTable('EZ'),
+                        UN: this.groupTable('UN')
+                    };
+
                     Vue.nextTick(function () {
                         var h = location.hash;
                         var u = location.href;
@@ -759,7 +769,8 @@
 
             return {
                 data: null,
-                map: null
+                map: null,
+                groups: {}
             }
         },
         methods: {
@@ -798,6 +809,7 @@
                         var l = d.leaves();
                         d.span = l.length;
                         d.items = 0;
+                        d.expanded = false;
                         l.forEach(e => d.items += e.data.group.length);
                         b[j].push(d);
                     }
