@@ -28,7 +28,7 @@ module.exports = {
         home: 'https://www.worldbank.org',
         api: ['http://api.worldbank.org/countries/indicators/IT.NET.USER.P2?per_page=300&format=json&date=2015:2015',
             'http://api.worldbank.org/countries/indicators/IT.CEL.SETS.P2?per_page=300&format=json&date=2015:2015'],
-        notes: 'Internet and cell prone users'
+        notes: 'Internet and cell phone users'
     },
     wiki: {
         version: require('../resources/wikipedia.org/iso-family.json')[1]._version,
