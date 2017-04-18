@@ -416,7 +416,7 @@
                 <td class="nowrap"><a :href="'#family-' + i.gl">{{data.family[i.family].name}}</a></td>
                 <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
                 <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{i.script}}</a></td>
-                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes}}</span></td>
+                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes('RTL')}}</span></td>
                 <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
                 <td class="sample"><span v-if="data.script[i.script]">{{data.script[i.script].sample}}</span></td>
                 <td><a v-if="i.chars >= 0" :href="'#characters-' + i.script + (i.chars + 1) + k">{{i.script + (i.chars +
@@ -438,7 +438,9 @@
                 <th>RTL</th>
                 <th>Cased</th>
                 <th>Line break letters</th>
-                <th>IME</th>
+                <th>IME <a href="https://en.wikipedia.org/wiki/Input_method" target="_blank" class="icon">
+                    <wiki size="24" style="margin-top: -3px;"></wiki>
+                </a></th>
                 <th>Density</th>
                 <th>Characters</th>
                 <th>Origin</th>
@@ -455,10 +457,10 @@
                         <wiki size="24"></wiki>
                     </a>
                 </td>
-                <td>{{i.rtl | yes}}</td>
-                <td>{{i.cased | yes}}</td>
-                <td>{{i.lbl | yes}}</td>
-                <td>{{i.ime | yes}}</td>
+                <td>{{i.rtl | yes('RTL')}}</td>
+                <td>{{i.cased | yes('cased')}}</td>
+                <td>{{i.lbl | yes('LBL')}}</td>
+                <td>{{i.ime | yes('IME')}}</td>
                 <td class="right">{{i.density}}</td>
                 <td class="right" v-if="i.chars">{{i.chars | number}}</td>
                 <td class="right" v-else>?</td>
@@ -829,8 +831,8 @@
         return isNaN(n) ? '' : ('$' + config.money(n));
     });
 
-    Vue.filter('yes', function (n) {
-        return n ? 'yes' : '';
+    Vue.filter('yes', function (v, t) {
+        return v ? (t ? t : 'yes') : '';
     });
 
     Vue.component('flag', {
