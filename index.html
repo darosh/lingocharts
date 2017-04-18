@@ -525,7 +525,7 @@
                 <td class="right">{{i.literacy | percent}}</td>
                 <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
                 <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{data.script[i.script].name}}</a></td>
-                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes}}</span></td>
+                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes('RTL')}}</span></td>
                 <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
                 <td class="right"><span v-if="i.chars >= 0">{{data.char[i.script][i.chars].count | number}}</span></td>
                 <td>
