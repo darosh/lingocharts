@@ -388,7 +388,7 @@
                 <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
                 <td><b>{{i.name}}</b></td>
                 <td>
-                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'">
+                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'" target="_blank" class="icon">
                         <wiki size="24"></wiki>
                     </a>
                 </td>
@@ -423,6 +423,7 @@
                 <th>Sample</th>
                 <th>Code</th>
                 <th>Name</th>
+                <th>Wiki</th>
                 <th>RTL</th>
                 <th>Cased</th>
                 <th>Line break letters</th>
@@ -438,6 +439,11 @@
                 <td class="sample">{{i.sample}}</td>
                 <td><a :href="'#script-' + k">{{k}}</a></td>
                 <td><b>{{i.name}}</b></td>
+                <td>
+                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank" class="icon">
+                        <wiki size="24"></wiki>
+                    </a>
+                </td>
                 <td>{{i.rtl | yes}}</td>
                 <td>{{i.cased | yes}}</td>
                 <td>{{i.lbl | yes}}</td>
