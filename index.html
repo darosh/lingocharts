@@ -54,6 +54,10 @@
             border-collapse: collapse;
         }
 
+        .merged {
+            border-bottom: 2px solid transparent;
+        }
+
         tr:not(:last-child) > *,
         thead > tr > * {
             border-bottom: 1px solid #e0e0e0;
@@ -300,6 +304,8 @@
                 About
                 <ul>
                     <li><a href="#notes">Notes</a></li>
+                    <li><a href="#codes">Codes</a></li>
+                    <li><a href="#links">Links</a></li>
                     <!--<li><a href="#counts">Counts</a></li>-->
                     <li><a href="#source-code">Source code</a></li>
                     <li><a href="#data-sources">Data sources</a></li>
@@ -543,9 +549,9 @@
                 <flag :code="k"
                       style="width: 32px; height: 32px; display: inline-block; position: relative; top: 10px; margin: -16px 0"></flag>
             </h3>
-            <table>
+            <table class="merged">
                 <tbody>
-                <tr v-for="i in groups[k]">
+                <tr v-for="i in groups[k]" v-if="i[i.length -1]">
                     <td v-for="j in i" :rowspan="j.span" v-if="j && j.span">
                         <a :href="'#group-' + k + '-' + j.id" v-if="!j.data.group" :id="'group-' + k + '-' + j.id"
                            v-if="!j.data.group">{{j.id}}</a>
@@ -612,6 +618,112 @@
         <p>Most data come from CLDR see <a href="#data-sources">Data sources</a> section.</p>
         <p>Only languages with <i class="double">official</i>, <i class="single">regional official</i> and <i>de facto
             official</i> status are included.</p>
+
+        <hr>
+        <h2 id="codes"><a href="#codes">Codes</a></h2>
+
+        <p>Used in <b>language</b>-<b>Script</b>-<b>COUNTRY</b> form.</p>
+
+        <table class="merged">
+            <thead>
+            <tr>
+                <th>Type</th>
+                <th>Iso</th>
+                <th>Case</th>
+                <th>Letters</th>
+                <th>Sample</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2">Language</td>
+                <td><a href="https://en.wikipedia.org/wiki/ISO_639-1" target="_blank">ISO 639-1</a></td>
+                <td>lower</td>
+                <td class="right">2</td>
+                <td><a href="#language-cs">cs</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/ISO_639-3" target="_blank">ISO 639-3</a></td>
+                <td>lower</td>
+                <td class="right">3</td>
+                <td><a href="http://www-01.sil.org/iso639-3/documentation.asp?id=ces" target="_blank">ces</a></td>
+            </tr>
+            <tr>
+                <td>Script</td>
+                <td><a href="https://en.wikipedia.org/wiki/ISO_15924" target="_blank">ISO 15924</a></td>
+                <td>Capitalized</td>
+                <td class="right">4</td>
+                <td><a href="#script-Latn">Latn</a></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a>
+                </td>
+                <td>UPPER</td>
+                <td class="right">2</td>
+                <td><a href="#country-CZ">CZ</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2 id="links"><a href="#links">Links</a></h2>
+
+        <table class="merged">
+            <thead>
+            <tr>
+                <th>Source</th>
+                <th>Type</th>
+                <th>Samples</th>
+                <th>Notes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Wikipedia</td>
+                <td>external</td>
+                <td><a href="https://en.wikipedia.org/wiki/Czech%20language" target="_blank" class="icon">
+                    <wiki size="24"></wiki>
+                </a></td>
+                <td>Search links made from names. <br><b>Warning:</b> may be misleading!</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Glottolog</td>
+                <td rowspan="2">external</td>
+                <td><a href="http://glottolog.org/resource/languoid/id/czec1258" target="_blank">czec1258</a></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td><a href="http://glottolog.org/resource/languoid/id/czec1258" target="_blank" class="glot icon"
+                       style="margin-top: -5px;"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>ISO 639-3</td>
+                <td>external</td>
+                <td><a href="http://www-01.sil.org/iso639-3/documentation.asp?id=ces" target="_blank">ces</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ethnologue</td>
+                <td>external</td>
+                <td><a href="https://www.ethnologue.com/language/ces" target="_blank" class="eth icon"
+                       style="margin-top: -5px;"></a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><i>this application</i></td>
+                <td>internal</td>
+                <td><a href="#language-cs">cs</a></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>external</td>
+                <td><a href="http://cldr.unicode.org/" target="_blank">http://cldr.unicode.org/</a></td>
+            </tr>
+            </tbody>
+        </table>
+
         <hr>
         <h2 id="source-code"><a href="#source-code">Source code</a></h2>
         <p>
