@@ -527,7 +527,7 @@
 
         <div v-for="k in ['001', '419', 'EU', 'EZ', 'UN']">
             <h3 :id="'group-' + k">
-                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a>
+                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a> <span style="font-weight: normal; font-size: 16px">({{groups[k].items}})</span>
                 <flag :code="k"
                       style="width: 32px; height: 32px; display: inline-block; position: relative; top: 10px; margin: -16px 0"></flag>
             </h3>
@@ -825,6 +825,9 @@
                         ii[j] += b[j][i] ? b[j][i].span : 0;
                     });
                 });
+
+                c.items = 0;
+                a.leaves().forEach(e => c.items += e.data.group.length);
 
                 return c;
             }
