@@ -224,6 +224,11 @@
             /*vertical-align: super;*/
             /*text-decoration: none;*/
         }
+
+        .no-bold-th-body tbody th {
+            font-weight: normal;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -533,7 +538,8 @@
 
         <div v-for="k in ['001', '419', 'EU', 'EZ', 'UN']">
             <h3 :id="'group-' + k">
-                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a> <span style="font-weight: normal; font-size: 16px">({{groups[k].items}})</span>
+                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a> <span
+                    style="font-weight: normal; font-size: 16px">({{groups[k].items}})</span>
                 <flag :code="k"
                       style="width: 32px; height: 32px; display: inline-block; position: relative; top: 10px; margin: -16px 0"></flag>
             </h3>
@@ -547,7 +553,8 @@
                         <span v-if="data.group[j.id]">({{j.items}})</span>
                         <span v-if="j.data.group" @click="Vue.set(j, 'expanded', !j.expanded)"
                               :class="{expander: true, expanded: j.expanded}"></span>
-                        <span v-for="(l, n) in j.data.group"><a :href="'#country-' + l">{{l}}</a><span v-show="j.expanded"> {{data.country[l].name}}</span><span
+                        <span v-for="(l, n) in j.data.group"><a :href="'#country-' + l">{{l}}</a><span
+                                v-show="j.expanded"> {{data.country[l].name}}</span><span
                                 v-if="(n + 1) < j.data.group.length">, </span></span>
                     </td>
                 </tr>
@@ -605,14 +612,60 @@
         <p>Most data come from CLDR see <a href="#data-sources">Data sources</a> section.</p>
         <p>Only languages with <i class="double">official</i>, <i class="single">regional official</i> and <i>de facto
             official</i> status are included.</p>
-
-        <!--<hr>-->
-        <!--<h2 id="counts"><a href="#counts">Counts</a></h2>-->
-
         <hr>
         <h2 id="source-code"><a href="#source-code">Source code</a></h2>
-        <p>Releases under MIT license on GitHub: <a href="https://github.com/darosh/lingocharts" target="_blank">https://github.com/darosh/lingocharts</a>.
+        <p>
+            Releases under <a :href="config.repo + 'blob/master/LICENSE'" target="_blank">MIT license</a> on GitHub: <a
+                href="https://github.com/darosh/lingocharts" target="_blank">https://github.com/darosh/lingocharts</a>.
         </p>
+        <p>
+            Live application: <a :href="config.url" target="_blank">{{config.url}}</a>.
+        </p>
+
+        <h3 id="source-code-data"><a href="#source-code-data">Data</a></h3>
+
+        <p>Available in <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a> and <a
+                href="https://en.wikipedia.org/wiki/Tab-separated_values" target="_blank">TSV</a> format. <b>Bold
+            items</b> in table bellow are used in this application. Served via <a
+                href="https://help.github.com/categories/github-pages-basics/" target="_blank">GitHub Pages</a>
+            directly from master branch.</p>
+
+        <table class="no-bold-th-body">
+            <thead>
+            <tr>
+                <th>Source</th>
+                <th>JSON</th>
+                <th>TSV</th>
+                <th>SVG</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th><a :href="config.repo +  'blob/master/data/index.json'" target="_blank">index</a></th>
+                <td><a :href="'./data/index.json'" target="_blank"><b>index.json</b></a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th><a :href="config.repo +  'blob/master/data/map.topo.json'" target="_blank">map.topo</a></th>
+                <td><a :href="'./data/map.topo.json'" target="_blank"><b>map.topo.json</b></a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th><a :href="config.repo +  'blob/master/data/flags.svg'" target="_blank">flags</a></th>
+                <td></td>
+                <td></td>
+                <td><a :href="'./data/flags.svg'" target="_blank"><b>flags.svg</b></a></td>
+            </tr>
+            <tr v-for="(i, k) in data">
+                <th><a :href="config.repo +  'blob/master/data/' + k + '.json'" target="_blank">{{k}}</a></th>
+                <td><a :href="'./data/' + k + '.json'" target="_blank">{{k}}.json</a></td>
+                <td><a :href="'./data/' + k + '.tsv'" target="_blank">{{k}}.tsv</a></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
 
         <hr>
         <h2 id="data-sources"><a href="#data-sources">Data sources</a></h2>
@@ -638,10 +691,16 @@
 <script src="//unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
 <script>
     var config = {
+        url: 'https://darosh.github.io/lingocharts/',
+        repo: 'https://github.com/darosh/lingocharts/',
         format: d3.format(','),
         money: d3.format(',.0f'),
         hash: ''
     };
+
+    config.online = location.hostname === 'localhost'
+        ? location.protocol + '//' + location.host + location.pathname.replace(/index\.html$/gi, '').replace(/\/$/, '') + '/'
+        : config.url;
 
     Vue.filter('number', function (n) {
         return config.format(n);

@@ -1,0 +1,7 @@
+name	rules	type	digits	id
+Western Digits		numeric	0123456789	latn
+Arabic-Indic Digits		numeric	٠١٢٣٤٥٦٧٨٩	arab
+Bangla Digits		numeric	০১২৩৪৫৬৭৮৯	beng
+Extended Arabic-Indic Digits		numeric	۰۱۲۳۴۵۶۷۸۹	arabext
+Devanagari Digits		numeric	०१२३४५६७८९	deva
+Myanmar Digits		numeric	၀၁၂၃၄၅၆၇၈၉	mymr

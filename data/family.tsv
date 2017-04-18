@@ -1,0 +1,618 @@
+name	id	parent	iso23	iso3
+Abkhaz-Adyge	abkh1242			
+Abkhaz-Abaza	abkh1243	abkh1242		
+Abkhazian	abkh1244	abkh1243	ab	abk
+Circassian	circ1239	abkh1242		
+Adyghe	adyg1241	circ1239	ady	ady
+Indo-European	indo1319			
+Germanic	germ1287	indo1319		
+Northwest Germanic	nort3152	germ1287		
+West Germanic	west2793	nort3152		
+Franconian	fran1268	west2793		
+Low Franconian	wese1235	fran1268		
+Afrikaansic	afri1273	wese1235		
+Afrikaans	afri1274	afri1273	af	afr
+Atlantic-Congo	atla1278			
+Volta-Congo	volt1241	atla1278		
+Kwa Volta-Congo	kwav1236	volt1241		
+Nyo	nyoa1234	kwav1236		
+Potou-Tano	poto1254	nyoa1234		
+Tano	tano1248	poto1254		
+Central Tano	cent2262	tano1248		
+Akanic	akan1251	cent2262		
+Akan	akan1250	akan1251	ak	aka
+Afro-Asiatic	afro1255			
+Semitic	semi1276	afro1255		
+West Semitic	west2786	semi1276		
+Ethiosemitic	ethi1244	west2786		
+South Ethiopic	sout3078	ethi1244		
+Transversal South Ethiopic	tran1288	sout3078		
+Amharic-Argobba	amha1244	tran1288		
+Amharic	amha1245	amha1244	am	amh
+Central Semitic	cent2236	west2786		
+Arabian	arab1394	cent2236		
+Arabic	arab1395	arab1394	ar	ara
+Indo-Iranian	indo1320	indo1319		
+Indo-Aryan	indo1321	indo1320		
+Indo-Aryan Eastern zone	indo1323	indo1321		
+Oriya-Gauda-Kamrupa	oriy1254	indo1323		
+Gauda-Kamrupa	gaud1237	oriy1254		
+Kamrupa	kamt1240	gaud1237		
+Eastern Kamta	assa1262	kamt1240		
+Assamese	assa1263	assa1262	as	asm
+Italic	ital1284	indo1319		
+Latino-Faliscan	lati1262	ital1284		
+Latinic	lati1263	lati1262		
+Imperial Latin	impe1234	lati1263		
+Romance	roma1334	impe1234		
+Italo-Western Romance	ital1285	roma1334		
+Western Romance	west2813	ital1285		
+Shifted Western Romance	shif1234	west2813		
+Southwestern Shifted Romance	sout3183	shif1234		
+West Ibero-Romance	west2838	sout3183		
+Asturo-Leonese	astu1244	west2838		
+Asturian	astu1245	astu1244	ast	ast
+Nakh-Daghestanian	nakh1245			
+Daghestanian	dagh1238	nakh1245		
+Avar-Andic-Tsezic	avar1255	dagh1238		
+Avar	avar1256	avar1255	av	ava
+Aymaran	ayma1253			
+Central-Southern Aymara	nucl1667	ayma1253	ay	aym
+Turkic	turk1311			
+Common Turkic	comm1245	turk1311		
+Oghuz-Kipchak-Uyghur	oghu1246	comm1245		
+Oghuz	oghu1243	oghu1246		
+West Oghuz	west2406	oghu1243		
+Azerbaijani	azer1255	west2406	az	aze
+Kipchak	kipc1239	oghu1243		
+North Kipchak	nort2696	kipc1239		
+Bashkir	bash1264	nort2696	ba	bak
+Iranian	iran1269	indo1320		
+Central Iranian PBS	cent2317	iran1269		
+Central Iranian PB	cent2318	cent2317		
+Northwestern Iranian	nort3177	cent2318		
+Balochic	balo1260	nort3177	bal	bal
+Balto-Slavic	balt1263	indo1319		
+Slavic	slav1255	balt1263		
+East Slavic	east1426	slav1255		
+Belarusian	bela1254	east1426	be	bel
+South Slavic	sout3147	slav1255		
+Eastern South Slavic	east2269	sout3147		
+Macedo-Bulgarian	mace1252	east2269		
+Bulgarian	bulg1262	mace1252	bg	bul
+North Sea Germanic	nort3175	west2793		
+Anglo-Frisian	angl1264	nort3175		
+Anglian	angl1265	angl1264		
+Mercian	merc1242	angl1265		
+Macro-English	macr1271	merc1242		
+Pacific Creole English	paci1280	macr1271		
+Early Melanesian Pidgin	earl1243	paci1280		
+Bislama	bisl1239	earl1243	bi	bis
+North-Central Atlantic	nort3146	atla1278		
+Central Atlantic	cent2230	nort3146		
+Bak	bakk1238	cent2230		
+Balanta	bala1300	bakk1238		
+Balanta-Ganja	bala1302	bala1300	bjt	bjt
+Gauda-Banga	gaud1238	gaud1237		
+Bengali	beng1280	gaud1238	bn	ben
+Sino-Tibetan	sino1245			
+Bodic	bodi1256	sino1245		
+Bodish	bodi1257	bodi1256		
+Old-Modern Tibetan	oldm1245	bodi1257		
+Tibetic	tibe1276	oldm1245		
+Tibetan	tibe1272	tibe1276	bo	bod
+Western South Slavic	west2804	sout3147		
+Serbian-Croatian-Bosnian	sout1528	west2804		
+Bosnian	bosn1245	sout1528	bs	bos
+North Atlantic	nort3148	nort3146		
+Tenda-Jaad	tend1240	nort3148		
+Tenda	tend1239	tend1240		
+Bassari-Bedik-Bapen	bass1263	tend1239		
+Bassari-Tanda	bass1258	bass1263	bsc	bsc
+Catalan	stan1289	sout3183	ca	cat
+Nakh	nakh1246	nakh1245		
+Chechen-Ingush	chec1244	nakh1246		
+Chechen	chec1245	chec1244	ce	che
+Austronesian	aust1307			
+Nuclear Austronesian	nucl1752	aust1307		
+Malayo-Polynesian	mala1545	nucl1752		
+Greater Central Philippine	grea1284	mala1545		
+Central Philippine	cent2246	grea1284		
+Bisayan	bisa1268	cent2246		
+Cebuano	cebu1242	bisa1268	ceb	ceb
+Chamorro	cham1312	mala1545	ch	cha
+Laki-Kurdish	laki1246	nort3177		
+Kurdish	kurd1259	laki1246		
+Central Kurdish	cent1972	kurd1259	ckb	ckb
+West Slavic	west2792	slav1255		
+Czech-Slovak	czec1260	west2792		
+Czech-Lach	czec1261	czec1260		
+Czech	czec1258	czec1261	cs	ces
+Lechitic	lech1241	west2792		
+Kashubian	kash1274	lech1241	csb	csb
+Celtic	celt1248	indo1319		
+Nuclear Celtic	nucl1715	celt1248		
+TGB Celtic	tgbc1234	nucl1715		
+Insular Celtic	insu1254	tgbc1234		
+Brythonic	bryt1239	insu1254		
+Old-Modern Welsh	oldm1247	bryt1239		
+Welsh	wels1247	oldm1247	cy	cym
+North Germanic	nort3160	nort3152		
+South Scandinavian	sout3248	nort3160		
+Danish	dani1285	sout3248	da	dan
+High Franconian	high1287	fran1268		
+German	stan1295	high1287	de	deu
+Dhivehi-Sinhala	sinh1245	indo1321		
+Dhivehi	dhiv1236	sinh1245	dv	div
+Joola-Manjaku	jool1234	bakk1238		
+Jola	jola1264	jool1234		
+Jola-Fonyi	jola1263	jola1264	dyo	dyo
+Southern Tibetic	sout3217	tibe1276		
+Dzongkhic	dzon1238	sout3217		
+Nuclear Dzongkhic	nucl1307	dzon1238		
+Dzongkha	dzon1239	nucl1307	dz	dzo
+Gbe	gbee1241	kwav1236		
+Western Gbe	west2802	gbee1241		
+Ewe	ewee1241	west2802	ee	ewe
+Graeco-Phrygian	grae1234	indo1319		
+Greek	gree1276	grae1234		
+Koineic Greek	koin1234	gree1276		
+Modern Greek	mode1248	koin1234	el	ell
+English	stan1293	macr1271	en	eng
+Castilic	cast1243	west2838		
+Spanish	stan1288	cast1243	es	spa
+Uralic	ural1272			
+Finnic	finn1317	ural1272		
+Estonian	esto1258	finn1317	et	est
+Basque	basq1248		eu	eus
+Southwestern Iranian	sout3157	iran1269		
+Middle-Modern Persian	midd1352	sout3157		
+Modern Southwestern Iranian	mode1259	midd1352		
+Farsic-Caucasian Tat	fars1254	mode1259	fa	fas
+Peul-Serer	peul1234	nort3148		
+Fula	fula1264	peul1234	ff	ful
+Nuclear Finnish	nucl1717	finn1317		
+Finnish	finn1318	nucl1717	fi	fin
+Tagalogic	taga1280	cent2246		
+Tagalog-Filipino	taga1269	taga1280		
+Filipino	fili1244	taga1269	fil	fil
+Central-Eastern Malayo-Polynesian	cent2237	mala1545		
+Eastern Malayo-Polynesian	east2712	cent2237		
+Oceanic	ocea1241	east2712		
+Central Pacific linkage	cent2060	ocea1241		
+Tokelau-Fijian	east2445	cent2060		
+East Fijian	east2446	east2445		
+Fijian	fiji1243	east2446	fj	fij
+West Scandinavian	west2805	nort3160		
+Icelandic-Faroese	icel1246	west2805		
+Faroese	faro1244	icel1246	fo	fao
+Northwestern Shifted Romance	nort3208	shif1234		
+Gallo-Rhaetian	gall1280	nort3208		
+Oil	oila1234	gall1280		
+Central Oil	cent2283	oila1234		
+Macro-French	macr1273	cent2283		
+Global French	glob1239	macr1273		
+French	stan1290	glob1239	fr	fra
+Frisian	fris1239	angl1264		
+Western Frisian	west2354	fris1239	fy	fry
+Goidelic	goid1240	insu1254		
+Western Goidelic	west2822	goid1240		
+Irish	iris1253	west2822	ga	gle
+Ga-Dangme	gada1257	kwav1236		
+Ga	gaaa1244	gada1257	gaa	gaa
+Eastern Goidelic	east2734	goid1240		
+Scottish Gaelic	scot1245	east2734	gd	gla
+Micronesian	micr1243	ocea1241		
+Nuclear Micronesian	micr1244	micr1243		
+Central Micronesian	cent2276	micr1244		
+Gilbertese	gilb1244	cent2276	gil	gil
+Galician Romance	gali1263	west2838		
+Galician	gali1258	gali1263	gl	glg
+Tupian	tupi1275			
+Maweti-Guarani	mawe1252	tupi1275		
+Aweti-Guarani	awet1245	mawe1252		
+Tupi-Guarani	tupi1276	awet1245		
+Tupi-Guarani Subgroup I	tupi1277	tupi1276		
+Tupi-Guarani Subgroup I.A	tupi1282	tupi1277	gn	grn
+High German	high1286	west2793		
+Middle-Modern High German	midd1349	high1286		
+Modern High German	mode1258	midd1349		
+Alpine Germanic	uppe1397	mode1258		
+Alemannic	alem1243	uppe1397		
+Swiss German	swis1247	alem1243	gsw	gsw
+Indo-Aryan Central zone	indo1322	indo1321		
+Subcontinental Central Indo-Aryan	subc1234	indo1322		
+Gujarati-Rajasthani	guja1255	subc1234		
+Gujaratic	guja1256	guja1255		
+Gujarati	guja1252	guja1256	gu	guj
+Manx	manx1243	east2734	gv	glv
+Polynesian	poly1242	east2445		
+Nuclear Polynesian	nucl1485	poly1242		
+Northern Outlier Polynesian-East Polynesian	nort3246	nucl1485		
+Solomons Northern Outlier Polynesian-East Polynesian	solo1260	nort3246		
+Central Northern Outlier Polynesian-East Polynesian	cent2298	solo1260		
+East Polynesian	east2449	cent2298		
+Central Eastern Polynesian	cent2062	east2449		
+Hawaiian	hawa1245	cent2062	haw	haw
+Northwest Semitic	nort3165	cent2236		
+Canaanite	cana1267	nort3165		
+Hebrewic	hebr1246	cana1267		
+Modern Hebrew	hebr1245	hebr1246	he	heb
+Western Hindi	west2812	subc1234		
+Hindustani	hind1270	west2812		
+Hindi	hind1269	hind1270	hi	hin
+Fiji Hindi	fiji1242	hind1270	hif	hif
+Central Bisayan	cent2263	bisa1268		
+Peripheral Central Bisayan	peri1261	cent2263		
+Capiznon-Ilonggo-Kawayan	capi1240	peri1261		
+Hiligaynon	hili1240	capi1240	hil	hil
+Pidgin	pidg1258			
+Motu based pidgin	motu1248	pidg1258		
+Hiri Motu	hiri1237	motu1248	ho	hmo
+Croatian	croa1245	sout1528	hr	hrv
+Circum-Caribbean French	circ1240	macr1273		
+Haitian	hait1244	circ1240	ht	hat
+Hungarian	hung1274	ural1272	hu	hun
+Armenic	arme1241	indo1319		
+Eastern-Western Armenian	east2768	arme1241		
+Armenian	nucl1235	east2768	hy	hye
+Malayo-Sumbawan	mala1536	mala1545		
+North and East Malayo-Sumbawan	nort3170	mala1536		
+Malayic	mala1538	nort3170		
+Nuclear Malayic	nucl1733	mala1538		
+Indonesian Archipelago Malay	indo1326	nucl1733	ms	msa
+Indonesian	indo1316	indo1326	id	ind
+Eskimo-Aleut	eski1264			
+Eskimo	eski1265	eski1264		
+Inuit	inui1246	eski1265		
+Western Canadian Inuktitut	west2618	inui1246	ikt	ikt
+Northern Luzon	nort3238	mala1545		
+Iloko	ilok1237	nort3238	ilo	ilo
+Ingush	ingu1240	chec1244	inh	inh
+Icelandic	icel1247	icel1246	is	isl
+Italo-Dalmatian	ital1286	ital1285		
+Italian Romance	ital1287	ital1286		
+Italian	ital1282	ital1287	it	ita
+Eastern Canadian Inuktitut	east2534	inui1246	iu	iku
+Japonic	japo1237			
+Japanesic	japa1256	japo1237		
+Japan-Taiwan Japanese	japa1258	japa1256		
+Japanese	nucl1643	japa1258	ja	jpn
+Kartvelian	kart1248			
+Georgian-Zan	geor1252	kart1248		
+Georgic	geor1253	geor1252		
+Georgian	nucl1302	geor1253	ka	kat
+Kabardian	kaba1278	circ1239	kbd	kbd
+Benue-Congo	benu1247	volt1241		
+Bantoid	bant1294	benu1247		
+Southern Bantoid	sout3152	bant1294		
+Narrow Bantu	narr1281	sout3152		
+Central-Western Bantu	cent2260	narr1281		
+Kongo-Yaka-Suku-Hungan	kong1295	cent2260		
+Kongo-Yaka-Suku	kong1296	kong1295		
+Kikongoic	kiko1234	kong1296		
+Core Kikongo	core1256	kiko1234	kg	kon
+Austroasiatic	aust1305			
+Khasi-Palaung	khas1273	aust1305		
+Khasian	khas1268	khas1273		
+Khasi-Pnar-Lyngngam	khas1274	khas1268		
+Khasi-Pnar	khas1275	khas1274		
+Khasi	khas1269	khas1275	kha	kha
+South Kipchak	sout2701	kipc1239		
+Kazakh	kaza1248	sout2701	kk	kaz
+Kalaallisut	kala1399	inui1246	kl	kal
+Khmeric	khme1253	aust1305		
+Central Khmer	cent1989	khme1253	km	khm
+Dravidian	drav1251			
+South Dravidian	sout3133	drav1251		
+South Dravidian I	sout3138	sout3133		
+Tamil-Kannada	tami1291	sout3138		
+Badaga-Kannada	bada1263	tami1291		
+Kannadoid	kann1259	bada1263		
+Nuclear Kannaoid	kann1255	kann1259		
+Kannada	nucl1305	kann1255	kn	kan
+Manjaku-Mankanya-Pepel	manj1250	jool1234		
+Mankanya	mank1251	manj1250	knf	knf
+Koreanic	kore1284			
+Korean	kore1280	kore1284	ko	kor
+Permian	perm1256	ural1272		
+Komi	komi1267	perm1256	kv	kom
+Komi-Permyak	komi1269	komi1267	koi	koi
+Indo-Aryan Southern zone	indo1325	indo1321		
+Konkanic	konk1270	indo1325	kok	kok
+West Kipchak	west1472	kipc1239		
+Karachay-Balkar	kara1465	west1472	krc	krc
+Indo-Aryan Northwestern zone	indo1324	indo1321		
+Kashmiri	kash1277	indo1324	ks	kas
+Kumyk	kumy1244	west1472	kum	kum
+Kirghiz	kirg1245	sout2701	ky	kir
+Middle Franconian	midd1319	high1287		
+Luxembourgish	luxe1241	midd1319	lb	ltz
+Lak	lakk1252	dagh1238	lbe	lbe
+Lezgic	lezg1248	dagh1238		
+Nuclear Lezgic	nucl1321	lezg1248		
+East Lezgic	east2367	nucl1321		
+Lezghian	lezg1247	east2367	lez	lez
+Greater Bangi-Ntomba	grea1286	cent2260		
+Ngiri	ngir1248	grea1286		
+Ngiri Riverain	ngir1249	ngir1248		
+Ngiri Riverain Ubangi	ngir1252	ngir1249		
+Ngiri Riverain Ubangi-Ripuaire	ngir1254	ngir1252		
+Bobangic	boba1248	ngir1254		
+Bobangic Riverain	boba1249	boba1248		
+Bobangi-Bangala-Lingala	boba1250	boba1249		
+Lingala-Bangala	ling1269	boba1250		
+Lingala	ling1263	ling1269	ln	lin
+Tai-Kadai	taik1256			
+Kam-Tai	kamt1241	taik1256		
+Be-Tai	beta1258	kamt1241		
+Daic	daic1237	beta1258		
+Central-Southwestern Tai	cent2251	daic1237		
+Wenma-Southwestern Tai	wenm1239	cent2251		
+Sapa-Southwestern Tai	sapa1255	wenm1239		
+Southwestern Tai	sout3184	sapa1255		
+Southwestern Thai PH	sput1235	sout3184		
+Lao-Thai	laot1235	sput1235		
+Lao	laoo1244	laot1235	lo	lao
+Eastern Baltic	east2280	balt1263		
+Lithuanian	lith1251	east2280	lt	lit
+Luban	luba1253	cent2260		
+Luba-Kaonde	luba1254	luba1253		
+Lubaic	luba1255	luba1254		
+Bangubangu-Kasai	bang1371	luba1255		
+Luba-Lulua	luba1249	bang1371	lua	lua
+Latvian	latv1249	east2280	lv	lav
+Bihari	biha1245	indo1321		
+Maithili-Magahi	mait1254	biha1245		
+Maithilic	mait1255	mait1254		
+Maithili	mait1250	mait1255	mai	mai
+Mordvin	mord1256	ural1272		
+Moksha	moks1248	mord1256	mdf	mdf
+Danaw	dana1253	grea1284		
+Maguindanao	magu1243	dana1253	mdh	mdh
+North African Arabic	nort3191	arab1395		
+Hassaniyya	hass1238	nort3191	mey	mey
+Cur-Bok-Cotier	curb1234	manj1250		
+Mandjak	mand1419	curb1234	mfv	mfv
+Basap-Greater Barito	basa1291	mala1545		
+Greater Barito linkage	grea1283	basa1291		
+Southeast Barito	sout2919	grea1283		
+Malagasic	mala1537	sout2919	mg	mlg
+Western Micronesian	west2844	cent2276		
+Marshallese	mars1254	west2844	mh	mah
+Maori	maor1246	cent2062	mi	mri
+Macedonian	mace1250	mace1252	mk	mkd
+Tamil-Kota	tami1292	tami1291		
+Tamil-Toda	tami1293	tami1292		
+Tamil-Irula	tami1294	tami1293		
+Tamil-Kodagu	tami1297	tami1294		
+Tamil-Malayalam	tami1298	tami1297		
+Malayalamoid	mala1541	tami1298		
+Malayalam	mala1464	mala1541	ml	mal
+Mongolic	mong1329			
+Eastern Mongolic	oira1260	mong1329		
+Oirat-Khalkha	oira1264	oira1260		
+Khalkha-Buriat	khal1273	oira1264		
+Mongolian	mong1331	khal1273	mn	mon
+Maharastric	maha1307	indo1325		
+Marathic	mara1416	maha1307		
+Marathi	mara1378	mara1416	mr	mar
+Maltese	malt1254	nort3191	mt	mlt
+Burmo-Qiangic	burm1265	sino1245		
+Lolo-Burmese	lolo1265	burm1265		
+Burmish	burm1266	lolo1265		
+Southern Burmish	sout3159	burm1266		
+Nuclear Southern Burmish	nucl1730	sout3159		
+Old-Modern Burmese	oldm1246	nucl1730		
+Burmese	nucl1310	oldm1246	my	mya
+Erzya	erzy1239	mord1256	myv	myv
+Nauru	naur1243	micr1243	na	nau
+Norwegian	norw1258	west2805		
+Norwegian Bokmål	norw1259	norw1258	nb	nob
+East Bantu	east2731	narr1281		
+Southern Bantu-Makua	sout3180	east2731		
+Nguni-Tsonga	ngun1275	sout3180		
+Nguni {S.40}	ngun1276	ngun1275		
+Southern Ndebele-Lowland	ngun1267	ngun1276		
+Zimbabwean Ndebele	nort2795	ngun1267	nd	nde
+Indo-Aryan Northern zone	indo1310	indo1321		
+Eastern Pahari	east1436	indo1310	ne	nep
+Tongic	tong1324	poly1242		
+Niuean	niue1239	tong1324	niu	niu
+Macro-Dutch	macr1270	wese1235		
+Middle-Modern Dutch	midd1347	macr1270		
+Modern Dutch	mode1257	midd1347		
+Dutch	dutc1256	mode1257	nl	nld
+Norwegian Nynorsk	norw1262	norw1258	nn	nno
+Sumayela Ndebele	sout2808	ngun1276	nr	nbl
+Sotho-Makua-Venda	soth1250	sout3180		
+Sotho-Makua	soth1251	soth1250		
+Sotho-Tswana {S.30}	soth1248	soth1251		
+Sotho	soth1252	soth1248		
+Northern Sotho	nort3233	soth1252		
+Sepedic	sepe1241	nort3233		
+Pedi	pedi1238	sepe1241	nso	nso
+Tumbuka-Sena-Nyanja	tumb1253	east2731		
+Nyanjaic	nyan1319	tumb1253		
+Nyanja	nyan1308	nyan1319	ny	nya
+Macro-Oriya	macr1269	oriy1254	or	ori
+Sogdic-Ossetic	sogd1247	cent2317		
+Ossetic	osse1245	sogd1247		
+Ossetian	osse1243	osse1245	os	oss
+Sindhi-Lahnda	sind1278	indo1324		
+Eastern Panjabic	east2727	sind1278		
+Eastern Panjabi	panj1256	east2727	pa	pan
+Meso-Cordilleran	meso1254	nort3238		
+South-Central Cordilleran	sout3211	meso1254		
+Southern Cordilleran	sout2907	sout3211		
+West Southern Cordilleran	west2550	sout2907		
+Pangasinan	pang1290	west2550	pag	pag
+Macro-Portuguese	macr1272	gali1263		
+Upper Guinea Portuguese	uppe1458	macr1272		
+Papiamento	papi1253	uppe1458	pap	pap
+Palauan	pala1344	mala1545	pau	pau
+Polish	poli1260	lech1241	pl	pol
+Pashto	pash1269	iran1269		
+Nuclear Pashto	nucl1276	pash1269	ps	pus
+Brazil-Portugal Portuguese	braz1247	macr1272		
+Portuguese	port1283	braz1247	pt	por
+Quechuan	quec1387		qu	que
+Mayan	maya1287			
+Core Mayan	core1254	maya1287		
+Quichean-Mamean	quic1274	core1254		
+Greater Quichean	grea1276	quic1274		
+Core Quichean	core1251	grea1276		
+Quiche-Achi	quic1275	core1251		
+K'iche'	kich1262	quic1275	quc	quc
+Romansh	roma1326	gall1280	rm	roh
+Northeast Savanna Bantu	nort3203	east2731		
+Great Lakes Bantu	grea1289	nort3203		
+Western Lakes Bantu	west2842	grea1289		
+Kivu	kivu1239	west2842		
+West Highlands Kivu	rwan1241	kivu1239		
+Rundi	rund1242	rwan1241	rn	run
+Eastern Romance	east2714	roma1334		
+Balkan Romance	macr1262	east2714		
+Romanian	roma1327	macr1262	ro	ron
+Russian	russ1263	east1426	ru	rus
+Kinyarwanda	kiny1244	rwan1241	rw	kin
+Sanskrit	sans1269	indo1321	sa	san
+North Siberian Turkic	nort2688	comm1245		
+Yakut	yaku1245	nort2688	sah	sah
+Mundaic	mund1335	aust1305		
+North Munda	nort3151	mund1335		
+Kherwarian	kher1245	nort3151		
+Santalic	sant1457	kher1245		
+Santali	sant1410	sant1457	sat	sat
+Cangin	cang1245	nort3148		
+Saafi-Noon-Lehar	saaf1239	cang1245		
+Saafi-Saafi	saaf1238	saaf1239	sav	sav
+Sindhic	sind1279	sind1278		
+Sindhi	sind1272	sind1279	sd	snd
+Saami	saam1281	ural1272		
+Western Saami	west2390	saam1281		
+Central Western Saami	cent2240	west2390		
+Northern Sami	nort2671	cent2240	se	sme
+North Volta-Congo	nort3149	volt1241		
+Cameroun-Ubangian	came1255	nort3149		
+Ubangi	uban1244	came1255		
+Ngbandi-Mongoba-Kazibati	ngba1290	uban1244		
+Ngbandic	ngba1280	ngba1290		
+Nuclear Ngbandic	nucl1737	ngba1280		
+Sangoic	sang1327	nucl1737		
+Sango	sang1328	sang1327	sg	sag
+Sinhalaic	sinh1247	sinh1245		
+Sinhala	sinh1246	sinh1247	si	sin
+Slovak	slov1269	czec1260	sk	slk
+Slovenian	slov1268	west2804	sl	slv
+Ellicean	elli1239	nucl1485		
+Samoan-Tokelauan	samo1310	elli1239		
+Samoan	samo1305	samo1310	sm	smo
+Shona {S.10}	shon1250	east2731		
+Core Shona	core1255	shon1250		
+Plateau Shona	plat1259	core1255		
+Central Shona	cent2310	plat1259		
+Shona	shon1251	cent2310	sn	sna
+Noon-Lehar	noon1244	saaf1239		
+Noon	noon1242	noon1244	snf	snf
+Cushitic	cush1243	afro1255		
+East Cushitic	east2699	cush1243		
+Lowland East Cushitic	lowl1267	east2699		
+Southern Lowland East Cushitic	sout3055	lowl1267		
+Mainstream Lowland East Cushitic	main1283	sout3055		
+Omo-Tana	omot1245	main1283		
+Eastern Omo-Tana	east2653	omot1245		
+Somali	soma1255	east2653	so	som
+Albanian	alba1267	indo1319	sq	sqi
+Serbian	serb1264	sout1528	sr	srp
+Sereer	sere1260	peul1234	srr	srr
+Swati	swat1243	ngun1267	ss	ssw
+Sesotho-Lozi	seso1234	soth1252		
+Southern Sotho	sout2807	seso1234	st	sot
+North Scandinavian	nort3266	nort3160		
+East-Central Swedic	east2780	nort3266		
+East Swedic	east2781	east2780		
+Swedish	swed1254	east2781	sv	swe
+Northeast Coastal Bantu	nort3209	nort3203		
+Coastal NEC Bantu	coas1317	nort3209		
+Sabaki-Swahili	saba1282	coas1317		
+Swahili {G.40}	swah1254	saba1282	sw	swa
+Tamiloid	tami1299	tami1298		
+Tamil	tami1289	tami1299	ta	tam
+South Dravidian II	sout3139	sout3133		
+Teluguic	telu1265	sout3139		
+Telugu	telu1262	telu1265	te	tel
+Central Malayo-Polynesian	cent2245	cent2237		
+Timoric A	timo1259	cent2245		
+Central Timoric A	cent2079	timo1259		
+Tetunic	tetu1244	cent2079		
+Tetum	tetu1245	tetu1244	tet	tet
+Farsic	fars1255	fars1254		
+Eastern Farsic	east2745	fars1255		
+Tajikic	taji1250	east2745		
+Tajik	taji1245	taji1250	tg	tgk
+Thai	thai1261	laot1235	th	tha
+Tigre-Tigrinya	tigr1276	ethi1244		
+Tigrinya	tigr1271	tigr1276	ti	tir
+East Oghuz	east2334	oghu1243		
+Turkmen	turk1304	east2334	tk	tuk
+Tokelau	toke1240	samo1310	tkl	tkl
+Tswanaic	tswa1256	soth1248		
+Tswana	tswa1253	tswa1256	tn	tsn
+Bedik-Bapen	bedi1237	bass1263		
+Bedik	bedi1235	bedi1237	tnr	tnr
+Tonga {Tonga Islands}	tong1325	tong1324	to	ton
+Tok Pisin	tokp1240	earl1243	tpi	tpi
+Nuclear West Oghuz	nucl1762	west2406		
+Turkish	nucl1301	nucl1762	tr	tur
+Tswa-Ronga {S.50}	tswa1254	ngun1275		
+Tsonga	tson1249	tswa1254	ts	tso
+South Bisayan	sout3175	bisa1268		
+Butuan-Tausug	butu1243	sout3175		
+Tausug	taus1251	butu1243	tsg	tsg
+Tatar	tata1255	nort2696	tt	tat
+Tuvalu	tuva1244	elli1239	tvl	tvl
+Tahitian-Austral	tahi1244	cent2062		
+Tahitian	tahi1242	tahi1244	ty	tah
+South Siberian Turkic	sout2693	comm1245		
+Sayan	saya1244	sout2693		
+Tuvinian	tuvi1240	saya1244	tyv	tyv
+Berber	berb1260	afro1255		
+Kabyle-Atlas Berber	kaby1244	berb1260		
+Atlas Berber	atla1275	kaby1244		
+Central Moroccan Berber	cent2194	atla1275	tzm	tzm
+Udmurt	udmu1245	perm1256	udm	udm
+Uyghur	uygh1240	oghu1246		
+Uighur	uigh1240	uygh1240	ug	uig
+Ukrainian-Rusyn	ukra1257	east1426		
+Ukrainian	ukra1253	ukra1257	uk	ukr
+Urdu	urdu1245	hind1270	ur	urd
+Uzbek	uzbe1247	oghu1243	uz	uzb
+Venda	vend1245	soth1250	ve	ven
+Vietic	viet1250	aust1305		
+Viet-Muong	viet1251	viet1250		
+Vietnamese	viet1252	viet1251	vi	vie
+Warayan	wara1304	cent2263		
+Samar-Waray	sama1315	wara1304		
+Waray {Philippines}	wara1300	sama1315	war	war
+Mijikenda-Pokomo-Comorian	miji1240	coas1317		
+Comorian Bantu	como1260	miji1240		
+Shindzwani-Shimaore	shin1269	como1260		
+Ndzwani Comorian	ndzw1235	shin1269	wni	wni
+Wolofic	wolo1247	nort3148		
+Wolof	nucl1347	wolo1247	wo	wol
+Zulu-Xhosa	zulu1251	ngun1267		
+Xhosa	xhos1239	zulu1251	xh	xho
+Defoid	defo1239	benu1247		
+Yoruboid	yoru1244	defo1239		
+Edekiri	edek1238	yoru1244		
+Ede	edea1234	edek1238		
+Eastern Ede	east2738	edea1234		
+Southeastern Ede	sout3186	east2738		
+Nuclear Yoruba	nucl1747	sout3186		
+Lucumi-Yoruba	lucu1239	nucl1747		
+Yoruba	yoru1245	lucu1239	yo	yor
+Northern Daic	nort3180	daic1237	za	zha
+Ngazidja Comorian	ngaz1238	como1260	zdj	zdj
+Sinitic	sini1245	sino1245	zh	zho
+Zulu	zulu1248	zulu1251	zu	zul

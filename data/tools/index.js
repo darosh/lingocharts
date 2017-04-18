@@ -504,9 +504,49 @@ function save(obj, dir) {
 
     Object.keys(obj).forEach(k => {
         fs.writeFile(path.join(dir, k + '.json'), stringify(obj[k], null, 2));
+        fs.writeFile(path.join(dir, k + '.tsv'), d3.tsvFormat(Array.isArray(obj[k])
+            ? obj[k].map(d => (typeof d === 'string') ? {value: d} : d)
+            : toRows(obj[k])));
     });
 
     fs.writeFile(path.join(dir, 'index.json'), stringify(obj, null, 2));
+}
+
+function toRows(o) {
+    const r = [];
+
+    Object.keys(o).forEach(d => {
+        let i;
+
+        if (typeof o[d] !== 'object') {
+            i = {
+                value: o[d]
+            };
+        } else {
+            i = o[d];
+        }
+
+        i.id = d;
+
+        if (Array.isArray(i)) {
+            i.forEach((j, n) => {
+                let k = Object.assign({id: i.id, index: n}, j);
+                r.push(k);
+            });
+        } else {
+            i = Object.assign({}, i);
+
+            Object.keys(i).forEach(k => {
+                if (!Array.isArray(i[k]) && typeof i[k] === 'object') {
+                    i[k] = JSON.stringify(i[k]);
+                }
+            });
+
+            r.push(i);
+        }
+    });
+
+    return r;
 }
 
 function stringify(o) {
