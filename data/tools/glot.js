@@ -50,7 +50,6 @@ module.exports = function (iso3) {
                 console.error(d);
             } else {
                 let ff = rm.resources.filter(d => d.id === m[2])[0];
-                console.log(ff);
                 return {id: m[2], name: m[1], iso3: d.iso3, geo: (ff && (ff.latitude !== null)) ? [ff.latitude, ff.longitude] : null};
             }
         });

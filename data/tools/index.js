@@ -330,18 +330,26 @@ function cldr(lang, country) {
     }
 }
 
-function clean(obj) {
+function clean(obj, fields = {}, n, level) {
     const propNames = Object.getOwnPropertyNames(obj);
 
     propNames.forEach((name) => {
         const prop = obj[name];
 
+        if (level > 1 && parseInt(name).toString() !== name) {
+            if (['language'].indexOf(n) === -1) {
+                fields[name] = true;
+            }
+        }
+
         if (typeof prop === 'object' && prop !== null) {
-            clean(prop);
+            clean(prop, fields, name, (level || 0) + 1);
         } else if (prop === null) {
             delete obj[name];
         }
     });
+
+    return Object.keys(fields);
 }
 
 function index(dic, val) {
@@ -501,7 +509,7 @@ function getContainment() {
 }
 
 function save(obj, dir) {
-    clean(obj);
+    obj.fields = clean(obj).sort();
 
     Object.keys(obj).forEach(k => {
         fs.writeFile(path.join(dir, k + '.json'), stringify(obj[k], null, 2));
