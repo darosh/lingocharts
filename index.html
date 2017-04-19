@@ -212,10 +212,10 @@
         }
 
         /*.wiki {*/
-            /*content: "\e906";*/
-            /*position: relative;*/
-            /*top: -2px;*/
-            /*vertical-align: text-top;*/
+        /*content: "\e906";*/
+        /*position: relative;*/
+        /*top: -2px;*/
+        /*vertical-align: text-top;*/
         /*}*/
 
         .family {
@@ -321,7 +321,7 @@
 </script>
 <div id="app">
     <h1 id="contents"><a href="#contents">LingoCharts!</a></h1>
-    <p>A language related data and charts. <i>Under construction.</i></p>
+    <p>A language related data and charts. <br><i>Under construction.</i></p>
 
     <p v-if="!data"><i>Loading&hellip;</i></p>
 
@@ -353,7 +353,7 @@
                     <li><a href="#characters">Characters</a></li>
                     <li><a href="#groups">Groups</a></li>
                     <li><a href="#plurals">Plurals</a></li>
-                    <li><a href="#ordinals">Ordinal</a></li>
+                    <li><a href="#ordinals">Ordinals</a></li>
                 </ul>
             </li>
             <li>
@@ -554,7 +554,7 @@
         <hr>
         <h2 id="families"><a href="#families">Families</a></h2>
 
-        <family :db="data"></family>
+        <family :db="data" class="nowrap"></family>
 
         <hr>
         <h2 id="characters"><a href="#characters">Characters</a></h2>
