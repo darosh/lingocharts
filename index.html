@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=1040,initial-scale=1.0">
     <title>LingoCharts!</title>
     <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('./assets/fonts/icomoon.eot?nel85w');
+            src: url('./assets/fonts/icomoon.eot?nel85w#iefix') format('embedded-opentype'),
+            url('./assets/fonts/icomoon.ttf?nel85w') format('truetype'),
+            url('./assets/fonts/icomoon.woff?nel85w') format('woff'),
+            url('./assets/fonts/icomoon.svg?nel85w#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        [class^="icon-"], [class*=" icon-"] {
+            /* use !important to prevent issues with browser extensions that change fonts */
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-circle:before {
+            content: "\e900";
+        }
+
+        .icon-chevron-right:before {
+            content: "\e901";
+        }
+
+        .icon-chevron-down:before {
+            content: "\e903";
+        }
+
+        .icon-external-link:before {
+            content: "\e905";
+        }
+
+        .icon-wikipedia-w:before {
+            content: "\e906";
+        }
+
+        a.icon-wikipedia-w, a.icon-wikipedia-w:visited {
+            text-decoration: none;
+            color: rgba(0, 0, 0, .87);
+        }
+
         body {
             font-family: sans-serif;
             font-size: 16px;
@@ -14,6 +65,8 @@
 
         a {
             color: #1a0dab;
+            white-space: nowrap;
+            word-break: keep-all;
         }
 
         a:visited {
@@ -78,16 +131,8 @@
             outline: none;
         }
 
-        svg {
-            /*display: block;*/
-        }
-
         .right {
             text-align: right;
-        }
-
-        .mono {
-            font-family: monospace;
         }
 
         .bold {
@@ -139,8 +184,6 @@
             text-decoration: none;
             font-weight: bold;
             color: rgba(0, 0, 0, 0.87);
-            /*font-size: 20px;*/
-            /*line-height: 24px;*/
             vertical-align: inherit;
         }
 
@@ -162,22 +205,18 @@
         }
 
         .eth:after {
-            /*width: 20px;*/
-            /*display: inline-block;*/
             padding: 0 4px;
             background-color: #006599;
             color: #fff;
-            /*color: #fffd30;*/
-            /*font-family: serif;*/
-            /*font-weight: normal;*/
             content: 'E';
         }
 
-        .wiki {
-            position: relative;
-            top: -2px;
-            vertical-align: text-top;
-        }
+        /*.wiki {*/
+            /*content: "\e906";*/
+            /*position: relative;*/
+            /*top: -2px;*/
+            /*vertical-align: text-top;*/
+        /*}*/
 
         .family {
             list-style: none;
@@ -186,36 +225,52 @@
         }
 
         .family li {
-            padding: 0;
-            margin: 0 0 0 20px;
+            padding: 0 0 0 10px;
+            margin: 0 0 0 12px;
+        }
+
+        .tree {
+            line-height: 22px;
+        }
+
+        .tree li {
+            border-left: 1px solid #e0e0e0;
         }
 
         .expander {
             cursor: pointer;
-            font-size: 20px;
             line-height: 20px;
-            width: 20px;
+            width: 22px;
+            height: 22px;
             display: inline-block;
         }
 
         .expander:after {
-            content: '\025b6';
+            font-family: icomoon;
+            content: '\e901';
+            position: relative;
+            top: 2px;
+            left: 4px;
         }
 
         .expander.expanded:after {
-            content: '\025bc';
+            content: '\e903';
         }
 
         .bullet {
-            width: 20px;
+            width: 22px;
+            height: 22px;
             display: inline-block;
-            text-align: right;
+            text-align: center;
         }
 
         .bullet:after {
-            content: '\025cf';
-            font-size: 20px;
+            font-family: icomoon;
+            content: '\e900';
             line-height: 20px;
+            position: relative;
+            top: 1px;
+            left: 1px;
         }
 
         [v-cloac] {
@@ -223,12 +278,11 @@
         }
 
         [target="_blank"]:not(.icon):after {
-            content: ' ⤢';
-            opacity: 0.5;
-            /*font-size: 12px;*/
-            /*line-height: 20px;*/
-            /*vertical-align: super;*/
-            /*text-decoration: none;*/
+            content: ' \e905';
+            /*opacity: 0.75;*/
+            font-family: icomoon;
+            font-style: normal;
+            /*font-size: 75%;*/
         }
 
         .no-bold-th-body tbody th {
@@ -255,13 +309,13 @@
            :href="'https://www.ethnologue.com/language/' + nd.data.data.iso3" target="_blank" class="icon eth"></a>
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.name"
            :href="'https://en.wikipedia.org/wiki/' + nd.data.data.name + (!nd.children ? ' language' : '')"
-           target="_blank" class="icon">
-            <wiki size="24" style="margin: -2px -3px -4px -3px"></wiki>
+           target="_blank" class="icon icon-wikipedia-w">
+            <!--<wiki size="24" style="margin: -2px -3px -4px -3px"></wiki>-->
         </a>
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.iso23"
            :href="'#language-' + nd.data.data.iso23">{{nd.data.data.iso23}}</a>
         <li v-for="i in nd.children" :style="{display: (expanded || nd.depth === 0) ? null : 'none'}">
-            <family :node="i"></family>
+            <family :node="i" class="tree"></family>
         </li>
     </ul>
 </script>
@@ -331,7 +385,7 @@
                 <th>Internet</th>
                 <th>Mobile</th>
                 <th>Currency<br>
-                <th>Language (population / literacy)
+                <th class="nowrap">Language (population / literacy)
                     <br>
                     <small style="font-weight: normal">
                         <span>de facto official</span>,
@@ -349,17 +403,17 @@
                 </td>
                 <td><a :href="'#country-' + k">{{k}}</a></td>
                 <td><b>{{i.name}}</b></td>
-                <td><a class="icon" :href="'https://en.wikipedia.org/wiki/' + i.name" target="_blank">
-                    <wiki size="24"></wiki>
+                <td><a class="icon icon-wikipedia-w" :href="'https://en.wikipedia.org/wiki/' + i.name" target="_blank">
+                    <!--<wiki size="24"></wiki>-->
                 </a></td>
-                <td>{{i.likely}}</td>
+                <td class="nowrap">{{i.likely}}</td>
                 <td class="right">{{i.population | number}}</td>
                 <td class="right">{{i.literacy | percent}}</td>
                 <td class="right">{{i.gdp | money}}</td>
                 <td class="right">{{i.net | percent}}</td>
                 <td class="right">{{i.cell | percent}}</td>
                 <td>{{i.currency}}</td>
-                <td>
+                <td class="nowrap">
                     <div v-for="(i, k) in i.language"><a :href="'#language-' + k"
                                                          :class="{noline: 1, double: i.status === 0, single: i.status === 1, bold: i.cldr}">{{k}}</a>
                         ({{i.percent}}%{{i.literacy ? (' / ' + i.literacy) + '%' : ''}})
@@ -401,8 +455,9 @@
                 <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
                 <td><b>{{i.name}}</b></td>
                 <td>
-                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'" target="_blank" class="icon">
-                        <wiki size="24"></wiki>
+                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'" target="_blank"
+                       class="icon icon-wikipedia-w">
+                        <!--<wiki size="24"></wiki>-->
                     </a>
                 </td>
                 <td><a :href="'http://www-01.sil.org/iso639-3/documentation.asp?id=' + i.iso3"
@@ -440,8 +495,9 @@
                 <th>RTL</th>
                 <th>Cased</th>
                 <th>Line break letters</th>
-                <th>IME <a href="https://en.wikipedia.org/wiki/Input_method" target="_blank" class="icon">
-                    <wiki size="24" style="margin-top: -3px;"></wiki>
+                <th>IME <a href="https://en.wikipedia.org/wiki/Input_method" target="_blank"
+                           class="icon icon-wikipedia-w">
+                    <!--<wiki size="24" style="margin-top: -3px;"></wiki>-->
                 </a></th>
                 <th>Density</th>
                 <th>Characters</th>
@@ -455,8 +511,9 @@
                 <td><a :href="'#script-' + k">{{k}}</a></td>
                 <td><b>{{i.name}}</b></td>
                 <td>
-                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank" class="icon">
-                        <wiki size="24"></wiki>
+                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank"
+                       class="icon icon-wikipedia-w">
+                        <!--<wiki size="24"></wiki>-->
                     </a>
                 </td>
                 <td>{{i.rtl | yes('RTL')}}</td>
@@ -515,7 +572,7 @@
                 <th>RTL</th>
                 <th>Quotes</th>
                 <th>Count</th>
-                <th style="min-width: 180px">Characters</th>
+                <th style="min-width: 360px">Characters</th>
             </tr>
             </thead>
             <tbody>
@@ -531,13 +588,11 @@
                 <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
                 <td class="right"><span v-if="i.chars >= 0">{{data.char[i.script][i.chars].count | number}}</span></td>
                 <td>
-                    <div class="chars" v-if="i.chars >= 0"
-                         v-text="data.char[i.script][i.chars].chars.substr(0, !i.$chars ? 600: undefined)"></div>
-                    <a class="click"
-                       v-if="!i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
-                       @click="Vue.set(i, '$chars', true)">&#x25b6;</a>
-                    <a class="click" v-if="i.$chars"
-                       @click="Vue.set(i, '$chars', false)">&#x25c0;</a>
+                    <a class="expander" :class="{expanded: i.$chars}"
+                       v-if="i.$chars || !i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
+                       @click="Vue.set(i, '$chars', !i.$chars)"></a>
+                    <span class="chars" v-if="i.chars >= 0"
+                          v-text="data.char[i.script][i.chars].chars.substr(0, !i.$chars ? 600: undefined)"></span>
                 </td>
             </tr>
             </tbody>
@@ -556,7 +611,7 @@
             <table class="merged">
                 <tbody>
                 <tr v-for="i in groups[k]" v-if="i[i.length -1]">
-                    <td v-for="j in i" :rowspan="j.span" v-if="j && j.span">
+                    <td v-for="j in i" :rowspan="j.span" v-if="j && j.span" :class="{nowrap: data.group[j.id]}">
                         <a :href="'#group-' + k + '-' + j.id" v-if="!j.data.group" :id="'group-' + k + '-' + j.id"
                            v-if="!j.data.group">{{j.id}}</a>
                         <b v-if="data.group[j.id]">{{data.group[j.id].name}}</b>
@@ -686,8 +741,9 @@
             <tr>
                 <td>Wikipedia</td>
                 <td>external</td>
-                <td><a href="https://en.wikipedia.org/wiki/Czech%20language" target="_blank" class="icon">
-                    <wiki size="24"></wiki>
+                <td><a href="https://en.wikipedia.org/wiki/Czech%20language" target="_blank"
+                       class="icon icon-wikipedia-w">
+                    <!--<wiki size="24"></wiki>-->
                 </a></td>
                 <td>Search links made from names. <br><b>Warning:</b> may be misleading!</td>
             </tr>
@@ -849,61 +905,61 @@
         }
     });
 
-    Vue.component('wiki', {
-        // https://en.wikipedia.org/wiki/File:Wikipedia's_W.svg
-        template: '<svg class="wiki" :width="size" :height="size" viewBox="0 0 128 128" stroke-miterlimit="10" shape-rendering="geometricPrecision" fill-rule="evenodd"><path d="M120.8 29.2c0 .4 0 .8-.3 1-.3.5-.6.6-1 .6-2.4.3-4.4 1-6 2.4-1.6 1.4-3.2 4-5 7.8L83 99.3c-.2.5-.6.8-1.4.8-.6 0-1-.3-1.4-.8L65.5 69 49 99c-.5.5-1 .8-1.6.8-.7 0-1.2-.3-1.4-.8L20.6 41c-1.6-3.6-3.2-6-5-7.5-1.8-1.4-4.2-2.3-7.3-2.7-.3 0-.6 0-.8-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.8-1.4 2.2 0 4.6 0 7 .3l6.5.3c2 0 4.5 0 7.3-.3l7.8-.3c.5 0 .8.5.8 1.4 0 1-.2 1.4-.5 1.4-2.4.2-4 .8-5.4 1.7-1.3 1-2 2.3-2 4 0 .7.3 1.7.8 3l21 47.2 12-22.4L52 41c-2-4-3.6-6.8-5-8-1.2-1.2-3-2-5.7-2.2-.3 0-.5 0-.7-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.7-1.4 2.2 0 4.3 0 6.2.3 1.8.2 3.7.3 5.8.3 2 0 4.2 0 6.4-.3 2.4-.2 4.6-.3 7-.3.4 0 .7.5.7 1.4 0 1 0 1.4-.5 1.4-4.5.3-6.8 1.6-6.8 4 0 1 .5 2.5 1.6 4.6l7.3 15L76 40.5c1-2 1.5-3.5 1.5-4.8 0-3-2.2-4.8-6.7-5-.5 0-.7-.4-.7-1.4 0-.3.2-.6.4-1 .2-.3.4-.4.6-.4 1.6 0 3.6 0 6 .3l5.5.3c1 0 2.6 0 4.6-.3l6.4-.3c.4 0 .6.4.6 1.2 0 1-.3 1.6-1 1.6-2.7.3-4.8 1-6.4 2.2-1.6 1.2-3.6 4-6 8l-9.7 18 13 26.8 19.5-45c.7-1.8 1-3.3 1-4.7 0-3.2-2.2-5-6.7-5.2-.3 0-.5-.4-.5-1.4 0-1 .3-1.4 1-1.4 1.5 0 3.5 0 5.8.3l5.2.3c1.5 0 3.2 0 5.2-.3l5.4-.3c.6 0 .8.4.8 1.2z"/></svg>',
-        props: ['size']
-    });
+    //    Vue.component('wiki', {
+    https://en.wikipedia.org/wiki/File:Wikipedia's_W.svg
+//        template: '<svg class="wiki" :width="size" :height="size" viewBox="0 0 128 128" stroke-miterlimit="10" shape-rendering="geometricPrecision" fill-rule="evenodd"><path d="M120.8 29.2c0 .4 0 .8-.3 1-.3.5-.6.6-1 .6-2.4.3-4.4 1-6 2.4-1.6 1.4-3.2 4-5 7.8L83 99.3c-.2.5-.6.8-1.4.8-.6 0-1-.3-1.4-.8L65.5 69 49 99c-.5.5-1 .8-1.6.8-.7 0-1.2-.3-1.4-.8L20.6 41c-1.6-3.6-3.2-6-5-7.5-1.8-1.4-4.2-2.3-7.3-2.7-.3 0-.6 0-.8-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.8-1.4 2.2 0 4.6 0 7 .3l6.5.3c2 0 4.5 0 7.3-.3l7.8-.3c.5 0 .8.5.8 1.4 0 1-.2 1.4-.5 1.4-2.4.2-4 .8-5.4 1.7-1.3 1-2 2.3-2 4 0 .7.3 1.7.8 3l21 47.2 12-22.4L52 41c-2-4-3.6-6.8-5-8-1.2-1.2-3-2-5.7-2.2-.3 0-.5 0-.7-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.7-1.4 2.2 0 4.3 0 6.2.3 1.8.2 3.7.3 5.8.3 2 0 4.2 0 6.4-.3 2.4-.2 4.6-.3 7-.3.4 0 .7.5.7 1.4 0 1 0 1.4-.5 1.4-4.5.3-6.8 1.6-6.8 4 0 1 .5 2.5 1.6 4.6l7.3 15L76 40.5c1-2 1.5-3.5 1.5-4.8 0-3-2.2-4.8-6.7-5-.5 0-.7-.4-.7-1.4 0-.3.2-.6.4-1 .2-.3.4-.4.6-.4 1.6 0 3.6 0 6 .3l5.5.3c1 0 2.6 0 4.6-.3l6.4-.3c.4 0 .6.4.6 1.2 0 1-.3 1.6-1 1.6-2.7.3-4.8 1-6.4 2.2-1.6 1.2-3.6 4-6 8l-9.7 18 13 26.8 19.5-45c.7-1.8 1-3.3 1-4.7 0-3.2-2.2-5-6.7-5.2-.3 0-.5-.4-.5-1.4 0-1 .3-1.4 1-1.4 1.5 0 3.5 0 5.8.3l5.2.3c1.5 0 3.2 0 5.2-.3l5.4-.3c.6 0 .8.4.8 1.2z"/></svg>',
+//        props: ['size']
+//    });
 
-    Vue.component('family', {
-        template: document.getElementById('template-family').innerHTML,
-        props: ['db', 'node'],
-        data(){
-            return {
-                expanded: false,
-                config: config
-            }
-        },
-        computed: {
-            nd() {
-                return this.node || d3.stratify()
-                        .parentId(d => d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root')
-                        (d3.merge([Object.keys(this.db.family).map(k => ({
-                            id: k,
-                            expanded: false,
-                            data: this.db.family[k]
-                        })), [{id: 'root'}]]))
-            }
-        },
-        watch: {
-            'config.hash': function (newVal) {
-                if (this.db && (newVal.indexOf('family-') > -1)) {
-                    iter(this);
+        Vue.component('family', {
+            template: document.getElementById('template-family').innerHTML,
+            props: ['db', 'node'],
+            data(){
+                return {
+                    expanded: false,
+                    config: config
+                }
+            },
+            computed: {
+                nd() {
+                    return this.node || d3.stratify()
+                            .parentId(d => d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root')
+                            (d3.merge([Object.keys(this.db.family).map(k => ({
+                                id: k,
+                                expanded: false,
+                                data: this.db.family[k]
+                            })), [{id: 'root'}]]))
+                }
+            },
+            watch: {
+                'config.hash': function (newVal) {
+                    if (this.db && (newVal.indexOf('family-') > -1)) {
+                        iter(this);
 
-                    function iter(node) {
-                        node.$children.forEach(c => {
-                            c.expanded = false;
-                            iter(c);
+                        function iter(node) {
+                            node.$children.forEach(c => {
+                                c.expanded = false;
+                                iter(c);
+                            });
+                        }
+                    }
+
+                    if (this.node && (newVal === ('family-' + this.node.id))) {
+                        this.expanded = true;
+                        var p = this;
+
+                        while ((p = p.$parent) && p.$vnode && p.$vnode.componentOptions.tag === 'family') {
+                            p.expanded = true;
+                        }
+
+                        Vue.nextTick(() => {
+                            var u = location.href;
+                            location.href = u;
                         });
                     }
                 }
-
-                if (this.node && (newVal === ('family-' + this.node.id))) {
-                    this.expanded = true;
-                    var p = this;
-
-                    while ((p = p.$parent) && p.$vnode && p.$vnode.componentOptions.tag === 'family') {
-                        p.expanded = true;
-                    }
-
-                    Vue.nextTick(() => {
-                        var u = location.href;
-                        location.href = u;
-                    });
-                }
             }
-        }
-    });
+        });
 
     new Vue({
         el: '#app',
