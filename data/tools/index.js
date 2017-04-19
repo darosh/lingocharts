@@ -378,6 +378,7 @@ function getFamily(kk) {
         f.forEach((d, i) => {
             dicFamily[d.id] = dicFamily[d.id] || {};
             dicFamily[d.id].name = d.name;
+            dicFamily[d.id].geo = d.geo;
             dicFamily[d.id].parent = i > 0 ? f[i - 1].id : null
         });
 

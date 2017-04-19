@@ -6807,6 +6807,7 @@
     "abkh1243": {"name": "Abkhaz-Abaza", "parent": "abkh1242", "id": "abkh1243"},
     "abkh1244": {
       "name": "Abkhazian",
+      "geo": [43.056218, 41.159115],
       "parent": "abkh1243",
       "iso23": "ab",
       "iso3": "abk",
@@ -6815,6 +6816,7 @@
     "circ1239": {"name": "Circassian", "parent": "abkh1242", "id": "circ1239"},
     "adyg1241": {
       "name": "Adyghe",
+      "geo": [44, 39.33],
       "parent": "circ1239",
       "iso23": "ady",
       "iso3": "ady",
@@ -6829,6 +6831,7 @@
     "afri1273": {"name": "Afrikaansic", "parent": "wese1235", "id": "afri1273"},
     "afri1274": {
       "name": "Afrikaans",
+      "geo": [-22, 30],
       "parent": "afri1273",
       "iso23": "af",
       "iso3": "afr",
@@ -6844,6 +6847,7 @@
     "akan1251": {"name": "Akanic", "parent": "cent2262", "id": "akan1251"},
     "akan1250": {
       "name": "Akan",
+      "geo": [6.34756, -1.33254],
       "parent": "akan1251",
       "iso23": "ak",
       "iso3": "aka",
@@ -6858,6 +6862,7 @@
     "amha1244": {"name": "Amharic-Argobba", "parent": "tran1288", "id": "amha1244"},
     "amha1245": {
       "name": "Amharic",
+      "geo": [11.708182, 39.543456],
       "parent": "amha1244",
       "iso23": "am",
       "iso3": "amh",
@@ -6881,6 +6886,7 @@
     "assa1262": {"name": "Eastern Kamta", "parent": "kamt1240", "id": "assa1262"},
     "assa1263": {
       "name": "Assamese",
+      "geo": [26.0876, 91.2932],
       "parent": "assa1262",
       "iso23": "as",
       "iso3": "asm",
@@ -6899,6 +6905,7 @@
     "astu1244": {"name": "Asturo-Leonese", "parent": "west2838", "id": "astu1244"},
     "astu1245": {
       "name": "Asturian",
+      "geo": [42.4181, -6.02227],
       "parent": "astu1244",
       "iso23": "ast",
       "iso3": "ast",
@@ -6909,6 +6916,7 @@
     "avar1255": {"name": "Avar-Andic-Tsezic", "parent": "dagh1238", "id": "avar1255"},
     "avar1256": {
       "name": "Avar",
+      "geo": [41.7047, 46.558],
       "parent": "avar1255",
       "iso23": "av",
       "iso3": "ava",
@@ -6938,6 +6946,7 @@
     "nort2696": {"name": "North Kipchak", "parent": "kipc1239", "id": "nort2696"},
     "bash1264": {
       "name": "Bashkir",
+      "geo": [53.5967, 56.5594],
       "parent": "nort2696",
       "iso23": "ba",
       "iso3": "bak",
@@ -6959,6 +6968,7 @@
     "east1426": {"name": "East Slavic", "parent": "slav1255", "id": "east1426"},
     "bela1254": {
       "name": "Belarusian",
+      "geo": [53.2307, 25.6038],
       "parent": "east1426",
       "iso23": "be",
       "iso3": "bel",
@@ -6969,6 +6979,7 @@
     "mace1252": {"name": "Macedo-Bulgarian", "parent": "east2269", "id": "mace1252"},
     "bulg1262": {
       "name": "Bulgarian",
+      "geo": [43.3646, 25.047],
       "parent": "mace1252",
       "iso23": "bg",
       "iso3": "bul",
@@ -6983,6 +6994,7 @@
     "earl1243": {"name": "Early Melanesian Pidgin", "parent": "paci1280", "id": "earl1243"},
     "bisl1239": {
       "name": "Bislama",
+      "geo": [-15.4, 166.89],
       "parent": "earl1243",
       "iso23": "bi",
       "iso3": "bis",
@@ -6994,6 +7006,7 @@
     "bala1300": {"name": "Balanta", "parent": "bakk1238", "id": "bala1300"},
     "bala1302": {
       "name": "Balanta-Ganja",
+      "geo": [12.5382, -15.6658],
       "parent": "bala1300",
       "iso23": "bjt",
       "iso3": "bjt",
@@ -7002,6 +7015,7 @@
     "gaud1238": {"name": "Gauda-Banga", "parent": "gaud1237", "id": "gaud1238"},
     "beng1280": {
       "name": "Bengali",
+      "geo": [24, 90],
       "parent": "gaud1238",
       "iso23": "bn",
       "iso3": "ben",
@@ -7014,6 +7028,7 @@
     "tibe1276": {"name": "Tibetic", "parent": "oldm1245", "id": "tibe1276"},
     "tibe1272": {
       "name": "Tibetan",
+      "geo": [28.3681, 90.1872],
       "parent": "tibe1276",
       "iso23": "bo",
       "iso3": "bod",
@@ -7023,6 +7038,7 @@
     "sout1528": {"name": "Serbian-Croatian-Bosnian", "parent": "west2804", "id": "sout1528"},
     "bosn1245": {
       "name": "Bosnian",
+      "geo": [42.9331, 17.6704],
       "parent": "sout1528",
       "iso23": "bs",
       "iso3": "bos",
@@ -7034,6 +7050,7 @@
     "bass1263": {"name": "Bassari-Bedik-Bapen", "parent": "tend1239", "id": "bass1263"},
     "bass1258": {
       "name": "Bassari-Tanda",
+      "geo": [12.4529, -13.3495],
       "parent": "bass1263",
       "iso23": "bsc",
       "iso3": "bsc",
@@ -7041,6 +7058,7 @@
     },
     "stan1289": {
       "name": "Catalan",
+      "geo": [41.453, 1.569],
       "parent": "sout3183",
       "iso23": "ca",
       "iso3": "cat",
@@ -7050,6 +7068,7 @@
     "chec1244": {"name": "Chechen-Ingush", "parent": "nakh1246", "id": "chec1244"},
     "chec1245": {
       "name": "Chechen",
+      "geo": [43.5, 45.5],
       "parent": "chec1244",
       "iso23": "ce",
       "iso3": "che",
@@ -7063,6 +7082,7 @@
     "bisa1268": {"name": "Bisayan", "parent": "cent2246", "id": "bisa1268"},
     "cebu1242": {
       "name": "Cebuano",
+      "geo": [8.38799, 124.367],
       "parent": "bisa1268",
       "iso23": "ceb",
       "iso3": "ceb",
@@ -7070,6 +7090,7 @@
     },
     "cham1312": {
       "name": "Chamorro",
+      "geo": [15.233333, 145.75],
       "parent": "mala1545",
       "iso23": "ch",
       "iso3": "cha",
@@ -7079,6 +7100,7 @@
     "kurd1259": {"name": "Kurdish", "parent": "laki1246", "id": "kurd1259"},
     "cent1972": {
       "name": "Central Kurdish",
+      "geo": [35.6539, 45.8077],
       "parent": "kurd1259",
       "iso23": "ckb",
       "iso3": "ckb",
@@ -7089,6 +7111,7 @@
     "czec1261": {"name": "Czech-Lach", "parent": "czec1260", "id": "czec1261"},
     "czec1258": {
       "name": "Czech",
+      "geo": [49.873398, 15.10437],
       "parent": "czec1261",
       "iso23": "cs",
       "iso3": "ces",
@@ -7097,6 +7120,7 @@
     "lech1241": {"name": "Lechitic", "parent": "west2792", "id": "lech1241"},
     "kash1274": {
       "name": "Kashubian",
+      "geo": [54.2996, 18.6163],
       "parent": "lech1241",
       "iso23": "csb",
       "iso3": "csb",
@@ -7110,6 +7134,7 @@
     "oldm1247": {"name": "Old-Modern Welsh", "parent": "bryt1239", "id": "oldm1247"},
     "wels1247": {
       "name": "Welsh",
+      "geo": [52, -4],
       "parent": "oldm1247",
       "iso23": "cy",
       "iso3": "cym",
@@ -7119,6 +7144,7 @@
     "sout3248": {"name": "South Scandinavian", "parent": "nort3160", "id": "sout3248"},
     "dani1285": {
       "name": "Danish",
+      "geo": [54.8655, 9.36284],
       "parent": "sout3248",
       "iso23": "da",
       "iso3": "dan",
@@ -7127,6 +7153,7 @@
     "high1287": {"name": "High Franconian", "parent": "fran1268", "id": "high1287"},
     "stan1295": {
       "name": "German",
+      "geo": [48.649, 12.4676],
       "parent": "high1287",
       "iso23": "de",
       "iso3": "deu",
@@ -7135,6 +7162,7 @@
     "sinh1245": {"name": "Dhivehi-Sinhala", "parent": "indo1321", "id": "sinh1245"},
     "dhiv1236": {
       "name": "Dhivehi",
+      "geo": [1.928498, 73.54433],
       "parent": "sinh1245",
       "iso23": "dv",
       "iso3": "div",
@@ -7144,6 +7172,7 @@
     "jola1264": {"name": "Jola", "parent": "jool1234", "id": "jola1264"},
     "jola1263": {
       "name": "Jola-Fonyi",
+      "geo": [12.75752, -15.7354766667],
       "parent": "jola1264",
       "iso23": "dyo",
       "iso3": "dyo",
@@ -7154,6 +7183,7 @@
     "nucl1307": {"name": "Nuclear Dzongkhic", "parent": "dzon1238", "id": "nucl1307"},
     "dzon1239": {
       "name": "Dzongkha",
+      "geo": [27.410786, 89.581604],
       "parent": "nucl1307",
       "iso23": "dz",
       "iso3": "dzo",
@@ -7163,6 +7193,7 @@
     "west2802": {"name": "Western Gbe", "parent": "gbee1241", "id": "west2802"},
     "ewee1241": {
       "name": "Ewe",
+      "geo": [6.46061, 0.814975],
       "parent": "west2802",
       "iso23": "ee",
       "iso3": "ewe",
@@ -7173,6 +7204,7 @@
     "koin1234": {"name": "Koineic Greek", "parent": "gree1276", "id": "koin1234"},
     "mode1248": {
       "name": "Modern Greek",
+      "geo": [42.3224, 24.8699],
       "parent": "koin1234",
       "iso23": "el",
       "iso3": "ell",
@@ -7180,6 +7212,7 @@
     },
     "stan1293": {
       "name": "English",
+      "geo": [53, -1],
       "parent": "macr1271",
       "iso23": "en",
       "iso3": "eng",
@@ -7188,6 +7221,7 @@
     "cast1243": {"name": "Castilic", "parent": "west2838", "id": "cast1243"},
     "stan1288": {
       "name": "Spanish",
+      "geo": [40.4414, -1.11788],
       "parent": "cast1243",
       "iso23": "es",
       "iso3": "spa",
@@ -7197,12 +7231,19 @@
     "finn1317": {"name": "Finnic", "parent": "ural1272", "id": "finn1317"},
     "esto1258": {
       "name": "Estonian",
+      "geo": [58.55, 25.82],
       "parent": "finn1317",
       "iso23": "et",
       "iso3": "est",
       "id": "esto1258"
     },
-    "basq1248": {"name": "Basque", "iso23": "eu", "iso3": "eus", "id": "basq1248"},
+    "basq1248": {
+      "name": "Basque",
+      "geo": [43.2787, -1.31622],
+      "iso23": "eu",
+      "iso3": "eus",
+      "id": "basq1248"
+    },
     "sout3157": {"name": "Southwestern Iranian", "parent": "iran1269", "id": "sout3157"},
     "midd1352": {"name": "Middle-Modern Persian", "parent": "sout3157", "id": "midd1352"},
     "mode1259": {"name": "Modern Southwestern Iranian", "parent": "midd1352", "id": "mode1259"},
@@ -7224,6 +7265,7 @@
     "nucl1717": {"name": "Nuclear Finnish", "parent": "finn1317", "id": "nucl1717"},
     "finn1318": {
       "name": "Finnish",
+      "geo": [64.7628, 25.5577],
       "parent": "nucl1717",
       "iso23": "fi",
       "iso3": "fin",
@@ -7233,6 +7275,7 @@
     "taga1269": {"name": "Tagalog-Filipino", "parent": "taga1280", "id": "taga1269"},
     "fili1244": {
       "name": "Filipino",
+      "geo": [12.265, 123.464],
       "parent": "taga1269",
       "iso23": "fil",
       "iso3": "fil",
@@ -7250,6 +7293,7 @@
     "east2446": {"name": "East Fijian", "parent": "east2445", "id": "east2446"},
     "fiji1243": {
       "name": "Fijian",
+      "geo": [-18, 178.33],
       "parent": "east2446",
       "iso23": "fj",
       "iso3": "fij",
@@ -7259,6 +7303,7 @@
     "icel1246": {"name": "Icelandic-Faroese", "parent": "west2805", "id": "icel1246"},
     "faro1244": {
       "name": "Faroese",
+      "geo": [62.0732, -6.88497],
       "parent": "icel1246",
       "iso23": "fo",
       "iso3": "fao",
@@ -7272,6 +7317,7 @@
     "glob1239": {"name": "Global French", "parent": "macr1273", "id": "glob1239"},
     "stan1290": {
       "name": "French",
+      "geo": [48, 2],
       "parent": "glob1239",
       "iso23": "fr",
       "iso3": "fra",
@@ -7280,6 +7326,7 @@
     "fris1239": {"name": "Frisian", "parent": "angl1264", "id": "fris1239"},
     "west2354": {
       "name": "Western Frisian",
+      "geo": [53.143, 5.86091],
       "parent": "fris1239",
       "iso23": "fy",
       "iso3": "fry",
@@ -7289,6 +7336,7 @@
     "west2822": {"name": "Western Goidelic", "parent": "goid1240", "id": "west2822"},
     "iris1253": {
       "name": "Irish",
+      "geo": [53.2186, -7.61509],
       "parent": "west2822",
       "iso23": "ga",
       "iso3": "gle",
@@ -7297,6 +7345,7 @@
     "gada1257": {"name": "Ga-Dangme", "parent": "kwav1236", "id": "gada1257"},
     "gaaa1244": {
       "name": "Ga",
+      "geo": [5.65488, -0.18598],
       "parent": "gada1257",
       "iso23": "gaa",
       "iso3": "gaa",
@@ -7305,6 +7354,7 @@
     "east2734": {"name": "Eastern Goidelic", "parent": "goid1240", "id": "east2734"},
     "scot1245": {
       "name": "Scottish Gaelic",
+      "geo": [56.7574, -5.24366],
       "parent": "east2734",
       "iso23": "gd",
       "iso3": "gla",
@@ -7315,6 +7365,7 @@
     "cent2276": {"name": "Central Micronesian", "parent": "micr1244", "id": "cent2276"},
     "gilb1244": {
       "name": "Gilbertese",
+      "geo": [-1.34, 176.44],
       "parent": "cent2276",
       "iso23": "gil",
       "iso3": "gil",
@@ -7323,6 +7374,7 @@
     "gali1263": {"name": "Galician Romance", "parent": "west2838", "id": "gali1263"},
     "gali1258": {
       "name": "Galician",
+      "geo": [42.2446, -7.5343],
       "parent": "gali1263",
       "iso23": "gl",
       "iso3": "glg",
@@ -7347,6 +7399,7 @@
     "alem1243": {"name": "Alemannic", "parent": "uppe1397", "id": "alem1243"},
     "swis1247": {
       "name": "Swiss German",
+      "geo": [47.0516, 8.46419],
       "parent": "alem1243",
       "iso23": "gsw",
       "iso3": "gsw",
@@ -7362,6 +7415,7 @@
     "guja1256": {"name": "Gujaratic", "parent": "guja1255", "id": "guja1256"},
     "guja1252": {
       "name": "Gujarati",
+      "geo": [22.687, 71.0962],
       "parent": "guja1256",
       "iso23": "gu",
       "iso3": "guj",
@@ -7369,6 +7423,7 @@
     },
     "manx1243": {
       "name": "Manx",
+      "geo": [54.2604, -4.45437],
       "parent": "east2734",
       "iso23": "gv",
       "iso3": "glv",
@@ -7395,6 +7450,7 @@
     "cent2062": {"name": "Central Eastern Polynesian", "parent": "east2449", "id": "cent2062"},
     "hawa1245": {
       "name": "Hawaiian",
+      "geo": [19.6297, -155.43],
       "parent": "cent2062",
       "iso23": "haw",
       "iso3": "haw",
@@ -7405,6 +7461,7 @@
     "hebr1246": {"name": "Hebrewic", "parent": "cana1267", "id": "hebr1246"},
     "hebr1245": {
       "name": "Modern Hebrew",
+      "geo": [31.1056, 35.0179],
       "parent": "hebr1246",
       "iso23": "he",
       "iso3": "heb",
@@ -7414,6 +7471,7 @@
     "hind1270": {"name": "Hindustani", "parent": "west2812", "id": "hind1270"},
     "hind1269": {
       "name": "Hindi",
+      "geo": [25, 77],
       "parent": "hind1270",
       "iso23": "hi",
       "iso3": "hin",
@@ -7421,6 +7479,7 @@
     },
     "fiji1242": {
       "name": "Fiji Hindi",
+      "geo": [-17.8148, 177.772],
       "parent": "hind1270",
       "iso23": "hif",
       "iso3": "hif",
@@ -7431,6 +7490,7 @@
     "capi1240": {"name": "Capiznon-Ilonggo-Kawayan", "parent": "peri1261", "id": "capi1240"},
     "hili1240": {
       "name": "Hiligaynon",
+      "geo": [10.4018, 122.974],
       "parent": "capi1240",
       "iso23": "hil",
       "iso3": "hil",
@@ -7440,6 +7500,7 @@
     "motu1248": {"name": "Motu based pidgin", "parent": "pidg1258", "id": "motu1248"},
     "hiri1237": {
       "name": "Hiri Motu",
+      "geo": [-9.33333, 147.083],
       "parent": "motu1248",
       "iso23": "ho",
       "iso3": "hmo",
@@ -7447,6 +7508,7 @@
     },
     "croa1245": {
       "name": "Croatian",
+      "geo": [45.2006, 16.826],
       "parent": "sout1528",
       "iso23": "hr",
       "iso3": "hrv",
@@ -7455,6 +7517,7 @@
     "circ1240": {"name": "Circum-Caribbean French", "parent": "macr1273", "id": "circ1240"},
     "hait1244": {
       "name": "Haitian",
+      "geo": [18.795135, -72.136115],
       "parent": "circ1240",
       "iso23": "ht",
       "iso3": "hat",
@@ -7462,6 +7525,7 @@
     },
     "hung1274": {
       "name": "Hungarian",
+      "geo": [46.9068585714, 19.6555271429],
       "parent": "ural1272",
       "iso23": "hu",
       "iso3": "hun",
@@ -7471,6 +7535,7 @@
     "east2768": {"name": "Eastern-Western Armenian", "parent": "arme1241", "id": "east2768"},
     "nucl1235": {
       "name": "Armenian",
+      "geo": [40, 45],
       "parent": "east2768",
       "iso23": "hy",
       "iso3": "hye",
@@ -7489,6 +7554,7 @@
     },
     "indo1316": {
       "name": "Indonesian",
+      "geo": [-7.33458, 109.716],
       "parent": "indo1326",
       "iso23": "id",
       "iso3": "ind",
@@ -7499,6 +7565,7 @@
     "inui1246": {"name": "Inuit", "parent": "eski1265", "id": "inui1246"},
     "west2618": {
       "name": "Western Canadian Inuktitut",
+      "geo": [64.3486, -96.148],
       "parent": "inui1246",
       "iso23": "ikt",
       "iso3": "ikt",
@@ -7507,6 +7574,7 @@
     "nort3238": {"name": "Northern Luzon", "parent": "mala1545", "id": "nort3238"},
     "ilok1237": {
       "name": "Iloko",
+      "geo": [15.9361, 120.993],
       "parent": "nort3238",
       "iso23": "ilo",
       "iso3": "ilo",
@@ -7514,6 +7582,7 @@
     },
     "ingu1240": {
       "name": "Ingush",
+      "geo": [42.9525, 44.158],
       "parent": "chec1244",
       "iso23": "inh",
       "iso3": "inh",
@@ -7521,6 +7590,7 @@
     },
     "icel1247": {
       "name": "Icelandic",
+      "geo": [63.4837, -19.0212],
       "parent": "icel1246",
       "iso23": "is",
       "iso3": "isl",
@@ -7530,6 +7600,7 @@
     "ital1287": {"name": "Italian Romance", "parent": "ital1286", "id": "ital1287"},
     "ital1282": {
       "name": "Italian",
+      "geo": [43.0464, 12.6489],
       "parent": "ital1287",
       "iso23": "it",
       "iso3": "ita",
@@ -7537,6 +7608,7 @@
     },
     "east2534": {
       "name": "Eastern Canadian Inuktitut",
+      "geo": [62.1735, -75.6139],
       "parent": "inui1246",
       "iso23": "iu",
       "iso3": "iku",
@@ -7547,6 +7619,7 @@
     "japa1258": {"name": "Japan-Taiwan Japanese", "parent": "japa1256", "id": "japa1258"},
     "nucl1643": {
       "name": "Japanese",
+      "geo": [35, 135],
       "parent": "japa1258",
       "iso23": "ja",
       "iso3": "jpn",
@@ -7557,6 +7630,7 @@
     "geor1253": {"name": "Georgic", "parent": "geor1252", "id": "geor1253"},
     "nucl1302": {
       "name": "Georgian",
+      "geo": [41.850397, 43.78613],
       "parent": "geor1253",
       "iso23": "ka",
       "iso3": "kat",
@@ -7564,6 +7638,7 @@
     },
     "kaba1278": {
       "name": "Kabardian",
+      "geo": [43.5082, 43.3918],
       "parent": "circ1239",
       "iso23": "kbd",
       "iso3": "kbd",
@@ -7591,6 +7666,7 @@
     "khas1275": {"name": "Khasi-Pnar", "parent": "khas1274", "id": "khas1275"},
     "khas1269": {
       "name": "Khasi",
+      "geo": [24.977, 91.9998],
       "parent": "khas1275",
       "iso23": "kha",
       "iso3": "kha",
@@ -7599,6 +7675,7 @@
     "sout2701": {"name": "South Kipchak", "parent": "kipc1239", "id": "sout2701"},
     "kaza1248": {
       "name": "Kazakh",
+      "geo": [41.8729, 65.7709],
       "parent": "sout2701",
       "iso23": "kk",
       "iso3": "kaz",
@@ -7606,6 +7683,7 @@
     },
     "kala1399": {
       "name": "Kalaallisut",
+      "geo": [69.3761, -52.864],
       "parent": "inui1246",
       "iso23": "kl",
       "iso3": "kal",
@@ -7614,6 +7692,7 @@
     "khme1253": {"name": "Khmeric", "parent": "aust1305", "id": "khme1253"},
     "cent1989": {
       "name": "Central Khmer",
+      "geo": [12.0515, 105.015],
       "parent": "khme1253",
       "iso23": "km",
       "iso3": "khm",
@@ -7628,6 +7707,7 @@
     "kann1255": {"name": "Nuclear Kannaoid", "parent": "kann1259", "id": "kann1255"},
     "nucl1305": {
       "name": "Kannada",
+      "geo": [13.5878, 76.1198],
       "parent": "kann1255",
       "iso23": "kn",
       "iso3": "kan",
@@ -7636,6 +7716,7 @@
     "manj1250": {"name": "Manjaku-Mankanya-Pepel", "parent": "jool1234", "id": "manj1250"},
     "mank1251": {
       "name": "Mankanya",
+      "geo": [12.2615066667, -15.74389],
       "parent": "manj1250",
       "iso23": "knf",
       "iso3": "knf",
@@ -7644,6 +7725,7 @@
     "kore1284": {"name": "Koreanic", "id": "kore1284"},
     "kore1280": {
       "name": "Korean",
+      "geo": [37.5, 128],
       "parent": "kore1284",
       "iso23": "ko",
       "iso3": "kor",
@@ -7659,6 +7741,7 @@
     },
     "komi1269": {
       "name": "Komi-Permyak",
+      "geo": [59.6602, 54.7959],
       "parent": "komi1267",
       "iso23": "koi",
       "iso3": "koi",
@@ -7675,6 +7758,7 @@
     "west1472": {"name": "West Kipchak", "parent": "kipc1239", "id": "west1472"},
     "kara1465": {
       "name": "Karachay-Balkar",
+      "geo": [43.565, 42.2606],
       "parent": "west1472",
       "iso23": "krc",
       "iso3": "krc",
@@ -7683,6 +7767,7 @@
     "indo1324": {"name": "Indo-Aryan Northwestern zone", "parent": "indo1321", "id": "indo1324"},
     "kash1277": {
       "name": "Kashmiri",
+      "geo": [34.166825, 74.330455],
       "parent": "indo1324",
       "iso23": "ks",
       "iso3": "kas",
@@ -7690,6 +7775,7 @@
     },
     "kumy1244": {
       "name": "Kumyk",
+      "geo": [43, 47],
       "parent": "west1472",
       "iso23": "kum",
       "iso3": "kum",
@@ -7697,6 +7783,7 @@
     },
     "kirg1245": {
       "name": "Kirghiz",
+      "geo": [42, 74],
       "parent": "sout2701",
       "iso23": "ky",
       "iso3": "kir",
@@ -7705,6 +7792,7 @@
     "midd1319": {"name": "Middle Franconian", "parent": "high1287", "id": "midd1319"},
     "luxe1241": {
       "name": "Luxembourgish",
+      "geo": [49.6839, 6.14931],
       "parent": "midd1319",
       "iso23": "lb",
       "iso3": "ltz",
@@ -7712,6 +7800,7 @@
     },
     "lakk1252": {
       "name": "Lak",
+      "geo": [42.1328, 47.0809],
       "parent": "dagh1238",
       "iso23": "lbe",
       "iso3": "lbe",
@@ -7722,6 +7811,7 @@
     "east2367": {"name": "East Lezgic", "parent": "nucl1321", "id": "east2367"},
     "lezg1247": {
       "name": "Lezghian",
+      "geo": [41.5157, 47.8951],
       "parent": "east2367",
       "iso23": "lez",
       "iso3": "lez",
@@ -7738,6 +7828,7 @@
     "ling1269": {"name": "Lingala-Bangala", "parent": "boba1250", "id": "ling1269"},
     "ling1263": {
       "name": "Lingala",
+      "geo": [1.40324, 19.7829],
       "parent": "ling1269",
       "iso23": "ln",
       "iso3": "lin",
@@ -7755,6 +7846,7 @@
     "laot1235": {"name": "Lao-Thai", "parent": "sput1235", "id": "laot1235"},
     "laoo1244": {
       "name": "Lao",
+      "geo": [16.0726, 104.568],
       "parent": "laot1235",
       "iso23": "lo",
       "iso3": "lao",
@@ -7763,6 +7855,7 @@
     "east2280": {"name": "Eastern Baltic", "parent": "balt1263", "id": "east2280"},
     "lith1251": {
       "name": "Lithuanian",
+      "geo": [55.1429, 23.9601],
       "parent": "east2280",
       "iso23": "lt",
       "iso3": "lit",
@@ -7774,6 +7867,7 @@
     "bang1371": {"name": "Bangubangu-Kasai", "parent": "luba1255", "id": "bang1371"},
     "luba1249": {
       "name": "Luba-Lulua",
+      "geo": [-5.72717, 22.4422],
       "parent": "bang1371",
       "iso23": "lua",
       "iso3": "lua",
@@ -7781,6 +7875,7 @@
     },
     "latv1249": {
       "name": "Latvian",
+      "geo": [56.826108, 24.309118],
       "parent": "east2280",
       "iso23": "lv",
       "iso3": "lav",
@@ -7791,6 +7886,7 @@
     "mait1255": {"name": "Maithilic", "parent": "mait1254", "id": "mait1255"},
     "mait1250": {
       "name": "Maithili",
+      "geo": [26.3817, 86.2211],
       "parent": "mait1255",
       "iso23": "mai",
       "iso3": "mai",
@@ -7799,6 +7895,7 @@
     "mord1256": {"name": "Mordvin", "parent": "ural1272", "id": "mord1256"},
     "moks1248": {
       "name": "Moksha",
+      "geo": [54.1855, 42.6728],
       "parent": "mord1256",
       "iso23": "mdf",
       "iso3": "mdf",
@@ -7807,6 +7904,7 @@
     "dana1253": {"name": "Danaw", "parent": "grea1284", "id": "dana1253"},
     "magu1243": {
       "name": "Maguindanao",
+      "geo": [6.9453, 124.509],
       "parent": "dana1253",
       "iso23": "mdh",
       "iso3": "mdh",
@@ -7815,6 +7913,7 @@
     "nort3191": {"name": "North African Arabic", "parent": "arab1395", "id": "nort3191"},
     "hass1238": {
       "name": "Hassaniyya",
+      "geo": [20.1464, -2.40278],
       "parent": "nort3191",
       "iso23": "mey",
       "iso3": "mey",
@@ -7823,6 +7922,7 @@
     "curb1234": {"name": "Cur-Bok-Cotier", "parent": "manj1250", "id": "curb1234"},
     "mand1419": {
       "name": "Mandjak",
+      "geo": [12.829, -15.9217],
       "parent": "curb1234",
       "iso23": "mfv",
       "iso3": "mfv",
@@ -7841,6 +7941,7 @@
     "west2844": {"name": "Western Micronesian", "parent": "cent2276", "id": "west2844"},
     "mars1254": {
       "name": "Marshallese",
+      "geo": [8.72, 167.73],
       "parent": "west2844",
       "iso23": "mh",
       "iso3": "mah",
@@ -7848,6 +7949,7 @@
     },
     "maor1246": {
       "name": "Maori",
+      "geo": [-38.2881, 176.541],
       "parent": "cent2062",
       "iso23": "mi",
       "iso3": "mri",
@@ -7855,6 +7957,7 @@
     },
     "mace1250": {
       "name": "Macedonian",
+      "geo": [41.5957, 21.7932],
       "parent": "mace1252",
       "iso23": "mk",
       "iso3": "mkd",
@@ -7868,6 +7971,7 @@
     "mala1541": {"name": "Malayalamoid", "parent": "tami1298", "id": "mala1541"},
     "mala1464": {
       "name": "Malayalam",
+      "geo": [9.59208, 76.7651],
       "parent": "mala1541",
       "iso23": "ml",
       "iso3": "mal",
@@ -7888,6 +7992,7 @@
     "mara1416": {"name": "Marathic", "parent": "maha1307", "id": "mara1416"},
     "mara1378": {
       "name": "Marathi",
+      "geo": [17.9344, 76.6665],
       "parent": "mara1416",
       "iso23": "mr",
       "iso3": "mar",
@@ -7895,6 +8000,7 @@
     },
     "malt1254": {
       "name": "Maltese",
+      "geo": [35.8884, 14.4508],
       "parent": "nort3191",
       "iso23": "mt",
       "iso3": "mlt",
@@ -7908,6 +8014,7 @@
     "oldm1246": {"name": "Old-Modern Burmese", "parent": "nucl1730", "id": "oldm1246"},
     "nucl1310": {
       "name": "Burmese",
+      "geo": [20.7926, 93.9665],
       "parent": "oldm1246",
       "iso23": "my",
       "iso3": "mya",
@@ -7915,6 +8022,7 @@
     },
     "erzy1239": {
       "name": "Erzya",
+      "geo": [52.8548, 45.3901],
       "parent": "mord1256",
       "iso23": "myv",
       "iso3": "myv",
@@ -7922,14 +8030,21 @@
     },
     "naur1243": {
       "name": "Nauru",
+      "geo": [-0.52957, 166.922],
       "parent": "micr1243",
       "iso23": "na",
       "iso3": "nau",
       "id": "naur1243"
     },
-    "norw1258": {"name": "Norwegian", "parent": "west2805", "id": "norw1258"},
+    "norw1258": {
+      "name": "Norwegian",
+      "geo": [59.92, 10.71],
+      "parent": "west2805",
+      "id": "norw1258"
+    },
     "norw1259": {
       "name": "Norwegian Bokmål",
+      "geo": [61.112, 8.886],
       "parent": "norw1258",
       "iso23": "nb",
       "iso3": "nob",
@@ -7942,6 +8057,7 @@
     "ngun1267": {"name": "Southern Ndebele-Lowland", "parent": "ngun1276", "id": "ngun1267"},
     "nort2795": {
       "name": "Zimbabwean Ndebele",
+      "geo": [-20.2513, 27.4096],
       "parent": "ngun1267",
       "iso23": "nd",
       "iso3": "nde",
@@ -7950,6 +8066,7 @@
     "indo1310": {"name": "Indo-Aryan Northern zone", "parent": "indo1321", "id": "indo1310"},
     "east1436": {
       "name": "Eastern Pahari",
+      "geo": [27.5947033333, 87.6200833333],
       "parent": "indo1310",
       "iso23": "ne",
       "iso3": "nep",
@@ -7958,6 +8075,7 @@
     "tong1324": {"name": "Tongic", "parent": "poly1242", "id": "tong1324"},
     "niue1239": {
       "name": "Niuean",
+      "geo": [-19.06, -169.86],
       "parent": "tong1324",
       "iso23": "niu",
       "iso3": "niu",
@@ -7968,6 +8086,7 @@
     "mode1257": {"name": "Modern Dutch", "parent": "midd1347", "id": "mode1257"},
     "dutc1256": {
       "name": "Dutch",
+      "geo": [52, 5],
       "parent": "mode1257",
       "iso23": "nl",
       "iso3": "nld",
@@ -7982,6 +8101,7 @@
     },
     "sout2808": {
       "name": "Sumayela Ndebele",
+      "geo": [-25.6272, 29.048],
       "parent": "ngun1276",
       "iso23": "nr",
       "iso3": "nbl",
@@ -7995,6 +8115,7 @@
     "sepe1241": {"name": "Sepedic", "parent": "nort3233", "id": "sepe1241"},
     "pedi1238": {
       "name": "Pedi",
+      "geo": [-24.7993, 29.4718],
       "parent": "sepe1241",
       "iso23": "nso",
       "iso3": "nso",
@@ -8004,6 +8125,7 @@
     "nyan1319": {"name": "Nyanjaic", "parent": "tumb1253", "id": "nyan1319"},
     "nyan1308": {
       "name": "Nyanja",
+      "geo": [-14.8047, 32.8108],
       "parent": "nyan1319",
       "iso23": "ny",
       "iso3": "nya",
@@ -8020,6 +8142,7 @@
     "osse1245": {"name": "Ossetic", "parent": "sogd1247", "id": "osse1245"},
     "osse1243": {
       "name": "Ossetian",
+      "geo": [41.7882, 43.2674],
       "parent": "osse1245",
       "iso23": "os",
       "iso3": "oss",
@@ -8029,6 +8152,7 @@
     "east2727": {"name": "Eastern Panjabic", "parent": "sind1278", "id": "east2727"},
     "panj1256": {
       "name": "Eastern Panjabi",
+      "geo": [30.0368, 75.6702],
       "parent": "east2727",
       "iso23": "pa",
       "iso3": "pan",
@@ -8040,6 +8164,7 @@
     "west2550": {"name": "West Southern Cordilleran", "parent": "sout2907", "id": "west2550"},
     "pang1290": {
       "name": "Pangasinan",
+      "geo": [15.9377, 120.365],
       "parent": "west2550",
       "iso23": "pag",
       "iso3": "pag",
@@ -8049,6 +8174,7 @@
     "uppe1458": {"name": "Upper Guinea Portuguese", "parent": "macr1272", "id": "uppe1458"},
     "papi1253": {
       "name": "Papiamento",
+      "geo": [12.48485, -69.93988],
       "parent": "uppe1458",
       "iso23": "pap",
       "iso3": "pap",
@@ -8056,6 +8182,7 @@
     },
     "pala1344": {
       "name": "Palauan",
+      "geo": [7.34138, 134.476678],
       "parent": "mala1545",
       "iso23": "pau",
       "iso3": "pau",
@@ -8063,6 +8190,7 @@
     },
     "poli1260": {
       "name": "Polish",
+      "geo": [51.8439, 18.6255],
       "parent": "lech1241",
       "iso23": "pl",
       "iso3": "pol",
@@ -8079,6 +8207,7 @@
     "braz1247": {"name": "Brazil-Portugal Portuguese", "parent": "macr1272", "id": "braz1247"},
     "port1283": {
       "name": "Portuguese",
+      "geo": [39.91, -8.1],
       "parent": "braz1247",
       "iso23": "pt",
       "iso3": "por",
@@ -8093,6 +8222,7 @@
     "quic1275": {"name": "Quiche-Achi", "parent": "core1251", "id": "quic1275"},
     "kich1262": {
       "name": "K'iche'",
+      "geo": [14.5278, -91.1696],
       "parent": "quic1275",
       "iso23": "quc",
       "iso3": "quc",
@@ -8100,6 +8230,7 @@
     },
     "roma1326": {
       "name": "Romansh",
+      "geo": [46.5538, 9.92812],
       "parent": "gall1280",
       "iso23": "rm",
       "iso3": "roh",
@@ -8112,6 +8243,7 @@
     "rwan1241": {"name": "West Highlands Kivu", "parent": "kivu1239", "id": "rwan1241"},
     "rund1242": {
       "name": "Rundi",
+      "geo": [-1.44174, 31.3191],
       "parent": "rwan1241",
       "iso23": "rn",
       "iso3": "run",
@@ -8121,6 +8253,7 @@
     "macr1262": {"name": "Balkan Romance", "parent": "east2714", "id": "macr1262"},
     "roma1327": {
       "name": "Romanian",
+      "geo": [46.3913, 24.2256],
       "parent": "macr1262",
       "iso23": "ro",
       "iso3": "ron",
@@ -8128,6 +8261,7 @@
     },
     "russ1263": {
       "name": "Russian",
+      "geo": [59, 50],
       "parent": "east1426",
       "iso23": "ru",
       "iso3": "rus",
@@ -8135,6 +8269,7 @@
     },
     "kiny1244": {
       "name": "Kinyarwanda",
+      "geo": [-1.56771, 29.6441],
       "parent": "rwan1241",
       "iso23": "rw",
       "iso3": "kin",
@@ -8142,6 +8277,7 @@
     },
     "sans1269": {
       "name": "Sanskrit",
+      "geo": [20, 77],
       "parent": "indo1321",
       "iso23": "sa",
       "iso3": "san",
@@ -8150,6 +8286,7 @@
     "nort2688": {"name": "North Siberian Turkic", "parent": "comm1245", "id": "nort2688"},
     "yaku1245": {
       "name": "Yakut",
+      "geo": [61.6974, 133.98],
       "parent": "nort2688",
       "iso23": "sah",
       "iso3": "sah",
@@ -8161,6 +8298,7 @@
     "sant1457": {"name": "Santalic", "parent": "kher1245", "id": "sant1457"},
     "sant1410": {
       "name": "Santali",
+      "geo": [25.0317, 87.8185],
       "parent": "sant1457",
       "iso23": "sat",
       "iso3": "sat",
@@ -8170,6 +8308,7 @@
     "saaf1239": {"name": "Saafi-Noon-Lehar", "parent": "cang1245", "id": "saaf1239"},
     "saaf1238": {
       "name": "Saafi-Saafi",
+      "geo": [14.625, -17.0568],
       "parent": "saaf1239",
       "iso23": "sav",
       "iso3": "sav",
@@ -8178,6 +8317,7 @@
     "sind1279": {"name": "Sindhic", "parent": "sind1278", "id": "sind1279"},
     "sind1272": {
       "name": "Sindhi",
+      "geo": [26, 69],
       "parent": "sind1279",
       "iso23": "sd",
       "iso3": "snd",
@@ -8188,6 +8328,7 @@
     "cent2240": {"name": "Central Western Saami", "parent": "west2390", "id": "cent2240"},
     "nort2671": {
       "name": "Northern Sami",
+      "geo": [68.725, 22.1113],
       "parent": "cent2240",
       "iso23": "se",
       "iso3": "sme",
@@ -8202,6 +8343,7 @@
     "sang1327": {"name": "Sangoic", "parent": "nucl1737", "id": "sang1327"},
     "sang1328": {
       "name": "Sango",
+      "geo": [6.78584, 20.1702],
       "parent": "sang1327",
       "iso23": "sg",
       "iso3": "sag",
@@ -8210,6 +8352,7 @@
     "sinh1247": {"name": "Sinhalaic", "parent": "sinh1245", "id": "sinh1247"},
     "sinh1246": {
       "name": "Sinhala",
+      "geo": [8, 81],
       "parent": "sinh1247",
       "iso23": "si",
       "iso3": "sin",
@@ -8217,6 +8360,7 @@
     },
     "slov1269": {
       "name": "Slovak",
+      "geo": [48.545705, 18.78479],
       "parent": "czec1260",
       "iso23": "sk",
       "iso3": "slk",
@@ -8224,6 +8368,7 @@
     },
     "slov1268": {
       "name": "Slovenian",
+      "geo": [46.2543, 14.7766],
       "parent": "west2804",
       "iso23": "sl",
       "iso3": "slv",
@@ -8233,6 +8378,7 @@
     "samo1310": {"name": "Samoan-Tokelauan", "parent": "elli1239", "id": "samo1310"},
     "samo1305": {
       "name": "Samoan",
+      "geo": [-13.92, -171.83],
       "parent": "samo1310",
       "iso23": "sm",
       "iso3": "smo",
@@ -8244,6 +8390,7 @@
     "cent2310": {"name": "Central Shona", "parent": "plat1259", "id": "cent2310"},
     "shon1251": {
       "name": "Shona",
+      "geo": [-17.20849, 29.75725],
       "parent": "cent2310",
       "iso23": "sn",
       "iso3": "sna",
@@ -8252,6 +8399,7 @@
     "noon1244": {"name": "Noon-Lehar", "parent": "saaf1239", "id": "noon1244"},
     "noon1242": {
       "name": "Noon",
+      "geo": [14.792, -16.9205],
       "parent": "noon1244",
       "iso23": "snf",
       "iso3": "snf",
@@ -8270,6 +8418,7 @@
     "east2653": {"name": "Eastern Omo-Tana", "parent": "omot1245", "id": "east2653"},
     "soma1255": {
       "name": "Somali",
+      "geo": [4.778704, 45.152856],
       "parent": "east2653",
       "iso23": "so",
       "iso3": "som",
@@ -8284,6 +8433,7 @@
     },
     "serb1264": {
       "name": "Serbian",
+      "geo": [44.3238, 21.9192],
       "parent": "sout1528",
       "iso23": "sr",
       "iso3": "srp",
@@ -8291,6 +8441,7 @@
     },
     "sere1260": {
       "name": "Sereer",
+      "geo": [13.8941, -16.3916],
       "parent": "peul1234",
       "iso23": "srr",
       "iso3": "srr",
@@ -8298,6 +8449,7 @@
     },
     "swat1243": {
       "name": "Swati",
+      "geo": [-26, 31.5],
       "parent": "ngun1267",
       "iso23": "ss",
       "iso3": "ssw",
@@ -8306,6 +8458,7 @@
     "seso1234": {"name": "Sesotho-Lozi", "parent": "soth1252", "id": "seso1234"},
     "sout2807": {
       "name": "Southern Sotho",
+      "geo": [-30.4445, 27.8951],
       "parent": "seso1234",
       "iso23": "st",
       "iso3": "sot",
@@ -8316,6 +8469,7 @@
     "east2781": {"name": "East Swedic", "parent": "east2780", "id": "east2781"},
     "swed1254": {
       "name": "Swedish",
+      "geo": [59.800634, 17.389526],
       "parent": "east2781",
       "iso23": "sv",
       "iso3": "swe",
@@ -8334,6 +8488,7 @@
     "tami1299": {"name": "Tamiloid", "parent": "tami1298", "id": "tami1299"},
     "tami1289": {
       "name": "Tamil",
+      "geo": [10.520219, 78.825989],
       "parent": "tami1299",
       "iso23": "ta",
       "iso3": "tam",
@@ -8343,6 +8498,7 @@
     "telu1265": {"name": "Teluguic", "parent": "sout3139", "id": "telu1265"},
     "telu1262": {
       "name": "Telugu",
+      "geo": [16.4529, 78.7024],
       "parent": "telu1265",
       "iso23": "te",
       "iso3": "tel",
@@ -8354,6 +8510,7 @@
     "tetu1244": {"name": "Tetunic", "parent": "cent2079", "id": "tetu1244"},
     "tetu1245": {
       "name": "Tetum",
+      "geo": [-9.11217, 125.528],
       "parent": "tetu1244",
       "iso23": "tet",
       "iso3": "tet",
@@ -8364,6 +8521,7 @@
     "taji1250": {"name": "Tajikic", "parent": "east2745", "id": "taji1250"},
     "taji1245": {
       "name": "Tajik",
+      "geo": [38.8213, 68.5549],
       "parent": "taji1250",
       "iso23": "tg",
       "iso3": "tgk",
@@ -8371,6 +8529,7 @@
     },
     "thai1261": {
       "name": "Thai",
+      "geo": [14.192, 100.671],
       "parent": "laot1235",
       "iso23": "th",
       "iso3": "tha",
@@ -8379,6 +8538,7 @@
     "tigr1276": {"name": "Tigre-Tigrinya", "parent": "ethi1244", "id": "tigr1276"},
     "tigr1271": {
       "name": "Tigrinya",
+      "geo": [15.3359, 38.9266],
       "parent": "tigr1276",
       "iso23": "ti",
       "iso3": "tir",
@@ -8387,6 +8547,7 @@
     "east2334": {"name": "East Oghuz", "parent": "oghu1243", "id": "east2334"},
     "turk1304": {
       "name": "Turkmen",
+      "geo": [37.0872, 59.1757],
       "parent": "east2334",
       "iso23": "tk",
       "iso3": "tuk",
@@ -8394,6 +8555,7 @@
     },
     "toke1240": {
       "name": "Tokelau",
+      "geo": [-9.227642, -171.780833],
       "parent": "samo1310",
       "iso23": "tkl",
       "iso3": "tkl",
@@ -8402,6 +8564,7 @@
     "tswa1256": {"name": "Tswanaic", "parent": "soth1248", "id": "tswa1256"},
     "tswa1253": {
       "name": "Tswana",
+      "geo": [-24.368, 24.7587],
       "parent": "tswa1256",
       "iso23": "tn",
       "iso3": "tsn",
@@ -8410,6 +8573,7 @@
     "bedi1237": {"name": "Bedik-Bapen", "parent": "bass1263", "id": "bedi1237"},
     "bedi1235": {
       "name": "Bedik",
+      "geo": [12.7531, -12.4796],
       "parent": "bedi1237",
       "iso23": "tnr",
       "iso3": "tnr",
@@ -8417,6 +8581,7 @@
     },
     "tong1325": {
       "name": "Tonga {Tonga Islands}",
+      "geo": [-21.17, -175.25],
       "parent": "tong1324",
       "iso23": "to",
       "iso3": "ton",
@@ -8424,6 +8589,7 @@
     },
     "tokp1240": {
       "name": "Tok Pisin",
+      "geo": [-9.41971, 147.303],
       "parent": "earl1243",
       "iso23": "tpi",
       "iso3": "tpi",
@@ -8432,6 +8598,7 @@
     "nucl1762": {"name": "Nuclear West Oghuz", "parent": "west2406", "id": "nucl1762"},
     "nucl1301": {
       "name": "Turkish",
+      "geo": [39.8667, 32.8667],
       "parent": "nucl1762",
       "iso23": "tr",
       "iso3": "tur",
@@ -8440,6 +8607,7 @@
     "tswa1254": {"name": "Tswa-Ronga {S.50}", "parent": "ngun1275", "id": "tswa1254"},
     "tson1249": {
       "name": "Tsonga",
+      "geo": [-23.5754, 31.8105],
       "parent": "tswa1254",
       "iso23": "ts",
       "iso3": "tso",
@@ -8449,6 +8617,7 @@
     "butu1243": {"name": "Butuan-Tausug", "parent": "sout3175", "id": "butu1243"},
     "taus1251": {
       "name": "Tausug",
+      "geo": [5.12236, 118.88],
       "parent": "butu1243",
       "iso23": "tsg",
       "iso3": "tsg",
@@ -8456,6 +8625,7 @@
     },
     "tata1255": {
       "name": "Tatar",
+      "geo": [55, 50],
       "parent": "nort2696",
       "iso23": "tt",
       "iso3": "tat",
@@ -8463,6 +8633,7 @@
     },
     "tuva1244": {
       "name": "Tuvalu",
+      "geo": [-8.520813, 179.198088],
       "parent": "elli1239",
       "iso23": "tvl",
       "iso3": "tvl",
@@ -8471,6 +8642,7 @@
     "tahi1244": {"name": "Tahitian-Austral", "parent": "cent2062", "id": "tahi1244"},
     "tahi1242": {
       "name": "Tahitian",
+      "geo": [-17.6485, -149.45],
       "parent": "tahi1244",
       "iso23": "ty",
       "iso3": "tah",
@@ -8480,6 +8652,7 @@
     "saya1244": {"name": "Sayan", "parent": "sout2693", "id": "saya1244"},
     "tuvi1240": {
       "name": "Tuvinian",
+      "geo": [48.436, 92.6693],
       "parent": "saya1244",
       "iso23": "tyv",
       "iso3": "tyv",
@@ -8490,6 +8663,7 @@
     "atla1275": {"name": "Atlas Berber", "parent": "kaby1244", "id": "atla1275"},
     "cent2194": {
       "name": "Central Moroccan Berber",
+      "geo": [32.7415, -2.40872],
       "parent": "atla1275",
       "iso23": "tzm",
       "iso3": "tzm",
@@ -8497,6 +8671,7 @@
     },
     "udmu1245": {
       "name": "Udmurt",
+      "geo": [56.12921, 52.63548],
       "parent": "perm1256",
       "iso23": "udm",
       "iso3": "udm",
@@ -8505,6 +8680,7 @@
     "uygh1240": {"name": "Uyghur", "parent": "oghu1246", "id": "uygh1240"},
     "uigh1240": {
       "name": "Uighur",
+      "geo": [43.67, 79.75],
       "parent": "uygh1240",
       "iso23": "ug",
       "iso3": "uig",
@@ -8513,6 +8689,7 @@
     "ukra1257": {"name": "Ukrainian-Rusyn", "parent": "east1426", "id": "ukra1257"},
     "ukra1253": {
       "name": "Ukrainian",
+      "geo": [48.175842, 24.395786],
       "parent": "ukra1257",
       "iso23": "uk",
       "iso3": "ukr",
@@ -8520,6 +8697,7 @@
     },
     "urdu1245": {
       "name": "Urdu",
+      "geo": [25, 67],
       "parent": "hind1270",
       "iso23": "ur",
       "iso3": "urd",
@@ -8534,6 +8712,7 @@
     },
     "vend1245": {
       "name": "Venda",
+      "geo": [-22.188, 29.9523],
       "parent": "soth1250",
       "iso23": "ve",
       "iso3": "ven",
@@ -8543,6 +8722,7 @@
     "viet1251": {"name": "Viet-Muong", "parent": "viet1250", "id": "viet1251"},
     "viet1252": {
       "name": "Vietnamese",
+      "geo": [20.681188, 105.774071],
       "parent": "viet1251",
       "iso23": "vi",
       "iso3": "vie",
@@ -8552,6 +8732,7 @@
     "sama1315": {"name": "Samar-Waray", "parent": "wara1304", "id": "sama1315"},
     "wara1300": {
       "name": "Waray {Philippines}",
+      "geo": [11.4911, 125.012],
       "parent": "sama1315",
       "iso23": "war",
       "iso3": "war",
@@ -8562,6 +8743,7 @@
     "shin1269": {"name": "Shindzwani-Shimaore", "parent": "como1260", "id": "shin1269"},
     "ndzw1235": {
       "name": "Ndzwani Comorian",
+      "geo": [-12.2123, 44.3709],
       "parent": "shin1269",
       "iso23": "wni",
       "iso3": "wni",
@@ -8570,6 +8752,7 @@
     "wolo1247": {"name": "Wolofic", "parent": "nort3148", "id": "wolo1247"},
     "nucl1347": {
       "name": "Wolof",
+      "geo": [15.2534, -15.383],
       "parent": "wolo1247",
       "iso23": "wo",
       "iso3": "wol",
@@ -8578,6 +8761,7 @@
     "zulu1251": {"name": "Zulu-Xhosa", "parent": "ngun1267", "id": "zulu1251"},
     "xhos1239": {
       "name": "Xhosa",
+      "geo": [-31.0389, 28.0769],
       "parent": "zulu1251",
       "iso23": "xh",
       "iso3": "xho",
@@ -8593,6 +8777,7 @@
     "lucu1239": {"name": "Lucumi-Yoruba", "parent": "nucl1747", "id": "lucu1239"},
     "yoru1245": {
       "name": "Yoruba",
+      "geo": [7.15345, 3.67225],
       "parent": "lucu1239",
       "iso23": "yo",
       "iso3": "yor",
@@ -8607,6 +8792,7 @@
     },
     "ngaz1238": {
       "name": "Ngazidja Comorian",
+      "geo": [-11.6129, 43.36],
       "parent": "como1260",
       "iso23": "zdj",
       "iso3": "zdj",
@@ -8621,6 +8807,7 @@
     },
     "zulu1248": {
       "name": "Zulu",
+      "geo": [-25.3305, 31.3512],
       "parent": "zulu1251",
       "iso23": "zu",
       "iso3": "zul",
