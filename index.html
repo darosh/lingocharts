@@ -180,11 +180,11 @@
             cursor: pointer;
         }
 
-        a.click {
+        .click {
             cursor: pointer;
         }
 
-        a.click:hover {
+        click:hover {
             text-decoration: underline;
         }
 
@@ -200,12 +200,9 @@
             height: 20px;
             display: inline-block;
             text-align: center;
-            /*padding: 1px;*/
         }
 
         .glot:after {
-            /*width: 20px;*/
-            /*display: inline-block;*/
             background-color: rgba(0, 0, 0, 0.87);
             color: #fff;
             padding: 0 2px;
@@ -218,13 +215,6 @@
             color: #fff;
             content: 'E';
         }
-
-        /*.wiki {*/
-        /*content: "\e906";*/
-        /*position: relative;*/
-        /*top: -2px;*/
-        /*vertical-align: text-top;*/
-        /*}*/
 
         .family {
             list-style: none;
@@ -287,16 +277,18 @@
 
         [target="_blank"]:not(.icon):after {
             content: ' \e905';
-            /*opacity: 0.75;*/
             font-family: icomoon;
             font-style: normal;
-            /*line-height: 24px;*/
-            /*font-size: 75%;*/
         }
 
         .no-bold-th-body tbody th {
             font-weight: normal;
             font-style: italic;
+        }
+
+        .items {
+            font-weight: normal;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -318,9 +310,7 @@
            :href="'https://www.ethnologue.com/language/' + nd.data.data.iso3" target="_blank" class="icon eth"></a>
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.name"
            :href="'https://en.wikipedia.org/wiki/' + nd.data.data.name + (!nd.children ? ' language' : '')"
-           target="_blank" class="icon icon-wikipedia-w">
-            <!--<wiki size="24" style="margin: -2px -3px -4px -3px"></wiki>-->
-        </a>
+           target="_blank" class="icon icon-wikipedia-w"></a>
         <a v-if="(expanded || !nd.children) && nd.data && nd.data.data && nd.data.data.iso23"
            :href="'#language-' + nd.data.data.iso23">{{nd.data.data.iso23}}</a>
         <li v-for="i in nd.children" :style="{display: (expanded || nd.depth === 0) ? null : 'none'}">
@@ -378,59 +368,63 @@
             </li>
         </ul>
 
-        <h2 id="countries"><a href="#countries">Countries</a></h2>
-
-        <table>
-            <thead>
-            <tr>
-                <th>Flag</th>
-                <th>Code</th>
-                <th style="width: 180px">Name</th>
-                <th>Wiki</th>
-                <th>Likely</th>
-                <th>Population</th>
-                <th>Literacy</th>
-                <th>GDP</th>
-                <th>Internet</th>
-                <th>Mobile</th>
-                <th>Currency<br>
-                <th class="nowrap">Language (population / literacy)
-                    <br>
-                    <small style="font-weight: normal">
-                        <span>de facto official</span>,
-                        <span class="single">official regional</span>,
-                        <span class="double">official</span>,
-                        <b>CLDR</b>
-                    </small>
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="(i, k) in data.country" :id="'country-' + k">
-                <td>
-                    <flag :code="k" style="width: 32px; height: 32px"></flag>
-                </td>
-                <td><a :href="'#country-' + k">{{k}}</a></td>
-                <td><b>{{i.name}}</b></td>
-                <td><a class="icon icon-wikipedia-w" :href="'https://en.wikipedia.org/wiki/' + i.name" target="_blank">
-                    <!--<wiki size="24"></wiki>-->
-                </a></td>
-                <td class="nowrap">{{i.likely}}</td>
-                <td class="right">{{i.population | number}}</td>
-                <td class="right">{{i.literacy | percent}}</td>
-                <td class="right">{{i.gdp | money}}</td>
-                <td class="right">{{i.net | percent}}</td>
-                <td class="right">{{i.cell | percent}}</td>
-                <td>{{i.currency}}</td>
-                <td class="nowrap">
-                    <div v-for="(i, k) in i.language"><a :href="'#language-' + k"
-                                                         :class="{noline: 1, double: i.status === 0, single: i.status === 1, bold: i.cldr}">{{k}}</a>
-                        ({{i.percent}}%{{i.literacy ? (' / ' + i.literacy) + '%' : ''}})
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <sortable :list="data.country">
+            <template slot="table" scope="props">
+                <h2 id="countries"><a href="#countries">Countries</a> <span
+                        class="items">({{props.list.length}})</span>
+                </h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Flag</th>
+                        <th class="click" @click="props.sort('id')">Code</th>
+                        <th class="click" @click="props.sort('name')" style="width: 180px">Name</th>
+                        <th>Wiki</th>
+                        <th class="click" @click="props.sort('likely')">Likely</th>
+                        <th class="click" @click="props.sort('population', true)">Population</th>
+                        <th class="click" @click="props.sort('literacy', true)">Literacy</th>
+                        <th class="click" @click="props.sort('gdp', true)">GDP</th>
+                        <th class="click" @click="props.sort('net', true)">Internet</th>
+                        <th class="click" @click="props.sort('cell', true)">Mobile</th>
+                        <th class="click" @click="props.sort('currency')">Currency</th>
+                        <th class="nowrap">Language (population / literacy)
+                            <br>
+                            <small style="font-weight: normal">
+                                <span>de facto official</span>,
+                                <span class="single">official regional</span>,
+                                <span class="double">official</span>,
+                                <b>CLDR</b>
+                            </small>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="i in props.list" :id="'country-' + i.id">
+                        <td>
+                            <flag :code="i.id" style="width: 32px; height: 32px"></flag>
+                        </td>
+                        <td><a :href="'#country-' + i.id">{{i.id}}</a></td>
+                        <td><b>{{i.name}}</b></td>
+                        <td><a class="icon icon-wikipedia-w" :href="'https://en.wikipedia.org/wiki/' + i.name"
+                               target="_blank"></a></td>
+                        <td class="nowrap">{{i.likely}}</td>
+                        <td class="right">{{i.population | number}}</td>
+                        <td class="right">{{i.literacy | percent}}</td>
+                        <td class="right">{{i.gdp | money}}</td>
+                        <td class="right">{{i.net | percent}}</td>
+                        <td class="right">{{i.cell | percent}}</td>
+                        <td>{{i.currency}}</td>
+                        <td class="nowrap">
+                            <div v-for="(i, k) in i.language"><a :href="'#language-' + k"
+                                                                 :class="{noline: 1, double: i.status === 0, single: i.status === 1, bold: i.cldr}">{{k}}</a>
+                                ({{i.percent}}%{{i.literacy ? (' / ' + i.literacy) + '%' : ''}})
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </sortable>
 
         <hr>
         <h2 id="languages"><a href="#languages">Languages</a></h2>
@@ -465,9 +459,7 @@
                 <td><b>{{i.name}}</b></td>
                 <td>
                     <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'" target="_blank"
-                       class="icon icon-wikipedia-w">
-                        <!--<wiki size="24"></wiki>-->
-                    </a>
+                       class="icon icon-wikipedia-w"></a>
                 </td>
                 <td><a :href="'http://www-01.sil.org/iso639-3/documentation.asp?id=' + i.iso3"
                        target="_blank">{{i.iso3}}</a></td>
@@ -505,9 +497,7 @@
                 <th>Cased</th>
                 <th>Line break letters</th>
                 <th>IME <a href="https://en.wikipedia.org/wiki/Input_method" target="_blank"
-                           class="icon icon-wikipedia-w">
-                    <!--<wiki size="24" style="margin-top: -3px;"></wiki>-->
-                </a></th>
+                           class="icon icon-wikipedia-w"></a></th>
                 <th>Density</th>
                 <th>Characters</th>
                 <th>Origin</th>
@@ -521,9 +511,7 @@
                 <td><b>{{i.name}}</b></td>
                 <td>
                     <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank"
-                       class="icon icon-wikipedia-w">
-                        <!--<wiki size="24"></wiki>-->
-                    </a>
+                       class="icon icon-wikipedia-w"></a>
                 </td>
                 <td>{{i.rtl | yes('RTL')}}</td>
                 <td>{{i.cased | yes('cased')}}</td>
@@ -751,9 +739,7 @@
                 <td>Wikipedia</td>
                 <td>external</td>
                 <td><a href="https://en.wikipedia.org/wiki/Czech%20language" target="_blank"
-                       class="icon icon-wikipedia-w">
-                    <!--<wiki size="24"></wiki>-->
-                </a></td>
+                       class="icon icon-wikipedia-w"></a></td>
                 <td>Search links made from names. <br><b>Warning:</b> may be misleading!</td>
             </tr>
             <tr>
@@ -914,61 +900,74 @@
         }
     });
 
-    //    Vue.component('wiki', {
-    https://en.wikipedia.org/wiki/File:Wikipedia's_W.svg
-//        template: '<svg class="wiki" :width="size" :height="size" viewBox="0 0 128 128" stroke-miterlimit="10" shape-rendering="geometricPrecision" fill-rule="evenodd"><path d="M120.8 29.2c0 .4 0 .8-.3 1-.3.5-.6.6-1 .6-2.4.3-4.4 1-6 2.4-1.6 1.4-3.2 4-5 7.8L83 99.3c-.2.5-.6.8-1.4.8-.6 0-1-.3-1.4-.8L65.5 69 49 99c-.5.5-1 .8-1.6.8-.7 0-1.2-.3-1.4-.8L20.6 41c-1.6-3.6-3.2-6-5-7.5-1.8-1.4-4.2-2.3-7.3-2.7-.3 0-.6 0-.8-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.8-1.4 2.2 0 4.6 0 7 .3l6.5.3c2 0 4.5 0 7.3-.3l7.8-.3c.5 0 .8.5.8 1.4 0 1-.2 1.4-.5 1.4-2.4.2-4 .8-5.4 1.7-1.3 1-2 2.3-2 4 0 .7.3 1.7.8 3l21 47.2 12-22.4L52 41c-2-4-3.6-6.8-5-8-1.2-1.2-3-2-5.7-2.2-.3 0-.5 0-.7-.4-.2-.3-.3-.6-.3-1 0-1 .2-1.4.7-1.4 2.2 0 4.3 0 6.2.3 1.8.2 3.7.3 5.8.3 2 0 4.2 0 6.4-.3 2.4-.2 4.6-.3 7-.3.4 0 .7.5.7 1.4 0 1 0 1.4-.5 1.4-4.5.3-6.8 1.6-6.8 4 0 1 .5 2.5 1.6 4.6l7.3 15L76 40.5c1-2 1.5-3.5 1.5-4.8 0-3-2.2-4.8-6.7-5-.5 0-.7-.4-.7-1.4 0-.3.2-.6.4-1 .2-.3.4-.4.6-.4 1.6 0 3.6 0 6 .3l5.5.3c1 0 2.6 0 4.6-.3l6.4-.3c.4 0 .6.4.6 1.2 0 1-.3 1.6-1 1.6-2.7.3-4.8 1-6.4 2.2-1.6 1.2-3.6 4-6 8l-9.7 18 13 26.8 19.5-45c.7-1.8 1-3.3 1-4.7 0-3.2-2.2-5-6.7-5.2-.3 0-.5-.4-.5-1.4 0-1 .3-1.4 1-1.4 1.5 0 3.5 0 5.8.3l5.2.3c1.5 0 3.2 0 5.2-.3l5.4-.3c.6 0 .8.4.8 1.2z"/></svg>',
-//        props: ['size']
-//    });
-
-        Vue.component('family', {
-            template: document.getElementById('template-family').innerHTML,
-            props: ['db', 'node'],
-            data(){
-                return {
-                    expanded: false,
-                    config: config
+    Vue.component('sortable', {
+        template: '<div><slot name="table" :list="sorted" :sort="sort"></slot></div>',
+        props: ['list'],
+        data() {
+            return {
+                sorted: Object.keys(this.list).map(k => (this.list[k].id = k, this.list[k]))
+            }
+        },
+        methods: {
+            sort(by, numeric) {
+                if (numeric) {
+                    this.sorted.sort((a, b) => (a[by] || 0) - (b[by] || 0));
+                } else {
+                    this.sorted.sort((a, b) => (a[by] || '').localeCompare(b[by] || ''));
                 }
-            },
-            computed: {
-                nd() {
-                    return this.node || d3.stratify()
-                            .parentId(d => d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root')
-                            (d3.merge([Object.keys(this.db.family).map(k => ({
-                                id: k,
-                                expanded: false,
-                                data: this.db.family[k]
-                            })), [{id: 'root'}]]))
-                }
-            },
-            watch: {
-                'config.hash': function (newVal) {
-                    if (this.db && (newVal.indexOf('family-') > -1)) {
-                        iter(this);
+            }
+        }
+    });
 
-                        function iter(node) {
-                            node.$children.forEach(c => {
-                                c.expanded = false;
-                                iter(c);
-                            });
-                        }
-                    }
+    Vue.component('family', {
+        template: document.getElementById('template-family').innerHTML,
+        props: ['db', 'node'],
+        data(){
+            return {
+                expanded: false,
+                config: config
+            }
+        },
+        computed: {
+            nd() {
+                return this.node || d3.stratify()
+                        .parentId(d => d.data && d.data.parent ? d.data.parent : d.id === 'root' ? null : 'root')
+                        (d3.merge([Object.keys(this.db.family).map(k => ({
+                            id: k,
+                            expanded: false,
+                            data: this.db.family[k]
+                        })), [{id: 'root'}]]))
+            }
+        },
+        watch: {
+            'config.hash': function (newVal) {
+                if (this.db && (newVal.indexOf('family-') > -1)) {
+                    iter(this);
 
-                    if (this.node && (newVal === ('family-' + this.node.id))) {
-                        this.expanded = true;
-                        var p = this;
-
-                        while ((p = p.$parent) && p.$vnode && p.$vnode.componentOptions.tag === 'family') {
-                            p.expanded = true;
-                        }
-
-                        Vue.nextTick(() => {
-                            var u = location.href;
-                            location.href = u;
+                    function iter(node) {
+                        node.$children.forEach(c => {
+                            c.expanded = false;
+                            iter(c);
                         });
                     }
                 }
+
+                if (this.node && (newVal === ('family-' + this.node.id))) {
+                    this.expanded = true;
+                    var p = this;
+
+                    while ((p = p.$parent) && p.$vnode && p.$vnode.componentOptions.tag === 'family') {
+                        p.expanded = true;
+                    }
+
+                    Vue.nextTick(() => {
+                        var u = location.href;
+                        location.href = u;
+                    });
+                }
             }
-        });
+        }
+    });
 
     new Vue({
         el: '#app',
@@ -1023,6 +1022,9 @@
             }
         },
         methods: {
+            items(o) {
+                return Array.isArray(o) ? o.length : Object.keys(o).length;
+            },
             groupTable(code) {
                 var a = [];
 
