@@ -184,7 +184,7 @@
             cursor: pointer;
         }
 
-        click:hover {
+        .click:hover {
             text-decoration: underline;
         }
 
@@ -399,7 +399,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr v-for="i in props.list" :id="'country-' + i.id">
+                    <tr v-for="i in props.list" :id="'country-' + i.id" :key="i.id">
                         <td>
                             <flag :code="i.id" style="width: 32px; height: 32px"></flag>
                         </td>
