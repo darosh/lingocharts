@@ -517,9 +517,9 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr v-for="(i, k) in data.script" :id="'script-' + k">
+                    <tr v-for="i in props.list" :id="'script-' + i.id">
                         <td class="sample">{{i.sample}}</td>
-                        <td><a :href="'#script-' + k">{{k}}</a></td>
+                        <td><a :href="'#script-' + i.id">{{i.id}}</a></td>
                         <td><b>{{i.name}}</b></td>
                         <td>
                             <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank"
@@ -555,9 +555,9 @@
                     <th>Digits</th>
                     </thead>
                     <tbody>
-                    <tr v-for="(i, k) in data.num" :id="'number-' + k">
+                    <tr v-for="i in props.list" :id="'number-' + i.id">
                         <td class="sample">{{i.digits[8]}}</td>
-                        <td><a :href="'#number-' + k">{{k}}</a></td>
+                        <td><a :href="'#number-' + i.id">{{i.id}}</a></td>
                         <td><b>{{i.name}}</b></td>
                         <td>{{i.type}}</td>
                         <td>{{i.digits}}</td>
@@ -574,11 +574,10 @@
         <family :db="data" class="nowrap"></family>
 
         <hr>
-        <sortable :list="data.char">
+        <sortable :list="data.language" :filter="i=>i.chars>=0">
             <template slot="table" scope="props">
                 <h2 id="characters"><a href="#characters">Characters</a> <span
                         class="items">({{props.list.length}})</span></h2>
-
                 <table>
                     <thead>
                     <tr>
@@ -596,10 +595,9 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr v-for="(i, k) in data.language" :id="'characters-' + i.script + (i.chars + 1) + k"
-                        v-if="i.chars >= 0">
+                    <tr v-for="i in props.list" :id="'characters-' + i.script + (i.chars + 1) + i.id">
                         <td>{{i.script + (i.chars + 1)}}</td>
-                        <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
+                        <td class="nowrap"><a :href="'#language-' + i.id">{{i.id}}</a></td>
                         <td><b>{{i.name}}</b></td>
                         <td class="right">{{i.population | number}}</td>
                         <td class="right">{{i.literacy | percent}}</td>
@@ -936,10 +934,16 @@
 
     Vue.component('sortable', {
         template: '<div><slot name="table" :list="sorted" :sort="sort"></slot></div>',
-        props: ['list'],
+        props: ['list', 'filter'],
         data() {
+            var l = Object.keys(this.list).map(k => (this.list[k].id = k, this.list[k]));
+
+            if (this.filter) {
+                l = l.filter(this.filter);
+            }
+
             return {
-                sorted: Object.keys(this.list).map(k => (this.list[k].id = k, this.list[k]))
+                sorted: l
             }
         },
         methods: {
