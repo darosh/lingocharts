@@ -1,14 +1,17 @@
 name	rtl	cased	lbl	ime	density	country	language	sample	chars	id
+Cyrillic	false	true	false	false	1	BG	ru	Я	443	Cyrl
 Latin	false	true	false	false	1	IT	en	L	1350	Latn
 Ethiopic	false	false	false	true	2	ET	am	አ	495	Ethi
 Arabic	true	false	false	false	1	SA	ar	ب	1279	Arab
-Cyrillic	false	true	false	false	1	BG	ru	Я	443	Cyrl
 Bangla	false	false	false	false	1	BD	bn	ক	93	Beng
+Tibetan	false	false	false	false	1	CN	bo	ཀ	207	Tibt
+Thaana	true	false	false	false	1	MV	dv	ތ	50	Thaa
 Greek	false	true	false	false	1	GR	el	Ω	518	Grek
 Gujarati	false	false	false	false	1	IN	gu	ક	85	Gujr
 Hebrew	true	false	false	false	1	IL	he	א	133	Hebr
 Devanagari	false	false	false	false	1	IN	hi	अ	154	Deva
 Armenian	false	true	false	false	1	AM	hy	Ա	93	Armn
+Unified Canadian Aboriginal Syllabics	false	false	false	true	2	CA	cr	ᓀ	710	Cans
 Japanese	false	false	true	true	2	JP	ja	か	NaN	Jpan
 Georgian	false	false	false	false	1	GE	ka	დ	127	Geor
 Khmer	false	false	true	false	1	KH	km	ក	146	Khmr
@@ -16,7 +19,9 @@ Kannada	false	false	false	false	1	IN	kn	ಕ	88	Knda
 Korean	false	false	false	true	3	KR	ko	가	NaN	Kore
 Lao	false	false	true	false	1	LA	lo	ລ	67	Laoo
 Malayalam	false	false	false	false	1	IN	ml	ക	114	Mlym
+Mongolian	false	false	false	false	1	MN	mn	ᠦ	166	Mong
 Myanmar	false	false	true	false	1	MM	my	က	223	Mymr
+Odia	false	false	false	false	1	IN	or	କ	90	Orya
 Gurmukhi	false	false	false	false	1	IN	pa	ਕ	79	Guru
 Sinhala	false	false	false	false	1	LK	si	අ	110	Sinh
 Tamil	false	false	false	false	1	IN	ta	க	72	Taml

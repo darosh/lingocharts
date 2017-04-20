@@ -212,6 +212,8 @@ function makeLanguage() {
         };
 
         if (language[k].script) {
+            dicScript[language[k].script] = dicScript[language[k].script] || {};
+
             if (availableLocales.indexOf(j + '-' + language[k].script) > -1) {
                 miscKey = j + '-' + language[k].script;
                 miscChars = require('cldr-misc-modern/main/' + j + '-' + language[k].script + '/characters.json');
@@ -233,7 +235,6 @@ function makeLanguage() {
                 dicNum[language[k].num] = dicNum[language[k].num] || getNum(language[k].num);
                 dicChar[language[k].script] = dicChar[language[k].script] || [];
                 language[k].chars = index(dicChar[language[k].script], miscChars ? miscChars.main[miscKey].characters.exemplarCharacters.substring(1, miscChars.main[miscKey].characters.exemplarCharacters.length - 1).replace(/\\u([0-9a-z]{4})/gi, a => String.fromCharCode(parseInt(a.substring(2), 16))) : null);
-                dicScript[language[k].script] = dicScript[language[k].script] || {};
                 let d = miscDelim.main[miscKey].delimiters;
                 language[k].quot = index(dicQuot, d.quotationStart + d.quotationEnd + d.alternateQuotationStart + d.alternateQuotationEnd);
             } else {

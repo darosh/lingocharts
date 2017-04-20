@@ -67,7 +67,7 @@
     "cldr": 356,
     "cldr-parent": 243,
     "group": 34,
-    "script": 25,
+    "script": 30,
     "family": 617,
     "plural": 30,
     "ordinal": 19,
@@ -8815,6 +8815,19 @@
     }
   },
   "script": {
+    "Cyrl": {
+      "name": "Cyrillic",
+      "rtl": false,
+      "cased": true,
+      "lbl": false,
+      "ime": false,
+      "density": 1,
+      "country": "BG",
+      "language": "ru",
+      "sample": "Я",
+      "chars": 443,
+      "id": "Cyrl"
+    },
     "Latn": {
       "name": "Latin",
       "rtl": false,
@@ -8854,19 +8867,6 @@
       "chars": 1279,
       "id": "Arab"
     },
-    "Cyrl": {
-      "name": "Cyrillic",
-      "rtl": false,
-      "cased": true,
-      "lbl": false,
-      "ime": false,
-      "density": 1,
-      "country": "BG",
-      "language": "ru",
-      "sample": "Я",
-      "chars": 443,
-      "id": "Cyrl"
-    },
     "Beng": {
       "name": "Bangla",
       "rtl": false,
@@ -8879,6 +8879,32 @@
       "sample": "ক",
       "chars": 93,
       "id": "Beng"
+    },
+    "Tibt": {
+      "name": "Tibetan",
+      "rtl": false,
+      "cased": false,
+      "lbl": false,
+      "ime": false,
+      "density": 1,
+      "country": "CN",
+      "language": "bo",
+      "sample": "ཀ",
+      "chars": 207,
+      "id": "Tibt"
+    },
+    "Thaa": {
+      "name": "Thaana",
+      "rtl": true,
+      "cased": false,
+      "lbl": false,
+      "ime": false,
+      "density": 1,
+      "country": "MV",
+      "language": "dv",
+      "sample": "ތ",
+      "chars": 50,
+      "id": "Thaa"
     },
     "Grek": {
       "name": "Greek",
@@ -8944,6 +8970,19 @@
       "sample": "Ա",
       "chars": 93,
       "id": "Armn"
+    },
+    "Cans": {
+      "name": "Unified Canadian Aboriginal Syllabics",
+      "rtl": false,
+      "cased": false,
+      "lbl": false,
+      "ime": true,
+      "density": 2,
+      "country": "CA",
+      "language": "cr",
+      "sample": "ᓀ",
+      "chars": 710,
+      "id": "Cans"
     },
     "Jpan": {
       "name": "Japanese",
@@ -9036,6 +9075,19 @@
       "chars": 114,
       "id": "Mlym"
     },
+    "Mong": {
+      "name": "Mongolian",
+      "rtl": false,
+      "cased": false,
+      "lbl": false,
+      "ime": false,
+      "density": 1,
+      "country": "MN",
+      "language": "mn",
+      "sample": "ᠦ",
+      "chars": 166,
+      "id": "Mong"
+    },
     "Mymr": {
       "name": "Myanmar",
       "rtl": false,
@@ -9048,6 +9100,19 @@
       "sample": "က",
       "chars": 223,
       "id": "Mymr"
+    },
+    "Orya": {
+      "name": "Odia",
+      "rtl": false,
+      "cased": false,
+      "lbl": false,
+      "ime": false,
+      "density": 1,
+      "country": "IN",
+      "language": "or",
+      "sample": "କ",
+      "chars": 90,
+      "id": "Orya"
     },
     "Guru": {
       "name": "Gurmukhi",

@@ -1,4 +1,16 @@
 {
+  "Cyrl": {
+    "name": "Cyrillic",
+    "rtl": false,
+    "cased": true,
+    "lbl": false,
+    "ime": false,
+    "density": 1,
+    "country": "BG",
+    "language": "ru",
+    "sample": "Я",
+    "chars": 443
+  },
   "Latn": {
     "name": "Latin",
     "rtl": false,
@@ -35,18 +47,6 @@
     "sample": "ب",
     "chars": 1279
   },
-  "Cyrl": {
-    "name": "Cyrillic",
-    "rtl": false,
-    "cased": true,
-    "lbl": false,
-    "ime": false,
-    "density": 1,
-    "country": "BG",
-    "language": "ru",
-    "sample": "Я",
-    "chars": 443
-  },
   "Beng": {
     "name": "Bangla",
     "rtl": false,
@@ -58,6 +58,30 @@
     "language": "bn",
     "sample": "ক",
     "chars": 93
+  },
+  "Tibt": {
+    "name": "Tibetan",
+    "rtl": false,
+    "cased": false,
+    "lbl": false,
+    "ime": false,
+    "density": 1,
+    "country": "CN",
+    "language": "bo",
+    "sample": "ཀ",
+    "chars": 207
+  },
+  "Thaa": {
+    "name": "Thaana",
+    "rtl": true,
+    "cased": false,
+    "lbl": false,
+    "ime": false,
+    "density": 1,
+    "country": "MV",
+    "language": "dv",
+    "sample": "ތ",
+    "chars": 50
   },
   "Grek": {
     "name": "Greek",
@@ -118,6 +142,18 @@
     "language": "hy",
     "sample": "Ա",
     "chars": 93
+  },
+  "Cans": {
+    "name": "Unified Canadian Aboriginal Syllabics",
+    "rtl": false,
+    "cased": false,
+    "lbl": false,
+    "ime": true,
+    "density": 2,
+    "country": "CA",
+    "language": "cr",
+    "sample": "ᓀ",
+    "chars": 710
   },
   "Jpan": {
     "name": "Japanese",
@@ -203,6 +239,18 @@
     "sample": "ക",
     "chars": 114
   },
+  "Mong": {
+    "name": "Mongolian",
+    "rtl": false,
+    "cased": false,
+    "lbl": false,
+    "ime": false,
+    "density": 1,
+    "country": "MN",
+    "language": "mn",
+    "sample": "ᠦ",
+    "chars": 166
+  },
   "Mymr": {
     "name": "Myanmar",
     "rtl": false,
@@ -214,6 +262,18 @@
     "language": "my",
     "sample": "က",
     "chars": 223
+  },
+  "Orya": {
+    "name": "Odia",
+    "rtl": false,
+    "cased": false,
+    "lbl": false,
+    "ime": false,
+    "density": 1,
+    "country": "IN",
+    "language": "or",
+    "sample": "କ",
+    "chars": 90
   },
   "Guru": {
     "name": "Gurmukhi",
