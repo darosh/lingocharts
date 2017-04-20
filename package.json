@@ -5,8 +5,9 @@
   "author": "Jan Forst",
   "devDependencies": {
     "cldr-core": "31.0.1",
-    "cldr-localenames-modern": "31.0.1",
-    "cldr-numbers-modern": "31.0.1",
+    "cldr-localenames-full": "^31.0.1",
+    "cldr-misc-full": "^31.0.1",
+    "cldr-numbers-full": "^31.0.1",
     "d3-dsv": "1.0.5",
     "d3-geo-projection": "2.1.0",
     "emojione": "2.2.7",

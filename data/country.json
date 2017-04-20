@@ -345,7 +345,7 @@
     "language": {
       "ay": {"percent": 20, "status": 0},
       "es": {"percent": 61, "status": 0, "cldr": "es-BO", "parent": "es-419"},
-      "qu": {"percent": 32, "status": 0}
+      "qu": {"percent": 32, "status": 0, "cldr": "qu-BO"}
     },
     "currency": "BOB"
   },
@@ -779,7 +779,7 @@
     "cell": 79.4,
     "language": {
       "es": {"percent": 96, "status": 0, "cldr": "es-EC", "parent": "es-419"},
-      "qu": {"percent": 17, "status": 0}
+      "qu": {"percent": 17, "status": 0, "cldr": "qu-EC"}
     },
     "currency": "USD"
   },
@@ -825,7 +825,7 @@
     "language": {
       "ar": {"percent": 4.9, "status": 0, "cldr": "ar-ER"},
       "en": {"percent": 59, "status": 0, "cldr": "en-ER", "parent": "en-001"},
-      "ti": {"percent": 60, "status": 2}
+      "ti": {"percent": 60, "status": 2, "cldr": "ti-ER"}
     },
     "currency": "ERN"
   },
@@ -1579,7 +1579,7 @@
     "cell": 109,
     "language": {
       "de": {"percent": 100, "status": 0, "cldr": "de-LI"},
-      "gsw": {"percent": 85, "status": 2}
+      "gsw": {"percent": 85, "status": 2, "cldr": "gsw-LI"}
     },
     "currency": "CHF"
   },

@@ -15,10 +15,10 @@ const glot = require('./glot');
 
 const worldData = require('../map.data.json');
 
-const namesTerritories = require('cldr-localenames-modern/main/en/territories.json').main.en.localeDisplayNames.territories;
-const namesLanguages = require('cldr-localenames-modern/main/en/languages.json').main.en.localeDisplayNames.languages;
-const namesScripts = require('cldr-localenames-modern/main/en/scripts.json').main.en.localeDisplayNames.scripts;
-const namesLocale = require('cldr-localenames-modern/main/en/localeDisplayNames.json').main.en.localeDisplayNames;
+const namesTerritories = require('cldr-localenames-full/main/en/territories.json').main.en.localeDisplayNames.territories;
+const namesLanguages = require('cldr-localenames-full/main/en/languages.json').main.en.localeDisplayNames.languages;
+const namesScripts = require('cldr-localenames-full/main/en/scripts.json').main.en.localeDisplayNames.scripts;
+const namesLocale = require('cldr-localenames-full/main/en/localeDisplayNames.json').main.en.localeDisplayNames;
 const territoryInfo = require('cldr-core/supplemental/territoryInfo.json').supplemental.territoryInfo;
 const territoryContainment = require('cldr-core/supplemental/territoryContainment.json').supplemental.territoryContainment;
 // const languageData = require('cldr-core/supplemental/languageData.json');
@@ -26,7 +26,7 @@ const plurals = require('cldr-core/supplemental/plurals.json').supplemental['plu
 const currencyData = require('cldr-core/supplemental/currencyData.json').supplemental.currencyData.region;
 const ordinals = require('cldr-core/supplemental/ordinals.json').supplemental['plurals-type-ordinal'];
 const likelySubtags = require('cldr-core/supplemental/likelySubtags.json');
-const availableLocales = require('cldr-core/availableLocales.json').availableLocales.modern;
+const availableLocales = require('cldr-core/availableLocales.json').availableLocales.full;
 const defaultContent = require('cldr-core/defaultContent.json').defaultContent;
 const scriptMetadata = require('cldr-core/scriptMetadata.json').scriptMetadata;
 const parentLocales = require('cldr-core/supplemental/parentLocales.json').supplemental.parentLocales.parentLocale;
@@ -97,6 +97,7 @@ save({
     num: dicNum,
     quot: dicQuot,
     char: dicChar,
+    // cldr: dicCldr,
     map: map
 }, process.argv[2]);
 
@@ -117,6 +118,8 @@ function makeCldr() {
             dicCldr[country[c].language[l].cldr] = true;
         }
     }));
+
+    Object.keys(language).forEach(k => language[k].cldr = (cldr(k) === k));
 }
 
 function makeParent() {
@@ -216,17 +219,17 @@ function makeLanguage() {
 
             if (availableLocales.indexOf(j + '-' + language[k].script) > -1) {
                 miscKey = j + '-' + language[k].script;
-                miscChars = require('cldr-misc-modern/main/' + j + '-' + language[k].script + '/characters.json');
-                miscDelim = require('cldr-misc-modern/main/' + j + '-' + language[k].script + '/delimiters.json');
-                miscNum = require('cldr-numbers-modern/main/' + j + '-' + language[k].script + '/numbers.json');
+                miscChars = require('cldr-misc-full/main/' + j + '-' + language[k].script + '/characters.json');
+                miscDelim = require('cldr-misc-full/main/' + j + '-' + language[k].script + '/delimiters.json');
+                miscNum = require('cldr-numbers-full/main/' + j + '-' + language[k].script + '/numbers.json');
             } else if (availableLocales.indexOf(j) > -1) {
                 let lik = likelySubtags.supplemental.likelySubtags[j];
 
                 if (lik && (lik.split('-')[1] === language[k].script)) {
                     miscKey = j;
-                    miscChars = require('cldr-misc-modern/main/' + j + '/characters.json');
-                    miscDelim = require('cldr-misc-modern/main/' + j + '/delimiters.json');
-                    miscNum = require('cldr-numbers-modern/main/' + j + '/numbers.json');
+                    miscChars = require('cldr-misc-full/main/' + j + '/characters.json');
+                    miscDelim = require('cldr-misc-full/main/' + j + '/delimiters.json');
+                    miscNum = require('cldr-numbers-full/main/' + j + '/numbers.json');
                 }
             }
 
@@ -322,7 +325,14 @@ function getScript(k) {
 }
 
 function cldr(lang, country) {
-    if (defaultContent.indexOf(lang + '-' + country) > -1 || defaultContent.indexOf(lang + '-' + getScript(lang) + '-' + country) > -1) {
+    if (!country) {
+        if (availableLocales.indexOf(lang) > -1) {
+            return lang;
+        } else {
+            console.error('not available' + lang);
+            return null;
+        }
+    } else if (defaultContent.indexOf(lang + '-' + country) > -1 || defaultContent.indexOf(lang + '-' + getScript(lang) + '-' + country) > -1) {
         return lang;
     } else if (availableLocales.indexOf(lang + '-' + country) > -1) {
         return lang + '-' + country;

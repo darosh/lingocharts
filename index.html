@@ -441,6 +441,7 @@
                         <th class="click" @click="props.sort('iso')">ISO</th>
                         <th class="click" @click="props.sort('gl')">Glottolog</th>
                         <th class="click" @click="props.sort('likely')">Likely</th>
+                        <th class="click" @click="props.sort('cldr', true)">CLDR</th>
                         <th class="click" @click="props.sort('population', true)">Population</th>
                         <th class="click" @click="props.sort('literacy', true)">Literacy</th>
                         <th>Plural</th>
@@ -469,6 +470,7 @@
                         <td><a :href="'http://glottolog.org/resource/languoid/id/' + i.gl" target="_blank">{{i.gl}}</a>
                         </td>
                         <td class="nowrap">{{i.likely}}</td>
+                        <td>{{i.cldr | yes('CLDR')}}</td>
                         <td class="right">{{i.population | number}}</td>
                         <td class="right">{{i.literacy | percent}}</td>
                         <td class="right"><span v-if="i.plural >= 0">{{data.plural[i.plural].forms.length}}</span></td>

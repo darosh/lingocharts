@@ -3,12 +3,12 @@ value	id
 199	language
 210	language-script
 199	language-likely
-356	cldr
-243	cldr-parent
+360	cldr
+247	cldr-parent
 34	group
 30	script
 617	family
 30	plural
 19	ordinal
-75	char
+115	char
 175	map

@@ -7,7 +7,8 @@
     "likely": "ab-Cyrl-GE",
     "script": "Cyrl",
     "population": 108418,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "ady": {
     "name": "Adyghe",
@@ -17,7 +18,8 @@
     "likely": "ady-Cyrl-RU",
     "script": "Cyrl",
     "population": 125273,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "af": {
     "name": "Afrikaans",
@@ -32,7 +34,8 @@
     "chars": 0,
     "quot": 0,
     "population": 7059091,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "ak": {
     "name": "Akan",
@@ -42,8 +45,12 @@
     "likely": "ak-Latn-GH",
     "script": "Latn",
     "plural": 1,
+    "num": "latn",
+    "chars": 1,
+    "quot": 0,
     "population": 10494237,
-    "literacy": 71.5
+    "literacy": 71.5,
+    "cldr": true
   },
   "am": {
     "name": "Amharic",
@@ -58,7 +65,8 @@
     "chars": 0,
     "quot": 1,
     "population": 33783420,
-    "literacy": 39
+    "literacy": 39,
+    "cldr": true
   },
   "ar": {
     "name": "Arabic",
@@ -73,7 +81,8 @@
     "chars": 0,
     "quot": 2,
     "population": 308333021,
-    "literacy": 77
+    "literacy": 77,
+    "cldr": true
   },
   "as": {
     "name": "Assamese",
@@ -84,8 +93,12 @@
     "script": "Beng",
     "plural": 2,
     "ordinal": 1,
+    "num": "beng",
+    "chars": 0,
+    "quot": 0,
     "population": 16469441,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "ast": {
     "name": "Asturian",
@@ -95,8 +108,12 @@
     "likely": "ast-Latn-ES",
     "script": "Latn",
     "plural": 4,
+    "num": "latn",
+    "chars": 2,
+    "quot": 3,
     "population": 631326,
-    "literacy": 97.7
+    "literacy": 97.7,
+    "cldr": true
   },
   "av": {
     "name": "Avaric",
@@ -106,7 +123,8 @@
     "likely": "av-Cyrl-RU",
     "script": "Cyrl",
     "population": 555185,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "ay": {
     "name": "Aymara",
@@ -116,7 +134,8 @@
     "likely": "ay-Latn-BO",
     "script": "Latn",
     "population": 2193920,
-    "literacy": 91.2
+    "literacy": 91.2,
+    "cldr": false
   },
   "az": {
     "name": "Azerbaijani",
@@ -128,10 +147,11 @@
     "plural": 0,
     "ordinal": 2,
     "num": "latn",
-    "chars": 1,
+    "chars": 3,
     "quot": 0,
     "population": 8786766,
-    "literacy": 99.8
+    "literacy": 99.8,
+    "cldr": true
   },
   "az-Arab": {
     "name": "Azerbaijani",
@@ -143,7 +163,8 @@
     "plural": 0,
     "ordinal": 2,
     "population": 686629,
-    "literacy": 78.5
+    "literacy": 78.5,
+    "cldr": false
   },
   "az-Cyrl": {
     "name": "Azerbaijani",
@@ -153,8 +174,12 @@
     "script": "Cyrl",
     "plural": 0,
     "ordinal": 2,
+    "num": "latn",
+    "chars": 0,
+    "quot": 1,
     "population": 1109795,
-    "literacy": 99.8
+    "literacy": 99.8,
+    "cldr": true
   },
   "ba": {
     "name": "Bashkir",
@@ -164,7 +189,8 @@
     "likely": "ba-Cyrl-RU",
     "script": "Cyrl",
     "population": 1850616,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "bal": {
     "name": "Baluchi",
@@ -174,7 +200,8 @@
     "likely": "bal-Arab-PK",
     "script": "Arab",
     "population": 223325,
-    "literacy": 28.1
+    "literacy": 28.1,
+    "cldr": false
   },
   "be": {
     "name": "Belarusian",
@@ -186,10 +213,11 @@
     "plural": 5,
     "ordinal": 3,
     "num": "latn",
-    "chars": 0,
-    "quot": 3,
+    "chars": 1,
+    "quot": 4,
     "population": 9570380,
-    "literacy": 99.6
+    "literacy": 99.6,
+    "cldr": true
   },
   "bg": {
     "name": "Bulgarian",
@@ -201,10 +229,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 1,
-    "quot": 4,
+    "chars": 2,
+    "quot": 5,
     "population": 7144650,
-    "literacy": 98.4
+    "literacy": 98.4,
+    "cldr": true
   },
   "bi": {
     "name": "Bislama",
@@ -214,7 +243,8 @@
     "likely": "bi-Latn-VU",
     "script": "Latn",
     "population": 249799,
-    "literacy": 83.2
+    "literacy": 83.2,
+    "cldr": false
   },
   "bjt": {
     "name": "Balanta-Ganja",
@@ -224,7 +254,8 @@
     "likely": "bjt-Latn-SN",
     "script": "Latn",
     "population": 87353,
-    "literacy": 100
+    "literacy": 100,
+    "cldr": false
   },
   "bn": {
     "name": "Bangla",
@@ -236,10 +267,11 @@
     "plural": 2,
     "ordinal": 1,
     "num": "beng",
-    "chars": 0,
+    "chars": 1,
     "quot": 0,
     "population": 255680540,
-    "literacy": 59.7
+    "literacy": 59.7,
+    "cldr": true
   },
   "bo": {
     "name": "Tibetan",
@@ -249,8 +281,12 @@
     "likely": "bo-Tibt-CN",
     "script": "Tibt",
     "plural": 6,
+    "num": "latn",
+    "chars": 0,
+    "quot": 0,
     "population": 2747080,
-    "literacy": 95.1
+    "literacy": 95.1,
+    "cldr": true
   },
   "bs": {
     "name": "Bosnian",
@@ -262,10 +298,11 @@
     "plural": 7,
     "ordinal": 0,
     "num": "latn",
-    "chars": 2,
-    "quot": 5,
+    "chars": 4,
+    "quot": 6,
     "population": 3823291,
-    "literacy": 98
+    "literacy": 98,
+    "cldr": true
   },
   "bs-Cyrl": {
     "name": "Bosnian",
@@ -275,8 +312,12 @@
     "script": "Cyrl",
     "plural": 7,
     "ordinal": 0,
+    "num": "latn",
+    "chars": 3,
+    "quot": 7,
     "population": 3823291,
-    "literacy": 98
+    "literacy": 98,
+    "cldr": true
   },
   "bsc": {
     "name": "Bassari-Tanda",
@@ -284,7 +325,8 @@
     "gl": "bass1258",
     "family": "atla1278",
     "population": 14034,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "ca": {
     "name": "Catalan",
@@ -296,10 +338,11 @@
     "plural": 4,
     "ordinal": 4,
     "num": "latn",
-    "chars": 3,
-    "quot": 6,
+    "chars": 5,
+    "quot": 3,
     "population": 8299482,
-    "literacy": 97.7
+    "literacy": 97.7,
+    "cldr": true
   },
   "ce": {
     "name": "Chechen",
@@ -310,8 +353,12 @@
     "script": "Cyrl",
     "plural": 0,
     "ordinal": 0,
+    "num": "latn",
+    "chars": 4,
+    "quot": 0,
     "population": 939543,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "ceb": {
     "name": "Cebuano",
@@ -321,7 +368,8 @@
     "likely": "ceb-Latn-PH",
     "script": "Latn",
     "population": 24629760,
-    "literacy": 13
+    "literacy": 13,
+    "cldr": false
   },
   "ch": {
     "name": "Chamorro",
@@ -331,7 +379,8 @@
     "likely": "ch-Latn-GU",
     "script": "Latn",
     "population": 35804,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": false
   },
   "ckb": {
     "name": "Central Kurdish",
@@ -341,8 +390,12 @@
     "likely": "ckb-Arab-IQ",
     "script": "Arab",
     "plural": 0,
+    "num": "arab",
+    "chars": 1,
+    "quot": 0,
     "population": 7629200,
-    "literacy": 78.5
+    "literacy": 78.5,
+    "cldr": true
   },
   "cs": {
     "name": "Czech",
@@ -354,10 +407,11 @@
     "plural": 8,
     "ordinal": 0,
     "num": "latn",
-    "chars": 4,
+    "chars": 6,
     "quot": 7,
     "population": 10431904,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "csb": {
     "name": "Kashubian",
@@ -367,7 +421,8 @@
     "likely": "csb-Latn-PL",
     "script": "Latn",
     "population": 50081,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "cy": {
     "name": "Welsh",
@@ -379,10 +434,11 @@
     "plural": 9,
     "ordinal": 5,
     "num": "latn",
-    "chars": 5,
+    "chars": 7,
     "quot": 0,
     "population": 496115,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "da": {
     "name": "Danish",
@@ -394,10 +450,11 @@
     "plural": 10,
     "ordinal": 0,
     "num": "latn",
-    "chars": 6,
+    "chars": 8,
     "quot": 0,
     "population": 5202225,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "de": {
     "name": "German",
@@ -409,10 +466,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 7,
+    "chars": 9,
     "quot": 7,
     "population": 100742338,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "dv": {
     "name": "Divehi",
@@ -423,7 +481,8 @@
     "script": "Thaa",
     "plural": 0,
     "population": 369383,
-    "literacy": 98.4
+    "literacy": 98.4,
+    "cldr": false
   },
   "dyo": {
     "name": "Jola-Fonyi",
@@ -432,8 +491,12 @@
     "family": "atla1278",
     "likely": "dyo-Latn-SN",
     "script": "Latn",
+    "num": "latn",
+    "chars": 10,
+    "quot": 3,
     "population": 372323,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": true
   },
   "dz": {
     "name": "Dzongkha",
@@ -443,8 +506,12 @@
     "likely": "dz-Tibt-BT",
     "script": "Tibt",
     "plural": 6,
+    "num": "tibt",
+    "chars": 1,
+    "quot": 0,
     "population": 352559,
-    "literacy": 52.8
+    "literacy": 52.8,
+    "cldr": true
   },
   "ee": {
     "name": "Ewe",
@@ -454,8 +521,12 @@
     "likely": "ee-Latn-GH",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 11,
+    "quot": 0,
     "population": 2959913,
-    "literacy": 71.5
+    "literacy": 71.5,
+    "cldr": true
   },
   "el": {
     "name": "Greek",
@@ -468,9 +539,10 @@
     "ordinal": 0,
     "num": "latn",
     "chars": 0,
-    "quot": 6,
+    "quot": 3,
     "population": 11810868,
-    "literacy": 97.4
+    "literacy": 97.4,
+    "cldr": true
   },
   "en": {
     "name": "English",
@@ -482,10 +554,11 @@
     "plural": 4,
     "ordinal": 6,
     "num": "latn",
-    "chars": 8,
+    "chars": 12,
     "quot": 0,
     "population": 1111587744,
-    "literacy": 80.1
+    "literacy": 80.1,
+    "cldr": true
   },
   "es": {
     "name": "Spanish",
@@ -497,10 +570,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 9,
-    "quot": 6,
+    "chars": 13,
+    "quot": 3,
     "population": 423409100,
-    "literacy": 94
+    "literacy": 94,
+    "cldr": true
   },
   "et": {
     "name": "Estonian",
@@ -512,10 +586,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 10,
+    "chars": 14,
     "quot": 7,
     "population": 893571,
-    "literacy": 99.8
+    "literacy": 99.8,
+    "cldr": true
   },
   "eu": {
     "name": "Basque",
@@ -527,10 +602,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 11,
+    "chars": 15,
     "quot": 8,
     "population": 971270,
-    "literacy": 97.7
+    "literacy": 97.7,
+    "cldr": true
   },
   "fa": {
     "name": "Persian",
@@ -542,10 +618,11 @@
     "plural": 2,
     "ordinal": 0,
     "num": "arabext",
-    "chars": 1,
+    "chars": 2,
     "quot": 1,
     "population": 78767200,
-    "literacy": 73
+    "literacy": 73,
+    "cldr": true
   },
   "ff": {
     "name": "Fulah",
@@ -555,8 +632,12 @@
     "likely": "ff-Latn-SN",
     "script": "Latn",
     "plural": 11,
+    "num": "latn",
+    "chars": 16,
+    "quot": 9,
     "population": 3007221,
-    "literacy": 49.7
+    "literacy": 49.7,
+    "cldr": true
   },
   "fi": {
     "name": "Finnish",
@@ -568,10 +649,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 12,
-    "quot": 9,
+    "chars": 17,
+    "quot": 10,
     "population": 5385691,
-    "literacy": 100
+    "literacy": 100,
+    "cldr": true
   },
   "fil": {
     "name": "Filipino",
@@ -583,10 +665,11 @@
     "plural": 12,
     "ordinal": 7,
     "num": "latn",
-    "chars": 13,
+    "chars": 18,
     "quot": 0,
     "population": 61574400,
-    "literacy": 95.4
+    "literacy": 95.4,
+    "cldr": true
   },
   "fj": {
     "name": "Fijian",
@@ -596,7 +679,8 @@
     "likely": "fj-Latn-FJ",
     "script": "Latn",
     "population": 356969,
-    "literacy": 93.7
+    "literacy": 93.7,
+    "cldr": false
   },
   "fo": {
     "name": "Faroese",
@@ -607,10 +691,11 @@
     "script": "Latn",
     "plural": 0,
     "num": "latn",
-    "chars": 14,
+    "chars": 19,
     "quot": 0,
     "population": 47934,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "fr": {
     "name": "French",
@@ -622,10 +707,11 @@
     "plural": 11,
     "ordinal": 7,
     "num": "latn",
-    "chars": 15,
-    "quot": 10,
+    "chars": 20,
+    "quot": 11,
     "population": 212993197,
-    "literacy": 77.1
+    "literacy": 77.1,
+    "cldr": true
   },
   "fy": {
     "name": "Western Frisian",
@@ -636,8 +722,12 @@
     "script": "Latn",
     "plural": 4,
     "ordinal": 0,
+    "num": "latn",
+    "chars": 21,
+    "quot": 0,
     "population": 731731,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "ga": {
     "name": "Irish",
@@ -649,10 +739,11 @@
     "plural": 13,
     "ordinal": 7,
     "num": "latn",
-    "chars": 16,
+    "chars": 22,
     "quot": 0,
     "population": 1106296,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "gaa": {
     "name": "Ga",
@@ -662,7 +753,8 @@
     "likely": "gaa-Latn-GH",
     "script": "Latn",
     "population": 753433,
-    "literacy": 71.5
+    "literacy": 71.5,
+    "cldr": false
   },
   "gd": {
     "name": "Scottish Gaelic",
@@ -672,8 +764,12 @@
     "likely": "gd-Latn-GB",
     "script": "Latn",
     "plural": 14,
+    "num": "latn",
+    "chars": 23,
+    "quot": 0,
     "population": 63787,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "gil": {
     "name": "Gilbertese",
@@ -683,7 +779,8 @@
     "likely": "gil-Latn-KI",
     "script": "Latn",
     "population": 64155,
-    "literacy": 90
+    "literacy": 90,
+    "cldr": false
   },
   "gl": {
     "name": "Galician",
@@ -695,10 +792,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 17,
+    "chars": 24,
     "quot": 0,
     "population": 3399446,
-    "literacy": 97.7
+    "literacy": 97.7,
+    "cldr": true
   },
   "gn": {
     "name": "Guarani",
@@ -708,7 +806,8 @@
     "likely": "gn-Latn-PY",
     "script": "Latn",
     "population": 5490248,
-    "literacy": 93.9
+    "literacy": 93.9,
+    "cldr": false
   },
   "gsw": {
     "name": "Swiss German",
@@ -719,8 +818,12 @@
     "script": "Latn",
     "plural": 0,
     "ordinal": 0,
+    "num": "latn",
+    "chars": 25,
+    "quot": 1,
     "population": 5348785,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "gu": {
     "name": "Gujarati",
@@ -735,7 +838,8 @@
     "chars": 0,
     "quot": 0,
     "population": 57009600,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "gv": {
     "name": "Manx",
@@ -745,8 +849,12 @@
     "likely": "gv-Latn-IM",
     "script": "Latn",
     "plural": 15,
+    "num": "latn",
+    "chars": 26,
+    "quot": 0,
     "population": 1676,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "haw": {
     "name": "Hawaiian",
@@ -756,8 +864,12 @@
     "likely": "haw-Latn-US",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 27,
+    "quot": 0,
     "population": 28836,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "he": {
     "name": "Hebrew",
@@ -770,9 +882,10 @@
     "ordinal": 0,
     "num": "latn",
     "chars": 0,
-    "quot": 9,
+    "quot": 10,
     "population": 8174530,
-    "literacy": 97.1
+    "literacy": 97.1,
+    "cldr": true
   },
   "hi": {
     "name": "Hindi",
@@ -787,7 +900,8 @@
     "chars": 0,
     "quot": 0,
     "population": 519420800,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "hif": {
     "name": "Fiji Hindi",
@@ -797,7 +911,8 @@
     "likely": "hif-Latn-FJ",
     "script": "Latn",
     "population": 375275,
-    "literacy": 93.7
+    "literacy": 93.7,
+    "cldr": false
   },
   "hil": {
     "name": "Hiligaynon",
@@ -807,7 +922,8 @@
     "likely": "hil-Latn-PH",
     "script": "Latn",
     "population": 8620416,
-    "literacy": 8
+    "literacy": 8,
+    "cldr": false
   },
   "ho": {
     "name": "Hiri Motu",
@@ -817,7 +933,8 @@
     "likely": "ho-Latn-PG",
     "script": "Latn",
     "population": 142618,
-    "literacy": 62.4
+    "literacy": 62.4,
+    "cldr": false
   },
   "hr": {
     "name": "Croatian",
@@ -829,10 +946,11 @@
     "plural": 7,
     "ordinal": 0,
     "num": "latn",
-    "chars": 2,
+    "chars": 4,
     "quot": 7,
     "population": 4904982,
-    "literacy": 98.8
+    "literacy": 98.8,
+    "cldr": true
   },
   "ht": {
     "name": "Haitian Creole",
@@ -842,7 +960,8 @@
     "likely": "ht-Latn-HT",
     "script": "Latn",
     "population": 8493498,
-    "literacy": 48.7
+    "literacy": 48.7,
+    "cldr": false
   },
   "hu": {
     "name": "Hungarian",
@@ -854,10 +973,11 @@
     "plural": 0,
     "ordinal": 9,
     "num": "latn",
-    "chars": 18,
-    "quot": 11,
+    "chars": 28,
+    "quot": 12,
     "population": 10241210,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "hy": {
     "name": "Armenian",
@@ -870,9 +990,10 @@
     "ordinal": 7,
     "num": "latn",
     "chars": 0,
-    "quot": 10,
+    "quot": 11,
     "population": 2990225,
-    "literacy": 99.6
+    "literacy": 99.6,
+    "cldr": true
   },
   "id": {
     "name": "Indonesian",
@@ -884,10 +1005,11 @@
     "plural": 6,
     "ordinal": 0,
     "num": "latn",
-    "chars": 8,
+    "chars": 12,
     "quot": 0,
     "population": 165322240,
-    "literacy": 92.8
+    "literacy": 92.8,
+    "cldr": true
   },
   "ikt": {
     "name": "Western Canadian Inuktitut",
@@ -897,7 +1019,8 @@
     "likely": "ikt-Latn-CA",
     "script": "Latn",
     "population": 3890,
-    "literacy": 30
+    "literacy": 30,
+    "cldr": false
   },
   "ilo": {
     "name": "Iloko",
@@ -907,7 +1030,8 @@
     "likely": "ilo-Latn-PH",
     "script": "Latn",
     "population": 9851904,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "inh": {
     "name": "Ingush",
@@ -917,7 +1041,8 @@
     "likely": "inh-Cyrl-RU",
     "script": "Cyrl",
     "population": 227768,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "is": {
     "name": "Icelandic",
@@ -929,10 +1054,11 @@
     "plural": 17,
     "ordinal": 0,
     "num": "latn",
-    "chars": 19,
+    "chars": 29,
     "quot": 7,
     "population": 335878,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "it": {
     "name": "Italian",
@@ -944,10 +1070,11 @@
     "plural": 4,
     "ordinal": 10,
     "num": "latn",
-    "chars": 20,
-    "quot": 6,
+    "chars": 30,
+    "quot": 3,
     "population": 59358298,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "iu": {
     "name": "Inuktitut",
@@ -958,7 +1085,8 @@
     "script": "Cans",
     "plural": 18,
     "population": 14853,
-    "literacy": 30
+    "literacy": 30,
+    "cldr": false
   },
   "iu-Latn": {
     "name": "Inuktitut",
@@ -968,7 +1096,8 @@
     "script": "Latn",
     "plural": 18,
     "population": 14853,
-    "literacy": 30
+    "literacy": 30,
+    "cldr": false
   },
   "ja": {
     "name": "Japanese",
@@ -981,9 +1110,10 @@
     "ordinal": 0,
     "num": "latn",
     "chars": 0,
-    "quot": 12,
+    "quot": 13,
     "population": 120366900,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "ka": {
     "name": "Georgian",
@@ -996,9 +1126,10 @@
     "ordinal": 11,
     "num": "latn",
     "chars": 0,
-    "quot": 13,
+    "quot": 14,
     "population": 4238123,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "kbd": {
     "name": "Kabardian",
@@ -1008,7 +1139,8 @@
     "likely": "kbd-Cyrl-RU",
     "script": "Cyrl",
     "population": 441301,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "kg": {
     "name": "Kongo",
@@ -1018,7 +1150,8 @@
     "likely": "kg-Latn-CD",
     "script": "Latn",
     "population": 1219967,
-    "literacy": 66.8
+    "literacy": 66.8,
+    "cldr": false
   },
   "kha": {
     "name": "Khasi",
@@ -1028,7 +1161,8 @@
     "likely": "kha-Latn-IN",
     "script": "Latn",
     "population": 1013504,
-    "literacy": 29
+    "literacy": 29,
+    "cldr": false
   },
   "kk": {
     "name": "Kazakh",
@@ -1040,10 +1174,11 @@
     "plural": 0,
     "ordinal": 12,
     "num": "latn",
-    "chars": 2,
-    "quot": 6,
+    "chars": 5,
+    "quot": 3,
     "population": 11750656,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "kl": {
     "name": "Kalaallisut",
@@ -1053,8 +1188,12 @@
     "likely": "kl-Latn-GL",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 31,
+    "quot": 0,
     "population": 55764,
-    "literacy": 99.9
+    "literacy": 99.9,
+    "cldr": true
   },
   "km": {
     "name": "Khmer",
@@ -1069,7 +1208,8 @@
     "chars": 0,
     "quot": 0,
     "population": 14201908,
-    "literacy": 73.9
+    "literacy": 73.9,
+    "cldr": true
   },
   "kn": {
     "name": "Kannada",
@@ -1084,7 +1224,8 @@
     "chars": 0,
     "quot": 0,
     "population": 46874561,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "knf": {
     "name": "Mankanya",
@@ -1094,7 +1235,8 @@
     "likely": "knf-Latn-SN",
     "script": "Latn",
     "population": 30073,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "ko": {
     "name": "Korean",
@@ -1109,7 +1251,8 @@
     "chars": 0,
     "quot": 0,
     "population": 75085974,
-    "literacy": 98.4
+    "literacy": 98.4,
+    "cldr": true
   },
   "koi": {
     "name": "Komi-Permyak",
@@ -1119,7 +1262,8 @@
     "likely": "koi-Cyrl-RU",
     "script": "Cyrl",
     "population": 64060,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "kok": {
     "name": "Konkani",
@@ -1128,8 +1272,12 @@
     "family": "indo1319",
     "likely": "kok-Deva-IN",
     "script": "Deva",
+    "num": "latn",
+    "chars": 1,
+    "quot": 0,
     "population": 4687456,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "krc": {
     "name": "Karachay-Balkar",
@@ -1139,7 +1287,8 @@
     "likely": "krc-Cyrl-RU",
     "script": "Cyrl",
     "population": 227768,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "ks": {
     "name": "Kashmiri",
@@ -1149,8 +1298,12 @@
     "likely": "ks-Arab-IN",
     "script": "Arab",
     "plural": 0,
+    "num": "arabext",
+    "chars": 3,
+    "quot": 0,
     "population": 5194208,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "kum": {
     "name": "Kumyk",
@@ -1160,7 +1313,8 @@
     "likely": "kum-Cyrl-RU",
     "script": "Cyrl",
     "population": 284710,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "kv": {
     "name": "Komi",
@@ -1170,7 +1324,8 @@
     "likely": "kv-Cyrl-RU",
     "script": "Cyrl",
     "population": 256239,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "ky": {
     "name": "Kyrgyz",
@@ -1182,10 +1337,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 3,
-    "quot": 3,
+    "chars": 6,
+    "quot": 4,
     "population": 2749224,
-    "literacy": 99.2
+    "literacy": 99.2,
+    "cldr": true
   },
   "lb": {
     "name": "Luxembourgish",
@@ -1195,8 +1351,12 @@
     "likely": "lb-Latn-LU",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 32,
+    "quot": 7,
     "population": 390135,
-    "literacy": 100
+    "literacy": 100,
+    "cldr": true
   },
   "lbe": {
     "name": "Lak",
@@ -1206,7 +1366,8 @@
     "likely": "lbe-Cyrl-RU",
     "script": "Cyrl",
     "population": 111037,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "lez": {
     "name": "Lezghian",
@@ -1216,7 +1377,8 @@
     "likely": "lez-Cyrl-RU",
     "script": "Cyrl",
     "population": 256239,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "ln": {
     "name": "Lingala",
@@ -1226,8 +1388,12 @@
     "likely": "ln-Latn-CD",
     "script": "Latn",
     "plural": 1,
+    "num": "latn",
+    "chars": 33,
+    "quot": 0,
     "population": 2521265,
-    "literacy": 66.8
+    "literacy": 66.8,
+    "cldr": true
   },
   "lo": {
     "name": "Lao",
@@ -1242,7 +1408,8 @@
     "chars": 0,
     "quot": 0,
     "population": 4843159,
-    "literacy": 72.7
+    "literacy": 72.7,
+    "cldr": true
   },
   "lt": {
     "name": "Lithuanian",
@@ -1254,10 +1421,11 @@
     "plural": 19,
     "ordinal": 0,
     "num": "latn",
-    "chars": 21,
-    "quot": 4,
+    "chars": 34,
+    "quot": 5,
     "population": 2462737,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "lua": {
     "name": "Luba-Lulua",
@@ -1267,7 +1435,8 @@
     "likely": "lua-Latn-CD",
     "script": "Latn",
     "population": 7807786,
-    "literacy": 66.8
+    "literacy": 66.8,
+    "cldr": false
   },
   "lv": {
     "name": "Latvian",
@@ -1279,10 +1448,11 @@
     "plural": 20,
     "ordinal": 0,
     "num": "latn",
-    "chars": 22,
+    "chars": 35,
     "quot": 0,
     "population": 1199071,
-    "literacy": 99.8
+    "literacy": 99.8,
+    "cldr": true
   },
   "mai": {
     "name": "Maithili",
@@ -1292,7 +1462,8 @@
     "likely": "mai-Deva-IN",
     "script": "Deva",
     "population": 15202560,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": false
   },
   "mdf": {
     "name": "Moksha",
@@ -1302,7 +1473,8 @@
     "likely": "mdf-Cyrl-RU",
     "script": "Cyrl",
     "population": 298946,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "mdh": {
     "name": "Maguindanao",
@@ -1312,7 +1484,8 @@
     "likely": "mdh-Latn-PH",
     "script": "Latn",
     "population": 1231488,
-    "literacy": 95.4
+    "literacy": 95.4,
+    "cldr": false
   },
   "mey": {
     "name": "Hassaniyya",
@@ -1320,7 +1493,8 @@
     "gl": "hass1238",
     "family": "afro1255",
     "population": 7161,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "mfv": {
     "name": "Mandjak",
@@ -1328,7 +1502,8 @@
     "gl": "mand1419",
     "family": "atla1278",
     "population": 110265,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "mg": {
     "name": "Malagasy",
@@ -1338,8 +1513,12 @@
     "likely": "mg-Latn-MG",
     "script": "Latn",
     "plural": 1,
+    "num": "latn",
+    "chars": 36,
+    "quot": 3,
     "population": 21987270,
-    "literacy": 64.5
+    "literacy": 64.5,
+    "cldr": true
   },
   "mh": {
     "name": "Marshallese",
@@ -1349,7 +1528,8 @@
     "likely": "mh-Latn-MH",
     "script": "Latn",
     "population": 53565,
-    "literacy": 93.7
+    "literacy": 93.7,
+    "cldr": false
   },
   "mi": {
     "name": "Maori",
@@ -1359,7 +1539,8 @@
     "likely": "mi-Latn-NZ",
     "script": "Latn",
     "population": 125288,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": false
   },
   "mk": {
     "name": "Macedonian",
@@ -1371,10 +1552,11 @@
     "plural": 21,
     "ordinal": 13,
     "num": "latn",
-    "chars": 4,
+    "chars": 7,
     "quot": 7,
     "population": 1407021,
-    "literacy": 97.4
+    "literacy": 97.4,
+    "cldr": true
   },
   "ml": {
     "name": "Malayalam",
@@ -1389,7 +1571,8 @@
     "chars": 0,
     "quot": 0,
     "population": 40540160,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "mn": {
     "name": "Mongolian",
@@ -1401,10 +1584,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 5,
+    "chars": 8,
     "quot": 0,
     "population": 2819137,
-    "literacy": 97.4
+    "literacy": 97.4,
+    "cldr": true
   },
   "mn-Mong": {
     "name": "Mongolian",
@@ -1416,7 +1600,8 @@
     "plural": 0,
     "ordinal": 0,
     "population": 3571204,
-    "literacy": 95.1
+    "literacy": 95.1,
+    "cldr": false
   },
   "mr": {
     "name": "Marathi",
@@ -1428,10 +1613,11 @@
     "plural": 2,
     "ordinal": 14,
     "num": "deva",
-    "chars": 1,
+    "chars": 2,
     "quot": 0,
     "population": 88681601,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "ms": {
     "name": "Malay",
@@ -1443,10 +1629,11 @@
     "plural": 6,
     "ordinal": 7,
     "num": "latn",
-    "chars": 23,
+    "chars": 37,
     "quot": 0,
     "population": 24427999,
-    "literacy": 93.2
+    "literacy": 93.2,
+    "cldr": true
   },
   "ms-Arab": {
     "name": "Malay",
@@ -1457,7 +1644,8 @@
     "plural": 6,
     "ordinal": 7,
     "population": 21831,
-    "literacy": 95.4
+    "literacy": 95.4,
+    "cldr": false
   },
   "mt": {
     "name": "Maltese",
@@ -1467,8 +1655,12 @@
     "likely": "mt-Latn-MT",
     "script": "Latn",
     "plural": 22,
+    "num": "latn",
+    "chars": 38,
+    "quot": 0,
     "population": 415196,
-    "literacy": 92.4
+    "literacy": 92.4,
+    "cldr": true
   },
   "my": {
     "name": "Burmese",
@@ -1483,7 +1675,8 @@
     "chars": 0,
     "quot": 0,
     "population": 36409856,
-    "literacy": 92.7
+    "literacy": 92.7,
+    "cldr": true
   },
   "myv": {
     "name": "Erzya",
@@ -1493,7 +1686,8 @@
     "likely": "myv-Cyrl-RU",
     "script": "Cyrl",
     "population": 441301,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "na": {
     "name": "Nauru",
@@ -1503,7 +1697,8 @@
     "likely": "na-Latn-NR",
     "script": "Latn",
     "population": 6906,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": false
   },
   "nb": {
     "name": "Norwegian Bokmål",
@@ -1515,10 +1710,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 24,
-    "quot": 14,
+    "chars": 39,
+    "quot": 15,
     "population": 5266658,
-    "literacy": 100
+    "literacy": 100,
+    "cldr": true
   },
   "nd": {
     "name": "North Ndebele",
@@ -1528,8 +1724,12 @@
     "likely": "nd-Latn-ZW",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 40,
+    "quot": 0,
     "population": 1745640,
-    "literacy": 83.6
+    "literacy": 83.6,
+    "cldr": true
   },
   "ne": {
     "name": "Nepali",
@@ -1541,10 +1741,11 @@
     "plural": 0,
     "ordinal": 15,
     "num": "deva",
-    "chars": 2,
+    "chars": 3,
     "quot": 0,
     "population": 19869444,
-    "literacy": 59.3
+    "literacy": 59.3,
+    "cldr": true
   },
   "niu": {
     "name": "Niuean",
@@ -1554,7 +1755,8 @@
     "likely": "niu-Latn-NU",
     "script": "Latn",
     "population": 1131,
-    "literacy": 95
+    "literacy": 95,
+    "cldr": false
   },
   "nl": {
     "name": "Dutch",
@@ -1566,10 +1768,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 25,
-    "quot": 15,
+    "chars": 41,
+    "quot": 16,
     "population": 23944585,
-    "literacy": 98.9
+    "literacy": 98.9,
+    "cldr": true
   },
   "nn": {
     "name": "Norwegian Nynorsk",
@@ -1579,8 +1782,12 @@
     "likely": "nn-Latn-NO",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 39,
+    "quot": 15,
     "population": 1316290,
-    "literacy": 100
+    "literacy": 100,
+    "cldr": true
   },
   "nr": {
     "name": "South Ndebele",
@@ -1591,7 +1798,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 868812,
-    "literacy": 50
+    "literacy": 50,
+    "cldr": false
   },
   "nso": {
     "name": "Northern Sotho",
@@ -1602,7 +1810,8 @@
     "script": "Latn",
     "plural": 1,
     "population": 5104266,
-    "literacy": 50
+    "literacy": 50,
+    "cldr": false
   },
   "ny": {
     "name": "Nyanja",
@@ -1613,7 +1822,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 11699289,
-    "literacy": 74.8
+    "literacy": 74.8,
+    "cldr": false
   },
   "or": {
     "name": "Odia",
@@ -1623,8 +1833,12 @@
     "likely": "or-Orya-IN",
     "script": "Orya",
     "plural": 0,
+    "num": "latn",
+    "chars": 0,
+    "quot": 0,
     "population": 40540160,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "os": {
     "name": "Ossetic",
@@ -1634,8 +1848,12 @@
     "likely": "os-Cyrl-GE",
     "script": "Cyrl",
     "plural": 0,
+    "num": "latn",
+    "chars": 9,
+    "quot": 4,
     "population": 108418,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "pa": {
     "name": "Punjabi",
@@ -1650,7 +1868,8 @@
     "chars": 0,
     "quot": 0,
     "population": 35472640,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "pag": {
     "name": "Pangasinan",
@@ -1660,7 +1879,8 @@
     "likely": "pag-Latn-PH",
     "script": "Latn",
     "population": 1436736,
-    "literacy": 95.4
+    "literacy": 95.4,
+    "cldr": false
   },
   "pap": {
     "name": "Papiamento",
@@ -1671,7 +1891,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 190044,
-    "literacy": 98.2
+    "literacy": 98.2,
+    "cldr": false
   },
   "pau": {
     "name": "Palauan",
@@ -1681,7 +1902,8 @@
     "likely": "pau-Latn-PW",
     "script": "Latn",
     "population": 15797,
-    "literacy": 92
+    "literacy": 92,
+    "cldr": false
   },
   "pl": {
     "name": "Polish",
@@ -1693,10 +1915,11 @@
     "plural": 23,
     "ordinal": 0,
     "num": "latn",
-    "chars": 26,
-    "quot": 16,
+    "chars": 42,
+    "quot": 17,
     "population": 36982368,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "ps": {
     "name": "Pashto",
@@ -1706,8 +1929,12 @@
     "likely": "ps-Arab-AF",
     "script": "Arab",
     "plural": 0,
+    "num": "arabext",
+    "chars": 4,
+    "quot": 0,
     "population": 14332760,
-    "literacy": 28.1
+    "literacy": 28.1,
+    "cldr": true
   },
   "pt": {
     "name": "Portuguese",
@@ -1719,10 +1946,11 @@
     "plural": 24,
     "ordinal": 0,
     "num": "latn",
-    "chars": 27,
+    "chars": 43,
     "quot": 0,
     "population": 221338465,
-    "literacy": 88.1
+    "literacy": 88.1,
+    "cldr": true
   },
   "qu": {
     "name": "Quechua",
@@ -1731,8 +1959,12 @@
     "family": "quec1387",
     "likely": "qu-Latn-PE",
     "script": "Latn",
+    "num": "latn",
+    "chars": 44,
+    "quot": 0,
     "population": 10855173,
-    "literacy": 90.6
+    "literacy": 90.6,
+    "cldr": true
   },
   "quc": {
     "name": "Kʼicheʼ",
@@ -1742,7 +1974,8 @@
     "likely": "quc-Latn-GT",
     "script": "Latn",
     "population": 1063300,
-    "literacy": 75.9
+    "literacy": 75.9,
+    "cldr": false
   },
   "rm": {
     "name": "Romansh",
@@ -1752,8 +1985,12 @@
     "likely": "rm-Latn-CH",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 45,
+    "quot": 1,
     "population": 40897,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "rn": {
     "name": "Rundi",
@@ -1762,8 +1999,12 @@
     "family": "atla1278",
     "likely": "rn-Latn-BI",
     "script": "Latn",
+    "num": "latn",
+    "chars": 12,
+    "quot": 10,
     "population": 6992559,
-    "literacy": 67.2
+    "literacy": 67.2,
+    "cldr": true
   },
   "ro": {
     "name": "Romanian",
@@ -1775,10 +2016,11 @@
     "plural": 25,
     "ordinal": 7,
     "num": "latn",
-    "chars": 28,
-    "quot": 16,
+    "chars": 46,
+    "quot": 17,
     "population": 21801362,
-    "literacy": 97.8
+    "literacy": 97.8,
+    "cldr": true
   },
   "ru": {
     "name": "Russian",
@@ -1790,10 +2032,11 @@
     "plural": 26,
     "ordinal": 0,
     "num": "latn",
-    "chars": 6,
-    "quot": 3,
+    "chars": 10,
+    "quot": 4,
     "population": 170580014,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "rw": {
     "name": "Kinyarwanda",
@@ -1802,8 +2045,12 @@
     "family": "atla1278",
     "likely": "rw-Latn-RW",
     "script": "Latn",
+    "num": "latn",
+    "chars": 12,
+    "quot": 15,
     "population": 10001068,
-    "literacy": 71.1
+    "literacy": 71.1,
+    "cldr": true
   },
   "sa": {
     "name": "Sanskrit",
@@ -1813,7 +2060,8 @@
     "likely": "sa-Deva-IN",
     "script": "Deva",
     "population": 15203,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": false
   },
   "sah": {
     "name": "Sakha",
@@ -1823,8 +2071,12 @@
     "likely": "sah-Cyrl-RU",
     "script": "Cyrl",
     "plural": 6,
+    "num": "latn",
+    "chars": 11,
+    "quot": 4,
     "population": 455536,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "sat": {
     "name": "Santali",
@@ -1834,7 +2086,8 @@
     "likely": "sat-Latn-IN",
     "script": "Latn",
     "population": 6967841,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": false
   },
   "sav": {
     "name": "Saafi-Saafi",
@@ -1844,7 +2097,8 @@
     "likely": "sav-Latn-SN",
     "script": "Latn",
     "population": 214802,
-    "literacy": 49.7
+    "literacy": 49.7,
+    "cldr": false
   },
   "sd": {
     "name": "Sindhi",
@@ -1854,7 +2108,8 @@
     "likely": "sd-Arab-PK",
     "script": "Arab",
     "population": 3293888,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": false
   },
   "sd-Deva": {
     "name": "Sindhi",
@@ -1864,7 +2119,8 @@
     "likely": "sd-Deva-IN",
     "script": "Deva",
     "population": 329389,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": false
   },
   "se": {
     "name": "Northern Sami",
@@ -1874,8 +2130,12 @@
     "likely": "se-Latn-NO",
     "script": "Latn",
     "plural": 18,
+    "num": "latn",
+    "chars": 47,
+    "quot": 10,
     "population": 173751,
-    "literacy": 100
+    "literacy": 100,
+    "cldr": true
   },
   "sg": {
     "name": "Sango",
@@ -1885,8 +2145,12 @@
     "likely": "sg-Latn-CF",
     "script": "Latn",
     "plural": 6,
+    "num": "latn",
+    "chars": 48,
+    "quot": 3,
     "population": 2698558,
-    "literacy": 56.6
+    "literacy": 56.6,
+    "cldr": true
   },
   "si": {
     "name": "Sinhala",
@@ -1901,7 +2165,8 @@
     "chars": 0,
     "quot": 0,
     "population": 15119801,
-    "literacy": 91.2
+    "literacy": 91.2,
+    "cldr": true
   },
   "sk": {
     "name": "Slovak",
@@ -1913,10 +2178,11 @@
     "plural": 8,
     "ordinal": 0,
     "num": "latn",
-    "chars": 29,
+    "chars": 49,
     "quot": 7,
     "population": 4961944,
-    "literacy": 99.6
+    "literacy": 99.6,
+    "cldr": true
   },
   "sl": {
     "name": "Slovenian",
@@ -1928,10 +2194,11 @@
     "plural": 28,
     "ordinal": 0,
     "num": "latn",
-    "chars": 30,
+    "chars": 50,
     "quot": 7,
     "population": 1753120,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": true
   },
   "sm": {
     "name": "Samoan",
@@ -1941,7 +2208,8 @@
     "likely": "sm-Latn-WS",
     "script": "Latn",
     "population": 252579,
-    "literacy": 98.4
+    "literacy": 98.4,
+    "cldr": false
   },
   "sn": {
     "name": "Shona",
@@ -1951,8 +2219,12 @@
     "likely": "sn-Latn-ZW",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 51,
+    "quot": 10,
     "population": 11783070,
-    "literacy": 83.6
+    "literacy": 83.6,
+    "cldr": true
   },
   "snf": {
     "name": "Noon",
@@ -1960,7 +2232,8 @@
     "gl": "noon1242",
     "family": "atla1278",
     "population": 34369,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "so": {
     "name": "Somali",
@@ -1970,8 +2243,12 @@
     "likely": "so-Latn-SO",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 12,
+    "quot": 0,
     "population": 8437572,
-    "literacy": 37.8
+    "literacy": 37.8,
+    "cldr": true
   },
   "sq": {
     "name": "Albanian",
@@ -1983,10 +2260,11 @@
     "plural": 0,
     "ordinal": 16,
     "num": "latn",
-    "chars": 31,
-    "quot": 6,
+    "chars": 52,
+    "quot": 3,
     "population": 5295976,
-    "literacy": 95.3
+    "literacy": 95.3,
+    "cldr": true
   },
   "sr": {
     "name": "Serbian",
@@ -1998,10 +2276,11 @@
     "plural": 7,
     "ordinal": 0,
     "num": "latn",
-    "chars": 7,
-    "quot": 17,
+    "chars": 3,
+    "quot": 18,
     "population": 7552823,
-    "literacy": 97.9
+    "literacy": 97.9,
+    "cldr": true
   },
   "sr-Latn": {
     "name": "Serbian",
@@ -2012,10 +2291,11 @@
     "plural": 7,
     "ordinal": 0,
     "num": "latn",
-    "chars": 2,
-    "quot": 17,
+    "chars": 4,
+    "quot": 18,
     "population": 8197401,
-    "literacy": 98
+    "literacy": 98,
+    "cldr": true
   },
   "srr": {
     "name": "Serer",
@@ -2025,7 +2305,8 @@
     "likely": "srr-Latn-SN",
     "script": "Latn",
     "population": 1575211,
-    "literacy": 49.7
+    "literacy": 49.7,
+    "cldr": false
   },
   "ss": {
     "name": "Swati",
@@ -2036,7 +2317,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 2307949,
-    "literacy": 63.8
+    "literacy": 63.8,
+    "cldr": false
   },
   "st": {
     "name": "Southern Sotho",
@@ -2047,7 +2329,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 6203764,
-    "literacy": 62.2
+    "literacy": 62.2,
+    "cldr": false
   },
   "sv": {
     "name": "Swedish",
@@ -2059,10 +2342,11 @@
     "plural": 4,
     "ordinal": 17,
     "num": "latn",
-    "chars": 32,
-    "quot": 9,
+    "chars": 53,
+    "quot": 10,
     "population": 11831721,
-    "literacy": 99.2
+    "literacy": 99.2,
+    "cldr": true
   },
   "sw": {
     "name": "Swahili",
@@ -2074,10 +2358,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 33,
+    "chars": 54,
     "quot": 0,
     "population": 147521308,
-    "literacy": 72.7
+    "literacy": 72.7,
+    "cldr": true
   },
   "ta": {
     "name": "Tamil",
@@ -2092,7 +2377,8 @@
     "chars": 0,
     "quot": 0,
     "population": 78202587,
-    "literacy": 64.1
+    "literacy": 64.1,
+    "cldr": true
   },
   "te": {
     "name": "Telugu",
@@ -2107,7 +2393,8 @@
     "chars": 0,
     "quot": 0,
     "population": 91215361,
-    "literacy": 62.8
+    "literacy": 62.8,
+    "cldr": true
   },
   "tet": {
     "name": "Tetum",
@@ -2117,7 +2404,8 @@
     "likely": "tet-Latn-TL",
     "script": "Latn",
     "population": 744032,
-    "literacy": 58.3
+    "literacy": 58.3,
+    "cldr": false
   },
   "tg": {
     "name": "Tajik",
@@ -2127,7 +2415,8 @@
     "likely": "tg-Cyrl-TJ",
     "script": "Cyrl",
     "population": 8330950,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "th": {
     "name": "Thai",
@@ -2142,7 +2431,8 @@
     "chars": 0,
     "quot": 0,
     "population": 54560640,
-    "literacy": 93
+    "literacy": 93,
+    "cldr": true
   },
   "ti": {
     "name": "Tigrinya",
@@ -2152,8 +2442,12 @@
     "likely": "ti-Ethi-ET",
     "script": "Ethi",
     "plural": 1,
+    "num": "latn",
+    "chars": 1,
+    "quot": 0,
     "population": 3521922,
-    "literacy": 68.9
+    "literacy": 68.9,
+    "cldr": true
   },
   "tk": {
     "name": "Turkmen",
@@ -2163,8 +2457,12 @@
     "likely": "tk-Latn-TM",
     "script": "Latn",
     "plural": 0,
+    "num": "latn",
+    "chars": 55,
+    "quot": 8,
     "population": 4270568,
-    "literacy": 90.1
+    "literacy": 90.1,
+    "cldr": true
   },
   "tkl": {
     "name": "Tokelau",
@@ -2174,7 +2472,8 @@
     "likely": "tkl-Latn-TK",
     "script": "Latn",
     "population": 1337,
-    "literacy": 94
+    "literacy": 94,
+    "cldr": false
   },
   "tn": {
     "name": "Tswana",
@@ -2185,7 +2484,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 5822368,
-    "literacy": 58.3
+    "literacy": 58.3,
+    "cldr": false
   },
   "tnr": {
     "name": "Bedik",
@@ -2193,7 +2493,8 @@
     "gl": "bedi1235",
     "family": "atla1278",
     "population": 3437,
-    "literacy": 10
+    "literacy": 10,
+    "cldr": false
   },
   "to": {
     "name": "Tongan",
@@ -2204,10 +2505,11 @@
     "script": "Latn",
     "plural": 6,
     "num": "latn",
-    "chars": 34,
+    "chars": 56,
     "quot": 0,
     "population": 101188,
-    "literacy": 99
+    "literacy": 99,
+    "cldr": true
   },
   "tpi": {
     "name": "Tok Pisin",
@@ -2217,7 +2519,8 @@
     "likely": "tpi-Latn-PG",
     "script": "Latn",
     "population": 4821838,
-    "literacy": 45
+    "literacy": 45,
+    "cldr": false
   },
   "tr": {
     "name": "Turkish",
@@ -2229,10 +2532,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 35,
+    "chars": 57,
     "quot": 0,
     "population": 74932662,
-    "literacy": 94.1
+    "literacy": 94.1,
+    "cldr": true
   },
   "ts": {
     "name": "Tsonga",
@@ -2243,7 +2547,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 2389231,
-    "literacy": 50
+    "literacy": 50,
+    "cldr": false
   },
   "tsg": {
     "name": "Tausug",
@@ -2253,7 +2558,8 @@
     "likely": "tsg-Latn-PH",
     "script": "Latn",
     "population": 1128864,
-    "literacy": 95.4
+    "literacy": 95.4,
+    "cldr": false
   },
   "tt": {
     "name": "Tatar",
@@ -2263,7 +2569,8 @@
     "likely": "tt-Cyrl-RU",
     "script": "Cyrl",
     "population": 1992970,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "tvl": {
     "name": "Tuvalu",
@@ -2273,7 +2580,8 @@
     "likely": "tvl-Latn-TV",
     "script": "Latn",
     "population": 9973,
-    "literacy": 95
+    "literacy": 95,
+    "cldr": false
   },
   "ty": {
     "name": "Tahitian",
@@ -2283,7 +2591,8 @@
     "likely": "ty-Latn-PF",
     "script": "Latn",
     "population": 88450,
-    "literacy": 98
+    "literacy": 98,
+    "cldr": false
   },
   "tyv": {
     "name": "Tuvinian",
@@ -2293,7 +2602,8 @@
     "likely": "tyv-Cyrl-RU",
     "script": "Cyrl",
     "population": 185062,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "tzm": {
     "name": "Central Atlas Tamazight",
@@ -2303,8 +2613,12 @@
     "likely": "tzm-Latn-MA",
     "script": "Latn",
     "plural": 29,
+    "num": "latn",
+    "chars": 58,
+    "quot": 0,
     "population": 3298269,
-    "literacy": 25
+    "literacy": 25,
+    "cldr": true
   },
   "udm": {
     "name": "Udmurt",
@@ -2314,7 +2628,8 @@
     "likely": "udm-Cyrl-RU",
     "script": "Cyrl",
     "population": 540949,
-    "literacy": 99.7
+    "literacy": 99.7,
+    "cldr": false
   },
   "ug": {
     "name": "Uyghur",
@@ -2324,8 +2639,12 @@
     "likely": "ug-Arab-CN",
     "script": "Arab",
     "plural": 0,
+    "num": "latn",
+    "chars": 5,
+    "quot": 19,
     "population": 7554471,
-    "literacy": 95.1
+    "literacy": 95.1,
+    "cldr": true
   },
   "uk": {
     "name": "Ukrainian",
@@ -2337,10 +2656,11 @@
     "plural": 26,
     "ordinal": 18,
     "num": "latn",
-    "chars": 8,
-    "quot": 3,
+    "chars": 12,
+    "quot": 4,
     "population": 35880225,
-    "literacy": 99.4
+    "literacy": 99.4,
+    "cldr": true
   },
   "ur": {
     "name": "Urdu",
@@ -2352,10 +2672,11 @@
     "plural": 4,
     "ordinal": 0,
     "num": "latn",
-    "chars": 2,
+    "chars": 6,
     "quot": 2,
     "population": 255240200,
-    "literacy": 56.9
+    "literacy": 56.9,
+    "cldr": true
   },
   "uz": {
     "name": "Uzbek",
@@ -2367,10 +2688,11 @@
     "plural": 0,
     "ordinal": 0,
     "num": "latn",
-    "chars": 36,
-    "quot": 18,
+    "chars": 59,
+    "quot": 20,
     "population": 25052560,
-    "literacy": 99.4
+    "literacy": 99.4,
+    "cldr": true
   },
   "uz-Arab": {
     "name": "Uzbek",
@@ -2381,8 +2703,12 @@
     "script": "Arab",
     "plural": 0,
     "ordinal": 0,
+    "num": "arabext",
+    "chars": 7,
+    "quot": 0,
     "population": 1566604,
-    "literacy": 28.1
+    "literacy": 28.1,
+    "cldr": true
   },
   "uz-Cyrl": {
     "name": "Uzbek",
@@ -2392,8 +2718,12 @@
     "script": "Cyrl",
     "plural": 0,
     "ordinal": 0,
+    "num": "latn",
+    "chars": 13,
+    "quot": 0,
     "population": 4421040,
-    "literacy": 99.4
+    "literacy": 99.4,
+    "cldr": true
   },
   "ve": {
     "name": "Venda",
@@ -2404,7 +2734,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 1248917,
-    "literacy": 50
+    "literacy": 50,
+    "cldr": false
   },
   "vi": {
     "name": "Vietnamese",
@@ -2416,10 +2747,11 @@
     "plural": 6,
     "ordinal": 7,
     "num": "latn",
-    "chars": 37,
+    "chars": 60,
     "quot": 0,
     "population": 81924460,
-    "literacy": 93.4
+    "literacy": 93.4,
+    "cldr": true
   },
   "war": {
     "name": "Waray",
@@ -2429,7 +2761,8 @@
     "likely": "war-Latn-PH",
     "script": "Latn",
     "population": 2976096,
-    "literacy": 95.4
+    "literacy": 95.4,
+    "cldr": false
   },
   "wni": {
     "name": "Ndzwani Comorian",
@@ -2439,7 +2772,8 @@
     "likely": "wni-Arab-KM",
     "script": "Arab",
     "population": 270191,
-    "literacy": 75.5
+    "literacy": 75.5,
+    "cldr": false
   },
   "wo": {
     "name": "Wolof",
@@ -2450,7 +2784,8 @@
     "script": "Latn",
     "plural": 6,
     "population": 10024070,
-    "literacy": 49.7
+    "literacy": 49.7,
+    "cldr": false
   },
   "xh": {
     "name": "Xhosa",
@@ -2461,7 +2796,8 @@
     "script": "Latn",
     "plural": 0,
     "population": 9774126,
-    "literacy": 50
+    "literacy": 50,
+    "cldr": false
   },
   "yo": {
     "name": "Yoruba",
@@ -2471,8 +2807,12 @@
     "likely": "yo-Latn-NG",
     "script": "Latn",
     "plural": 6,
+    "num": "latn",
+    "chars": 61,
+    "quot": 0,
     "population": 24186890,
-    "literacy": 61.3
+    "literacy": 61.3,
+    "cldr": true
   },
   "za": {
     "name": "Zhuang",
@@ -2482,7 +2822,8 @@
     "likely": "za-Latn-CN",
     "script": "Latn",
     "population": 4257974,
-    "literacy": 95.1
+    "literacy": 95.1,
+    "cldr": false
   },
   "zdj": {
     "name": "Ngazidja Comorian",
@@ -2492,7 +2833,8 @@
     "likely": "zdj-Arab-KM",
     "script": "Arab",
     "population": 294031,
-    "literacy": 75.5
+    "literacy": 75.5,
+    "cldr": false
   },
   "zh": {
     "name": "Chinese",
@@ -2507,7 +2849,8 @@
     "chars": 0,
     "quot": 0,
     "population": 1240637933,
-    "literacy": 95.1
+    "literacy": 95.1,
+    "cldr": true
   },
   "zh-Hant": {
     "name": "Traditional Chinese",
@@ -2520,9 +2863,10 @@
     "ordinal": 0,
     "num": "latn",
     "chars": 0,
-    "quot": 12,
+    "quot": 13,
     "population": 29686067,
-    "literacy": 95.5
+    "literacy": 95.5,
+    "cldr": true
   },
   "zu": {
     "name": "Zulu",
@@ -2534,9 +2878,10 @@
     "plural": 2,
     "ordinal": 0,
     "num": "latn",
-    "chars": 38,
+    "chars": 62,
     "quot": 0,
     "population": 13032168,
-    "literacy": 50
+    "literacy": 50,
+    "cldr": true
   }
 }

@@ -1,211 +1,211 @@
-name	iso3	gl	family	likely	script	population	literacy	id	plural	ordinal	num	chars	quot
-Abkhazian	abk	abkh1244	abkh1242	ab-Cyrl-GE	Cyrl	108418	99.7	ab					
-Adyghe	ady	adyg1241	abkh1242	ady-Cyrl-RU	Cyrl	125273	99.7	ady					
-Afrikaans	afr	afri1274	indo1319	af-Latn-ZA	Latn	7059091	99	af	0	0	latn	0	0
-Akan	aka	akan1250	atla1278	ak-Latn-GH	Latn	10494237	71.5	ak	1				
-Amharic	amh	amha1245	afro1255	am-Ethi-ET	Ethi	33783420	39	am	2	0	latn	0	1
-Arabic	ara	arab1395	afro1255	ar-Arab-EG	Arab	308333021	77	ar	3	0	arab	0	2
-Assamese	asm	assa1263	indo1319	as-Beng-IN	Beng	16469441	62.8	as	2	1			
-Asturian	ast	astu1245	indo1319	ast-Latn-ES	Latn	631326	97.7	ast	4				
-Avaric	ava	avar1256	nakh1245	av-Cyrl-RU	Cyrl	555185	99.7	av					
-Aymara	aym	nucl1667	ayma1253	ay-Latn-BO	Latn	2193920	91.2	ay					
-Azerbaijani	aze	azer1255	turk1311	az-Latn-AZ	Latn	8786766	99.8	az	0	2	latn	1	0
-Azerbaijani	aze	azer1255	turk1311	az-Arab-IR	Arab	686629	78.5	az-Arab	0	2			
-Azerbaijani	aze	azer1255	turk1311		Cyrl	1109795	99.8	az-Cyrl	0	2			
-Bashkir	bak	bash1264	turk1311	ba-Cyrl-RU	Cyrl	1850616	99.7	ba					
-Baluchi	bal	balo1260	indo1319	bal-Arab-PK	Arab	223325	28.1	bal					
-Belarusian	bel	bela1254	indo1319	be-Cyrl-BY	Cyrl	9570380	99.6	be	5	3	latn	0	3
-Bulgarian	bul	bulg1262	indo1319	bg-Cyrl-BG	Cyrl	7144650	98.4	bg	0	0	latn	1	4
-Bislama	bis	bisl1239	indo1319	bi-Latn-VU	Latn	249799	83.2	bi					
-Balanta-Ganja	bjt	bala1302	atla1278	bjt-Latn-SN	Latn	87353	100	bjt					
-Bangla	ben	beng1280	indo1319	bn-Beng-BD	Beng	255680540	59.7	bn	2	1	beng	0	0
-Tibetan	bod	tibe1272	sino1245	bo-Tibt-CN	Tibt	2747080	95.1	bo	6				
-Bosnian	bos	bosn1245	indo1319	bs-Latn-BA	Latn	3823291	98	bs	7	0	latn	2	5
-Bosnian	bos	bosn1245	indo1319		Cyrl	3823291	98	bs-Cyrl	7	0			
-Bassari-Tanda	bsc	bass1258	atla1278			14034	10	bsc					
-Catalan	cat	stan1289	indo1319	ca-Latn-ES	Latn	8299482	97.7	ca	4	4	latn	3	6
-Chechen	che	chec1245	nakh1245	ce-Cyrl-RU	Cyrl	939543	99.7	ce	0	0			
-Cebuano	ceb	cebu1242	aust1307	ceb-Latn-PH	Latn	24629760	13	ceb					
-Chamorro	cha	cham1312	aust1307	ch-Latn-GU	Latn	35804	99	ch					
-Central Kurdish	ckb	cent1972	indo1319	ckb-Arab-IQ	Arab	7629200	78.5	ckb	0				
-Czech	ces	czec1258	indo1319	cs-Latn-CZ	Latn	10431904	99	cs	8	0	latn	4	7
-Kashubian	csb	kash1274	indo1319	csb-Latn-PL	Latn	50081	99.7	csb					
-Welsh	cym	wels1247	indo1319	cy-Latn-GB	Latn	496115	99	cy	9	5	latn	5	0
-Danish	dan	dani1285	indo1319	da-Latn-DK	Latn	5202225	99	da	10	0	latn	6	0
-German	deu	stan1295	indo1319	de-Latn-DE	Latn	100742338	99	de	4	0	latn	7	7
-Divehi	div	dhiv1236	indo1319	dv-Thaa-MV	Thaa	369383	98.4	dv	0				
-Jola-Fonyi	dyo	jola1263	atla1278	dyo-Latn-SN	Latn	372323	10	dyo					
-Dzongkha	dzo	dzon1239	sino1245	dz-Tibt-BT	Tibt	352559	52.8	dz	6				
-Ewe	ewe	ewee1241	atla1278	ee-Latn-GH	Latn	2959913	71.5	ee	0				
-Greek	ell	mode1248	indo1319	el-Grek-GR	Grek	11810868	97.4	el	0	0	latn	0	6
-English	eng	stan1293	indo1319	en-Latn-US	Latn	1111587744	80.1	en	4	6	latn	8	0
-Spanish	spa	stan1288	indo1319	es-Latn-ES	Latn	423409100	94	es	0	0	latn	9	6
-Estonian	est	esto1258	ural1272	et-Latn-EE	Latn	893571	99.8	et	4	0	latn	10	7
-Basque	eus	basq1248	basq1248	eu-Latn-ES	Latn	971270	97.7	eu	0	0	latn	11	8
-Persian	fas	fars1254	indo1319	fa-Arab-IR	Arab	78767200	73	fa	2	0	arabext	1	1
-Fulah	ful	fula1264	atla1278	ff-Latn-SN	Latn	3007221	49.7	ff	11				
-Finnish	fin	finn1318	ural1272	fi-Latn-FI	Latn	5385691	100	fi	4	0	latn	12	9
-Filipino	fil	fili1244	aust1307	fil-Latn-PH	Latn	61574400	95.4	fil	12	7	latn	13	0
-Fijian	fij	fiji1243	aust1307	fj-Latn-FJ	Latn	356969	93.7	fj					
-Faroese	fao	faro1244	indo1319	fo-Latn-FO	Latn	47934	99	fo	0		latn	14	0
-French	fra	stan1290	indo1319	fr-Latn-FR	Latn	212993197	77.1	fr	11	7	latn	15	10
-Western Frisian	fry	west2354	indo1319	fy-Latn-NL	Latn	731731	99	fy	4	0			
-Irish	gle	iris1253	indo1319	ga-Latn-IE	Latn	1106296	99	ga	13	7	latn	16	0
-Ga	gaa	gaaa1244	atla1278	gaa-Latn-GH	Latn	753433	71.5	gaa					
-Scottish Gaelic	gla	scot1245	indo1319	gd-Latn-GB	Latn	63787	99	gd	14				
-Gilbertese	gil	gilb1244	aust1307	gil-Latn-KI	Latn	64155	90	gil					
-Galician	glg	gali1258	indo1319	gl-Latn-ES	Latn	3399446	97.7	gl	4	0	latn	17	0
-Guarani	grn	tupi1282	tupi1275	gn-Latn-PY	Latn	5490248	93.9	gn					
-Swiss German	gsw	swis1247	indo1319	gsw-Latn-CH	Latn	5348785	99	gsw	0	0			
-Gujarati	guj	guja1252	indo1319	gu-Gujr-IN	Gujr	57009600	62.8	gu	2	8	latn	0	0
-Manx	glv	manx1243	indo1319	gv-Latn-IM	Latn	1676	99	gv	15				
-Hawaiian	haw	hawa1245	aust1307	haw-Latn-US	Latn	28836	99	haw	0				
-Hebrew	heb	hebr1245	afro1255	he-Hebr-IL	Hebr	8174530	97.1	he	16	0	latn	0	9
-Hindi	hin	hind1269	indo1319	hi-Deva-IN	Deva	519420800	62.8	hi	2	8	latn	0	0
-Fiji Hindi	hif	fiji1242	indo1319	hif-Latn-FJ	Latn	375275	93.7	hif					
-Hiligaynon	hil	hili1240	aust1307	hil-Latn-PH	Latn	8620416	8	hil					
-Hiri Motu	hmo	hiri1237	pidg1258	ho-Latn-PG	Latn	142618	62.4	ho					
-Croatian	hrv	croa1245	indo1319	hr-Latn-HR	Latn	4904982	98.8	hr	7	0	latn	2	7
-Haitian Creole	hat	hait1244	indo1319	ht-Latn-HT	Latn	8493498	48.7	ht					
-Hungarian	hun	hung1274	ural1272	hu-Latn-HU	Latn	10241210	99	hu	0	9	latn	18	11
-Armenian	hye	nucl1235	indo1319	hy-Armn-AM	Armn	2990225	99.6	hy	11	7	latn	0	10
-Indonesian	ind	indo1316	aust1307	id-Latn-ID	Latn	165322240	92.8	id	6	0	latn	8	0
-Western Canadian Inuktitut	ikt	west2618	eski1264	ikt-Latn-CA	Latn	3890	30	ikt					
-Iloko	ilo	ilok1237	aust1307	ilo-Latn-PH	Latn	9851904	10	ilo					
-Ingush	inh	ingu1240	nakh1245	inh-Cyrl-RU	Cyrl	227768	99.7	inh					
-Icelandic	isl	icel1247	indo1319	is-Latn-IS	Latn	335878	99	is	17	0	latn	19	7
-Italian	ita	ital1282	indo1319	it-Latn-IT	Latn	59358298	99	it	4	10	latn	20	6
-Inuktitut	iku	east2534	eski1264	iu-Cans-CA	Cans	14853	30	iu	18				
-Inuktitut	iku	east2534	eski1264		Latn	14853	30	iu-Latn	18				
-Japanese	jpn	nucl1643	japo1237	ja-Jpan-JP	Jpan	120366900	99	ja	6	0	latn	0	12
-Georgian	kat	nucl1302	kart1248	ka-Geor-GE	Geor	4238123	99.7	ka	0	11	latn	0	13
-Kabardian	kbd	kaba1278	abkh1242	kbd-Cyrl-RU	Cyrl	441301	99.7	kbd					
-Kongo	kon	core1256	atla1278	kg-Latn-CD	Latn	1219967	66.8	kg					
-Khasi	kha	khas1269	aust1305	kha-Latn-IN	Latn	1013504	29	kha					
-Kazakh	kaz	kaza1248	turk1311	kk-Cyrl-KZ	Cyrl	11750656	99.7	kk	0	12	latn	2	6
-Kalaallisut	kal	kala1399	eski1264	kl-Latn-GL	Latn	55764	99.9	kl	0				
-Khmer	khm	cent1989	aust1305	km-Khmr-KH	Khmr	14201908	73.9	km	6	0	latn	0	0
-Kannada	kan	nucl1305	drav1251	kn-Knda-IN	Knda	46874561	62.8	kn	2	0	latn	0	0
-Mankanya	knf	mank1251	atla1278	knf-Latn-SN	Latn	30073	10	knf					
-Korean	kor	kore1280	kore1284	ko-Kore-KR	Kore	75085974	98.4	ko	6	0	latn	0	0
-Komi-Permyak	koi	komi1269	ural1272	koi-Cyrl-RU	Cyrl	64060	99.7	koi					
-Konkani	kok	konk1270	indo1319	kok-Deva-IN	Deva	4687456	62.8	kok					
-Karachay-Balkar	krc	kara1465	turk1311	krc-Cyrl-RU	Cyrl	227768	99.7	krc					
-Kashmiri	kas	kash1277	indo1319	ks-Arab-IN	Arab	5194208	62.8	ks	0				
-Kumyk	kum	kumy1244	turk1311	kum-Cyrl-RU	Cyrl	284710	99.7	kum					
-Komi	kom	komi1267	ural1272	kv-Cyrl-RU	Cyrl	256239	99.7	kv					
-Kyrgyz	kir	kirg1245	turk1311	ky-Cyrl-KG	Cyrl	2749224	99.2	ky	0	0	latn	3	3
-Luxembourgish	ltz	luxe1241	indo1319	lb-Latn-LU	Latn	390135	100	lb	0				
-Lak	lbe	lakk1252	nakh1245	lbe-Cyrl-RU	Cyrl	111037	99.7	lbe					
-Lezghian	lez	lezg1247	nakh1245	lez-Cyrl-RU	Cyrl	256239	99.7	lez					
-Lingala	lin	ling1263	atla1278	ln-Latn-CD	Latn	2521265	66.8	ln	1				
-Lao	lao	laoo1244	taik1256	lo-Laoo-LA	Laoo	4843159	72.7	lo	6	7	latn	0	0
-Lithuanian	lit	lith1251	indo1319	lt-Latn-LT	Latn	2462737	99.7	lt	19	0	latn	21	4
-Luba-Lulua	lua	luba1249	atla1278	lua-Latn-CD	Latn	7807786	66.8	lua					
-Latvian	lav	latv1249	indo1319	lv-Latn-LV	Latn	1199071	99.8	lv	20	0	latn	22	0
-Maithili	mai	mait1250	indo1319	mai-Deva-IN	Deva	15202560	62.8	mai					
-Moksha	mdf	moks1248	ural1272	mdf-Cyrl-RU	Cyrl	298946	99.7	mdf					
-Maguindanao	mdh	magu1243	aust1307	mdh-Latn-PH	Latn	1231488	95.4	mdh					
-Hassaniyya	mey	hass1238	afro1255			7161	10	mey					
-Mandjak	mfv	mand1419	atla1278			110265	10	mfv					
-Malagasy	mlg	mala1537	aust1307	mg-Latn-MG	Latn	21987270	64.5	mg	1				
-Marshallese	mah	mars1254	aust1307	mh-Latn-MH	Latn	53565	93.7	mh					
-Maori	mri	maor1246	aust1307	mi-Latn-NZ	Latn	125288	99	mi					
-Macedonian	mkd	mace1250	indo1319	mk-Cyrl-MK	Cyrl	1407021	97.4	mk	21	13	latn	4	7
-Malayalam	mal	mala1464	drav1251	ml-Mlym-IN	Mlym	40540160	62.8	ml	0	0	latn	0	0
-Mongolian	mon	mong1331	mong1329	mn-Cyrl-MN	Cyrl	2819137	97.4	mn	0	0	latn	5	0
-Mongolian	mon	mong1331	mong1329	mn-Mong-CN	Mong	3571204	95.1	mn-Mong	0	0			
-Marathi	mar	mara1378	indo1319	mr-Deva-IN	Deva	88681601	62.8	mr	2	14	deva	1	0
-Malay	msa	indo1326	aust1307	ms-Latn-MY	Latn	24427999	93.2	ms	6	7	latn	23	0
-Malay	msa	indo1326	aust1307		Arab	21831	95.4	ms-Arab	6	7			
-Maltese	mlt	malt1254	afro1255	mt-Latn-MT	Latn	415196	92.4	mt	22				
-Burmese	mya	nucl1310	sino1245	my-Mymr-MM	Mymr	36409856	92.7	my	6	0	mymr	0	0
-Erzya	myv	erzy1239	ural1272	myv-Cyrl-RU	Cyrl	441301	99.7	myv					
-Nauru	nau	naur1243	aust1307	na-Latn-NR	Latn	6906	99	na					
-Norwegian Bokmål	nob	norw1259	indo1319	nb-Latn-NO	Latn	5266658	100	nb	0	0	latn	24	14
-North Ndebele	nde	nort2795	atla1278	nd-Latn-ZW	Latn	1745640	83.6	nd	0				
-Nepali	nep	east1436	indo1319	ne-Deva-NP	Deva	19869444	59.3	ne	0	15	deva	2	0
-Niuean	niu	niue1239	aust1307	niu-Latn-NU	Latn	1131	95	niu					
-Dutch	nld	dutc1256	indo1319	nl-Latn-NL	Latn	23944585	98.9	nl	4	0	latn	25	15
-Norwegian Nynorsk	nno	norw1262	indo1319	nn-Latn-NO	Latn	1316290	100	nn	0				
-South Ndebele	nbl	sout2808	atla1278	nr-Latn-ZA	Latn	868812	50	nr	0				
-Northern Sotho	nso	pedi1238	atla1278	nso-Latn-ZA	Latn	5104266	50	nso	1				
-Nyanja	nya	nyan1308	atla1278	ny-Latn-MW	Latn	11699289	74.8	ny	0				
-Odia	ori	macr1269	indo1319	or-Orya-IN	Orya	40540160	62.8	or	0				
-Ossetic	oss	osse1243	indo1319	os-Cyrl-GE	Cyrl	108418	99.7	os	0				
-Punjabi	pan	panj1256	indo1319	pa-Guru-IN	Guru	35472640	62.8	pa	1	0	latn	0	0
-Pangasinan	pag	pang1290	aust1307	pag-Latn-PH	Latn	1436736	95.4	pag					
-Papiamento	pap	papi1253	indo1319	pap-Latn-AW	Latn	190044	98.2	pap	0				
-Palauan	pau	pala1344	aust1307	pau-Latn-PW	Latn	15797	92	pau					
-Polish	pol	poli1260	indo1319	pl-Latn-PL	Latn	36982368	99.7	pl	23	0	latn	26	16
-Pashto	pus	nucl1276	indo1319	ps-Arab-AF	Arab	14332760	28.1	ps	0				
-Portuguese	por	port1283	indo1319	pt-Latn-BR	Latn	221338465	88.1	pt	24	0	latn	27	0
-Quechua	que	quec1387	quec1387	qu-Latn-PE	Latn	10855173	90.6	qu					
-Kʼicheʼ	quc	kich1262	maya1287	quc-Latn-GT	Latn	1063300	75.9	quc					
-Romansh	roh	roma1326	indo1319	rm-Latn-CH	Latn	40897	99	rm	0				
-Rundi	run	rund1242	atla1278	rn-Latn-BI	Latn	6992559	67.2	rn					
-Romanian	ron	roma1327	indo1319	ro-Latn-RO	Latn	21801362	97.8	ro	25	7	latn	28	16
-Russian	rus	russ1263	indo1319	ru-Cyrl-RU	Cyrl	170580014	99.7	ru	26	0	latn	6	3
-Kinyarwanda	kin	kiny1244	atla1278	rw-Latn-RW	Latn	10001068	71.1	rw					
-Sanskrit	san	sans1269	indo1319	sa-Deva-IN	Deva	15203	62.8	sa					
-Sakha	sah	yaku1245	turk1311	sah-Cyrl-RU	Cyrl	455536	99.7	sah	6				
-Santali	sat	sant1410	aust1305	sat-Latn-IN	Latn	6967841	62.8	sat					
-Saafi-Saafi	sav	saaf1238	atla1278	sav-Latn-SN	Latn	214802	49.7	sav					
-Sindhi	snd	sind1272	indo1319	sd-Arab-PK	Arab	3293888	62.8	sd					
-Sindhi	snd	sind1272	indo1319	sd-Deva-IN	Deva	329389	62.8	sd-Deva					
-Northern Sami	sme	nort2671	ural1272	se-Latn-NO	Latn	173751	100	se	18				
-Sango	sag	sang1328	atla1278	sg-Latn-CF	Latn	2698558	56.6	sg	6				
-Sinhala	sin	sinh1246	indo1319	si-Sinh-LK	Sinh	15119801	91.2	si	27	0	latn	0	0
-Slovak	slk	slov1269	indo1319	sk-Latn-SK	Latn	4961944	99.6	sk	8	0	latn	29	7
-Slovenian	slv	slov1268	indo1319	sl-Latn-SI	Latn	1753120	99.7	sl	28	0	latn	30	7
-Samoan	smo	samo1305	aust1307	sm-Latn-WS	Latn	252579	98.4	sm					
-Shona	sna	shon1251	atla1278	sn-Latn-ZW	Latn	11783070	83.6	sn	0				
-Noon	snf	noon1242	atla1278			34369	10	snf					
-Somali	som	soma1255	afro1255	so-Latn-SO	Latn	8437572	37.8	so	0				
-Albanian	sqi	alba1267	indo1319	sq-Latn-AL	Latn	5295976	95.3	sq	0	16	latn	31	6
-Serbian	srp	serb1264	indo1319	sr-Cyrl-RS	Cyrl	7552823	97.9	sr	7	0	latn	7	17
-Serbian	srp	serb1264	indo1319		Latn	8197401	98	sr-Latn	7	0	latn	2	17
-Serer	srr	sere1260	atla1278	srr-Latn-SN	Latn	1575211	49.7	srr					
-Swati	ssw	swat1243	atla1278	ss-Latn-ZA	Latn	2307949	63.8	ss	0				
-Southern Sotho	sot	sout2807	atla1278	st-Latn-ZA	Latn	6203764	62.2	st	0				
-Swedish	swe	swed1254	indo1319	sv-Latn-SE	Latn	11831721	99.2	sv	4	17	latn	32	9
-Swahili	swa	swah1254	atla1278	sw-Latn-TZ	Latn	147521308	72.7	sw	4	0	latn	33	0
-Tamil	tam	tami1289	drav1251	ta-Taml-IN	Taml	78202587	64.1	ta	0	0	latn	0	0
-Telugu	tel	telu1262	drav1251	te-Telu-IN	Telu	91215361	62.8	te	0	0	latn	0	0
-Tetum	tet	tetu1245	aust1307	tet-Latn-TL	Latn	744032	58.3	tet					
-Tajik	tgk	taji1245	indo1319	tg-Cyrl-TJ	Cyrl	8330950	99.7	tg					
-Thai	tha	thai1261	taik1256	th-Thai-TH	Thai	54560640	93	th	6	0	latn	0	0
-Tigrinya	tir	tigr1271	afro1255	ti-Ethi-ET	Ethi	3521922	68.9	ti	1				
-Turkmen	tuk	turk1304	turk1311	tk-Latn-TM	Latn	4270568	90.1	tk	0				
-Tokelau	tkl	toke1240	aust1307	tkl-Latn-TK	Latn	1337	94	tkl					
-Tswana	tsn	tswa1253	atla1278	tn-Latn-ZA	Latn	5822368	58.3	tn	0				
-Bedik	tnr	bedi1235	atla1278			3437	10	tnr					
-Tongan	ton	tong1325	aust1307	to-Latn-TO	Latn	101188	99	to	6		latn	34	0
-Tok Pisin	tpi	tokp1240	indo1319	tpi-Latn-PG	Latn	4821838	45	tpi					
-Turkish	tur	nucl1301	turk1311	tr-Latn-TR	Latn	74932662	94.1	tr	0	0	latn	35	0
-Tsonga	tso	tson1249	atla1278	ts-Latn-ZA	Latn	2389231	50	ts	0				
-Tausug	tsg	taus1251	aust1307	tsg-Latn-PH	Latn	1128864	95.4	tsg					
-Tatar	tat	tata1255	turk1311	tt-Cyrl-RU	Cyrl	1992970	99.7	tt					
-Tuvalu	tvl	tuva1244	aust1307	tvl-Latn-TV	Latn	9973	95	tvl					
-Tahitian	tah	tahi1242	aust1307	ty-Latn-PF	Latn	88450	98	ty					
-Tuvinian	tyv	tuvi1240	turk1311	tyv-Cyrl-RU	Cyrl	185062	99.7	tyv					
-Central Atlas Tamazight	tzm	cent2194	afro1255	tzm-Latn-MA	Latn	3298269	25	tzm	29				
-Udmurt	udm	udmu1245	ural1272	udm-Cyrl-RU	Cyrl	540949	99.7	udm					
-Uyghur	uig	uigh1240	turk1311	ug-Arab-CN	Arab	7554471	95.1	ug	0				
-Ukrainian	ukr	ukra1253	indo1319	uk-Cyrl-UA	Cyrl	35880225	99.4	uk	26	18	latn	8	3
-Urdu	urd	urdu1245	indo1319	ur-Arab-PK	Arab	255240200	56.9	ur	4	0	latn	2	2
-Uzbek	uzb	uzbe1247	turk1311	uz-Latn-UZ	Latn	25052560	99.4	uz	0	0	latn	36	18
-Uzbek	uzb	uzbe1247	turk1311	uz-Arab-AF	Arab	1566604	28.1	uz-Arab	0	0			
-Uzbek	uzb	uzbe1247	turk1311		Cyrl	4421040	99.4	uz-Cyrl	0	0			
-Venda	ven	vend1245	atla1278	ve-Latn-ZA	Latn	1248917	50	ve	0				
-Vietnamese	vie	viet1252	aust1305	vi-Latn-VN	Latn	81924460	93.4	vi	6	7	latn	37	0
-Waray	war	wara1300	aust1307	war-Latn-PH	Latn	2976096	95.4	war					
-Ndzwani Comorian	wni	ndzw1235	atla1278	wni-Arab-KM	Arab	270191	75.5	wni					
-Wolof	wol	nucl1347	atla1278	wo-Latn-SN	Latn	10024070	49.7	wo	6				
-Xhosa	xho	xhos1239	atla1278	xh-Latn-ZA	Latn	9774126	50	xh	0				
-Yoruba	yor	yoru1245	atla1278	yo-Latn-NG	Latn	24186890	61.3	yo	6				
-Zhuang	zha	nort3180	taik1256	za-Latn-CN	Latn	4257974	95.1	za					
-Ngazidja Comorian	zdj	ngaz1238	atla1278	zdj-Arab-KM	Arab	294031	75.5	zdj					
-Chinese	zho	sini1245	sino1245	zh-Hans-CN	Hans	1240637933	95.1	zh	6	0	latn	0	0
-Traditional Chinese	zho	sini1245	sino1245	zh-Hant-TW	Hant	29686067	95.5	zh-Hant	6	0	latn	0	12
-Zulu	zul	zulu1248	atla1278	zu-Latn-ZA	Latn	13032168	50	zu	2	0	latn	38	0
+name	iso3	gl	family	likely	script	population	literacy	cldr	id	plural	ordinal	num	chars	quot
+Abkhazian	abk	abkh1244	abkh1242	ab-Cyrl-GE	Cyrl	108418	99.7	false	ab					
+Adyghe	ady	adyg1241	abkh1242	ady-Cyrl-RU	Cyrl	125273	99.7	false	ady					
+Afrikaans	afr	afri1274	indo1319	af-Latn-ZA	Latn	7059091	99	true	af	0	0	latn	0	0
+Akan	aka	akan1250	atla1278	ak-Latn-GH	Latn	10494237	71.5	true	ak	1		latn	1	0
+Amharic	amh	amha1245	afro1255	am-Ethi-ET	Ethi	33783420	39	true	am	2	0	latn	0	1
+Arabic	ara	arab1395	afro1255	ar-Arab-EG	Arab	308333021	77	true	ar	3	0	arab	0	2
+Assamese	asm	assa1263	indo1319	as-Beng-IN	Beng	16469441	62.8	true	as	2	1	beng	0	0
+Asturian	ast	astu1245	indo1319	ast-Latn-ES	Latn	631326	97.7	true	ast	4		latn	2	3
+Avaric	ava	avar1256	nakh1245	av-Cyrl-RU	Cyrl	555185	99.7	false	av					
+Aymara	aym	nucl1667	ayma1253	ay-Latn-BO	Latn	2193920	91.2	false	ay					
+Azerbaijani	aze	azer1255	turk1311	az-Latn-AZ	Latn	8786766	99.8	true	az	0	2	latn	3	0
+Azerbaijani	aze	azer1255	turk1311	az-Arab-IR	Arab	686629	78.5	false	az-Arab	0	2			
+Azerbaijani	aze	azer1255	turk1311		Cyrl	1109795	99.8	true	az-Cyrl	0	2	latn	0	1
+Bashkir	bak	bash1264	turk1311	ba-Cyrl-RU	Cyrl	1850616	99.7	false	ba					
+Baluchi	bal	balo1260	indo1319	bal-Arab-PK	Arab	223325	28.1	false	bal					
+Belarusian	bel	bela1254	indo1319	be-Cyrl-BY	Cyrl	9570380	99.6	true	be	5	3	latn	1	4
+Bulgarian	bul	bulg1262	indo1319	bg-Cyrl-BG	Cyrl	7144650	98.4	true	bg	0	0	latn	2	5
+Bislama	bis	bisl1239	indo1319	bi-Latn-VU	Latn	249799	83.2	false	bi					
+Balanta-Ganja	bjt	bala1302	atla1278	bjt-Latn-SN	Latn	87353	100	false	bjt					
+Bangla	ben	beng1280	indo1319	bn-Beng-BD	Beng	255680540	59.7	true	bn	2	1	beng	1	0
+Tibetan	bod	tibe1272	sino1245	bo-Tibt-CN	Tibt	2747080	95.1	true	bo	6		latn	0	0
+Bosnian	bos	bosn1245	indo1319	bs-Latn-BA	Latn	3823291	98	true	bs	7	0	latn	4	6
+Bosnian	bos	bosn1245	indo1319		Cyrl	3823291	98	true	bs-Cyrl	7	0	latn	3	7
+Bassari-Tanda	bsc	bass1258	atla1278			14034	10	false	bsc					
+Catalan	cat	stan1289	indo1319	ca-Latn-ES	Latn	8299482	97.7	true	ca	4	4	latn	5	3
+Chechen	che	chec1245	nakh1245	ce-Cyrl-RU	Cyrl	939543	99.7	true	ce	0	0	latn	4	0
+Cebuano	ceb	cebu1242	aust1307	ceb-Latn-PH	Latn	24629760	13	false	ceb					
+Chamorro	cha	cham1312	aust1307	ch-Latn-GU	Latn	35804	99	false	ch					
+Central Kurdish	ckb	cent1972	indo1319	ckb-Arab-IQ	Arab	7629200	78.5	true	ckb	0		arab	1	0
+Czech	ces	czec1258	indo1319	cs-Latn-CZ	Latn	10431904	99	true	cs	8	0	latn	6	7
+Kashubian	csb	kash1274	indo1319	csb-Latn-PL	Latn	50081	99.7	false	csb					
+Welsh	cym	wels1247	indo1319	cy-Latn-GB	Latn	496115	99	true	cy	9	5	latn	7	0
+Danish	dan	dani1285	indo1319	da-Latn-DK	Latn	5202225	99	true	da	10	0	latn	8	0
+German	deu	stan1295	indo1319	de-Latn-DE	Latn	100742338	99	true	de	4	0	latn	9	7
+Divehi	div	dhiv1236	indo1319	dv-Thaa-MV	Thaa	369383	98.4	false	dv	0				
+Jola-Fonyi	dyo	jola1263	atla1278	dyo-Latn-SN	Latn	372323	10	true	dyo			latn	10	3
+Dzongkha	dzo	dzon1239	sino1245	dz-Tibt-BT	Tibt	352559	52.8	true	dz	6		tibt	1	0
+Ewe	ewe	ewee1241	atla1278	ee-Latn-GH	Latn	2959913	71.5	true	ee	0		latn	11	0
+Greek	ell	mode1248	indo1319	el-Grek-GR	Grek	11810868	97.4	true	el	0	0	latn	0	3
+English	eng	stan1293	indo1319	en-Latn-US	Latn	1111587744	80.1	true	en	4	6	latn	12	0
+Spanish	spa	stan1288	indo1319	es-Latn-ES	Latn	423409100	94	true	es	0	0	latn	13	3
+Estonian	est	esto1258	ural1272	et-Latn-EE	Latn	893571	99.8	true	et	4	0	latn	14	7
+Basque	eus	basq1248	basq1248	eu-Latn-ES	Latn	971270	97.7	true	eu	0	0	latn	15	8
+Persian	fas	fars1254	indo1319	fa-Arab-IR	Arab	78767200	73	true	fa	2	0	arabext	2	1
+Fulah	ful	fula1264	atla1278	ff-Latn-SN	Latn	3007221	49.7	true	ff	11		latn	16	9
+Finnish	fin	finn1318	ural1272	fi-Latn-FI	Latn	5385691	100	true	fi	4	0	latn	17	10
+Filipino	fil	fili1244	aust1307	fil-Latn-PH	Latn	61574400	95.4	true	fil	12	7	latn	18	0
+Fijian	fij	fiji1243	aust1307	fj-Latn-FJ	Latn	356969	93.7	false	fj					
+Faroese	fao	faro1244	indo1319	fo-Latn-FO	Latn	47934	99	true	fo	0		latn	19	0
+French	fra	stan1290	indo1319	fr-Latn-FR	Latn	212993197	77.1	true	fr	11	7	latn	20	11
+Western Frisian	fry	west2354	indo1319	fy-Latn-NL	Latn	731731	99	true	fy	4	0	latn	21	0
+Irish	gle	iris1253	indo1319	ga-Latn-IE	Latn	1106296	99	true	ga	13	7	latn	22	0
+Ga	gaa	gaaa1244	atla1278	gaa-Latn-GH	Latn	753433	71.5	false	gaa					
+Scottish Gaelic	gla	scot1245	indo1319	gd-Latn-GB	Latn	63787	99	true	gd	14		latn	23	0
+Gilbertese	gil	gilb1244	aust1307	gil-Latn-KI	Latn	64155	90	false	gil					
+Galician	glg	gali1258	indo1319	gl-Latn-ES	Latn	3399446	97.7	true	gl	4	0	latn	24	0
+Guarani	grn	tupi1282	tupi1275	gn-Latn-PY	Latn	5490248	93.9	false	gn					
+Swiss German	gsw	swis1247	indo1319	gsw-Latn-CH	Latn	5348785	99	true	gsw	0	0	latn	25	1
+Gujarati	guj	guja1252	indo1319	gu-Gujr-IN	Gujr	57009600	62.8	true	gu	2	8	latn	0	0
+Manx	glv	manx1243	indo1319	gv-Latn-IM	Latn	1676	99	true	gv	15		latn	26	0
+Hawaiian	haw	hawa1245	aust1307	haw-Latn-US	Latn	28836	99	true	haw	0		latn	27	0
+Hebrew	heb	hebr1245	afro1255	he-Hebr-IL	Hebr	8174530	97.1	true	he	16	0	latn	0	10
+Hindi	hin	hind1269	indo1319	hi-Deva-IN	Deva	519420800	62.8	true	hi	2	8	latn	0	0
+Fiji Hindi	hif	fiji1242	indo1319	hif-Latn-FJ	Latn	375275	93.7	false	hif					
+Hiligaynon	hil	hili1240	aust1307	hil-Latn-PH	Latn	8620416	8	false	hil					
+Hiri Motu	hmo	hiri1237	pidg1258	ho-Latn-PG	Latn	142618	62.4	false	ho					
+Croatian	hrv	croa1245	indo1319	hr-Latn-HR	Latn	4904982	98.8	true	hr	7	0	latn	4	7
+Haitian Creole	hat	hait1244	indo1319	ht-Latn-HT	Latn	8493498	48.7	false	ht					
+Hungarian	hun	hung1274	ural1272	hu-Latn-HU	Latn	10241210	99	true	hu	0	9	latn	28	12
+Armenian	hye	nucl1235	indo1319	hy-Armn-AM	Armn	2990225	99.6	true	hy	11	7	latn	0	11
+Indonesian	ind	indo1316	aust1307	id-Latn-ID	Latn	165322240	92.8	true	id	6	0	latn	12	0
+Western Canadian Inuktitut	ikt	west2618	eski1264	ikt-Latn-CA	Latn	3890	30	false	ikt					
+Iloko	ilo	ilok1237	aust1307	ilo-Latn-PH	Latn	9851904	10	false	ilo					
+Ingush	inh	ingu1240	nakh1245	inh-Cyrl-RU	Cyrl	227768	99.7	false	inh					
+Icelandic	isl	icel1247	indo1319	is-Latn-IS	Latn	335878	99	true	is	17	0	latn	29	7
+Italian	ita	ital1282	indo1319	it-Latn-IT	Latn	59358298	99	true	it	4	10	latn	30	3
+Inuktitut	iku	east2534	eski1264	iu-Cans-CA	Cans	14853	30	false	iu	18				
+Inuktitut	iku	east2534	eski1264		Latn	14853	30	false	iu-Latn	18				
+Japanese	jpn	nucl1643	japo1237	ja-Jpan-JP	Jpan	120366900	99	true	ja	6	0	latn	0	13
+Georgian	kat	nucl1302	kart1248	ka-Geor-GE	Geor	4238123	99.7	true	ka	0	11	latn	0	14
+Kabardian	kbd	kaba1278	abkh1242	kbd-Cyrl-RU	Cyrl	441301	99.7	false	kbd					
+Kongo	kon	core1256	atla1278	kg-Latn-CD	Latn	1219967	66.8	false	kg					
+Khasi	kha	khas1269	aust1305	kha-Latn-IN	Latn	1013504	29	false	kha					
+Kazakh	kaz	kaza1248	turk1311	kk-Cyrl-KZ	Cyrl	11750656	99.7	true	kk	0	12	latn	5	3
+Kalaallisut	kal	kala1399	eski1264	kl-Latn-GL	Latn	55764	99.9	true	kl	0		latn	31	0
+Khmer	khm	cent1989	aust1305	km-Khmr-KH	Khmr	14201908	73.9	true	km	6	0	latn	0	0
+Kannada	kan	nucl1305	drav1251	kn-Knda-IN	Knda	46874561	62.8	true	kn	2	0	latn	0	0
+Mankanya	knf	mank1251	atla1278	knf-Latn-SN	Latn	30073	10	false	knf					
+Korean	kor	kore1280	kore1284	ko-Kore-KR	Kore	75085974	98.4	true	ko	6	0	latn	0	0
+Komi-Permyak	koi	komi1269	ural1272	koi-Cyrl-RU	Cyrl	64060	99.7	false	koi					
+Konkani	kok	konk1270	indo1319	kok-Deva-IN	Deva	4687456	62.8	true	kok			latn	1	0
+Karachay-Balkar	krc	kara1465	turk1311	krc-Cyrl-RU	Cyrl	227768	99.7	false	krc					
+Kashmiri	kas	kash1277	indo1319	ks-Arab-IN	Arab	5194208	62.8	true	ks	0		arabext	3	0
+Kumyk	kum	kumy1244	turk1311	kum-Cyrl-RU	Cyrl	284710	99.7	false	kum					
+Komi	kom	komi1267	ural1272	kv-Cyrl-RU	Cyrl	256239	99.7	false	kv					
+Kyrgyz	kir	kirg1245	turk1311	ky-Cyrl-KG	Cyrl	2749224	99.2	true	ky	0	0	latn	6	4
+Luxembourgish	ltz	luxe1241	indo1319	lb-Latn-LU	Latn	390135	100	true	lb	0		latn	32	7
+Lak	lbe	lakk1252	nakh1245	lbe-Cyrl-RU	Cyrl	111037	99.7	false	lbe					
+Lezghian	lez	lezg1247	nakh1245	lez-Cyrl-RU	Cyrl	256239	99.7	false	lez					
+Lingala	lin	ling1263	atla1278	ln-Latn-CD	Latn	2521265	66.8	true	ln	1		latn	33	0
+Lao	lao	laoo1244	taik1256	lo-Laoo-LA	Laoo	4843159	72.7	true	lo	6	7	latn	0	0
+Lithuanian	lit	lith1251	indo1319	lt-Latn-LT	Latn	2462737	99.7	true	lt	19	0	latn	34	5
+Luba-Lulua	lua	luba1249	atla1278	lua-Latn-CD	Latn	7807786	66.8	false	lua					
+Latvian	lav	latv1249	indo1319	lv-Latn-LV	Latn	1199071	99.8	true	lv	20	0	latn	35	0
+Maithili	mai	mait1250	indo1319	mai-Deva-IN	Deva	15202560	62.8	false	mai					
+Moksha	mdf	moks1248	ural1272	mdf-Cyrl-RU	Cyrl	298946	99.7	false	mdf					
+Maguindanao	mdh	magu1243	aust1307	mdh-Latn-PH	Latn	1231488	95.4	false	mdh					
+Hassaniyya	mey	hass1238	afro1255			7161	10	false	mey					
+Mandjak	mfv	mand1419	atla1278			110265	10	false	mfv					
+Malagasy	mlg	mala1537	aust1307	mg-Latn-MG	Latn	21987270	64.5	true	mg	1		latn	36	3
+Marshallese	mah	mars1254	aust1307	mh-Latn-MH	Latn	53565	93.7	false	mh					
+Maori	mri	maor1246	aust1307	mi-Latn-NZ	Latn	125288	99	false	mi					
+Macedonian	mkd	mace1250	indo1319	mk-Cyrl-MK	Cyrl	1407021	97.4	true	mk	21	13	latn	7	7
+Malayalam	mal	mala1464	drav1251	ml-Mlym-IN	Mlym	40540160	62.8	true	ml	0	0	latn	0	0
+Mongolian	mon	mong1331	mong1329	mn-Cyrl-MN	Cyrl	2819137	97.4	true	mn	0	0	latn	8	0
+Mongolian	mon	mong1331	mong1329	mn-Mong-CN	Mong	3571204	95.1	false	mn-Mong	0	0			
+Marathi	mar	mara1378	indo1319	mr-Deva-IN	Deva	88681601	62.8	true	mr	2	14	deva	2	0
+Malay	msa	indo1326	aust1307	ms-Latn-MY	Latn	24427999	93.2	true	ms	6	7	latn	37	0
+Malay	msa	indo1326	aust1307		Arab	21831	95.4	false	ms-Arab	6	7			
+Maltese	mlt	malt1254	afro1255	mt-Latn-MT	Latn	415196	92.4	true	mt	22		latn	38	0
+Burmese	mya	nucl1310	sino1245	my-Mymr-MM	Mymr	36409856	92.7	true	my	6	0	mymr	0	0
+Erzya	myv	erzy1239	ural1272	myv-Cyrl-RU	Cyrl	441301	99.7	false	myv					
+Nauru	nau	naur1243	aust1307	na-Latn-NR	Latn	6906	99	false	na					
+Norwegian Bokmål	nob	norw1259	indo1319	nb-Latn-NO	Latn	5266658	100	true	nb	0	0	latn	39	15
+North Ndebele	nde	nort2795	atla1278	nd-Latn-ZW	Latn	1745640	83.6	true	nd	0		latn	40	0
+Nepali	nep	east1436	indo1319	ne-Deva-NP	Deva	19869444	59.3	true	ne	0	15	deva	3	0
+Niuean	niu	niue1239	aust1307	niu-Latn-NU	Latn	1131	95	false	niu					
+Dutch	nld	dutc1256	indo1319	nl-Latn-NL	Latn	23944585	98.9	true	nl	4	0	latn	41	16
+Norwegian Nynorsk	nno	norw1262	indo1319	nn-Latn-NO	Latn	1316290	100	true	nn	0		latn	39	15
+South Ndebele	nbl	sout2808	atla1278	nr-Latn-ZA	Latn	868812	50	false	nr	0				
+Northern Sotho	nso	pedi1238	atla1278	nso-Latn-ZA	Latn	5104266	50	false	nso	1				
+Nyanja	nya	nyan1308	atla1278	ny-Latn-MW	Latn	11699289	74.8	false	ny	0				
+Odia	ori	macr1269	indo1319	or-Orya-IN	Orya	40540160	62.8	true	or	0		latn	0	0
+Ossetic	oss	osse1243	indo1319	os-Cyrl-GE	Cyrl	108418	99.7	true	os	0		latn	9	4
+Punjabi	pan	panj1256	indo1319	pa-Guru-IN	Guru	35472640	62.8	true	pa	1	0	latn	0	0
+Pangasinan	pag	pang1290	aust1307	pag-Latn-PH	Latn	1436736	95.4	false	pag					
+Papiamento	pap	papi1253	indo1319	pap-Latn-AW	Latn	190044	98.2	false	pap	0				
+Palauan	pau	pala1344	aust1307	pau-Latn-PW	Latn	15797	92	false	pau					
+Polish	pol	poli1260	indo1319	pl-Latn-PL	Latn	36982368	99.7	true	pl	23	0	latn	42	17
+Pashto	pus	nucl1276	indo1319	ps-Arab-AF	Arab	14332760	28.1	true	ps	0		arabext	4	0
+Portuguese	por	port1283	indo1319	pt-Latn-BR	Latn	221338465	88.1	true	pt	24	0	latn	43	0
+Quechua	que	quec1387	quec1387	qu-Latn-PE	Latn	10855173	90.6	true	qu			latn	44	0
+Kʼicheʼ	quc	kich1262	maya1287	quc-Latn-GT	Latn	1063300	75.9	false	quc					
+Romansh	roh	roma1326	indo1319	rm-Latn-CH	Latn	40897	99	true	rm	0		latn	45	1
+Rundi	run	rund1242	atla1278	rn-Latn-BI	Latn	6992559	67.2	true	rn			latn	12	10
+Romanian	ron	roma1327	indo1319	ro-Latn-RO	Latn	21801362	97.8	true	ro	25	7	latn	46	17
+Russian	rus	russ1263	indo1319	ru-Cyrl-RU	Cyrl	170580014	99.7	true	ru	26	0	latn	10	4
+Kinyarwanda	kin	kiny1244	atla1278	rw-Latn-RW	Latn	10001068	71.1	true	rw			latn	12	15
+Sanskrit	san	sans1269	indo1319	sa-Deva-IN	Deva	15203	62.8	false	sa					
+Sakha	sah	yaku1245	turk1311	sah-Cyrl-RU	Cyrl	455536	99.7	true	sah	6		latn	11	4
+Santali	sat	sant1410	aust1305	sat-Latn-IN	Latn	6967841	62.8	false	sat					
+Saafi-Saafi	sav	saaf1238	atla1278	sav-Latn-SN	Latn	214802	49.7	false	sav					
+Sindhi	snd	sind1272	indo1319	sd-Arab-PK	Arab	3293888	62.8	false	sd					
+Sindhi	snd	sind1272	indo1319	sd-Deva-IN	Deva	329389	62.8	false	sd-Deva					
+Northern Sami	sme	nort2671	ural1272	se-Latn-NO	Latn	173751	100	true	se	18		latn	47	10
+Sango	sag	sang1328	atla1278	sg-Latn-CF	Latn	2698558	56.6	true	sg	6		latn	48	3
+Sinhala	sin	sinh1246	indo1319	si-Sinh-LK	Sinh	15119801	91.2	true	si	27	0	latn	0	0
+Slovak	slk	slov1269	indo1319	sk-Latn-SK	Latn	4961944	99.6	true	sk	8	0	latn	49	7
+Slovenian	slv	slov1268	indo1319	sl-Latn-SI	Latn	1753120	99.7	true	sl	28	0	latn	50	7
+Samoan	smo	samo1305	aust1307	sm-Latn-WS	Latn	252579	98.4	false	sm					
+Shona	sna	shon1251	atla1278	sn-Latn-ZW	Latn	11783070	83.6	true	sn	0		latn	51	10
+Noon	snf	noon1242	atla1278			34369	10	false	snf					
+Somali	som	soma1255	afro1255	so-Latn-SO	Latn	8437572	37.8	true	so	0		latn	12	0
+Albanian	sqi	alba1267	indo1319	sq-Latn-AL	Latn	5295976	95.3	true	sq	0	16	latn	52	3
+Serbian	srp	serb1264	indo1319	sr-Cyrl-RS	Cyrl	7552823	97.9	true	sr	7	0	latn	3	18
+Serbian	srp	serb1264	indo1319		Latn	8197401	98	true	sr-Latn	7	0	latn	4	18
+Serer	srr	sere1260	atla1278	srr-Latn-SN	Latn	1575211	49.7	false	srr					
+Swati	ssw	swat1243	atla1278	ss-Latn-ZA	Latn	2307949	63.8	false	ss	0				
+Southern Sotho	sot	sout2807	atla1278	st-Latn-ZA	Latn	6203764	62.2	false	st	0				
+Swedish	swe	swed1254	indo1319	sv-Latn-SE	Latn	11831721	99.2	true	sv	4	17	latn	53	10
+Swahili	swa	swah1254	atla1278	sw-Latn-TZ	Latn	147521308	72.7	true	sw	4	0	latn	54	0
+Tamil	tam	tami1289	drav1251	ta-Taml-IN	Taml	78202587	64.1	true	ta	0	0	latn	0	0
+Telugu	tel	telu1262	drav1251	te-Telu-IN	Telu	91215361	62.8	true	te	0	0	latn	0	0
+Tetum	tet	tetu1245	aust1307	tet-Latn-TL	Latn	744032	58.3	false	tet					
+Tajik	tgk	taji1245	indo1319	tg-Cyrl-TJ	Cyrl	8330950	99.7	false	tg					
+Thai	tha	thai1261	taik1256	th-Thai-TH	Thai	54560640	93	true	th	6	0	latn	0	0
+Tigrinya	tir	tigr1271	afro1255	ti-Ethi-ET	Ethi	3521922	68.9	true	ti	1		latn	1	0
+Turkmen	tuk	turk1304	turk1311	tk-Latn-TM	Latn	4270568	90.1	true	tk	0		latn	55	8
+Tokelau	tkl	toke1240	aust1307	tkl-Latn-TK	Latn	1337	94	false	tkl					
+Tswana	tsn	tswa1253	atla1278	tn-Latn-ZA	Latn	5822368	58.3	false	tn	0				
+Bedik	tnr	bedi1235	atla1278			3437	10	false	tnr					
+Tongan	ton	tong1325	aust1307	to-Latn-TO	Latn	101188	99	true	to	6		latn	56	0
+Tok Pisin	tpi	tokp1240	indo1319	tpi-Latn-PG	Latn	4821838	45	false	tpi					
+Turkish	tur	nucl1301	turk1311	tr-Latn-TR	Latn	74932662	94.1	true	tr	0	0	latn	57	0
+Tsonga	tso	tson1249	atla1278	ts-Latn-ZA	Latn	2389231	50	false	ts	0				
+Tausug	tsg	taus1251	aust1307	tsg-Latn-PH	Latn	1128864	95.4	false	tsg					
+Tatar	tat	tata1255	turk1311	tt-Cyrl-RU	Cyrl	1992970	99.7	false	tt					
+Tuvalu	tvl	tuva1244	aust1307	tvl-Latn-TV	Latn	9973	95	false	tvl					
+Tahitian	tah	tahi1242	aust1307	ty-Latn-PF	Latn	88450	98	false	ty					
+Tuvinian	tyv	tuvi1240	turk1311	tyv-Cyrl-RU	Cyrl	185062	99.7	false	tyv					
+Central Atlas Tamazight	tzm	cent2194	afro1255	tzm-Latn-MA	Latn	3298269	25	true	tzm	29		latn	58	0
+Udmurt	udm	udmu1245	ural1272	udm-Cyrl-RU	Cyrl	540949	99.7	false	udm					
+Uyghur	uig	uigh1240	turk1311	ug-Arab-CN	Arab	7554471	95.1	true	ug	0		latn	5	19
+Ukrainian	ukr	ukra1253	indo1319	uk-Cyrl-UA	Cyrl	35880225	99.4	true	uk	26	18	latn	12	4
+Urdu	urd	urdu1245	indo1319	ur-Arab-PK	Arab	255240200	56.9	true	ur	4	0	latn	6	2
+Uzbek	uzb	uzbe1247	turk1311	uz-Latn-UZ	Latn	25052560	99.4	true	uz	0	0	latn	59	20
+Uzbek	uzb	uzbe1247	turk1311	uz-Arab-AF	Arab	1566604	28.1	true	uz-Arab	0	0	arabext	7	0
+Uzbek	uzb	uzbe1247	turk1311		Cyrl	4421040	99.4	true	uz-Cyrl	0	0	latn	13	0
+Venda	ven	vend1245	atla1278	ve-Latn-ZA	Latn	1248917	50	false	ve	0				
+Vietnamese	vie	viet1252	aust1305	vi-Latn-VN	Latn	81924460	93.4	true	vi	6	7	latn	60	0
+Waray	war	wara1300	aust1307	war-Latn-PH	Latn	2976096	95.4	false	war					
+Ndzwani Comorian	wni	ndzw1235	atla1278	wni-Arab-KM	Arab	270191	75.5	false	wni					
+Wolof	wol	nucl1347	atla1278	wo-Latn-SN	Latn	10024070	49.7	false	wo	6				
+Xhosa	xho	xhos1239	atla1278	xh-Latn-ZA	Latn	9774126	50	false	xh	0				
+Yoruba	yor	yoru1245	atla1278	yo-Latn-NG	Latn	24186890	61.3	true	yo	6		latn	61	0
+Zhuang	zha	nort3180	taik1256	za-Latn-CN	Latn	4257974	95.1	false	za					
+Ngazidja Comorian	zdj	ngaz1238	atla1278	zdj-Arab-KM	Arab	294031	75.5	false	zdj					
+Chinese	zho	sini1245	sino1245	zh-Hans-CN	Hans	1240637933	95.1	true	zh	6	0	latn	0	0
+Traditional Chinese	zho	sini1245	sino1245	zh-Hant-TW	Hant	29686067	95.5	true	zh-Hant	6	0	latn	0	13
+Zulu	zul	zulu1248	atla1278	zu-Latn-ZA	Latn	13032168	50	true	zu	2	0	latn	62	0
