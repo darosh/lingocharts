@@ -271,7 +271,7 @@
             left: 1px;
         }
 
-        [v-cloac] {
+        [v-cloak] {
             display: none;
         }
 
@@ -324,7 +324,7 @@
 
     <p v-if="!data"><i>Loading&hellip;</i></p>
 
-    <div v-if="data" v-cloac>
+    <div v-if="data" v-cloak>
 
         <!--<svg width="960" height="480">-->
         <!--<g>-->
@@ -427,181 +427,210 @@
         </sortable>
 
         <hr>
-        <h2 id="languages"><a href="#languages">Languages</a></h2>
+        <sortable :list="data.language">
+            <template slot="table" scope="props">
+                <h2 id="languages"><a href="#languages">Languages</a> <span
+                        class="items">({{props.list.length}})</span></h2>
 
-        <table>
-            <thead>
-            <tr>
-                <th>Code</th>
-                <th>Name</th>
-                <th>Wiki</th>
-                <th>ISO</th>
-                <th>Glottolog</th>
-                <th>Likely</th>
-                <th>Population</th>
-                <th>Literacy</th>
-                <th>Plural</th>
-                <th></th>
-                <th>Ordinal</th>
-                <th></th>
-                <th>Family</th>
-                <th>Numbers</th>
-                <th>Script</th>
-                <th>RTL</th>
-                <th>Quotes</th>
-                <th>Sample</th>
-                <th>Characters</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="(i, k) in data.language" :id="'language-' + k">
-                <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
-                <td><b>{{i.name}}</b></td>
-                <td>
-                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'" target="_blank"
-                       class="icon icon-wikipedia-w"></a>
-                </td>
-                <td><a :href="'http://www-01.sil.org/iso639-3/documentation.asp?id=' + i.iso3"
-                       target="_blank">{{i.iso3}}</a></td>
-                <td><a :href="'http://glottolog.org/resource/languoid/id/' + i.gl" target="_blank">{{i.gl}}</a></td>
-                <td class="nowrap">{{i.likely}}</td>
-                <td class="right">{{i.population | number}}</td>
-                <td class="right">{{i.literacy | percent}}</td>
-                <td class="right"><span v-if="i.plural >= 0">{{data.plural[i.plural].forms.length}}</span></td>
-                <td><a v-if="i.plural >= 0" :href="'#plural-'+(i.plural + 1)">p{{i.plural + 1}}</a></td>
-                <td class="right"><span v-if="i.ordinal >= 0">{{data.ordinal[i.ordinal].forms.length}}</span></td>
-                <td><a v-if="i.ordinal >= 0" :href="'#ordinal-'+(i.ordinal + 1)">o{{i.ordinal + 1}}</a></td>
-                <td class="nowrap"><a :href="'#family-' + i.gl">{{data.family[i.family].name}}</a></td>
-                <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
-                <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{i.script}}</a></td>
-                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes('RTL')}}</span></td>
-                <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
-                <td class="sample"><span v-if="data.script[i.script]">{{data.script[i.script].sample}}</span></td>
-                <td><a v-if="i.chars >= 0" :href="'#characters-' + i.script + (i.chars + 1) + k">{{i.script + (i.chars +
-                    1)}}</a></td>
-            </tr>
-            </tbody>
-        </table>
-
-        <hr>
-        <h2 id="scripts"><a href="#scripts">Scripts</a></h2>
-
-        <table>
-            <thead>
-            <tr>
-                <th>Sample</th>
-                <th>Code</th>
-                <th>Name</th>
-                <th>Wiki</th>
-                <th>RTL</th>
-                <th>Cased</th>
-                <th>Line break letters</th>
-                <th>IME <a href="https://en.wikipedia.org/wiki/Input_method" target="_blank"
-                           class="icon icon-wikipedia-w"></a></th>
-                <th>Density</th>
-                <th>Characters</th>
-                <th>Origin</th>
-                <th>Language</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="(i, k) in data.script" :id="'script-' + k">
-                <td class="sample">{{i.sample}}</td>
-                <td><a :href="'#script-' + k">{{k}}</a></td>
-                <td><b>{{i.name}}</b></td>
-                <td>
-                    <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank"
-                       class="icon icon-wikipedia-w"></a>
-                </td>
-                <td>{{i.rtl | yes('RTL')}}</td>
-                <td>{{i.cased | yes('cased')}}</td>
-                <td>{{i.lbl | yes('LBL')}}</td>
-                <td>{{i.ime | yes('IME')}}</td>
-                <td class="right">{{i.density}}</td>
-                <td class="right" v-if="i.chars">{{i.chars | number}}</td>
-                <td class="right" v-else>?</td>
-                <td><a :href="'#country-'+i.country">{{i.country}}</a></td>
-                <td><a :href="'#language-'+i.language">{{i.language}}</a></td>
-            </tr>
-            </tbody>
-        </table>
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="click" @click="props.sort('id')">Code</th>
+                        <th class="click" @click="props.sort('name')">Name</th>
+                        <th>Wiki</th>
+                        <th class="click" @click="props.sort('iso')">ISO</th>
+                        <th class="click" @click="props.sort('gl')">Glottolog</th>
+                        <th class="click" @click="props.sort('likely')">Likely</th>
+                        <th class="click" @click="props.sort('population', true)">Population</th>
+                        <th class="click" @click="props.sort('literacy', true)">Literacy</th>
+                        <th>Plural</th>
+                        <th></th>
+                        <th>Ordinal</th>
+                        <th></th>
+                        <th class="click" @click="props.sort('family')">Family</th>
+                        <th class="click" @click="props.sort('num')">Numbers</th>
+                        <th class="click" @click="props.sort('script')">Script</th>
+                        <th>RTL</th>
+                        <th class="click" @click="props.sort('quot', true)">Quotes</th>
+                        <th>Sample</th>
+                        <th class="click" @click="props.sort(i=>(i.chars>=0)?i.script+(i.chars+1):'')">Characters</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="i in props.list" :id="'language-' + i.id" :key="i.id">
+                        <td class="nowrap"><a :href="'#language-' + i.id">{{i.id}}</a></td>
+                        <td><b>{{i.name}}</b></td>
+                        <td>
+                            <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' language'" target="_blank"
+                               class="icon icon-wikipedia-w"></a>
+                        </td>
+                        <td><a :href="'http://www-01.sil.org/iso639-3/documentation.asp?id=' + i.iso3"
+                               target="_blank">{{i.iso3}}</a></td>
+                        <td><a :href="'http://glottolog.org/resource/languoid/id/' + i.gl" target="_blank">{{i.gl}}</a>
+                        </td>
+                        <td class="nowrap">{{i.likely}}</td>
+                        <td class="right">{{i.population | number}}</td>
+                        <td class="right">{{i.literacy | percent}}</td>
+                        <td class="right"><span v-if="i.plural >= 0">{{data.plural[i.plural].forms.length}}</span></td>
+                        <td><a v-if="i.plural >= 0" :href="'#plural-'+(i.plural + 1)">p{{i.plural + 1}}</a></td>
+                        <td class="right"><span v-if="i.ordinal >= 0">{{data.ordinal[i.ordinal].forms.length}}</span>
+                        </td>
+                        <td><a v-if="i.ordinal >= 0" :href="'#ordinal-'+(i.ordinal + 1)">o{{i.ordinal + 1}}</a></td>
+                        <td class="nowrap"><a :href="'#family-' + i.gl">{{data.family[i.family].name}}</a></td>
+                        <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
+                        <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{i.script}}</a><span v-else>{{i.script}}</span>
+                        </td>
+                        <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes('RTL')}}</span></td>
+                        <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
+                        <td class="sample"><span v-if="data.script[i.script]">{{data.script[i.script].sample}}</span>
+                        </td>
+                        <td><a v-if="i.chars >= 0" :href="'#characters-' + i.script + (i.chars + 1) + i.id">{{i.script +
+                            (i.chars +1)}}</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </sortable>
 
         <hr>
-        <h2 id="numbers"><a href="#numbers">Numbers</a></h2>
+        <sortable :list="data.script">
+            <template slot="table" scope="props">
+                <h2 id="scripts"><a href="#scripts">Scripts</a> <span
+                        class="items">({{props.list.length}})</span></h2>
 
-        <table>
-            <thead>
-            <th>Sample</th>
-            <th>Code</th>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Digits</th>
-            </thead>
-            <tbody>
-            <tr v-for="(i, k) in data.num" :id="'number-' + k">
-                <td class="sample">{{i.digits[8]}}</td>
-                <td><a :href="'#number-' + k">{{k}}</a></td>
-                <td><b>{{i.name}}</b></td>
-                <td>{{i.type}}</td>
-                <td>{{i.digits}}</td>
-            </tr>
-            </tbody>
-        </table>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Sample</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Wiki</th>
+                        <th>RTL</th>
+                        <th>Cased</th>
+                        <th>Line break letters</th>
+                        <th>IME <a href="https://en.wikipedia.org/wiki/Input_method" target="_blank"
+                                   class="icon icon-wikipedia-w"></a></th>
+                        <th>Density</th>
+                        <th>Characters</th>
+                        <th>Origin</th>
+                        <th>Language</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(i, k) in data.script" :id="'script-' + k">
+                        <td class="sample">{{i.sample}}</td>
+                        <td><a :href="'#script-' + k">{{k}}</a></td>
+                        <td><b>{{i.name}}</b></td>
+                        <td>
+                            <a :href="'https://en.wikipedia.org/wiki/' + i.name + ' script'" target="_blank"
+                               class="icon icon-wikipedia-w"></a>
+                        </td>
+                        <td>{{i.rtl | yes('RTL')}}</td>
+                        <td>{{i.cased | yes('cased')}}</td>
+                        <td>{{i.lbl | yes('LBL')}}</td>
+                        <td>{{i.ime | yes('IME')}}</td>
+                        <td class="right">{{i.density}}</td>
+                        <td class="right" v-if="i.chars">{{i.chars | number}}</td>
+                        <td class="right" v-else>?</td>
+                        <td><a :href="'#country-'+i.country">{{i.country}}</a></td>
+                        <td><a :href="'#language-'+i.language">{{i.language}}</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </sortable>
 
         <hr>
-        <h2 id="families"><a href="#families">Families</a></h2>
+        <sortable :list="data.num">
+            <template slot="table" scope="props">
+                <h2 id="numbers"><a href="#numbers">Numbers</a> <span
+                        class="items">({{props.list.length}})</span></h2>
+
+                <table>
+                    <thead>
+                    <th>Sample</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Digits</th>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(i, k) in data.num" :id="'number-' + k">
+                        <td class="sample">{{i.digits[8]}}</td>
+                        <td><a :href="'#number-' + k">{{k}}</a></td>
+                        <td><b>{{i.name}}</b></td>
+                        <td>{{i.type}}</td>
+                        <td>{{i.digits}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </sortable>
+
+        <hr>
+        <h2 id="families"><a href="#families">Families</a> <span
+                class="items">({{items(data.family)}})</span></h2>
 
         <family :db="data" class="nowrap"></family>
 
         <hr>
-        <h2 id="characters"><a href="#characters">Characters</a></h2>
+        <sortable :list="data.char">
+            <template slot="table" scope="props">
+                <h2 id="characters"><a href="#characters">Characters</a> <span
+                        class="items">({{props.list.length}})</span></h2>
 
-        <table>
-            <thead>
-            <tr>
-                <th>Id</th>
-                <th>Language</th>
-                <th>Name</th>
-                <th>Population</th>
-                <th>Literacy</th>
-                <th>Numbers</th>
-                <th>Script</th>
-                <th>RTL</th>
-                <th>Quotes</th>
-                <th>Count</th>
-                <th style="min-width: 360px">Characters</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="(i, k) in data.language" :id="'characters-' + i.script + (i.chars + 1) + k" v-if="i.chars >= 0">
-                <td>{{i.script + (i.chars + 1)}}</td>
-                <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
-                <td><b>{{i.name}}</b></td>
-                <td class="right">{{i.population | number}}</td>
-                <td class="right">{{i.literacy | percent}}</td>
-                <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
-                <td><a :href="'#script-'+i.script" v-if="data.script[i.script]">{{data.script[i.script].name}}</a></td>
-                <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes('RTL')}}</span></td>
-                <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
-                <td class="right"><span v-if="i.chars >= 0">{{data.char[i.script][i.chars].count | number}}</span></td>
-                <td>
-                    <a class="expander" :class="{expanded: i.$chars}"
-                       v-if="i.$chars || !i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
-                       @click="Vue.set(i, '$chars', !i.$chars)"></a>
-                    <span class="chars" v-if="i.chars >= 0"
-                          v-text="data.char[i.script][i.chars].chars.substr(0, !i.$chars ? 600: undefined)"></span>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Language</th>
+                        <th>Name</th>
+                        <th>Population</th>
+                        <th>Literacy</th>
+                        <th>Numbers</th>
+                        <th>Script</th>
+                        <th>RTL</th>
+                        <th>Quotes</th>
+                        <th>Count</th>
+                        <th style="min-width: 360px">Characters</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(i, k) in data.language" :id="'characters-' + i.script + (i.chars + 1) + k"
+                        v-if="i.chars >= 0">
+                        <td>{{i.script + (i.chars + 1)}}</td>
+                        <td class="nowrap"><a :href="'#language-' + k">{{k}}</a></td>
+                        <td><b>{{i.name}}</b></td>
+                        <td class="right">{{i.population | number}}</td>
+                        <td class="right">{{i.literacy | percent}}</td>
+                        <td><a :href="'#number-'+i.num">{{i.num}}</a></td>
+                        <td><a :href="'#script-'+i.script"
+                               v-if="data.script[i.script]">{{data.script[i.script].name}}</a></td>
+                        <td><span v-if="data.script[i.script]">{{data.script[i.script].rtl | yes('RTL')}}</span></td>
+                        <td class="sample"><span v-if="data.quot[i.quot]">{{data.quot[i.quot]}}</span></td>
+                        <td class="right"><span
+                                v-if="i.chars >= 0">{{data.char[i.script][i.chars].count | number}}</span></td>
+                        <td>
+                            <a class="expander" :class="{expanded: i.$chars}"
+                               v-if="i.$chars || !i.$chars && (i.chars >= 0 && data.char[i.script][i.chars].chars.length > 600)"
+                               @click="Vue.set(i, '$chars', !i.$chars)"></a>
+                            <span class="chars" v-if="i.chars >= 0"
+                                  v-text="data.char[i.script][i.chars].chars.substr(0, !i.$chars ? 600: undefined)"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </sortable>
 
         <hr>
         <h2 id="groups"><a href="#groups">Groups</a></h2>
 
         <div v-for="(i, k) in groups">
             <h3 :id="'group-' + k">
-                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a> <span
-                    style="font-weight: normal; font-size: 16px">({{groups[k].items}})</span>
+                <a :href="'#group-' + k"><span style="font-weight: normal">{{k}}</span> {{data.group[k].name}}</a>
+                <span
+                        style="font-weight: normal; font-size: 16px">({{groups[k].items}})</span>
                 <flag :code="k"
                       style="width: 32px; height: 32px; display: inline-block; position: relative; top: 10px; margin: -16px 0"></flag>
             </h3>
@@ -672,7 +701,8 @@
         <h2 id="notes"><a href="#notes">Notes</a></h2>
 
         <p>Most data come from CLDR see <a href="#data-sources">Data sources</a> section.</p>
-        <p>Only languages with <i class="double">official</i>, <i class="single">regional official</i> and <i>de facto
+        <p>Only languages with <i class="double">official</i>, <i class="single">regional official</i> and <i>de
+            facto
             official</i> status are included.</p>
 
         <hr>
@@ -713,7 +743,8 @@
             </tr>
             <tr>
                 <td>Country</td>
-                <td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a>
+                <td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1
+                    alpha-2</a>
                 </td>
                 <td>UPPER</td>
                 <td class="right">2</td>
@@ -785,8 +816,10 @@
         <hr>
         <h2 id="source-code"><a href="#source-code">Source code</a></h2>
         <p>
-            Releases under <a :href="config.repo + 'blob/master/LICENSE'" target="_blank">MIT license</a> on GitHub: <a
-                href="https://github.com/darosh/lingocharts" target="_blank">https://github.com/darosh/lingocharts</a>.
+            Releases under <a :href="config.repo + 'blob/master/LICENSE'" target="_blank">MIT license</a> on GitHub:
+            <a
+                    href="https://github.com/darosh/lingocharts"
+                    target="_blank">https://github.com/darosh/lingocharts</a>.
         </p>
         <p>
             Live application: <a :href="config.url" target="_blank">{{config.url}}</a>.
@@ -859,6 +892,7 @@
 <script src="//unpkg.com/d3@4.7.4/build/d3.min.js"></script>
 <script src="//unpkg.com/topojson-client@3.0.0/dist/topojson-client.min.js"></script>
 <script src="//unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
+<!--<script src="//unpkg.com/vue@2.2.6/dist/vue.js"></script>-->
 <script>
     var config = {
         url: 'https://darosh.github.io/lingocharts/',
@@ -889,7 +923,7 @@
     });
 
     Vue.component('flag', {
-        template: '<div>',
+        template: '<div></div>',
         props: ['code'],
         mounted() {
             var f = getFlag(this.code, config.flags);
@@ -911,9 +945,14 @@
         methods: {
             sort(by, numeric) {
                 if (numeric) {
-                    this.sorted.sort((a, b) => (a[by] || 0) - (b[by] || 0));
+                    this.sorted.sort((a, b) => val(a) - val(b));
                 } else {
-                    this.sorted.sort((a, b) => (a[by] || '').localeCompare(b[by] || ''));
+                    this.sorted.sort((a, b) => val(a).localeCompare(val(b)));
+                }
+
+                function val(a) {
+                    var r = by.call ? by(a) : a[by];
+                    return numeric ? isNaN(r) ? -Infinity : r : (r || '');
                 }
             }
         }
@@ -1016,6 +1055,7 @@
                 });
 
             return {
+                config: config,
                 data: null,
                 map: null,
                 groups: {}
