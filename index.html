@@ -336,14 +336,13 @@
         <!--</svg>-->
 
         <ul>
-            <!--<li>-->
-            <!--Maps-->
-            <!--<ul>-->
-            <!--<li></li>-->
-            <!--<li></li>-->
-            <!--<li></li>-->
-            <!--</ul>-->
-            <!--</li>-->
+            <li>
+                Maps
+                <ul>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#map-by-flag">Map by flag color</a></li>
+                </ul>
+            </li>
             <li>
                 Tables
                 <ul>
@@ -371,12 +370,21 @@
             </li>
         </ul>
 
+        <hr>
+        <h2 id="map"><a href="#map">Map</a></h2>
+        <app-map></app-map>
+
+        <hr>
+        <h2 id="map-by-flag"><a href="#map-by-flag">Map by flag color</a></h2>
+        <app-map color="flag"></app-map>
+
+        <hr>
         <sortable :list="data.country">
             <template slot="table" scope="props">
                 <h2 id="countries"><a href="#countries">Countries</a> <span
                         class="items">({{props.list.length}})</span>
                 </h2>
-                <table  style="margin-left: 3px">
+                <table style="margin-left: 3px">
                     <thead>
                     <tr>
                         <th class="click" @click="props.sort('color')">Flag</th>
@@ -893,9 +901,10 @@
     </div>
 </div>
 <script src="//unpkg.com/d3@4.7.4/build/d3.min.js"></script>
-<script src="//unpkg.com/topojson-client@3.0.0/dist/topojson-client.min.js"></script>
+<script src="//unpkg.com/d3-scale-chromatic@1.1.1/build/d3-scale-chromatic.min.js"></script>
+<!--<script src="//unpkg.com/topojson-client@3.0.0/dist/topojson-client.min.js"></script>-->
 <script src="//unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
-<!--<script src="//unpkg.com/vue@2.2.6/dist/vue.js"></script>-->
+<script src="//unpkg.com/vue@2.2.6/dist/vue.js"></script>
 <script>
     var config = {
         url: 'https://darosh.github.io/lingocharts/',
@@ -1017,6 +1026,51 @@
         }
     });
 
+    var width = 960;
+    var height = 480;
+    var add = 0;
+
+    var clip = [[0, 960], [15, 390]];
+
+    var projection = d3.geoEquirectangular()
+        .clipExtent([[0, 0], [width, clip[1][1]]])
+        .scale(height / Math.PI)
+        .rotate([-10])
+        .translate([width / 2, height / 2 - clip[1][0]]);
+
+    var path = d3.geoPath()
+        .projection(projection);
+
+    var colorBy = {
+        map: d => d3.schemePastel2[config.data.map[d.id].color - 1],
+        flag: d => '#' + config.data.country[d.id].color
+    };
+
+    Vue.component('app-map', {
+        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="land"></g><g class="border"></g></svg>',
+        props: ['color'],
+        mounted(){
+            var svg = d3.select(this.$el);
+            svg.attr('width', width)
+                .attr('height', clip[1][1] - clip[1][0])
+            var land = svg.select('.land');
+            land.selectAll('d').data(config.land)
+                .enter()
+                .append('path')
+                .attr('title', d => d.id)
+                .attr('d', path)
+                .attr('fill', colorBy[this.color || 'map']);
+            var border = svg.select('.border');
+            border.selectAll('d').data([config.border])
+                .enter()
+                .append('path')
+                .attr('d', path)
+                .attr('fill', 'none')
+                .attr('stroke', '#000')
+                .attr('stroke-width', 0.5);
+        }
+    });
+
     new Vue({
         el: '#app',
         data() {
@@ -1028,6 +1082,8 @@
                     config.flags = flags;
                     config.map = map;
                     config.data = data;
+                    config.land = topojson.feature(map, map.objects.countries).features;
+                    config.border = topojson.mesh(map, map.objects.countries);
                     this.data = data;
 
                     this.groups = {
