@@ -13,8 +13,10 @@ const _stringify = require('json-stringify-pretty-compact');
 
 const sil = require('./sil');
 const glot = require('./glot');
+const ms = require('../resources/missing-geo.json');
 
 const worldData = require('../map.data.json');
+const worldCountries = require('world-countries');
 const colors = require('../resources/flag-colors.json');
 
 const namesTerritories = require('cldr-localenames-full/main/en/territories.json').main.en.localeDisplayNames.territories;
@@ -189,6 +191,7 @@ function makeCountry() {
             language: lp,
             currency: Object.keys((currencyData[iso_a2] || [])
                     .filter(k => k[Object.keys(k)[0]]._from && !k[Object.keys(k)[0]]._to)[0] || {})[0] || null,
+            geo: getCountryLonLat(iso_a2),
             color: getColor(iso_a2)
         };
     });
@@ -260,6 +263,27 @@ function makeLanguage() {
         language[k].population = t[0];
         language[k].literacy = t[1];
     });
+}
+
+function getCountryLonLat(iso2) {
+    let f = worldCountries.filter(d => d.cca2 === iso2);
+
+    if ((!f.length || !f[0].latlng || !f[0].latlng.length) && ms[iso2]) {
+        let m = getMissingLonLat(iso2);
+        f = [{latlng: m.length > 1 ? m : m[0]}];
+    }
+
+    if (!f.length) {
+        console.error('missing geo: ' + iso2);
+    }
+
+    return f.length ? f[0].latlng : null;
+}
+
+function getMissingLonLat(k) {
+    var ar = Array.isArray(ms[k]) ? ms[k] : [ms[k]];
+    ar = ar.map(d => d.split(',').map(d => parseFloat(d)));
+    return ar;
 }
 
 function makeChar() {
@@ -339,7 +363,7 @@ function cldr(lang, country) {
         if (availableLocales.indexOf(lang) > -1) {
             return lang;
         } else {
-            console.error('not available' + lang);
+            console.error('not available: ' + lang);
             return null;
         }
     } else if (defaultContent.indexOf(lang + '-' + country) > -1 || defaultContent.indexOf(lang + '-' + getScript(lang) + '-' + country) > -1) {

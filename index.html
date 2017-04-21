@@ -902,9 +902,9 @@
 </div>
 <script src="//unpkg.com/d3@4.7.4/build/d3.min.js"></script>
 <script src="//unpkg.com/d3-scale-chromatic@1.1.1/build/d3-scale-chromatic.min.js"></script>
-<!--<script src="//unpkg.com/topojson-client@3.0.0/dist/topojson-client.min.js"></script>-->
+<script src="//unpkg.com/topojson-client@3.0.0/dist/topojson-client.min.js"></script>
 <script src="//unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
-<script src="//unpkg.com/vue@2.2.6/dist/vue.js"></script>
+<!--<script src="//unpkg.com/vue@2.2.6/dist/vue.js"></script>-->
 <script>
     var config = {
         url: 'https://darosh.github.io/lingocharts/',
@@ -1030,7 +1030,8 @@
     var height = 480;
     var add = 0;
 
-    var clip = [[0, 960], [15, 390]];
+//    var clip = [[0, 960], [15, 390]];
+    var clip = [[0, 960], [0, 480]];
 
     var projection = d3.geoEquirectangular()
         .clipExtent([[0, 0], [width, clip[1][1]]])
@@ -1039,10 +1040,11 @@
         .translate([width / 2, height / 2 - clip[1][0]]);
 
     var path = d3.geoPath()
-        .projection(projection);
+        .projection(projection)
+        .pointRadius(2);
 
     var colorBy = {
-        map: d => d3.schemePastel2[config.data.map[d.id].color - 1],
+        map: d => config.data.map[d.id] ? d3.schemePastel2[config.data.map[d.id].color - 1] : '#000',
         flag: d => '#' + config.data.country[d.id].color
     };
 

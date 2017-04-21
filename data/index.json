@@ -81,6 +81,7 @@
       "gdp": 40680000,
       "literacy": 99,
       "currency": "SHP",
+      "geo": [-7.9412278, -14.4280773],
       "color": "2a5f9d",
       "id": "AC"
     },
@@ -94,6 +95,7 @@
       "cell": 88.1,
       "language": {"ca": {"percent": 51, "status": 0, "cldr": "ca-AD"}},
       "currency": "EUR",
+      "geo": [42.5, 1.5],
       "color": "fde230",
       "id": "AD"
     },
@@ -107,6 +109,7 @@
       "cell": 187,
       "language": {"ar": {"percent": 78, "status": 0, "cldr": "ar-AE"}},
       "currency": "AED",
+      "geo": [24, 54],
       "color": "ec4b5b",
       "id": "AE"
     },
@@ -126,6 +129,7 @@
         "uz-Arab": {"percent": 4.7, "status": 1, "cldr": "uz-Arab", "parent": "root"}
       },
       "currency": "AFN",
+      "geo": [33, 65],
       "color": "ed4c5c",
       "id": "AF"
     },
@@ -138,6 +142,7 @@
       "cell": 137,
       "language": {"en": {"percent": 86, "status": 0, "cldr": "en-AG", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [17.05, -61.8],
       "color": "ec4b5b",
       "id": "AG"
     },
@@ -148,6 +153,7 @@
       "literacy": 95,
       "language": {"en": {"percent": 95, "status": 0, "cldr": "en-AI", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [18.25, -63.16666666],
       "color": "2a5f9e",
       "id": "AI"
     },
@@ -161,6 +167,7 @@
       "cell": 106,
       "language": {"sq": {"percent": 100, "status": 0, "cldr": "sq"}},
       "currency": "ALL",
+      "geo": [41, 20],
       "color": "f32f4b",
       "id": "AL"
     },
@@ -174,6 +181,7 @@
       "cell": 115,
       "language": {"hy": {"percent": 98, "status": 0, "cldr": "hy"}},
       "currency": "AMD",
+      "geo": [40, 45],
       "color": "295e9e",
       "id": "AM"
     },
@@ -187,6 +195,7 @@
       "cell": 60.8,
       "language": {"pt": {"percent": 67, "status": 0, "cldr": "pt-AO", "parent": "pt-PT"}},
       "currency": "AOA",
+      "geo": [-12.5, 18.5],
       "color": "ec4b5b",
       "id": "AO"
     },
@@ -196,6 +205,7 @@
       "population": 300,
       "gdp": 17190000,
       "literacy": 99,
+      "geo": [-90, 0],
       "color": "3a7dce",
       "id": "AQ"
     },
@@ -209,6 +219,7 @@
       "cell": 144,
       "language": {"es": {"percent": 100, "status": 0, "cldr": "es-AR", "parent": "es-419"}},
       "currency": "ARS",
+      "geo": [-34, -64],
       "color": "b3d6ee",
       "id": "AR"
     },
@@ -223,6 +234,7 @@
         "sm": {"percent": 99, "status": 0}
       },
       "currency": "USD",
+      "geo": [-14.33333333, -170],
       "color": "2b5e9d",
       "id": "AS"
     },
@@ -241,6 +253,7 @@
         "sl": {"percent": 0.37, "status": 1}
       },
       "currency": "EUR",
+      "geo": [47.33333333, 13.33333333],
       "color": "ec4b5b",
       "id": "AT"
     },
@@ -253,6 +266,7 @@
       "cell": 133,
       "language": {"en": {"percent": 96, "status": 2, "cldr": "en-AU", "parent": "en-001"}},
       "currency": "AUD",
+      "geo": [-27, 133],
       "color": "2a5f9e",
       "id": "AU"
     },
@@ -269,6 +283,7 @@
         "pap": {"percent": 61, "status": 0}
       },
       "currency": "AWG",
+      "geo": [12.5, -69.96666666],
       "color": "42ade2",
       "id": "AW"
     },
@@ -280,6 +295,7 @@
       "literacy": 100,
       "language": {"sv": {"percent": 99, "status": 0, "cldr": "sv-AX"}},
       "currency": "EUR",
+      "geo": [60.116667, 19.9],
       "color": "2a5e9d",
       "id": "AX"
     },
@@ -296,6 +312,7 @@
         "az-Cyrl": {"percent": 9.9, "status": 0, "cldr": "az-Cyrl", "parent": "root"}
       },
       "currency": "AZN",
+      "geo": [40.5, 47.5],
       "color": "ed4c5c",
       "id": "AZ"
     },
@@ -315,6 +332,7 @@
         "sr-Latn": {"percent": 10, "status": 0, "cldr": "sr-Latn-BA"}
       },
       "currency": "BAM",
+      "geo": [44, 18],
       "color": "2a5f9d",
       "id": "BA"
     },
@@ -327,6 +345,7 @@
       "cell": 116,
       "language": {"en": {"percent": 100, "status": 0, "cldr": "en-BB", "parent": "en-001"}},
       "currency": "BBD",
+      "geo": [13.16666666, -59.53333333],
       "color": "2c5b94",
       "id": "BB"
     },
@@ -340,6 +359,7 @@
       "cell": 83.4,
       "language": {"bn": {"percent": 98, "status": 0, "cldr": "bn"}},
       "currency": "BDT",
+      "geo": [24, 90],
       "color": "699635",
       "id": "BD"
     },
@@ -357,6 +377,7 @@
         "nl": {"percent": 55, "status": 0, "cldr": "nl-BE"}
       },
       "currency": "EUR",
+      "geo": [50.83333333, 4],
       "color": "ffe62e",
       "id": "BE"
     },
@@ -370,6 +391,7 @@
       "cell": 80.6,
       "language": {"fr": {"percent": 22, "status": 0, "cldr": "fr-BF"}},
       "currency": "XOF",
+      "geo": [13, -2],
       "color": "ec4b5b",
       "id": "BF"
     },
@@ -383,6 +405,7 @@
       "cell": 129,
       "language": {"bg": {"percent": 100, "status": 0, "cldr": "bg"}},
       "currency": "BGN",
+      "geo": [43, 25],
       "color": "83bf4f",
       "id": "BG"
     },
@@ -396,6 +419,7 @@
       "cell": 185,
       "language": {"ar": {"percent": 87, "status": 0, "cldr": "ar-BH"}},
       "currency": "BHD",
+      "geo": [26, 50.55],
       "color": "c94747",
       "id": "BH"
     },
@@ -413,6 +437,7 @@
         "rn": {"percent": 63, "status": 0, "cldr": "rn"}
       },
       "currency": "BIF",
+      "geo": [-3.5, 30],
       "color": "ed4c5c",
       "id": "BI"
     },
@@ -426,6 +451,7 @@
       "cell": 85.6,
       "language": {"fr": {"percent": 35, "status": 0, "cldr": "fr-BJ"}},
       "currency": "XOF",
+      "geo": [9.5, 2.25],
       "color": "ed4b5c",
       "id": "BJ"
     },
@@ -437,6 +463,7 @@
       "literacy": 99,
       "language": {"fr": {"percent": 95, "status": 0, "cldr": "fr-BL"}},
       "currency": "EUR",
+      "geo": [18.5, -63.41666666],
       "color": "3f6693",
       "id": "BL"
     },
@@ -449,6 +476,7 @@
       "cell": 57.9,
       "language": {"en": {"percent": 92, "status": 0, "cldr": "en-BM", "parent": "en-001"}},
       "currency": "BMD",
+      "geo": [32.33333333, -64.75],
       "color": "ec4c5c",
       "id": "BM"
     },
@@ -465,6 +493,7 @@
         "ms-Arab": {"percent": 5, "status": 0}
       },
       "currency": "BND",
+      "geo": [4.5, 114.66666666],
       "color": "fee52e",
       "id": "BN"
     },
@@ -482,6 +511,7 @@
         "qu": {"percent": 32, "status": 0, "cldr": "qu-BO"}
       },
       "currency": "BOB",
+      "geo": [-17, -65],
       "color": "fecd30",
       "id": "BO"
     },
@@ -493,6 +523,7 @@
       "literacy": 99,
       "language": {"nl": {"percent": 8, "status": 0, "cldr": "nl-BQ"}},
       "currency": "USD",
+      "geo": [12.1683401, -68.4481465],
       "color": "2e5d96",
       "id": "BQ"
     },
@@ -506,6 +537,7 @@
       "cell": 127,
       "language": {"pt": {"percent": 91, "status": 0, "cldr": "pt"}},
       "currency": "BRL",
+      "geo": [-10, -55],
       "color": "6a9634",
       "id": "BR"
     },
@@ -518,6 +550,7 @@
       "cell": 80.3,
       "language": {"en": {"percent": 100, "status": 0, "cldr": "en-BS", "parent": "en-001"}},
       "currency": "BSD",
+      "geo": [24.25, -76],
       "color": "42ace2",
       "id": "BS"
     },
@@ -531,6 +564,7 @@
       "cell": 87.1,
       "language": {"dz": {"percent": 47, "status": 0, "cldr": "dz"}},
       "currency": "INR",
+      "geo": [27.5, 90.5],
       "color": "fece32",
       "id": "BT"
     },
@@ -541,6 +575,7 @@
       "gdp": 43270,
       "literacy": 99,
       "currency": "NOK",
+      "geo": [-54.43333333, 3.4],
       "color": "ed4b5b",
       "id": "BV"
     },
@@ -556,6 +591,7 @@
         "tn": {"percent": 62, "status": 0}
       },
       "currency": "BWP",
+      "geo": [-22, 24],
       "color": "b4d7ee",
       "id": "BW"
     },
@@ -572,6 +608,7 @@
         "ru": {"percent": 12, "status": 0, "cldr": "ru-BY"}
       },
       "currency": "BYN",
+      "geo": [53, 28],
       "color": "c94747",
       "id": "BY"
     },
@@ -584,6 +621,7 @@
       "cell": 48.9,
       "language": {"en": {"percent": 100, "status": 0, "cldr": "en-BZ", "parent": "en-001"}},
       "currency": "BZD",
+      "geo": [17.25, -88.75],
       "color": "428ac1",
       "id": "BZ"
     },
@@ -602,6 +640,7 @@
         "iu-Latn": {"percent": 0.042, "literacy": 30, "status": 1}
       },
       "currency": "CAD",
+      "geo": [60, -95],
       "color": "ed4c5c",
       "id": "CA"
     },
@@ -612,6 +651,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 17, "status": 2, "cldr": "en-CC", "parent": "en-001"}},
       "currency": "AUD",
+      "geo": [-12.5, 96.83333333],
       "color": "6c9734",
       "id": "CC"
     },
@@ -631,6 +671,7 @@
         "sw": {"percent": 50, "status": 1, "cldr": "sw-CD"}
       },
       "currency": "CDF",
+      "geo": [0, 25],
       "color": "42ade1",
       "id": "CD"
     },
@@ -647,6 +688,7 @@
         "sg": {"percent": 49, "status": 0, "cldr": "sg"}
       },
       "currency": "XAF",
+      "geo": [7, 21],
       "color": "f42e4b",
       "id": "CF"
     },
@@ -660,6 +702,7 @@
       "cell": 112,
       "language": {"fr": {"percent": 84, "status": 0, "cldr": "fr-CG"}},
       "currency": "XAF",
+      "geo": [-1, 15],
       "color": "75a842",
       "id": "CG"
     },
@@ -679,6 +722,7 @@
         "rm": {"percent": 0.5, "status": 1, "cldr": "rm"}
       },
       "currency": "CHF",
+      "geo": [47, 8],
       "color": "ec4b5c",
       "id": "CH"
     },
@@ -692,6 +736,7 @@
       "cell": 119,
       "language": {"fr": {"percent": 49, "status": 0, "cldr": "fr-CI"}},
       "currency": "XOF",
+      "geo": [8, -5],
       "color": "f0b100",
       "id": "CI"
     },
@@ -702,6 +747,7 @@
       "literacy": 95,
       "language": {"en": {"percent": 95, "status": 0, "cldr": "en-CK", "parent": "en-001"}},
       "currency": "NZD",
+      "geo": [-21.23333333, -159.76666666],
       "color": "2a5f9e",
       "id": "CK"
     },
@@ -715,6 +761,7 @@
       "cell": 129,
       "language": {"es": {"percent": 98, "status": 0, "cldr": "es-CL", "parent": "es-419"}},
       "currency": "CLP",
+      "geo": [-30, -71],
       "color": "ec4b5c",
       "id": "CL"
     },
@@ -731,6 +778,7 @@
         "fr": {"percent": 68, "status": 0, "cldr": "fr-CM"}
       },
       "currency": "XAF",
+      "geo": [6, 12],
       "color": "c94746",
       "id": "CM"
     },
@@ -751,6 +799,7 @@
         "zh": {"percent": 90, "status": 0, "cldr": "zh"}
       },
       "currency": "CNY",
+      "geo": [35, 105],
       "color": "ec4b5b",
       "id": "CN"
     },
@@ -764,6 +813,7 @@
       "cell": 116,
       "language": {"es": {"percent": 93, "status": 0, "cldr": "es-CO", "parent": "es-419"}},
       "currency": "COP",
+      "geo": [4, -72],
       "color": "ffe62e",
       "id": "CO"
     },
@@ -773,6 +823,7 @@
       "population": 1,
       "gdp": 40950,
       "literacy": 99,
+      "geo": [10.2833333, -109.2188554],
       "color": "ed4b5c",
       "id": "CP"
     },
@@ -786,6 +837,7 @@
       "cell": 151,
       "language": {"es": {"percent": 95, "status": 0, "cldr": "es-CR", "parent": "es-419"}},
       "currency": "CRC",
+      "geo": [10, -84],
       "color": "c94747",
       "id": "CR"
     },
@@ -799,6 +851,7 @@
       "cell": 29.7,
       "language": {"es": {"percent": 100, "status": 0, "cldr": "es-CU", "parent": "es-419"}},
       "currency": "CUP",
+      "geo": [21.5, -80],
       "color": "428ac0",
       "id": "CU"
     },
@@ -812,6 +865,7 @@
       "cell": 127,
       "language": {"pt": {"percent": 76, "status": 0, "cldr": "pt-CV", "parent": "pt-PT"}},
       "currency": "CVE",
+      "geo": [16, -24],
       "color": "2a5f9d",
       "id": "CV"
     },
@@ -827,6 +881,7 @@
         "pap": {"percent": 81, "status": 2}
       },
       "currency": "ANG",
+      "geo": [12.116667, -68.933333],
       "color": "2a5f9e",
       "id": "CW"
     },
@@ -837,6 +892,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 63, "status": 0, "cldr": "en-CX", "parent": "en-001"}},
       "currency": "AUD",
+      "geo": [-10.5, 105.66666666],
       "color": "6d9734",
       "id": "CX"
     },
@@ -853,6 +909,7 @@
         "tr": {"percent": 23, "status": 0, "cldr": "tr-CY"}
       },
       "currency": "EUR",
+      "geo": [35, 33],
       "color": "f09247",
       "id": "CY"
     },
@@ -866,6 +923,7 @@
       "cell": 129,
       "language": {"cs": {"percent": 98, "status": 0, "cldr": "cs"}},
       "currency": "CZK",
+      "geo": [49.75, 15.5],
       "color": "eb4c5d",
       "id": "CZ"
     },
@@ -879,6 +937,7 @@
       "cell": 117,
       "language": {"de": {"percent": 91, "status": 0, "cldr": "de"}},
       "currency": "EUR",
+      "geo": [51, 9],
       "color": "ec4c5c",
       "id": "DE"
     },
@@ -889,6 +948,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 99, "status": 2, "cldr": "en-DG", "parent": "en-001"}},
       "currency": "USD",
+      "geo": [-7.3432227, 72.3588798],
       "color": "2c609e",
       "id": "DG"
     },
@@ -905,6 +965,7 @@
         "fr": {"percent": 2.1, "status": 0, "cldr": "fr-DJ"}
       },
       "currency": "DJF",
+      "geo": [11.5, 43],
       "color": "42ade2",
       "id": "DJ"
     },
@@ -922,6 +983,7 @@
         "kl": {"percent": 0.13, "status": 1}
       },
       "currency": "DKK",
+      "geo": [56, 10],
       "color": "ed4b5b",
       "id": "DK"
     },
@@ -934,6 +996,7 @@
       "cell": 106,
       "language": {"en": {"percent": 94, "status": 0, "cldr": "en-DM", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [15.41666666, -61.33333333],
       "color": "699535",
       "id": "DM"
     },
@@ -947,6 +1010,7 @@
       "cell": 82.6,
       "language": {"es": {"percent": 78, "status": 0, "cldr": "es-DO", "parent": "es-419"}},
       "currency": "DOP",
+      "geo": [19, -70.66666666],
       "color": "2a5e9d",
       "id": "DO"
     },
@@ -963,6 +1027,7 @@
         "fr": {"percent": 20, "status": 0, "cldr": "fr-DZ"}
       },
       "currency": "DZD",
+      "geo": [28, 3],
       "color": "699535",
       "id": "DZ"
     },
@@ -974,6 +1039,7 @@
       "literacy": 97.7,
       "language": {"es": {"percent": 98, "status": 0, "cldr": "es-EA"}},
       "currency": "EUR",
+      "geo": [[35.88899, -5.3360886], [35.2862888, -2.9533027]],
       "color": "fecd31",
       "id": "EA"
     },
@@ -990,6 +1056,7 @@
         "qu": {"percent": 17, "status": 0, "cldr": "qu-EC"}
       },
       "currency": "USD",
+      "geo": [-2, -77.5],
       "color": "fee52e",
       "id": "EC"
     },
@@ -1003,6 +1070,7 @@
       "cell": 149,
       "language": {"et": {"percent": 71, "status": 0, "cldr": "et"}},
       "currency": "EUR",
+      "geo": [59, 26],
       "color": "42ace2",
       "id": "EE"
     },
@@ -1016,6 +1084,7 @@
       "cell": 111,
       "language": {"ar": {"percent": 94, "status": 0, "cldr": "ar-EG"}},
       "currency": "EGP",
+      "geo": [27, 30],
       "color": "ec4b5b",
       "id": "EG"
     },
@@ -1027,6 +1096,7 @@
       "literacy": 50,
       "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-EH"}},
       "currency": "MAD",
+      "geo": [24.5, -13],
       "color": "ed4c5c",
       "id": "EH"
     },
@@ -1044,6 +1114,7 @@
         "ti": {"percent": 60, "status": 2, "cldr": "ti-ER"}
       },
       "currency": "ERN",
+      "geo": [15, 39],
       "color": "ec4c5c",
       "id": "ER"
     },
@@ -1063,6 +1134,7 @@
         "gl": {"percent": 7, "status": 1, "cldr": "gl"}
       },
       "currency": "EUR",
+      "geo": [40, -4],
       "color": "fecd31",
       "id": "ES"
     },
@@ -1076,6 +1148,7 @@
       "cell": 42.8,
       "language": {"am": {"percent": 33, "status": 0, "cldr": "am"}},
       "currency": "ETB",
+      "geo": [8, 38],
       "color": "ec4c5c",
       "id": "ET"
     },
@@ -1092,6 +1165,7 @@
         "sv": {"percent": 44, "status": 0, "cldr": "sv-FI"}
       },
       "currency": "EUR",
+      "geo": [64, 26],
       "color": "428ac1",
       "id": "FI"
     },
@@ -1108,6 +1182,7 @@
         "hif": {"percent": 41, "status": 0}
       },
       "currency": "FJD",
+      "geo": [-18, 175],
       "color": "42ace1",
       "id": "FJ"
     },
@@ -1118,6 +1193,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 96, "status": 0, "cldr": "en-FK", "parent": "en-001"}},
       "currency": "FKP",
+      "geo": [-51.75, -59],
       "color": "2a5f9e",
       "id": "FK"
     },
@@ -1129,6 +1205,7 @@
       "net": 31.5,
       "language": {"en": {"percent": 57, "status": 0, "cldr": "en-FM", "parent": "en-001"}},
       "currency": "USD",
+      "geo": [6.91666666, 158.25],
       "color": "428ac1",
       "id": "FM"
     },
@@ -1142,6 +1219,7 @@
       "cell": 127,
       "language": {"fo": {"percent": 95, "status": 0, "cldr": "fo"}},
       "currency": "DKK",
+      "geo": [62, -7],
       "color": "ed4b5b",
       "id": "FO"
     },
@@ -1155,6 +1233,7 @@
       "cell": 103,
       "language": {"fr": {"percent": 99, "status": 0, "cldr": "fr"}},
       "currency": "EUR",
+      "geo": [46, 2],
       "color": "ed4b5c",
       "id": "FR"
     },
@@ -1168,6 +1247,7 @@
       "cell": 169,
       "language": {"fr": {"percent": 63, "status": 0, "cldr": "fr-GA"}},
       "currency": "XAF",
+      "geo": [-1, 11.75],
       "color": "ffe62e",
       "id": "GA"
     },
@@ -1185,6 +1265,7 @@
         "gd": {"percent": 0.099, "status": 1, "cldr": "gd"}
       },
       "currency": "GBP",
+      "geo": [54, -2],
       "color": "ed4c5c",
       "id": "GB"
     },
@@ -1197,6 +1278,7 @@
       "cell": 112,
       "language": {"en": {"percent": 96, "status": 0, "cldr": "en-GD", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [12.11666666, -61.66666666],
       "color": "fecd31",
       "id": "GD"
     },
@@ -1214,6 +1296,7 @@
         "os": {"percent": 2.2, "status": 1, "cldr": "os"}
       },
       "currency": "GEL",
+      "geo": [42, 43.5],
       "color": "ed4c5c",
       "id": "GE"
     },
@@ -1225,6 +1308,7 @@
       "literacy": 83,
       "language": {"fr": {"percent": 77, "status": 0, "cldr": "fr-GF"}},
       "currency": "EUR",
+      "geo": [4, -53],
       "color": "699634",
       "id": "GF"
     },
@@ -1235,6 +1319,7 @@
       "literacy": 100,
       "language": {"en": {"percent": 100, "status": 0, "cldr": "en-GG", "parent": "en-001"}},
       "currency": "GBP",
+      "geo": [49.46666666, -2.58333333],
       "color": "ed4c5c",
       "id": "GG"
     },
@@ -1253,6 +1338,7 @@
         "gaa": {"percent": 2.8, "status": 1}
       },
       "currency": "GHS",
+      "geo": [8, -2],
       "color": "fecd31",
       "id": "GH"
     },
@@ -1263,6 +1349,7 @@
       "literacy": 80,
       "language": {"en": {"percent": 80, "status": 0, "cldr": "en-GI", "parent": "en-001"}},
       "currency": "GIP",
+      "geo": [36.13333333, -5.35],
       "color": "eb4c5c",
       "id": "GI"
     },
@@ -1276,6 +1363,7 @@
       "cell": 107,
       "language": {"kl": {"percent": 84, "status": 0, "cldr": "kl"}},
       "currency": "DKK",
+      "geo": [72, -40],
       "color": "c94747",
       "id": "GL"
     },
@@ -1288,6 +1376,7 @@
       "cell": 131,
       "language": {"en": {"percent": 40, "status": 0, "cldr": "en-GM", "parent": "en-001"}},
       "currency": "GMD",
+      "geo": [13.46666666, -16.56666666],
       "color": "2a5f9d",
       "id": "GM"
     },
@@ -1301,6 +1390,7 @@
       "cell": 87.2,
       "language": {"fr": {"percent": 29, "status": 0, "cldr": "fr-GN"}},
       "currency": "GNF",
+      "geo": [11, -10],
       "color": "ffcd31",
       "id": "GN"
     },
@@ -1312,6 +1402,7 @@
       "literacy": 90,
       "language": {"fr": {"percent": 90, "status": 0, "cldr": "fr-GP"}},
       "currency": "EUR",
+      "geo": [16.25, -61.583333],
       "color": "384c63",
       "id": "GP"
     },
@@ -1329,6 +1420,7 @@
         "pt": {"percent": 0.0001, "status": 0, "cldr": "pt-GQ", "parent": "pt-PT"}
       },
       "currency": "XAF",
+      "geo": [2, 10],
       "color": "82be4f",
       "id": "GQ"
     },
@@ -1342,6 +1434,7 @@
       "cell": 114,
       "language": {"el": {"percent": 99, "status": 0, "cldr": "el"}},
       "currency": "EUR",
+      "geo": [39, 22],
       "color": "428ac1",
       "id": "GR"
     },
@@ -1352,6 +1445,7 @@
       "gdp": 865400,
       "literacy": 99,
       "currency": "GBP",
+      "geo": [-54.5, -37],
       "color": "2b5f9c",
       "id": "GS"
     },
@@ -1368,6 +1462,7 @@
         "quc": {"percent": 7, "status": 1}
       },
       "currency": "GTQ",
+      "geo": [15.5, -90.25],
       "color": "42ace1",
       "id": "GT"
     },
@@ -1382,6 +1477,7 @@
         "en": {"percent": 91, "status": 2, "cldr": "en-GU"}
       },
       "currency": "USD",
+      "geo": [13.46666666, 144.78333333],
       "color": "2b5e9d",
       "id": "GU"
     },
@@ -1395,6 +1491,7 @@
       "cell": 69.3,
       "language": {"pt": {"percent": 100, "status": 0, "cldr": "pt-GW", "parent": "pt-PT"}},
       "currency": "XOF",
+      "geo": [12, -15],
       "color": "ffce30",
       "id": "GW"
     },
@@ -1407,6 +1504,7 @@
       "cell": 67.2,
       "language": {"en": {"percent": 100, "status": 0, "cldr": "en-GY", "parent": "en-001"}},
       "currency": "GYD",
+      "geo": [5, -59],
       "color": "699635",
       "id": "GY"
     },
@@ -1423,6 +1521,7 @@
         "zh-Hant": {"percent": 95, "status": 0, "cldr": "zh-Hant-HK"}
       },
       "currency": "HKD",
+      "geo": [22.267, 114.188],
       "color": "ed4c5c",
       "id": "HK"
     },
@@ -1433,6 +1532,7 @@
       "gdp": 51710,
       "literacy": 99,
       "currency": "AUD",
+      "geo": [-53.1, 72.51666666],
       "color": "2a5f9e",
       "id": "HM"
     },
@@ -1446,6 +1546,7 @@
       "cell": 95.5,
       "language": {"es": {"percent": 78, "status": 0, "cldr": "es-HN", "parent": "es-419"}},
       "currency": "HNL",
+      "geo": [15, -86.5],
       "color": "42ade2",
       "id": "HN"
     },
@@ -1462,6 +1563,7 @@
         "it": {"percent": 1.6, "status": 1}
       },
       "currency": "HRK",
+      "geo": [45.16666666, 15.5],
       "color": "ec4c5c",
       "id": "HR"
     },
@@ -1478,6 +1580,7 @@
         "ht": {"percent": 81, "status": 0}
       },
       "currency": "HTG",
+      "geo": [19, -72.41666666],
       "color": "2a5f9d",
       "id": "HT"
     },
@@ -1491,6 +1594,7 @@
       "cell": 119,
       "language": {"hu": {"percent": 100, "status": 0, "cldr": "hu"}},
       "currency": "HUF",
+      "geo": [47, 20],
       "color": "ec4b5b",
       "id": "HU"
     },
@@ -1502,6 +1606,7 @@
       "literacy": 97.7,
       "language": {"es": {"percent": 98, "status": 0, "cldr": "es-IC"}},
       "currency": "EUR",
+      "geo": [28.4260613, -18.0971522],
       "color": "2a5f9e",
       "id": "IC"
     },
@@ -1515,6 +1620,7 @@
       "cell": 132,
       "language": {"id": {"percent": 64, "status": 0, "cldr": "id"}},
       "currency": "IDR",
+      "geo": [-5, 120],
       "color": "ed4b5c",
       "id": "ID"
     },
@@ -1530,6 +1636,7 @@
         "ga": {"percent": 22, "status": 0, "cldr": "ga"}
       },
       "currency": "EUR",
+      "geo": [53, -8],
       "color": "fd8736",
       "id": "IE"
     },
@@ -1546,6 +1653,7 @@
         "he": {"percent": 100, "status": 0, "cldr": "he"}
       },
       "currency": "ILS",
+      "geo": [31.47, 35.13],
       "color": "428ac1",
       "id": "IL"
     },
@@ -1559,6 +1667,7 @@
         "gv": {"percent": 1.9, "status": 0, "cldr": "gv"}
       },
       "currency": "GBP",
+      "geo": [54.25, -4.5],
       "color": "ec4c5c",
       "id": "IM"
     },
@@ -1595,6 +1704,7 @@
         "ur": {"percent": 5, "status": 1, "cldr": "ur-IN"}
       },
       "currency": "INR",
+      "geo": [20, 77],
       "color": "f1b100",
       "id": "IN"
     },
@@ -1607,6 +1717,7 @@
         "en": {"percent": 100, "literacy": 100, "status": 0, "cldr": "en-IO", "parent": "en-001"}
       },
       "currency": "USD",
+      "geo": [-6, 71.5],
       "color": "2c609e",
       "id": "IO"
     },
@@ -1624,6 +1735,7 @@
         "ckb": {"percent": 20, "status": 1, "cldr": "ckb"}
       },
       "currency": "IQD",
+      "geo": [33, 44],
       "color": "c94747",
       "id": "IQ"
     },
@@ -1637,6 +1749,7 @@
       "cell": 93.4,
       "language": {"fa": {"percent": 75, "status": 0, "cldr": "fa"}},
       "currency": "IRR",
+      "geo": [32, 53],
       "color": "84c051",
       "id": "IR"
     },
@@ -1650,6 +1763,7 @@
       "cell": 114,
       "language": {"is": {"percent": 100, "status": 0, "cldr": "is"}},
       "currency": "ISK",
+      "geo": [65, -18],
       "color": "2a5e9d",
       "id": "IS"
     },
@@ -1666,6 +1780,7 @@
         "it": {"percent": 95, "status": 0, "cldr": "it"}
       },
       "currency": "EUR",
+      "geo": [42.83333333, 12.83333333],
       "color": "ed4c5c",
       "id": "IT"
     },
@@ -1676,6 +1791,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 95, "status": 0, "cldr": "en-JE", "parent": "en-001"}},
       "currency": "GBP",
+      "geo": [49.25, -2.16666666],
       "color": "ed4b5c",
       "id": "JE"
     },
@@ -1688,6 +1804,7 @@
       "cell": 112,
       "language": {"en": {"percent": 98, "status": 0, "cldr": "en-JM", "parent": "en-001"}},
       "currency": "JMD",
+      "geo": [18.25, -77.5],
       "color": "6c9734",
       "id": "JM"
     },
@@ -1701,6 +1818,7 @@
       "cell": 179,
       "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-JO"}},
       "currency": "JOD",
+      "geo": [31, 36],
       "color": "75a742",
       "id": "JO"
     },
@@ -1714,6 +1832,7 @@
       "cell": 125,
       "language": {"ja": {"percent": 95, "status": 0, "cldr": "ja"}},
       "currency": "JPY",
+      "geo": [36, 138],
       "color": "ed4c5c",
       "id": "JP"
     },
@@ -1730,6 +1849,7 @@
         "sw": {"percent": 66, "status": 0, "cldr": "sw-KE"}
       },
       "currency": "KES",
+      "geo": [1, 38],
       "color": "c94747",
       "id": "KE"
     },
@@ -1746,6 +1866,7 @@
         "ru": {"percent": 36, "status": 0, "cldr": "ru-KG"}
       },
       "currency": "KGS",
+      "geo": [41, 75],
       "color": "f4304b",
       "id": "KG"
     },
@@ -1759,6 +1880,7 @@
       "cell": 133,
       "language": {"km": {"percent": 89, "status": 0, "cldr": "km"}},
       "currency": "KHR",
+      "geo": [13, 105],
       "color": "ed4c5c",
       "id": "KH"
     },
@@ -1774,6 +1896,7 @@
         "gil": {"percent": 60, "status": 0}
       },
       "currency": "AUD",
+      "geo": [1.41666666, 173],
       "color": "ec4c5c",
       "id": "KI"
     },
@@ -1792,6 +1915,7 @@
         "zdj": {"percent": 37, "status": 0}
       },
       "currency": "KMF",
+      "geo": [-12.16666666, 44.25],
       "color": "ec4c5b",
       "id": "KM"
     },
@@ -1804,6 +1928,7 @@
       "cell": 132,
       "language": {"en": {"percent": 98, "status": 0, "cldr": "en-KN", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [17.33333333, -62.75],
       "color": "fde42e",
       "id": "KN"
     },
@@ -1816,6 +1941,7 @@
       "cell": 12.9,
       "language": {"ko": {"percent": 88, "status": 0, "cldr": "ko-KP"}},
       "currency": "KPW",
+      "geo": [40, 127],
       "color": "ed4c5c",
       "id": "KP"
     },
@@ -1829,6 +1955,7 @@
       "cell": 118,
       "language": {"ko": {"percent": 100, "status": 0, "cldr": "ko"}},
       "currency": "KRW",
+      "geo": [37, 127.5],
       "color": "ec4c5c",
       "id": "KR"
     },
@@ -1842,6 +1969,7 @@
       "cell": 232,
       "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-KW"}},
       "currency": "KWD",
+      "geo": [29.5, 45.75],
       "color": "ec4b5c",
       "id": "KW"
     },
@@ -1854,6 +1982,7 @@
       "cell": 155,
       "language": {"en": {"percent": 98, "status": 0, "cldr": "en-KY", "parent": "en-001"}},
       "currency": "KYD",
+      "geo": [19.5, -80.5],
       "color": "2a5f9d",
       "id": "KY"
     },
@@ -1870,6 +1999,7 @@
         "ru": {"percent": 72, "status": 0, "cldr": "ru-KZ"}
       },
       "currency": "KZT",
+      "geo": [48, 68],
       "color": "00afc9",
       "id": "KZ"
     },
@@ -1883,6 +2013,7 @@
       "cell": 53.1,
       "language": {"lo": {"percent": 69, "status": 0, "cldr": "lo"}},
       "currency": "LAK",
+      "geo": [18, 105],
       "color": "2a5f9e",
       "id": "LA"
     },
@@ -1896,6 +2027,7 @@
       "cell": 87.1,
       "language": {"ar": {"percent": 86, "status": 0, "cldr": "ar-LB"}},
       "currency": "LBP",
+      "geo": [33.83333333, 35.83333333],
       "color": "ed4c5c",
       "id": "LB"
     },
@@ -1908,6 +2040,7 @@
       "cell": 102,
       "language": {"en": {"percent": 90, "status": 0, "cldr": "en-LC", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [13.88333333, -60.96666666],
       "color": "48c2f2",
       "id": "LC"
     },
@@ -1924,6 +2057,7 @@
         "gsw": {"percent": 85, "status": 2, "cldr": "gsw-LI"}
       },
       "currency": "CHF",
+      "geo": [47.26666666, 9.53333333],
       "color": "ec4b5c",
       "id": "LI"
     },
@@ -1940,6 +2074,7 @@
         "ta": {"percent": 15, "status": 0, "cldr": "ta-LK"}
       },
       "currency": "LKR",
+      "geo": [7, 81],
       "color": "fecd31",
       "id": "LK"
     },
@@ -1952,6 +2087,7 @@
       "cell": 81.1,
       "language": {"en": {"percent": 83, "status": 0, "cldr": "en-LR", "parent": "en-001"}},
       "currency": "LRD",
+      "geo": [6.5, -9.5],
       "color": "ec4c5c",
       "id": "LR"
     },
@@ -1968,6 +2104,7 @@
         "st": {"percent": 98, "status": 0}
       },
       "currency": "ZAR",
+      "geo": [-29.5, 28.5],
       "color": "82bf4f",
       "id": "LS"
     },
@@ -1981,6 +2118,7 @@
       "cell": 140,
       "language": {"lt": {"percent": 86, "status": 0, "cldr": "lt"}},
       "currency": "EUR",
+      "geo": [56, 24],
       "color": "689635",
       "id": "LT"
     },
@@ -1998,6 +2136,7 @@
         "lb": {"percent": 67, "status": 0, "cldr": "lb"}
       },
       "currency": "EUR",
+      "geo": [49.75, 6.16666666],
       "color": "c94646",
       "id": "LU"
     },
@@ -2011,6 +2150,7 @@
       "cell": 127,
       "language": {"lv": {"percent": 61, "status": 0, "cldr": "lv"}},
       "currency": "EUR",
+      "geo": [57, 25],
       "color": "c8515f",
       "id": "LV"
     },
@@ -2024,6 +2164,7 @@
       "cell": 157,
       "language": {"ar": {"percent": 74, "status": 0, "cldr": "ar-LY"}},
       "currency": "LYD",
+      "geo": [25, 17],
       "color": "c94747",
       "id": "LY"
     },
@@ -2041,6 +2182,7 @@
         "tzm": {"percent": 9.8, "literacy": 25, "status": 0, "cldr": "tzm"}
       },
       "currency": "MAD",
+      "geo": [32, -5],
       "color": "f32f4b",
       "id": "MA"
     },
@@ -2054,6 +2196,7 @@
       "cell": 88.8,
       "language": {"fr": {"percent": 99, "status": 0, "cldr": "fr-MC"}},
       "currency": "EUR",
+      "geo": [43.73333333, 7.4],
       "color": "c94646",
       "id": "MC"
     },
@@ -2067,6 +2210,7 @@
       "cell": 108,
       "language": {"ro": {"percent": 63, "status": 0, "cldr": "ro-MD"}},
       "currency": "MDL",
+      "geo": [47, 29],
       "color": "fde52e",
       "id": "MD"
     },
@@ -2080,6 +2224,7 @@
       "cell": 162,
       "language": {"sr-Latn": {"percent": 100, "status": 0, "cldr": "sr-Latn-ME"}},
       "currency": "EUR",
+      "geo": [42.5, 19.3],
       "color": "ed4c5b",
       "id": "ME"
     },
@@ -2091,6 +2236,7 @@
       "literacy": 99,
       "language": {"fr": {"percent": 100, "status": 0, "cldr": "fr-MF"}},
       "currency": "EUR",
+      "geo": [18.08333333, -63.95],
       "color": "ed4b5c",
       "id": "MF"
     },
@@ -2108,6 +2254,7 @@
         "mg": {"percent": 90, "status": 0, "cldr": "mg"}
       },
       "currency": "MGA",
+      "geo": [-20, 47],
       "color": "ec4b5c",
       "id": "MG"
     },
@@ -2123,6 +2270,7 @@
         "mh": {"percent": 73, "status": 0}
       },
       "currency": "USD",
+      "geo": [9, 168],
       "color": "2b5f9e",
       "id": "MH"
     },
@@ -2139,6 +2287,7 @@
         "sq": {"percent": 25, "status": 1, "cldr": "sq-MK"}
       },
       "currency": "MKD",
+      "geo": [41.83333333, 22],
       "color": "ed4c5b",
       "id": "MK"
     },
@@ -2152,6 +2301,7 @@
       "cell": 140,
       "language": {"fr": {"percent": 46, "status": 0, "cldr": "fr-ML"}},
       "currency": "XOF",
+      "geo": [17, -4],
       "color": "ffce30",
       "id": "ML"
     },
@@ -2165,6 +2315,7 @@
       "cell": 76.7,
       "language": {"my": {"percent": 64, "status": 0, "cldr": "my"}},
       "currency": "MMK",
+      "geo": [22, 98],
       "color": "fbe432",
       "id": "MM"
     },
@@ -2178,6 +2329,7 @@
       "cell": 105,
       "language": {"mn": {"percent": 93, "status": 0, "cldr": "mn"}},
       "currency": "MNT",
+      "geo": [46, 105],
       "color": "c94746",
       "id": "MN"
     },
@@ -2194,6 +2346,7 @@
         "zh-Hant": {"percent": 98, "status": 0, "cldr": "zh-Hant-MO", "parent": "zh-Hant-HK"}
       },
       "currency": "MOP",
+      "geo": [22.16666666, 113.55],
       "color": "83bf4f",
       "id": "MO"
     },
@@ -2204,6 +2357,7 @@
       "literacy": 97,
       "language": {"en": {"percent": 97, "status": 2, "cldr": "en-MP"}},
       "currency": "USD",
+      "geo": [15.2, 145.75],
       "color": "0171bb",
       "id": "MP"
     },
@@ -2215,6 +2369,7 @@
       "literacy": 98,
       "language": {"fr": {"percent": 98, "status": 0, "cldr": "fr-MQ"}},
       "currency": "EUR",
+      "geo": [14.666667, -61],
       "color": "2b5f9e",
       "id": "MQ"
     },
@@ -2228,6 +2383,7 @@
       "cell": 89.3,
       "language": {"ar": {"percent": 85, "status": 0, "cldr": "ar-MR"}},
       "currency": "MRO",
+      "geo": [20, -12],
       "color": "6a9634",
       "id": "MR"
     },
@@ -2238,6 +2394,7 @@
       "literacy": 97,
       "language": {"en": {"percent": 66, "status": 0, "cldr": "en-MS", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [16.75, -62.2],
       "color": "2a5f9e",
       "id": "MS"
     },
@@ -2254,6 +2411,7 @@
         "mt": {"percent": 100, "status": 0, "cldr": "mt"}
       },
       "currency": "EUR",
+      "geo": [35.83333333, 14.58333333],
       "color": "ec4b5c",
       "id": "MT"
     },
@@ -2270,6 +2428,7 @@
         "fr": {"percent": 3, "status": 0, "cldr": "fr-MU"}
       },
       "currency": "MUR",
+      "geo": [-20.28333333, 57.55],
       "color": "295e9e",
       "id": "MU"
     },
@@ -2283,6 +2442,7 @@
       "cell": 207,
       "language": {"dv": {"percent": 94, "status": 0}},
       "currency": "MVR",
+      "geo": [3.25, 73],
       "color": "699635",
       "id": "MV"
     },
@@ -2298,6 +2458,7 @@
         "ny": {"percent": 63, "status": 0}
       },
       "currency": "MWK",
+      "geo": [-13.5, 34],
       "color": "eb4b5b",
       "id": "MW"
     },
@@ -2311,6 +2472,7 @@
       "cell": 85.3,
       "language": {"es": {"percent": 83, "status": 2, "cldr": "es-MX", "parent": "es-419"}},
       "currency": "MXN",
+      "geo": [23, -102],
       "color": "ec4c5c",
       "id": "MX"
     },
@@ -2324,6 +2486,7 @@
       "cell": 144,
       "language": {"ms": {"percent": 75, "status": 0, "cldr": "ms"}},
       "currency": "MYR",
+      "geo": [2.5, 112.5],
       "color": "ec4c5c",
       "id": "MY"
     },
@@ -2337,6 +2500,7 @@
       "cell": 74.2,
       "language": {"pt": {"percent": 27, "status": 0, "cldr": "pt-MZ", "parent": "pt-PT"}},
       "currency": "MZN",
+      "geo": [-18.25, 35],
       "color": "fee52e",
       "id": "MZ"
     },
@@ -2350,6 +2514,7 @@
       "cell": 102,
       "language": {"en": {"percent": 7, "status": 0, "cldr": "en-NA", "parent": "en-001"}},
       "currency": "ZAR",
+      "geo": [-22, 17],
       "color": "ed4c5c",
       "id": "NA"
     },
@@ -2363,6 +2528,7 @@
       "cell": 93.5,
       "language": {"fr": {"percent": 96, "status": 0, "cldr": "fr-NC"}},
       "currency": "XPF",
+      "geo": [-21.5, 165.5],
       "color": "2c5c94",
       "id": "NC"
     },
@@ -2376,6 +2542,7 @@
       "cell": 46.5,
       "language": {"fr": {"percent": 29, "status": 0, "cldr": "fr-NE"}},
       "currency": "XOF",
+      "geo": [16, 8],
       "color": "f17a52",
       "id": "NE"
     },
@@ -2386,6 +2553,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 76, "status": 0, "cldr": "en-NF", "parent": "en-001"}},
       "currency": "AUD",
+      "geo": [-29.03333333, 167.95],
       "color": "699636",
       "id": "NF"
     },
@@ -2401,6 +2569,7 @@
         "yo": {"percent": 13, "status": 0, "cldr": "yo"}
       },
       "currency": "NGN",
+      "geo": [10, 8],
       "color": "82bf4f",
       "id": "NG"
     },
@@ -2414,6 +2583,7 @@
       "cell": 116,
       "language": {"es": {"percent": 78, "status": 0, "cldr": "es-NI", "parent": "es-419"}},
       "currency": "NIO",
+      "geo": [13, -85],
       "color": "428ac1",
       "id": "NI"
     },
@@ -2430,6 +2600,7 @@
         "nl": {"percent": 100, "status": 0, "cldr": "nl"}
       },
       "currency": "EUR",
+      "geo": [52.5, 5.75],
       "color": "ed4b5b",
       "id": "NL"
     },
@@ -2447,6 +2618,7 @@
         "se": {"percent": 3.3, "status": 1, "cldr": "se"}
       },
       "currency": "NOK",
+      "geo": [62, 10],
       "color": "ed4b5b",
       "id": "NO"
     },
@@ -2460,6 +2632,7 @@
       "cell": 96.7,
       "language": {"ne": {"percent": 44, "status": 0, "cldr": "ne"}},
       "currency": "NPR",
+      "geo": [28, 84],
       "color": "ea4d5e",
       "id": "NP"
     },
@@ -2473,6 +2646,7 @@
         "na": {"percent": 72, "status": 0}
       },
       "currency": "AUD",
+      "geo": [-0.53333333, 166.91666666],
       "color": "295f9e",
       "id": "NR"
     },
@@ -2486,6 +2660,7 @@
         "niu": {"percent": 95, "status": 0}
       },
       "currency": "NZD",
+      "geo": [-19.03333333, -169.86666666],
       "color": "fecd31",
       "id": "NU"
     },
@@ -2501,6 +2676,7 @@
         "mi": {"percent": 2.8, "status": 0}
       },
       "currency": "NZD",
+      "geo": [-41, 174],
       "color": "2a5f9e",
       "id": "NZ"
     },
@@ -2514,6 +2690,7 @@
       "cell": 160,
       "language": {"ar": {"percent": 81, "status": 0, "cldr": "ar-OM"}},
       "currency": "OMR",
+      "geo": [21, 57],
       "color": "ed4c5c",
       "id": "OM"
     },
@@ -2527,6 +2704,7 @@
       "cell": 174,
       "language": {"es": {"percent": 69, "status": 0, "cldr": "es-PA", "parent": "es-419"}},
       "currency": "PAB",
+      "geo": [9, -80],
       "color": "ec4c5c",
       "id": "PA"
     },
@@ -2543,6 +2721,7 @@
         "qu": {"percent": 15, "status": 0, "cldr": "qu"}
       },
       "currency": "PEN",
+      "geo": [-10, -76],
       "color": "ec4b5b",
       "id": "PE"
     },
@@ -2559,6 +2738,7 @@
         "ty": {"percent": 31, "status": 0}
       },
       "currency": "XPF",
+      "geo": [-15, -140],
       "color": "ed4c5c",
       "id": "PF"
     },
@@ -2576,6 +2756,7 @@
         "tpi": {"percent": 71, "literacy": 45, "status": 0}
       },
       "currency": "PGK",
+      "geo": [-6, 147],
       "color": "c94746",
       "id": "PG"
     },
@@ -2599,6 +2780,7 @@
         "war": {"percent": 2.9, "status": 1}
       },
       "currency": "PHP",
+      "geo": [13, 122],
       "color": "ec4b5c",
       "id": "PH"
     },
@@ -2615,6 +2797,7 @@
         "ur": {"percent": 95, "status": 0, "cldr": "ur"}
       },
       "currency": "PKR",
+      "geo": [30, 70],
       "color": "699635",
       "id": "PK"
     },
@@ -2633,6 +2816,7 @@
         "pl": {"percent": 96, "status": 0, "cldr": "pl"}
       },
       "currency": "PLN",
+      "geo": [52, 20],
       "color": "ec4b5c",
       "id": "PL"
     },
@@ -2644,6 +2828,7 @@
       "literacy": 99,
       "language": {"fr": {"percent": 91, "status": 0, "cldr": "fr-PM"}},
       "currency": "EUR",
+      "geo": [46.83333333, -56.33333333],
       "color": "068bbe",
       "id": "PM"
     },
@@ -2654,6 +2839,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 85, "status": 0, "cldr": "en-PN", "parent": "en-001"}},
       "currency": "NZD",
+      "geo": [-25.06666666, -130.1],
       "color": "2a609d",
       "id": "PN"
     },
@@ -2670,6 +2856,7 @@
         "es": {"percent": 87, "status": 0, "cldr": "es-PR", "parent": "es-419"}
       },
       "currency": "USD",
+      "geo": [18.25, -66.5],
       "color": "eb4c5c",
       "id": "PR"
     },
@@ -2683,6 +2870,7 @@
       "cell": 77.6,
       "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-PS"}},
       "currency": "ILS",
+      "geo": [31.9, 35.2],
       "color": "699534",
       "id": "PS"
     },
@@ -2696,6 +2884,7 @@
       "cell": 110,
       "language": {"pt": {"percent": 96, "status": 0, "cldr": "pt-PT"}},
       "currency": "EUR",
+      "geo": [39.5, -8],
       "color": "ec4c5c",
       "id": "PT"
     },
@@ -2711,6 +2900,7 @@
         "pau": {"percent": 74, "status": 0}
       },
       "currency": "USD",
+      "geo": [7.5, 134.5],
       "color": "42ace1",
       "id": "PW"
     },
@@ -2727,6 +2917,7 @@
         "gn": {"percent": 80, "status": 0}
       },
       "currency": "PYG",
+      "geo": [-23, -58],
       "color": "ec4c5c",
       "id": "PY"
     },
@@ -2740,6 +2931,7 @@
       "cell": 154,
       "language": {"ar": {"percent": 89, "status": 0, "cldr": "ar-QA"}},
       "currency": "QAR",
+      "geo": [25.5, 51.25],
       "color": "b84a78",
       "id": "QA"
     },
@@ -2751,6 +2943,7 @@
       "literacy": 88,
       "language": {"fr": {"percent": 89, "status": 0, "cldr": "fr-RE"}},
       "currency": "EUR",
+      "geo": [-21.15, 55.5],
       "color": "ffce31",
       "id": "RE"
     },
@@ -2764,6 +2957,7 @@
       "cell": 107,
       "language": {"ro": {"percent": 90, "status": 0, "cldr": "ro"}},
       "currency": "RON",
+      "geo": [46, 25],
       "color": "ffce30",
       "id": "RO"
     },
@@ -2785,6 +2979,7 @@
         "uk": {"percent": 0, "status": 1}
       },
       "currency": "RSD",
+      "geo": [44, 21],
       "color": "ec4c5c",
       "id": "RS"
     },
@@ -2819,6 +3014,7 @@
         "udm": {"percent": 0.38, "status": 1}
       },
       "currency": "RUB",
+      "geo": [60, 100],
       "color": "428ac0",
       "id": "RU"
     },
@@ -2836,6 +3032,7 @@
         "rw": {"percent": 77, "status": 0, "cldr": "rw"}
       },
       "currency": "RWF",
+      "geo": [-2, 30],
       "color": "43ade0",
       "id": "RW"
     },
@@ -2849,6 +3046,7 @@
       "cell": 177,
       "language": {"ar": {"percent": 100, "status": 0, "cldr": "ar-SA"}},
       "currency": "SAR",
+      "geo": [25, 45],
       "color": "699635",
       "id": "SA"
     },
@@ -2861,6 +3059,7 @@
       "cell": 72.7,
       "language": {"en": {"percent": 100, "status": 0, "cldr": "en-SB", "parent": "en-001"}},
       "currency": "SBD",
+      "geo": [-8, 159],
       "color": "6a9634",
       "id": "SB"
     },
@@ -2877,6 +3076,7 @@
         "fr": {"percent": 60, "status": 0, "cldr": "fr-SC"}
       },
       "currency": "SCR",
+      "geo": [-4.58333333, 55.66666666],
       "color": "28729f",
       "id": "SC"
     },
@@ -2893,6 +3093,7 @@
         "en": {"percent": 61, "status": 0, "cldr": "en-SD", "parent": "en-001"}
       },
       "currency": "SDG",
+      "geo": [15, 30],
       "color": "ed4b5c",
       "id": "SD"
     },
@@ -2909,6 +3110,7 @@
         "sv": {"percent": 95, "status": 0, "cldr": "sv"}
       },
       "currency": "SEK",
+      "geo": [62, 15],
       "color": "ffe62e",
       "id": "SE"
     },
@@ -2926,6 +3128,7 @@
         "zh": {"percent": 77, "status": 0}
       },
       "currency": "SGD",
+      "geo": [1.36666666, 103.8],
       "color": "ec4c5c",
       "id": "SG"
     },
@@ -2936,6 +3139,7 @@
       "literacy": 97,
       "language": {"en": {"percent": 69, "status": 0, "cldr": "en-SH", "parent": "en-001"}},
       "currency": "SHP",
+      "geo": [-15.965424, -5.7815686],
       "color": "2a5f9d",
       "id": "SH"
     },
@@ -2949,6 +3153,7 @@
       "cell": 113,
       "language": {"sl": {"percent": 87, "status": 0, "cldr": "sl"}},
       "currency": "EUR",
+      "geo": [46.11666666, 14.81666666],
       "color": "438ac0",
       "id": "SI"
     },
@@ -2960,6 +3165,7 @@
       "literacy": 100,
       "language": {"nb": {"percent": 80, "status": 0, "cldr": "nb-SJ"}},
       "currency": "NOK",
+      "geo": [78, 20],
       "color": "ed4b5b",
       "id": "SJ"
     },
@@ -2973,6 +3179,7 @@
       "cell": 122,
       "language": {"sk": {"percent": 90, "status": 0, "cldr": "sk"}},
       "currency": "EUR",
+      "geo": [48.66666666, 19.5],
       "color": "ec4c5c",
       "id": "SK"
     },
@@ -2985,6 +3192,7 @@
       "cell": 89.5,
       "language": {"en": {"percent": 35, "status": 0, "cldr": "en-SL", "parent": "en-001"}},
       "currency": "SLL",
+      "geo": [8.5, -11.5],
       "color": "82bf4f",
       "id": "SL"
     },
@@ -2997,6 +3205,7 @@
       "cell": 115,
       "language": {"it": {"percent": 89, "status": 0, "cldr": "it-SM"}},
       "currency": "EUR",
+      "geo": [43.76666666, 12.41666666],
       "color": "a6d2ec",
       "id": "SM"
     },
@@ -3024,6 +3233,7 @@
         "wo": {"percent": 70, "status": 2}
       },
       "currency": "XOF",
+      "geo": [14, -14],
       "color": "fee52e",
       "id": "SN"
     },
@@ -3040,6 +3250,7 @@
         "so": {"percent": 78, "status": 0, "cldr": "so"}
       },
       "currency": "SOS",
+      "geo": [10, 49],
       "color": "42ade2",
       "id": "SO"
     },
@@ -3053,6 +3264,7 @@
       "cell": 181,
       "language": {"nl": {"percent": 90, "status": 0, "cldr": "nl-SR"}},
       "currency": "SRD",
+      "geo": [4, -56],
       "color": "c94746",
       "id": "SR"
     },
@@ -3065,6 +3277,7 @@
       "cell": 23.9,
       "language": {"en": {"percent": 27, "status": 0, "cldr": "en-SS", "parent": "en-001"}},
       "currency": "SSP",
+      "geo": [7, 30],
       "color": "35506f",
       "id": "SS"
     },
@@ -3078,6 +3291,7 @@
       "cell": 65.1,
       "language": {"pt": {"percent": 85, "status": 0, "cldr": "pt-ST", "parent": "pt-PT"}},
       "currency": "STD",
+      "geo": [1, 7],
       "color": "82bf4f",
       "id": "ST"
     },
@@ -3091,6 +3305,7 @@
       "cell": 145,
       "language": {"es": {"percent": 89, "status": 0, "cldr": "es-SV", "parent": "es-419"}},
       "currency": "USD",
+      "geo": [13.83333333, -88.91666666],
       "color": "428ac1",
       "id": "SV"
     },
@@ -3104,6 +3319,7 @@
         "nl": {"percent": 3.8, "status": 0, "cldr": "nl-SX"}
       },
       "currency": "ANG",
+      "geo": [18.033333, -63.05],
       "color": "ec4c5c",
       "id": "SX"
     },
@@ -3120,6 +3336,7 @@
         "fr": {"percent": 5.9, "status": 0, "cldr": "fr-SY"}
       },
       "currency": "SYP",
+      "geo": [35, 38],
       "color": "ec4b5b",
       "id": "SY"
     },
@@ -3135,6 +3352,7 @@
         "ss": {"percent": 58, "status": 0}
       },
       "currency": "SZL",
+      "geo": [-26.5, 31.5],
       "color": "2e5d94",
       "id": "SZ"
     },
@@ -3144,6 +3362,7 @@
       "gdp": 11900000,
       "literacy": 99,
       "currency": "GBP",
+      "geo": [-37.116185, -12.3540162],
       "color": "2a609e",
       "id": "TA"
     },
@@ -3154,6 +3373,7 @@
       "literacy": 98,
       "language": {"en": {"percent": 98, "status": 0, "cldr": "en-TC", "parent": "en-001"}},
       "currency": "USD",
+      "geo": [21.75, -71.58333333],
       "color": "2a5f9e",
       "id": "TC"
     },
@@ -3170,6 +3390,7 @@
         "fr": {"percent": 26, "status": 0, "cldr": "fr-TD"}
       },
       "currency": "XAF",
+      "geo": [15, 19],
       "color": "ffce30",
       "id": "TD"
     },
@@ -3180,6 +3401,7 @@
       "gdp": 5733000,
       "literacy": 99,
       "currency": "EUR",
+      "geo": [-49.25, 69.167],
       "color": "2a5f9e",
       "id": "TF"
     },
@@ -3193,6 +3415,7 @@
       "cell": 64.9,
       "language": {"fr": {"percent": 61, "status": 0, "cldr": "fr-TG"}},
       "currency": "XOF",
+      "geo": [8, 1.16666666],
       "color": "ffcd31",
       "id": "TG"
     },
@@ -3206,6 +3429,7 @@
       "cell": 126,
       "language": {"th": {"percent": 80, "literacy": 93, "status": 0, "cldr": "th"}},
       "currency": "THB",
+      "geo": [15, 100],
       "color": "295e9e",
       "id": "TH"
     },
@@ -3219,6 +3443,7 @@
       "cell": 98.6,
       "language": {"tg": {"percent": 100, "status": 0}},
       "currency": "TJS",
+      "geo": [39, 71],
       "color": "c94747",
       "id": "TJ"
     },
@@ -3233,6 +3458,7 @@
         "tkl": {"percent": 100, "status": 0}
       },
       "currency": "NZD",
+      "geo": [-9, -172],
       "color": "2a5f9d",
       "id": "TK"
     },
@@ -3249,6 +3475,7 @@
         "tet": {"percent": 59, "status": 0}
       },
       "currency": "USD",
+      "geo": [-8.83333333, 125.91666666],
       "color": "ec4c5c",
       "id": "TL"
     },
@@ -3262,6 +3489,7 @@
       "cell": 146,
       "language": {"tk": {"percent": 70, "status": 0, "cldr": "tk"}},
       "currency": "TMT",
+      "geo": [40, 60],
       "color": "83bf4f",
       "id": "TM"
     },
@@ -3278,6 +3506,7 @@
         "fr": {"percent": 74, "status": 0, "cldr": "fr-TN"}
       },
       "currency": "TND",
+      "geo": [34, 9],
       "color": "ec4c5c",
       "id": "TN"
     },
@@ -3294,6 +3523,7 @@
         "to": {"percent": 95, "status": 0, "cldr": "to"}
       },
       "currency": "TOP",
+      "geo": [-20, -175],
       "color": "c94646",
       "id": "TO"
     },
@@ -3307,6 +3537,7 @@
       "cell": 96,
       "language": {"tr": {"percent": 93, "status": 0, "cldr": "tr"}},
       "currency": "TRY",
+      "geo": [39, 35],
       "color": "ec4c5c",
       "id": "TR"
     },
@@ -3319,6 +3550,7 @@
       "cell": 158,
       "language": {"en": {"percent": 88, "status": 0, "cldr": "en-TT", "parent": "en-001"}},
       "currency": "TTD",
+      "geo": [11, -61],
       "color": "ed4b5c",
       "id": "TT"
     },
@@ -3335,6 +3567,7 @@
         "tvl": {"percent": 91, "status": 0}
       },
       "currency": "AUD",
+      "geo": [-8, 178],
       "color": "5b97b0",
       "id": "TV"
     },
@@ -3346,6 +3579,7 @@
       "literacy": 96.1,
       "language": {"zh-Hant": {"percent": 95, "status": 0, "cldr": "zh-Hant", "parent": "root"}},
       "currency": "TWD",
+      "geo": [23.5, 121],
       "color": "ec4b5c",
       "id": "TW"
     },
@@ -3362,6 +3596,7 @@
         "sw": {"percent": 90, "status": 0, "cldr": "sw"}
       },
       "currency": "TZS",
+      "geo": [-6, 35],
       "color": "83be4f",
       "id": "TZ"
     },
@@ -3378,6 +3613,7 @@
         "uk": {"percent": 65, "status": 0, "cldr": "uk"}
       },
       "currency": "UAH",
+      "geo": [49, 32],
       "color": "ffe62d",
       "id": "UA"
     },
@@ -3394,6 +3630,7 @@
         "sw": {"percent": 75, "status": 0, "cldr": "sw-UG"}
       },
       "currency": "UGX",
+      "geo": [1, 32],
       "color": "ffe52d",
       "id": "UG"
     },
@@ -3404,6 +3641,7 @@
       "literacy": 99,
       "language": {"en": {"percent": 100, "status": 2, "cldr": "en-UM"}},
       "currency": "USD",
+      "geo": [19.2944482, 166.5922695],
       "color": "ed4c5c",
       "id": "UM"
     },
@@ -3420,6 +3658,7 @@
         "haw": {"percent": 0.0089, "status": 1, "cldr": "haw"}
       },
       "currency": "USD",
+      "geo": [38, -97],
       "color": "ed4c5c",
       "id": "US"
     },
@@ -3433,6 +3672,7 @@
       "cell": 160,
       "language": {"es": {"percent": 88, "status": 0, "cldr": "es-UY", "parent": "es-419"}},
       "currency": "UYU",
+      "geo": [-33, -56],
       "color": "428ac1",
       "id": "UY"
     },
@@ -3449,6 +3689,7 @@
         "uz-Cyrl": {"percent": 15, "status": 0, "cldr": "uz-Cyrl", "parent": "root"}
       },
       "currency": "UZS",
+      "geo": [41, 64],
       "color": "82bf4f",
       "id": "UZ"
     },
@@ -3460,6 +3701,7 @@
       "literacy": 100,
       "language": {"it": {"percent": 82, "status": 2, "cldr": "it-VA"}},
       "currency": "EUR",
+      "geo": [41.9, 12.45],
       "color": "fee530",
       "id": "VA"
     },
@@ -3472,6 +3714,7 @@
       "cell": 104,
       "language": {"en": {"percent": 96, "status": 0, "cldr": "en-VC", "parent": "en-001"}},
       "currency": "XCD",
+      "geo": [13.25, -61.2],
       "color": "fee52e",
       "id": "VC"
     },
@@ -3485,6 +3728,7 @@
       "cell": 93,
       "language": {"es": {"percent": 82, "status": 0, "cldr": "es-VE", "parent": "es-419"}},
       "currency": "VEF",
+      "geo": [8, -66],
       "color": "2a5f9e",
       "id": "VE"
     },
@@ -3496,6 +3740,7 @@
       "cell": 146,
       "language": {"en": {"percent": 98, "status": 0, "cldr": "en-VG", "parent": "en-001"}},
       "currency": "USD",
+      "geo": [18.431383, -64.62305],
       "color": "2a5f9e",
       "id": "VG"
     },
@@ -3507,6 +3752,7 @@
       "net": 54.8,
       "language": {"en": {"percent": 75, "status": 2, "cldr": "en-VI"}},
       "currency": "USD",
+      "geo": [18.35, -64.933333],
       "color": "fecf3a",
       "id": "VI"
     },
@@ -3520,6 +3766,7 @@
       "cell": 131,
       "language": {"vi": {"percent": 86, "status": 0, "cldr": "vi"}},
       "currency": "VND",
+      "geo": [16.16666666, 107.83333333],
       "color": "f42f4b",
       "id": "VN"
     },
@@ -3537,6 +3784,7 @@
         "fr": {"percent": 50, "status": 0, "cldr": "fr-VU"}
       },
       "currency": "VUV",
+      "geo": [-16, 167],
       "color": "ec4b5b",
       "id": "VU"
     },
@@ -3548,6 +3796,7 @@
       "literacy": 50,
       "language": {"fr": {"percent": 49, "status": 0, "cldr": "fr-WF"}},
       "currency": "XPF",
+      "geo": [-13.3, -176.2],
       "color": "ed4b5c",
       "id": "WF"
     },
@@ -3564,6 +3813,7 @@
         "sm": {"percent": 100, "status": 0}
       },
       "currency": "WST",
+      "geo": [-13.58333333, -172.33333333],
       "color": "ec4b5c",
       "id": "WS"
     },
@@ -3579,6 +3829,7 @@
         "sr-Latn": {"percent": 5, "status": 0, "cldr": "sr-Latn-XK"}
       },
       "currency": "EUR",
+      "geo": [42.666667, 21.166667],
       "color": "428ac0",
       "id": "XK"
     },
@@ -3592,6 +3843,7 @@
       "cell": 68,
       "language": {"ar": {"percent": 74, "status": 0, "cldr": "ar-YE"}},
       "currency": "YER",
+      "geo": [15, 48],
       "color": "c94646",
       "id": "YE"
     },
@@ -3603,6 +3855,7 @@
       "literacy": 92,
       "language": {"fr": {"percent": 57, "status": 0, "cldr": "fr-YT"}},
       "currency": "EUR",
+      "geo": [-12.83333333, 45.16666666],
       "color": "44668d",
       "id": "YT"
     },
@@ -3627,6 +3880,7 @@
         "zu": {"percent": 24, "literacy": 50, "status": 1, "cldr": "zu"}
       },
       "currency": "ZAR",
+      "geo": [-29, 24],
       "color": "6c9635",
       "id": "ZA"
     },
@@ -3639,6 +3893,7 @@
       "cell": 74.5,
       "language": {"en": {"percent": 16, "status": 0, "cldr": "en-ZM", "parent": "en-001"}},
       "currency": "ZMW",
+      "geo": [-15, 30],
       "color": "82be4e",
       "id": "ZM"
     },
@@ -3656,6 +3911,7 @@
         "sn": {"percent": 81, "status": 0, "cldr": "sn"}
       },
       "currency": "USD",
+      "geo": [-20, 30],
       "color": "fecd30",
       "id": "ZW"
     }
