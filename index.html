@@ -1101,14 +1101,26 @@
     //    var clip = [[0, 960], [15, 390]];
     var clip = [[0, 960], [0, 480]];
 
+    var simplify = d3.geoTransform({
+        point: function (x, y) {
+            this.stream.point(Math.round(x), Math.round(y));
+        }
+    });
+
     var projection = d3.geoEquirectangular()
         .clipExtent([[0, 0], [width, clip[1][1]]])
         .scale(height / Math.PI)
         .rotate([-10])
-        .translate([width / 2, height / 2 - clip[1][0]]);
+        .translate([width / 2, height / 2 - clip[1][0]])
+        .precision(1);
 
     var path = d3.geoPath()
-        .projection(projection)
+        .projection({
+            stream: function (s) {
+                return projection.stream(simplify.stream(s));
+            }
+        })
+        //        .projection(projection)
         .pointRadius(2);
 
     var graticule = d3.geoGraticule();
