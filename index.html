@@ -1108,9 +1108,9 @@
         literacy: d => d3.interpolateRdYlGn(config.data.country[d.id].literacy / 100),
         internet: d => config.data.country[d.id].net ? d3.interpolateRdYlGn(config.data.country[d.id].net / 100) : '#fff',
         mobile: d => config.data.country[d.id].cell ? d3.interpolateRdYlGn(config.data.country[d.id].cell / 100) : '#fff',
-        un: d => d3.interpolateRdYlGn(config.data.group.UN.contains.indexOf(d.id) === -1 ? 0 : 1),
-        eu: d => d3.interpolateRdYlGn(config.data.group.EU.contains.indexOf(d.id) === -1 ? 0 : 1),
-        ez: d => d3.interpolateRdYlGn(config.data.group.EZ.contains.indexOf(d.id) === -1 ? 0 : 1),
+        un: d => config.data.group.UN.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
+        eu: d => config.data.group.EU.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
+        ez: d => config.data.group.EZ.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
         population: d3.interpolateRdYlGn,
         inverted: d => d3.interpolateRdYlGn(1 - d)
     };
