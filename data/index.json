@@ -72,7 +72,7 @@
     "plural": 30,
     "ordinal": 19,
     "char": 115,
-    "map": 175
+    "map": 176
   },
   "country": {
     "AC": {
@@ -10630,7 +10630,8 @@
     "YE": {"color": 5, "id": "YE"},
     "ZA": {"color": 2, "id": "ZA"},
     "ZM": {"color": 5, "id": "ZM"},
-    "ZW": {"color": 1, "id": "ZW"}
+    "ZW": {"color": 1, "id": "ZW"},
+    "GF": {"color": 7, "id": "GF"}
   },
   "fields": [
     "api",
