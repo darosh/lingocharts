@@ -344,6 +344,9 @@
                     <li><a href="#map-by-literacy">Map by literacy</a></li>
                     <li><a href="#map-by-internet">Map by internet</a></li>
                     <li><a href="#map-by-mobile">Map by mobile</a></li>
+                    <li><a href="#map-by-un">Map by UN</a></li>
+                    <li><a href="#map-by-eu">Map by EU</a></li>
+                    <li><a href="#map-by-ez">Map by EZ</a></li>
                 </ul>
             </li>
             <li>
@@ -392,6 +395,18 @@
         <hr>
         <h2 id="map-by-mobile"><a href="#map-by-mobile">Map by mobile</a></h2>
         <app-map color="mobile"></app-map>
+
+        <hr>
+        <h2 id="map-by-un"><a href="#map-by-un">Map by UN</a></h2>
+        <app-map color="un"></app-map>
+        
+        <hr>
+        <h2 id="map-by-eu"><a href="#map-by-eu">Map by EU</a></h2>
+        <app-map color="eu"></app-map>
+
+        <hr>
+        <h2 id="map-by-ez"><a href="#map-by-ez">Map by EZ</a></h2>
+        <app-map color="ez"></app-map>
 
         <hr>
         <sortable :list="data.country">
@@ -1065,7 +1080,10 @@
         flag: d => '#' + config.data.country[d.id].color,
         literacy: d => d3.interpolateRdYlGn(config.data.country[d.id].literacy / 100),
         internet: d => config.data.country[d.id].net ? d3.interpolateRdYlGn(config.data.country[d.id].net / 100) : '#fff',
-        mobile: d => config.data.country[d.id].cell ? d3.interpolateRdYlGn(config.data.country[d.id].cell / 100) : '#fff'
+        mobile: d => config.data.country[d.id].cell ? d3.interpolateRdYlGn(config.data.country[d.id].cell / 100) : '#fff',
+        un: d => d3.interpolateRdYlGn(config.data.group.UN.contains.indexOf(d.id) === -1 ? 0 : 1),
+        eu: d => d3.interpolateRdYlGn(config.data.group.EU.contains.indexOf(d.id) === -1 ? 0 : 1),
+        ez: d => d3.interpolateRdYlGn(config.data.group.EZ.contains.indexOf(d.id) === -1 ? 0 : 1)
     };
 
     Vue.component('app-map', {
