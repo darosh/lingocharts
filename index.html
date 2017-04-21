@@ -341,6 +341,9 @@
                 <ul>
                     <li><a href="#map">Map</a></li>
                     <li><a href="#map-by-flag">Map by flag color</a></li>
+                    <li><a href="#map-by-literacy">Map by literacy</a></li>
+                    <li><a href="#map-by-internet">Map by internet</a></li>
+                    <li><a href="#map-by-mobile">Map by mobile</a></li>
                 </ul>
             </li>
             <li>
@@ -377,6 +380,18 @@
         <hr>
         <h2 id="map-by-flag"><a href="#map-by-flag">Map by flag color</a></h2>
         <app-map color="flag"></app-map>
+
+        <hr>
+        <h2 id="map-by-literacy"><a href="#map-by-literacy">Map by literacy</a></h2>
+        <app-map color="literacy"></app-map>
+
+        <hr>
+        <h2 id="map-by-internet"><a href="#map-by-internet">Map by internet</a></h2>
+        <app-map color="internet"></app-map>
+
+        <hr>
+        <h2 id="map-by-mobile"><a href="#map-by-mobile">Map by mobile</a></h2>
+        <app-map color="mobile"></app-map>
 
         <hr>
         <sortable :list="data.country">
@@ -1047,7 +1062,10 @@
 
     var colorBy = {
         map: d => config.data.map[d.id] ? d3.schemePastel2[config.data.map[d.id].color - 1] : '#000',
-        flag: d => '#' + config.data.country[d.id].color
+        flag: d => '#' + config.data.country[d.id].color,
+        literacy: d => d3.interpolateRdYlGn(config.data.country[d.id].literacy / 100),
+        internet: d => config.data.country[d.id].net ? d3.interpolateRdYlGn(config.data.country[d.id].net / 100) : '#fff',
+        mobile: d => config.data.country[d.id].cell ? d3.interpolateRdYlGn(config.data.country[d.id].cell / 100) : '#fff'
     };
 
     Vue.component('app-map', {
