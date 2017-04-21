@@ -376,10 +376,10 @@
                 <h2 id="countries"><a href="#countries">Countries</a> <span
                         class="items">({{props.list.length}})</span>
                 </h2>
-                <table>
+                <table  style="margin-left: 3px">
                     <thead>
                     <tr>
-                        <th>Flag</th>
+                        <th class="click" @click="props.sort('color')">Flag</th>
                         <th class="click" @click="props.sort('id')">Code</th>
                         <th class="click" @click="props.sort('name')" style="width: 180px">Name</th>
                         <th>Wiki</th>
@@ -403,7 +403,7 @@
                     </thead>
                     <tbody>
                     <tr v-for="i in props.list" :id="'country-' + i.id" :key="i.id">
-                        <td>
+                        <td :style="{'border-left': '3px solid #' + i.color}">
                             <flag :code="i.id" style="width: 32px; height: 32px"></flag>
                         </td>
                         <td><a :href="'#country-' + i.id">{{i.id}}</a></td>

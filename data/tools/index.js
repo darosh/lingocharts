@@ -5,7 +5,8 @@ const cfg = {
     skipUnofficial: true
 };
 
-const d3 = require('d3-dsv');
+const d3Dsv = require('d3-dsv');
+const d3Color = require('d3-color');
 const fs = require('fs');
 const path = require('path');
 const _stringify = require('json-stringify-pretty-compact');
@@ -14,6 +15,7 @@ const sil = require('./sil');
 const glot = require('./glot');
 
 const worldData = require('../map.data.json');
+const colors = require('../resources/flag-colors.json');
 
 const namesTerritories = require('cldr-localenames-full/main/en/territories.json').main.en.localeDisplayNames.territories;
 const namesLanguages = require('cldr-localenames-full/main/en/languages.json').main.en.localeDisplayNames.languages;
@@ -101,6 +103,13 @@ save({
     map: map
 }, process.argv[2]);
 
+function getColor(country) {
+    return colors[country].filter(c => {
+        let h = d3Color.hsl('#' + c[0]);
+        return h.l < 0.95 && h.s > 0.25 && h.l > 0.25;
+    })[0][0];
+}
+
 function log() {
     console.log('map teritories: ' + worldData.length);
     console.log('teritories: ' + Object.keys(territoryInfo).length);
@@ -179,7 +188,8 @@ function makeCountry() {
             cell: cell && cell.value ? numFixed(numOrZero(cell.value)) : null,
             language: lp,
             currency: Object.keys((currencyData[iso_a2] || [])
-                    .filter(k => k[Object.keys(k)[0]]._from && !k[Object.keys(k)[0]]._to)[0] || {})[0] || null
+                    .filter(k => k[Object.keys(k)[0]]._from && !k[Object.keys(k)[0]]._to)[0] || {})[0] || null,
+            color: getColor(iso_a2)
         };
     });
 }
@@ -524,7 +534,7 @@ function save(obj, dir) {
 
     Object.keys(obj).forEach(k => {
         fs.writeFile(path.join(dir, k + '.json'), stringify(obj[k], null, 2));
-        fs.writeFile(path.join(dir, k + '.tsv'), d3.tsvFormat(Array.isArray(obj[k])
+        fs.writeFile(path.join(dir, k + '.tsv'), d3Dsv.tsvFormat(Array.isArray(obj[k])
             ? obj[k].map(d => (typeof d === 'string') ? {value: d} : d)
             : toRows(obj[k])));
     });
