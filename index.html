@@ -348,6 +348,10 @@
                     <li><a href="#map-by-un">Map by UN</a></li>
                     <li><a href="#map-by-eu">Map by EU</a></li>
                     <li><a href="#map-by-ez">Map by EZ</a></li>
+                    <li><a href="#map-by-population">Map by population</a></li>
+                    <li><a href="#map-by-gdp">Map by GDP</a></li>
+                    <li><a href="#map-by-gdp-pcap">Map by GDP per capita</a></li>
+                    <li><a href="#map-by-population-literacy">Map by population &times; literacy</a></li>
                 </ul>
             </li>
             <li>
@@ -408,6 +412,22 @@
         <hr>
         <h2 id="map-by-ez"><a href="#map-by-ez">Map by EZ</a></h2>
         <app-map color="ez"></app-map>
+
+        <hr>
+        <h2 id="map-by-population"><a href="#map-by-population">Map by population</a></h2>
+        <app-map field="population"></app-map>
+
+        <hr>
+        <h2 id="map-by-gdp"><a href="#map-by-gdp">Map by GDP</a></h2>
+        <app-map field="gdp"></app-map>
+
+        <hr>
+        <h2 id="map-by-gdp-pcap"><a href="#map-by-gdp-pcap">Map by GDP per capita</a></h2>
+        <app-map :field="d => d.gdp / d.population"></app-map>
+
+        <hr>
+        <h2 id="map-by-population-literacy"><a href="#map-by-population-literacy">Map by population &times; literacy</a></h2>
+        <app-map :field="d => d.population * d.literacy / 100"></app-map>
 
         <hr>
         <sortable :list="data.country">
@@ -1085,12 +1105,13 @@
         mobile: d => config.data.country[d.id].cell ? d3.interpolateRdYlGn(config.data.country[d.id].cell / 100) : '#fff',
         un: d => d3.interpolateRdYlGn(config.data.group.UN.contains.indexOf(d.id) === -1 ? 0 : 1),
         eu: d => d3.interpolateRdYlGn(config.data.group.EU.contains.indexOf(d.id) === -1 ? 0 : 1),
-        ez: d => d3.interpolateRdYlGn(config.data.group.EZ.contains.indexOf(d.id) === -1 ? 0 : 1)
+        ez: d => d3.interpolateRdYlGn(config.data.group.EZ.contains.indexOf(d.id) === -1 ? 0 : 1),
+        population: d3.interpolateRdYlGn
     };
 
     Vue.component('app-map', {
         template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="graticule"></g><g class="land"></g><g class="border"></g><g class="frame"></g></svg>',
-        props: ['color'],
+        props: ['color', 'field'],
         mounted(){
             var svg = d3.select(this.$el);
             svg.attr('width', width)
@@ -1103,6 +1124,19 @@
                 .attr('fill', 'none')
                 .attr('stroke-width', 0.5)
                 .attr('stroke', '#ccc');
+
+            var c;
+            var s;
+            var f;
+
+            if (this.field) {
+                f = this.field.call ? this.field : d => d[this.field];
+                s = d3.scaleLog().domain(d3.extent(Object.keys(config.data.country), d => f(config.data.country[d])));
+                c = d => colorBy[this.color || 'population'](s(f(config.data.country[d.id])));
+            } else {
+                c = colorBy[this.color || 'map'];
+            }
+
             var land = svg.select('.land');
             land.selectAll('a').data(config.land)
                 .enter()
@@ -1111,7 +1145,7 @@
                 .append('path')
                 .attr('title', d => d.id)
                 .attr('d', path)
-                .attr('fill', colorBy[this.color || 'map']);
+                .attr('fill', c);
             var border = svg.select('.border');
             border.selectAll('d').data([config.border])
                 .enter()
