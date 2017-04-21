@@ -679,7 +679,8 @@
             <table class="merged">
                 <tbody>
                 <tr v-for="i in groups[k]" v-if="i[i.length -1]">
-                    <td v-for="j in i" :rowspan="j.span" v-if="j && j.span" :class="{nowrap: data.group[j.id]}" :style="{'min-width': !data.group[j.id] ? '480px' : null}">
+                    <td v-for="j in i" :rowspan="j.span" v-if="j && j.span" :class="{nowrap: data.group[j.id]}"
+                        :style="{'min-width': !data.group[j.id] ? '480px' : null}">
                         <a :href="'#group-' + k + '-' + j.id" v-if="!j.data.group" :id="'group-' + k + '-' + j.id"
                            v-if="!j.data.group">{{j.id}}</a>
                         <b v-if="data.group[j.id]">{{data.group[j.id].name}}</b>
