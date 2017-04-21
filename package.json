@@ -34,7 +34,7 @@
     "flags": "node data/tools/flags.js | svgo -p 3 --disable cleanupIDs --disable convertTransform --disable moveGroupAttrsToElems -i - > data/flags.svg",
     "map": "npm run map:geo && npm run map:topo && npm run map:data",
     "map:data": "shp2json -n data/resources/naturalearthdata.com/ne_110m_admin_0_countries.shp | ndjson-map \"d.properties.iso_a2 = {Kosovo:'XK', Somaliland: 'SO', 'N. Cyprus': 'CY'}[d.properties.name] || d.properties.iso_a2, d.properties\" | ndjson-reduce > data/map.data.json",
-    "map:geo": "shp2json -n data/resources/naturalearthdata.com/ne_110m_admin_0_countries.shp | ndjson-map \"d.id = {Kosovo:'XK', Somaliland: '*Somaliland', 'N. Cyprus': '*Northern Cyprus'}[d.properties.name] || d.properties.iso_a2, delete d.properties, d\" | geostitch -n > data/map.geo.json",
+    "map:geo": "shp2json -n data/resources/naturalearthdata.com/ne_110m_admin_0_countries.shp | ndjson-map \"d.id = {Kosovo:'XK', Somaliland: 'SO', 'N. Cyprus': 'CY'}[d.properties.name] || d.properties.iso_a2, delete d.properties, d\" | geostitch -n > data/map.geo.json",
     "map:topo": "geo2topo -q 1e5 -n countries=data/map.geo.json > data/map.topo.json",
     "wb:cell": "jsurl \"http://api.worldbank.org/countries/indicators/IT.CEL.SETS.P2?per_page=300&format=json&date=2015:2015\" > data/cell-users.json",
     "wb:net": "jsurl \"http://api.worldbank.org/countries/indicators/IT.NET.USER.P2?per_page=300&format=json&date=2015:2015\" > data/net-users.json",
