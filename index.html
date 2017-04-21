@@ -1030,7 +1030,7 @@
     var height = 480;
     var add = 0;
 
-//    var clip = [[0, 960], [15, 390]];
+    //    var clip = [[0, 960], [15, 390]];
     var clip = [[0, 960], [0, 480]];
 
     var projection = d3.geoEquirectangular()
@@ -1043,21 +1043,33 @@
         .projection(projection)
         .pointRadius(2);
 
+    var graticule = d3.geoGraticule();
+
     var colorBy = {
         map: d => config.data.map[d.id] ? d3.schemePastel2[config.data.map[d.id].color - 1] : '#000',
         flag: d => '#' + config.data.country[d.id].color
     };
 
     Vue.component('app-map', {
-        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="land"></g><g class="border"></g></svg>',
+        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="graticule"></g><g class="land"></g><g class="border"></g><g class="frame"></g></svg>',
         props: ['color'],
         mounted(){
             var svg = d3.select(this.$el);
             svg.attr('width', width)
-                .attr('height', clip[1][1] - clip[1][0])
-            var land = svg.select('.land');
-            land.selectAll('d').data(config.land)
+                .attr('height', clip[1][1] - clip[1][0]);
+            var grat = svg.select('.graticule');
+            grat.selectAll('path').data([graticule()])
                 .enter()
+                .append('path')
+                .attr('d', path)
+                .attr('fill', 'none')
+                .attr('stroke-width', 0.5)
+                .attr('stroke', '#ccc');
+            var land = svg.select('.land');
+            land.selectAll('a').data(config.land)
+                .enter()
+                .append('a')
+                .attr('xlink:href', d => '#country-' + d.id)
                 .append('path')
                 .attr('title', d => d.id)
                 .attr('d', path)
@@ -1067,6 +1079,17 @@
                 .enter()
                 .append('path')
                 .attr('d', path)
+                .attr('fill', 'none')
+                .attr('stroke', '#000')
+                .attr('stroke-width', 0.5);
+            var frame = svg.select('.frame');
+            frame.selectAll('rect').data([0])
+                .enter()
+                .append('rect')
+                .attr('x', 0)
+                .attr('y', 0)
+                .attr('width', width)
+                .attr('height', height)
                 .attr('fill', 'none')
                 .attr('stroke', '#000')
                 .attr('stroke-width', 0.5);
