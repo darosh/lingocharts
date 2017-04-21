@@ -350,6 +350,7 @@
                     <li><a href="#map-internet">Internet</a></li>
                     <li><a href="#map-mobile">Mobile</a></li>
                     <li><a href="#map-languages">Languages</a></li>
+                    <li><a href="#map-regions">Regions</a></li>
                     <li><a href="#map-un">United Nations</a></li>
                     <li><a href="#map-eu">European Union</a></li>
                     <li><a href="#map-ez">Eurozone</a></li>
@@ -424,6 +425,10 @@
         <hr>
         <h2 id="map-languages"><a href="#map-languages">Languages</a></h2>
         <app-map color="inverted" :scale="d3.scaleLinear" :field="d => Object.keys(d.language || {}).length"></app-map>
+
+        <hr>
+        <h2 id="map-regions"><a href="#map-regions">Regions</a></h2>
+        <app-map color="regions"></app-map>
 
         <hr>
         <h2 id="map-un"><a href="#map-un">United Nations</a></h2>
@@ -1136,7 +1141,29 @@
         ez: d => config.data.group.EZ.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
         '419': d => !config.data.group['419'].contains.filter(e => config.data.group[e].contains.indexOf(d.id) !== -1).length ? '#ccc' : d3.interpolateRdYlGn(1),
         population: d3.interpolateRdYlGn,
-        inverted: d => d3.interpolateRdYlGn(1 - d)
+        inverted: d => d3.interpolateRdYlGn(1 - d),
+        regions: d => {
+            var g = config.data.group;
+            var w = g['001'].contains;
+            var ts;
+            var tc;
+
+            w.forEach((c, i) => g[c].contains.forEach((s, j) => {
+                if (!ts && (g[s].contains.indexOf(d.id) !== -1)) {
+                    tc = i;
+                    ts = j / (g[c].contains.length - 1);
+                }
+            }));
+
+            console.log(tc, ts);
+            var sch = d3.schemeSet1;
+            var add = 1;
+            var to = d3.hsl(sch[tc + add]).brighter(0.75);
+            to.s += 0.25;
+            to.l = 0.95;
+            var r = d3.scaleLinear().range([d3.hsl(sch[tc + add]).darker(0.75), to]);
+            return r(ts);
+        }
     };
 
     Vue.component('app-map', {
