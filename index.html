@@ -1155,7 +1155,6 @@
                 }
             }));
 
-            console.log(tc, ts);
             var sch = d3.schemeSet1;
             var add = 1;
             var to = d3.hsl(sch[tc + add]).brighter(0.75);
@@ -1167,7 +1166,7 @@
     };
 
     Vue.component('app-map', {
-        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="graticule"></g><g class="land"></g><g class="border"></g><g class="frame"></g></svg>',
+        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="graticule"></g><g class="land"></g><g class="border"></g><g class="legend"></g><g class="frame"></g></svg>',
         props: ['color', 'field', 'scale'],
         mounted(){
             var svg = d3.select(this.$el);
@@ -1222,6 +1221,15 @@
                 .attr('fill', 'none')
                 .attr('stroke', '#000')
                 .attr('stroke-width', 0.5);
+
+//            if (s) {
+//                var margin = 10;
+//                s.range([0 + margin, width - margin]);
+//                var axis = d3.axisTop(s).ticks(7, '.0s');
+//                svg.select('.legend')
+//                    .attr('transform', 'translate(0, ' + (margin + 10) + ')')
+//                    .call(axis);
+//            }
         }
     });
 
