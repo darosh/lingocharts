@@ -11,6 +11,7 @@
   "currency",
   "density",
   "digits",
+  "extinct",
   "family",
   "forms",
   "gdp",
@@ -18,6 +19,7 @@
   "gl",
   "group",
   "home",
+  "id",
   "ime",
   "iso23",
   "iso3",
@@ -32,6 +34,7 @@
   "num",
   "ordinal",
   "parent",
+  "parentId",
   "percent",
   "plural",
   "population",
@@ -43,6 +46,8 @@
   "script",
   "source",
   "status",
+  "title",
   "type",
-  "version"
+  "version",
+  "year"
 ]

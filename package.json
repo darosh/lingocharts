@@ -39,6 +39,7 @@
     "map:topo": "geo2topo -q 1e5 -n countries=data/map.geo.json | node data/tools/fix-topo.js > data/map.topo.json",
     "wb:cell": "jsurl \"http://api.worldbank.org/countries/indicators/IT.CEL.SETS.P2?per_page=300&format=json&date=2015:2015\" > data/cell-users.json",
     "wb:net": "jsurl \"http://api.worldbank.org/countries/indicators/IT.NET.USER.P2?per_page=300&format=json&date=2015:2015\" > data/net-users.json",
+    "wiki:extinct": "node -e \"require('wikitable')({url:'https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction',format:'array'}).then(data=>(data.push({_version: new Date()}),console.log(JSON.stringify(data,null,2))))\" > data/resources/wikipedia.org/extinct-languages.json",
     "wiki:script": "node -e \"require('wikitable')({url:'https://en.wikipedia.org/wiki/ISO_15924',format:'array'}).then(data=>(data.push({_version: new Date()}),console.log(JSON.stringify(data,null,2))))\" > data/resources/wikipedia.org/iso-script.json"
   }
 }

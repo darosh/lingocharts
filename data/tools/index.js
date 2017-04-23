@@ -102,7 +102,8 @@ save({
     quot: dicQuot,
     char: dicChar,
     // cldr: dicCldr,
-    map: map
+    map: map,
+    usage: require('./languages')
 }, process.argv[2]);
 
 function getColor(country) {
