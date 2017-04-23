@@ -40,6 +40,7 @@ module.exports = {
         ],
         // https://en.wikipedia.org/wiki/List_of_countries_by_future_population_(United_Nations,_medium_fertility_variant)
         // https://en.wikipedia.org/wiki/List_of_Wikipedias
+        // https://en.wikipedia.org/wiki/List_of_modern_literature_translated_into_dead_languages
         notes: 'Character count by script, and extincted languages'
     },
     ned: {
