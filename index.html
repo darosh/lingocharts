@@ -371,7 +371,6 @@
                     <li><a href="#notes">Notes</a></li>
                     <li><a href="#codes">Codes</a></li>
                     <li><a href="#links">Links</a></li>
-                    <!--<li><a href="#counts">Counts</a></li>-->
                     <li><a href="#source-code">Source code</a></li>
                     <li><a href="#data-sources">Data sources</a></li>
                 </ul>
@@ -950,9 +949,9 @@
                 <td><a :href="'./data/flags.svg'" target="_blank"><b>flags.svg</b></a></td>
             </tr>
             <tr v-for="(i, k) in data">
-                <th><a :href="config.repo +  'blob/master/data/' + k + '.json'" target="_blank">{{k}}</a></th>
-                <td><a :href="'./data/' + k + '.json'" target="_blank">{{k}}.json</a></td>
-                <td><a :href="'./data/' + k + '.tsv'" target="_blank">{{k}}.tsv</a></td>
+                <th><a :href="config.repo +  'blob/master/data/json/' + k + '.json'" target="_blank">{{k}}</a></th>
+                <td><a :href="'./data/json/' + k + '.json'" target="_blank">{{k}}.json</a></td>
+                <td><a :href="'./data/tsv/' + k + '.tsv'" target="_blank">{{k}}.tsv</a></td>
                 <td></td>
             </tr>
             </tbody>
@@ -1114,6 +1113,7 @@
 
     var width = 960;
     var height = 480;
+    var legendHeight = 0;
     var add = 0;
 
     //    var clip = [[0, 960], [15, 390]];
@@ -1149,7 +1149,7 @@
         mounted(){
             var svg = d3.select(this.$el);
             svg.attr('width', width)
-                .attr('height', clip[1][1] - clip[1][0]);
+                .attr('height', clip[1][1] - clip[1][0] + legendHeight);
             var grat = svg.select('.graticule');
             grat.selectAll('path').data([graticule()])
                 .enter()
@@ -1206,12 +1206,12 @@
                 .attr('stroke', '#000')
                 .attr('stroke-width', 0.5);
 
-//            if (s) {
+//            if (colorScale) {
 //                var margin = 10;
-//                s.range([0 + margin, width - margin]);
-//                var axis = d3.axisTop(s).ticks(7, '.0s');
+//                colorScale.range([0 + margin, width - margin]);
+//                var axis = d3.axisBottom(colorScale).ticks(7, '.0s');
 //                svg.select('.legend')
-//                    .attr('transform', 'translate(0, ' + (margin + 10) + ')')
+//                    .attr('transform', 'translate(0, ' + (height - margin + 10) + ')')
 //                    .call(axis);
 //            }
         }

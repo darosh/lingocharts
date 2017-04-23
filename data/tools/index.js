@@ -557,8 +557,8 @@ function save(obj, dir) {
     obj.fields = clean(obj).sort();
 
     Object.keys(obj).forEach(k => {
-        fs.writeFile(path.join(dir, k + '.json'), stringify(obj[k], null, 2));
-        fs.writeFile(path.join(dir, k + '.tsv'), d3Dsv.tsvFormat(Array.isArray(obj[k])
+        fs.writeFile(path.join(dir, 'json', k + '.json'), stringify(obj[k], null, 2));
+        fs.writeFile(path.join(dir, 'tsv', k + '.tsv'), d3Dsv.tsvFormat(Array.isArray(obj[k])
             ? obj[k].map(d => (typeof d === 'string') ? {value: d} : d)
             : toRows(obj[k])));
     });
