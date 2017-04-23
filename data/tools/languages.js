@@ -12,36 +12,47 @@ module.exports = [
     },
     {
         id: 'udhr',
-        title: 'The Universal Declaration of Human Rights',
+        title: 'Declaration of Human Rights',
         num: 502,
         parentId: 'living',
-        source: 'http://www.ohchr.org/EN/UDHR/Pages/SearchByLang.aspx'
+        source: 'http://www.ohchr.org/EN/UDHR/Pages/SearchByLang.aspx',
+        usage: true
     },
     {
         id: 'bible',
+        title: 'Bible',
         num: 636,
-        source: 'https://en.wikipedia.org/wiki/Bible_translations'
+        source: 'https://en.wikipedia.org/wiki/Bible_translations',
+        usage: true
     },
     {
         id: 'newTestament',
+        title: 'New Testament',
         num: 636 + 1442,
         source: 'https://en.wikipedia.org/wiki/Bible_translations',
-        parentId: 'bible'
+        parentId: 'bible',
+        usage: true
     },
     {
         id: 'win10',
+        title: 'Windows 10',
         num: 111,
-        source: 'https://en.wikipedia.org/wiki/Windows_10'
+        source: 'https://en.wikipedia.org/wiki/Windows_10',
+        usage: true
     },
     {
         id: 'android',
+        title: 'Android',
         num: 100,
-        source: 'https://en.wikipedia.org/wiki/Android_(operating_system)'
+        source: 'https://en.wikipedia.org/wiki/Android_(operating_system)',
+        usage: true
     },
     {
         id: 'ios',
+        title: 'iOS',
         num: 40,
-        source: 'https://en.wikipedia.org/wiki/IOS'
+        source: 'https://en.wikipedia.org/wiki/IOS',
+        usage: true
     },
     {
         id: 'extinct2050',
@@ -50,6 +61,17 @@ module.exports = [
         year: 2050,
         parentId: 'living',
         extinct: true,
+        future: true,
+        source: 'https://en.wikipedia.org/wiki/Extinct_language'
+    },
+    {
+        id: 'living2050',
+        title: 'Living by 2050',
+        num: Math.round(7000 * 0.1),
+        year: 2050,
+        parentId: 'living',
+        future: true,
+        usage: true,
         source: 'https://en.wikipedia.org/wiki/Extinct_language'
     },
     {

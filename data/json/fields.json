@@ -14,6 +14,7 @@
   "extinct",
   "family",
   "forms",
+  "future",
   "gdp",
   "geo",
   "gl",
@@ -48,6 +49,7 @@
   "status",
   "title",
   "type",
+  "usage",
   "version",
   "year"
 ]

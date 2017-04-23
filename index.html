@@ -331,6 +331,13 @@
     <div v-if="data" v-cloak>
         <ul>
             <li>
+                Charts
+                <ol>
+                    <li><a href="#chart-usage">Usage</a></li>
+                    <li><a href="#chart-extincted">Extincted</a></li>
+                </ol>
+            </li>
+            <li>
                 Maps
                 <ol>
                     <li><a href="#map">Map</a></li>
@@ -339,7 +346,7 @@
                     <li><a href="#map-population-literacy">Population &times; literacy</a></li>
                     <li><a href="#map-population-illiteracy">Population &times; illiteracy</a></li>
                     <li><a href="#map-gdp">GDP</a></li>
-                    <li><a href="#map-gdp-capita">GDP / capita</a></li>
+                    <li><a href="#map-gdp-population">GDP &divide; population</a></li>
                     <li><a href="#map-internet">Internet</a></li>
                     <li><a href="#map-mobile">Mobile</a></li>
                     <li><a href="#map-languages">Languages</a></li>
@@ -378,6 +385,14 @@
         </ul>
 
         <hr>
+        <h2 id="chart-usage"><a href="#chart-usage">Usage</a></h2>
+        <app-chart-bar-usage></app-chart-bar-usage>
+
+        <hr>
+        <h2 id="chart-extincted"><a href="#chart-extincted">Extincted</a></h2>
+        <app-chart-bar></app-chart-bar>
+
+        <hr>
         <h2 id="map"><a href="#map">Map</a></h2>
         <app-map :value="d => config.data.map[d.id] ? config.data.map[d.id].color : 0"
                  :extent="d3.range(8)"
@@ -409,7 +424,7 @@
         <app-map field="gdp"></app-map>
 
         <hr>
-        <h2 id="map-gdp-capita"><a href="#map-gdp-capita">GDP / capita</a></h2>
+        <h2 id="map-gdp-population"><a href="#map-gdp-population">GDP &divide; population</a></h2>
         <app-map :value="d => config.data.country[d.id].gdp / config.data.country[d.id].population"></app-map>
 
         <hr>
@@ -1221,6 +1236,99 @@
                     .attr('transform', 'translate(0, ' + (height + legendMargin) + ')')
                     .call(axis);
             }
+        }
+    });
+
+    Vue.component('app-chart-bar', {
+        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="chart"></g><g class="values"></g><g class="legend"></g><g class="frame"></g></svg>',
+        mounted() {
+            var height = 240;
+            var svg = d3.select(this.$el);
+            svg.attr('width', width)
+                .attr('height', height + legendHeight - 6 - 6);
+
+            var shift = 10 + 2 + 2;
+            var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+            var y = d3.scaleLinear().rangeRound([height, shift]);
+
+            var data = config.data.usage.filter(d => d.extinct && !isNaN(d.year) && !d.future);
+
+            x.domain(data.map(d => d.year).sort(d3.ascending));
+            y.domain([0, d3.max(data, d => d.num)]);
+
+            svg.select('.chart').selectAll('.bar')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr('fill', d3.interpolateBlues(0.5))
+                .attr('x', d => x(d.year))
+                .attr('y', d => y(d.num))
+                .attr('width', x.bandwidth())
+                .attr('height', d => height - y(d.num));
+
+            svg.select('.values').selectAll('.value')
+                .data(data)
+                .enter()
+                .append('text')
+                .attr('font-size', 10)
+                .attr('text-anchor', 'middle')
+                .attr('x', d => x(d.year) + x.bandwidth() / 2)
+                .attr('y', d => y(d.num) - 2)
+                .text(d => d.num);
+
+            svg.select('.legend')
+                .attr('transform', 'translate(0,' + height + ')')
+                .call(d3.axisBottom(x))
+                .selectAll('path').attr('display', 'none');
+        }
+    });
+
+    Vue.component('app-chart-bar-usage', {
+        template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="chart"></g><g class="values"></g><g class="legend"></g><g class="frame"></g></svg>',
+        mounted() {
+            var height = 240;
+            var svg = d3.select(this.$el);
+            svg.attr('width', width)
+                .attr('height', height + legendHeight - 6 - 6);
+
+            var shift = 10 + 2 + 2;
+            var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+            var y = d3.scaleLinear().rangeRound([height, shift]);
+
+            var data = config.data.usage.filter(d => d.usage);
+
+            data.push({
+                title: 'Official',
+                num: Object.keys(config.data.language).length
+            });
+
+            x.domain(data.map(d => d.title));
+            y.domain([0, d3.max(data, d => d.num)]);
+
+            svg.select('.chart').selectAll('.bar')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr('fill', d3.interpolateBlues(0.5))
+                .attr('x', d => x(d.title))
+                .attr('y', d => y(d.num))
+                .attr('width', x.bandwidth())
+                .attr('height', d => height - y(d.num));
+
+            svg.select('.values').selectAll('.value')
+                .data(data)
+                .enter()
+                .append('text')
+                .attr('font-size', 10)
+                .attr('text-anchor', 'middle')
+                .attr('x', d => x(d.title) + x.bandwidth() / 2)
+                .attr('y', d => y(d.num) - 2)
+                .text(d => d.num);
+
+            svg.select('.legend')
+                .attr('transform', 'translate(0,' + height + ')')
+                .call(d3.axisBottom(x))
+                .selectAll('path').attr('display', 'none');
         }
     });
 

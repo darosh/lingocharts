@@ -1,0 +1,43 @@
+id	title	num	parentId	source	year	extinct
+total						
+living	Living languages	7000	total			
+udhr	The Universal Declaration of Human Rights	502	living	http://www.ohchr.org/EN/UDHR/Pages/SearchByLang.aspx		
+bible		636		https://en.wikipedia.org/wiki/Bible_translations		
+newTestament		2078	bible	https://en.wikipedia.org/wiki/Bible_translations		
+win10		111		https://en.wikipedia.org/wiki/Windows_10		
+android		100		https://en.wikipedia.org/wiki/Android_(operating_system)		
+ios		40		https://en.wikipedia.org/wiki/IOS		
+extinct2050	Extinct by 2050	6300	living	https://en.wikipedia.org/wiki/Extinct_language	2050	true
+extincted						
+extinct0		2	extincted		0	true
+extinct100		9	extincted		100	true
+extinct200		2	extincted		200	true
+extinct300		4	extincted		300	true
+extinct400		5	extincted		400	true
+extinct500		8	extincted		500	true
+extinct600		2	extincted		600	true
+extinct800		4	extincted		800	true
+extinct900		2	extincted		900	true
+extinct1000		6	extincted		1000	true
+extinct1100		4	extincted		1100	true
+extinct1200		2	extincted		1200	true
+extinct1300		4	extincted		1300	true
+extinct1400		3	extincted		1400	true
+extinct1500		6	extincted		1500	true
+extinct1600		8	extincted		1600	true
+extinct1700		12	extincted		1700	true
+extinct1800		45	extincted		1800	true
+extinct1900		91	extincted		1900	true
+extinct2000		158	extincted		2000	true
+extinct-100		11	extincted		-100	true
+extinct-1000		3	extincted		-1000	true
+extinct-300		7	extincted		-300	true
+extinct-400		3	extincted		-400	true
+extinct-500		4	extincted		-500	true
+extinct-600		4	extincted		-600	true
+extinct-700		1	extincted		-700	true
+extinct-1100		1	extincted		-1100	true
+extinct-1200		2	extincted		-1200	true
+extinct-1300		1	extincted		-1300	true
+extinct-1500		1	extincted		-1500	true
+extinct-2000		2	extincted		-2000	true
