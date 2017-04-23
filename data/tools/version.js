@@ -34,10 +34,13 @@ module.exports = {
         version: require('../resources/wikipedia.org/iso-family.json')[1]._version,
         name: 'Wikipedia',
         home: 'https://www.wikipedia.org',
-        source: 'https://en.wikipedia.org/wiki/ISO_15924',
+        api: [
+            'https://en.wikipedia.org/wiki/ISO_15924',
+            'https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction'
+        ],
         // https://en.wikipedia.org/wiki/List_of_countries_by_future_population_(United_Nations,_medium_fertility_variant)
         // https://en.wikipedia.org/wiki/List_of_Wikipedias
-        notes: 'Character count in scripts'
+        notes: 'Character count by script, and extincted languages'
     },
     ned: {
         version: fs.readFileSync('./data/resources/naturalearthdata.com/ne_110m_admin_0_countries.VERSION.txt', 'utf8'),

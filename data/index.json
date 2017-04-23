@@ -39,8 +39,11 @@
       "version": "2017-04-16T10:39:51.023Z",
       "name": "Wikipedia",
       "home": "https://www.wikipedia.org",
-      "source": "https://en.wikipedia.org/wiki/ISO_15924",
-      "notes": "Character count in scripts",
+      "api": [
+        "https://en.wikipedia.org/wiki/ISO_15924",
+        "https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction"
+      ],
+      "notes": "Character count by script, and extincted languages",
       "id": "wiki"
     },
     "ned": {
