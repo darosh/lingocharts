@@ -390,7 +390,8 @@
 
         <hr>
         <h2 id="map-literacy"><a href="#map-literacy">Literacy</a></h2>
-        <app-map field="literacy"></app-map>
+        <app-map :scale="d3.scaleLinear()"
+                 field="literacy"></app-map>
 
         <hr>
         <h2 id="map-population-literacy"><a href="#map-population-literacy">Population &times; literacy</a></h2>
@@ -408,12 +409,13 @@
         <app-map field="gdp"></app-map>
 
         <hr>
-        <h2 id="map-gdp-capita"><a href="#map-gdp-pcap">GDP / capita</a></h2>
+        <h2 id="map-gdp-capita"><a href="#map-gdp-capita">GDP / capita</a></h2>
         <app-map :value="d => config.data.country[d.id].gdp / config.data.country[d.id].population"></app-map>
 
         <hr>
         <h2 id="map-internet"><a href="#map-internet">Internet</a></h2>
-        <app-map field="net"></app-map>
+        <app-map field="net"
+                 :scale="d3.scaleLinear()"></app-map>
 
         <hr>
         <h2 id="map-mobile"><a href="#map-mobile">Mobile</a></h2>
@@ -1113,7 +1115,8 @@
 
     var width = 960;
     var height = 480;
-    var legendHeight = 0;
+    var legendMargin = 12;
+    var legendHeight = 6 + 10 + legendMargin * 2;
     var add = 0;
 
     //    var clip = [[0, 960], [15, 390]];
@@ -1177,6 +1180,9 @@
                 color = this.color.call ? d => this.color(colorScale(value(d))) : d => colorScale(value(d));
             }
 
+            var hasBottomLegend = colorScale && extent.length === 2;
+            svg.attr('height', clip[1][1] - clip[1][0] + (hasBottomLegend ? legendHeight : 0));
+
             var land = svg.select('.land');
             land.selectAll('a').data(config.land)
                 .enter()
@@ -1194,26 +1200,27 @@
                 .attr('fill', 'none')
                 .attr('stroke', '#000')
                 .attr('stroke-width', 0.5);
+
+            var frameStroke = 0.5;
             var frame = svg.select('.frame');
             frame.selectAll('rect').data([0])
                 .enter()
                 .append('rect')
-                .attr('x', 0)
-                .attr('y', 0)
-                .attr('width', width)
-                .attr('height', height)
+                .attr('x', frameStroke / 2)
+                .attr('y', frameStroke / 2)
+                .attr('width', width - frameStroke)
+                .attr('height', height - frameStroke)
                 .attr('fill', 'none')
                 .attr('stroke', '#000')
-                .attr('stroke-width', 0.5);
+                .attr('stroke-width', frameStroke);
 
-//            if (colorScale) {
-//                var margin = 10;
-//                colorScale.range([0 + margin, width - margin]);
-//                var axis = d3.axisBottom(colorScale).ticks(7, '.0s');
-//                svg.select('.legend')
-//                    .attr('transform', 'translate(0, ' + (height - margin + 10) + ')')
-//                    .call(axis);
-//            }
+            if (hasBottomLegend) {
+                colorScale.range([0 + legendMargin, width - legendMargin]);
+                var axis = d3.axisBottom(colorScale).ticks(7, '.0s');
+                svg.select('.legend')
+                    .attr('transform', 'translate(0, ' + (height + legendMargin) + ')')
+                    .call(axis);
+            }
         }
     });
 
