@@ -329,13 +329,6 @@
     <p v-if="!data"><i>Loading&hellip;</i></p>
 
     <div v-if="data" v-cloak>
-
-        <!--<svg width="960" height="480">-->
-        <!--<g>-->
-        <!--<path v-for=""></path>-->
-        <!--</g>-->
-        <!--</svg>-->
-
         <ul>
             <li>
                 Maps
@@ -387,7 +380,10 @@
 
         <hr>
         <h2 id="map"><a href="#map">Map</a></h2>
-        <app-map></app-map>
+        <app-map :value="d => config.data.map[d.id] ? config.data.map[d.id].color : 0"
+                 :extent="d3.range(8)"
+                 :scale="d3.scaleOrdinal()"
+                 :color="d3.merge([['#000'], d3.schemePastel2.slice(0,7)])"></app-map>
 
         <hr>
         <h2 id="map-population"><a href="#map-population">Population</a></h2>
@@ -395,16 +391,18 @@
 
         <hr>
         <h2 id="map-literacy"><a href="#map-literacy">Literacy</a></h2>
-        <app-map color="literacy"></app-map>
+        <app-map field="literacy"></app-map>
 
         <hr>
         <h2 id="map-population-literacy"><a href="#map-population-literacy">Population &times; literacy</a></h2>
-        <app-map :field="d => d.population * d.literacy / 100"></app-map>
+        <app-map
+                :value="d => config.data.country[d.id].population * config.data.country[d.id].literacy / 100"></app-map>
 
         <hr>
         <h2 id="map-population-illiteracy"><a href="#map-population-illiteracy">Population &times; illiteracy</a></h2>
-        <app-map color="inverted" :scale="d3.scaleLinear"
-                 :field="d => d.population * (100 - d.literacy) / 100"></app-map>
+        <app-map :value="d => config.data.country[d.id].population * (100 - config.data.country[d.id].literacy) / 100"
+                 :scale="d3.scaleLinear()"
+                 :color="t => d3.interpolateRdYlGn(1-t)"></app-map>
 
         <hr>
         <h2 id="map-gdp"><a href="#map-gdp">GDP</a></h2>
@@ -412,43 +410,49 @@
 
         <hr>
         <h2 id="map-gdp-capita"><a href="#map-gdp-pcap">GDP / capita</a></h2>
-        <app-map :field="d => d.gdp / d.population"></app-map>
+        <app-map :value="d => config.data.country[d.id].gdp / config.data.country[d.id].population"></app-map>
 
         <hr>
         <h2 id="map-internet"><a href="#map-internet">Internet</a></h2>
-        <app-map color="internet"></app-map>
+        <app-map field="net"></app-map>
 
         <hr>
         <h2 id="map-mobile"><a href="#map-mobile">Mobile</a></h2>
-        <app-map color="mobile"></app-map>
+        <app-map field="cell"></app-map>
 
         <hr>
         <h2 id="map-languages"><a href="#map-languages">Languages</a></h2>
-        <app-map color="inverted" :scale="d3.scaleLinear" :field="d => Object.keys(d.language || {}).length"></app-map>
+        <app-map :value="d => Object.keys(config.data.country[d.id].language || {}).length"
+                 :scale="d3.scaleLinear()"
+                 :color="t => d3.interpolateRdYlGn(1-t)"></app-map>
 
         <hr>
         <h2 id="map-regions"><a href="#map-regions">Regions</a></h2>
-        <app-map color="regions"></app-map>
+        <app-map multi="_groupValue"></app-map>
 
         <hr>
         <h2 id="map-un"><a href="#map-un">United Nations</a></h2>
-        <app-map color="un"></app-map>
+        <app-map
+                :computed="d => config.data.group.UN.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1)"></app-map>
 
         <hr>
         <h2 id="map-eu"><a href="#map-eu">European Union</a></h2>
-        <app-map color="eu"></app-map>
+        <app-map
+                :computed="d => config.data.group.EU.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1)"></app-map>
 
         <hr>
         <h2 id="map-ez"><a href="#map-ez">Eurozone</a></h2>
-        <app-map color="ez"></app-map>
+        <app-map
+                :computed="d => config.data.group.EZ.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1)"></app-map>
 
         <hr>
         <h2 id="map-419"><a href="#map-419">Latin America</a></h2>
-        <app-map color="419"></app-map>
+        <app-map
+                :computed="d => !config.data.group['419'].contains.filter(e => config.data.group[e].contains.indexOf(d.id) !== -1).length ? '#ccc' : d3.interpolateRdYlGn(1)"></app-map>
 
         <hr>
         <h2 id="map-flag"><a href="#map-flag">Flag color</a></h2>
-        <app-map color="flag"></app-map>
+        <app-map :computed="d => '#' + config.data.country[d.id].color"></app-map>
 
         <hr>
         <sortable :list="data.country">
@@ -991,6 +995,15 @@
         ? location.protocol + '//' + location.host + location.pathname.replace(/index\.html$/gi, '').replace(/\/$/, '') + '/'
         : config.url;
 
+    config.multicolor = [
+        d3.interpolateGreens,
+        d3.interpolateGreys,
+        d3.interpolatePurples,
+        d3.interpolateOranges,
+        d3.interpolateBlues,
+        d3.interpolateReds
+    ];
+
     Vue.filter('number', function (n) {
         return config.format(n);
     });
@@ -1130,44 +1143,9 @@
 
     var graticule = d3.geoGraticule();
 
-    var colorBy = {
-        map: d => config.data.map[d.id] ? d3.schemePastel2[config.data.map[d.id].color - 1] : '#000',
-        flag: d => '#' + config.data.country[d.id].color,
-        literacy: d => d3.interpolateRdYlGn(config.data.country[d.id].literacy / 100),
-        internet: d => config.data.country[d.id].net ? d3.interpolateRdYlGn(config.data.country[d.id].net / 100) : '#fff',
-        mobile: d => config.data.country[d.id].cell ? d3.interpolateRdYlGn(config.data.country[d.id].cell / 100) : '#fff',
-        un: d => config.data.group.UN.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
-        eu: d => config.data.group.EU.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
-        ez: d => config.data.group.EZ.contains.indexOf(d.id) === -1 ? '#ccc' : d3.interpolateRdYlGn(1),
-        '419': d => !config.data.group['419'].contains.filter(e => config.data.group[e].contains.indexOf(d.id) !== -1).length ? '#ccc' : d3.interpolateRdYlGn(1),
-        population: d3.interpolateRdYlGn,
-        inverted: d => d3.interpolateRdYlGn(1 - d),
-        regions: d => {
-            var g = config.data.group;
-            var w = g['001'].contains;
-            var ts;
-            var tc;
-
-            w.forEach((c, i) => g[c].contains.forEach((s, j) => {
-                if (!ts && (g[s].contains.indexOf(d.id) !== -1)) {
-                    tc = i;
-                    ts = j / (g[c].contains.length - 1);
-                }
-            }));
-
-            var sch = d3.schemeSet1;
-            var add = 1;
-            var to = d3.hsl(sch[tc + add]).brighter(0.75);
-            to.s += 0.25;
-            to.l = 0.95;
-            var r = d3.scaleLinear().range([d3.hsl(sch[tc + add]).darker(0.75), to]);
-            return r(ts);
-        }
-    };
-
     Vue.component('app-map', {
         template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="graticule"></g><g class="land"></g><g class="border"></g><g class="legend"></g><g class="frame"></g></svg>',
-        props: ['color', 'field', 'scale'],
+        props: ['color', 'value', 'scale', 'extent', 'field', 'computed', 'multi'],
         mounted(){
             var svg = d3.select(this.$el);
             svg.attr('width', width)
@@ -1181,16 +1159,22 @@
                 .attr('stroke-width', 0.5)
                 .attr('stroke', '#ccc');
 
-            var c;
-            var s;
-            var f;
+            var color;
 
-            if (this.field) {
-                f = this.field.call ? this.field : d => d[this.field];
-                s = (this.scale ? this.scale : d3.scaleLog)().domain(d3.extent(Object.keys(config.data.country), d => f(config.data.country[d])));
-                c = d => colorBy[this.color || 'population'](s(f(config.data.country[d.id])));
+            if (this.multi) {
+                color = d => {
+                    var t = config.data.country[d.id][this.multi];
+                    return config.multicolor[t[0]](t[1] * 0.5 + 0.25);
+                }
+            } else if (this.computed) {
+                color = this.computed;
             } else {
-                c = colorBy[this.color || 'map'];
+                var value = this.field ? d => config.data.country[d.id][this.field] : this.value;
+                var extent = this.extent ? this.extent : d3.extent(Object.keys(config.data.country), k => value(config.data.country[k]));
+                this.scale = this.scale || d3.scaleLog();
+                this.color = this.color || (d => isNaN(d) ? '#fff' : d3.interpolateRdYlGn(d));
+                var colorScale = this.scale.domain(extent).range(this.color.call ? [0, 1] : this.color);
+                color = this.color.call ? d => this.color(colorScale(value(d))) : d => colorScale(value(d));
             }
 
             var land = svg.select('.land');
@@ -1201,7 +1185,7 @@
                 .append('path')
                 .attr('title', d => d.id)
                 .attr('d', path)
-                .attr('fill', c);
+                .attr('fill', color);
             var border = svg.select('.border');
             border.selectAll('d').data([config.border])
                 .enter()
@@ -1256,6 +1240,8 @@
                         UN: this.groupTable('UN')
                     };
 
+                    this.addCountryGroup();
+
                     Vue.nextTick(function () {
                         var h = location.hash;
                         var u = location.href;
@@ -1291,6 +1277,16 @@
         methods: {
             items(o) {
                 return Array.isArray(o) ? o.length : Object.keys(o).length;
+            },
+            addCountryGroup () {
+                config.data.group['001'].contains.forEach((c, i) => {
+                    config.data.group[c].contains.forEach((d, j, a) => {
+                        config.data.group[d].contains.forEach(e => {
+                            config.data.country[e]._group = [c, d];
+                            config.data.country[e]._groupValue = [i, j / (a.length - 1)];
+                        });
+                    });
+                });
             },
             groupTable(code) {
                 var a = [];
