@@ -1,3 +1,5 @@
+'use strict';
+
 function getFlag(iso, flags) {
     var node = flags.getElementById(iso);
 

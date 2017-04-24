@@ -1,23 +1,47 @@
-var config = {
+'use strict';
+
+const config = {
     url: 'https://darosh.github.io/lingocharts/',
     repo: 'https://github.com/darosh/lingocharts/',
     format: d3.format(','),
     money: d3.format(',.0f'),
-    hash: ''
+    hash: '',
+    multicolor: [
+        d3.interpolateGreens,
+        d3.interpolateGreys,
+        d3.interpolatePurples,
+        d3.interpolateOranges,
+        d3.interpolateBlues,
+        d3.interpolateReds
+    ],
+    width: 960,
+    height: 480,
+    legendMargin: 12
 };
 
-config.online = location.hostname === 'localhost'
-    ? location.protocol + '//' + location.host + location.pathname.replace(/index\.html$/gi, '').replace(/\/$/, '') + '/'
-    : config.url;
+config.legendHeight = 6 + 10 + config.legendMargin * 2;
 
-config.multicolor = [
-    d3.interpolateGreens,
-    d3.interpolateGreys,
-    d3.interpolatePurples,
-    d3.interpolateOranges,
-    d3.interpolateBlues,
-    d3.interpolateReds
-];
+config.simplify = d3.geoTransform({
+    point: function (x, y) {
+        this.stream.point(Math.round(x), Math.round(y));
+    }
+});
+
+config.projection = d3.geoEquirectangular()
+    .scale(config.height / Math.PI)
+    .rotate([-10])
+    .translate([config.width / 2, config.height / 2])
+    .precision(1);
+
+config.path = d3.geoPath()
+    .projection({
+        stream: function (s) {
+            return config.projection.stream(config.simplify.stream(s));
+        }
+    })
+    .pointRadius(2);
+
+config.graticule = d3.geoGraticule();
 
 Vue.filter('number', function (n) {
     return config.format(n);
@@ -39,7 +63,7 @@ Vue.component('flag', {
     template: '<div></div>',
     props: ['code'],
     mounted() {
-        var f = getFlag(this.code, config.flags);
+        const f = getFlag(this.code, config.flags);
 
         if (f) {
             this.$el.appendChild(f);
@@ -51,7 +75,8 @@ Vue.component('sortable', {
     template: '<div><slot name="table" :list="sorted" :sort="sort"></slot></div>',
     props: ['list', 'filter'],
     data() {
-        var l = Object.keys(this.list).map(k => (this.list[k].id = k, this.list[k]));
+        //noinspection CommaExpressionJS
+        let l = Object.keys(this.list).map(k => (this.list[k].id = k, this.list[k]));
 
         if (this.filter) {
             l = l.filter(this.filter);
@@ -70,7 +95,7 @@ Vue.component('sortable', {
             }
 
             function val(a) {
-                var r = by.call ? by(a) : a[by];
+                const r = by.call ? by(a) : a[by];
                 return numeric ? isNaN(r) ? -Infinity : r : (r || '');
             }
         }
@@ -100,26 +125,27 @@ Vue.component('family', {
     watch: {
         'config.hash': function (newVal) {
             if (this.db && (newVal.indexOf('family-') > -1)) {
-                iter(this);
-
-                function iter(node) {
+                const iteration = (node) => {
                     node.$children.forEach(c => {
                         c.expanded = false;
                         iter(c);
                     });
-                }
+                };
+
+                iteration(this);
             }
 
             if (this.node && (newVal === ('family-' + this.node.id))) {
                 this.expanded = true;
-                var p = this;
+                let p = this;
 
                 while ((p = p.$parent) && p.$vnode && p.$vnode.componentOptions.tag === 'family') {
                     p.expanded = true;
                 }
 
                 Vue.nextTick(() => {
-                    var u = location.href;
+                    //noinspection UnnecessaryLocalVariableJS
+                    const u = location.href;
                     location.href = u;
                 });
             }
@@ -127,112 +153,79 @@ Vue.component('family', {
     }
 });
 
-var width = 960;
-var height = 480;
-var legendMargin = 12;
-var legendHeight = 6 + 10 + legendMargin * 2;
-var add = 0;
-
-//    var clip = [[0, 960], [15, 390]];
-var clip = [[0, 960], [0, 480]];
-
-var simplify = d3.geoTransform({
-    point: function (x, y) {
-        this.stream.point(Math.round(x), Math.round(y));
-    }
-});
-
-var projection = d3.geoEquirectangular()
-    .clipExtent([[0, 0], [width, clip[1][1]]])
-    .scale(height / Math.PI)
-    .rotate([-10])
-    .translate([width / 2, height / 2 - clip[1][0]])
-    .precision(1);
-
-var path = d3.geoPath()
-    .projection({
-        stream: function (s) {
-            return projection.stream(simplify.stream(s));
-        }
-    })
-    //        .projection(projection)
-    .pointRadius(2);
-
-var graticule = d3.geoGraticule();
-
 Vue.component('app-map', {
     template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="graticule"></g><g class="land"></g><g class="border"></g><g class="legend"></g><g class="frame"></g></svg>',
     props: ['color', 'value', 'scale', 'extent', 'field', 'computed', 'multi'],
     mounted(){
-        var svg = d3.select(this.$el);
-        svg.attr('width', width)
-            .attr('height', clip[1][1] - clip[1][0] + legendHeight);
-        var grat = svg.select('.graticule');
-        grat.selectAll('path').data([graticule()])
+        const svg = d3.select(this.$el);
+        svg.attr('width', config.width)
+            .attr('height', config.height + config.legendHeight);
+        const grat = svg.select('.graticule');
+        grat.selectAll('path').data([config.graticule()])
             .enter()
             .append('path')
-            .attr('d', path)
+            .attr('d', config.path)
             .attr('fill', 'none')
             .attr('stroke-width', 0.5)
             .attr('stroke', '#ccc');
 
-        var color;
+        let color, colorScale, extent;
 
         if (this.multi) {
             color = d => {
-                var t = config.data.country[d.id][this.multi];
+                const t = config.data.country[d.id][this.multi];
                 return config.multicolor[t[0]](t[1] * 0.5 + 0.25);
             }
         } else if (this.computed) {
             color = this.computed;
         } else {
-            var value = this.field ? d => config.data.country[d.id][this.field] : this.value;
-            var extent = this.extent ? this.extent : d3.extent(Object.keys(config.data.country), k => value(config.data.country[k]));
+            const value = this.field ? d => config.data.country[d.id][this.field] : this.value;
+            extent = this.extent ? this.extent : d3.extent(Object.keys(config.data.country), k => value(config.data.country[k]));
             this.scale = this.scale || d3.scaleLog();
             this.color = this.color || (d => isNaN(d) ? '#fff' : d3.interpolateRdYlGn(d));
-            var colorScale = this.scale.domain(extent).range(this.color.call ? [0, 1] : this.color);
+            colorScale = this.scale.domain(extent).range(this.color.call ? [0, 1] : this.color);
             color = this.color.call ? d => this.color(colorScale(value(d))) : d => colorScale(value(d));
         }
 
-        var hasBottomLegend = colorScale && extent.length === 2;
-        svg.attr('height', clip[1][1] - clip[1][0] + (hasBottomLegend ? legendHeight : 0));
+        const hasBottomLegend = colorScale && extent.length === 2;
+        svg.attr('height', config.height + (hasBottomLegend ? config.legendHeight : 0));
 
-        var land = svg.select('.land');
+        const land = svg.select('.land');
         land.selectAll('a').data(config.land)
             .enter()
             .append('a')
             .attr('xlink:href', d => '#country-' + d.id)
             .append('path')
             .attr('title', d => d.id)
-            .attr('d', path)
+            .attr('d', config.path)
             .attr('fill', color);
-        var border = svg.select('.border');
+        const border = svg.select('.border');
         border.selectAll('d').data([config.border])
             .enter()
             .append('path')
-            .attr('d', path)
+            .attr('d', config.path)
             .attr('fill', 'none')
             .attr('stroke', '#000')
             .attr('stroke-width', 0.5);
 
-        var frameStroke = 0.5;
-        var frame = svg.select('.frame');
+        const frameStroke = 0.5;
+        const frame = svg.select('.frame');
         frame.selectAll('rect').data([0])
             .enter()
             .append('rect')
             .attr('x', frameStroke / 2)
             .attr('y', frameStroke / 2)
-            .attr('width', width - frameStroke)
-            .attr('height', height - frameStroke)
+            .attr('width', config.width - frameStroke)
+            .attr('height', config.height - frameStroke)
             .attr('fill', 'none')
             .attr('stroke', '#000')
             .attr('stroke-width', frameStroke);
 
         if (hasBottomLegend) {
-            colorScale.range([0 + legendMargin, width - legendMargin]);
-            var axis = d3.axisBottom(colorScale).ticks(7, '.0s');
+            colorScale.range([config.legendMargin, config.width - config.legendMargin]);
+            const axis = d3.axisBottom(colorScale).ticks(7, '.0s');
             svg.select('.legend')
-                .attr('transform', 'translate(0, ' + (height + legendMargin) + ')')
+                .attr('transform', 'translate(0, ' + (config.height + config.legendMargin) + ')')
                 .call(axis);
         }
     }
@@ -242,14 +235,14 @@ Vue.component('app-chart-bar', {
     template: '<div><svg style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="chart"></g><g class="values"></g><g class="legend"></g><g class="frame"></g></svg><div style="min-width: 240px; display: inline-block"><ul><li v-for="i in list" v-if="i.source"><a :href="i.source" target="_blank">{{i.title}}</a></li></ul></div><div style="clear: left"></div></div>',
     props: ['list', 'x', 'sort', 'desc'],
     mounted() {
-        var height = 240;
-        var svg = d3.select(this.$el).select('svg');
-        svg.attr('width', width)
-            .attr('height', height + legendHeight - 6 - 6);
+        const height = 240;
+        const svg = d3.select(this.$el).select('svg');
+        svg.attr('width', config.width)
+            .attr('height', config.height + config.legendHeight - 6 - 6);
 
-        var shift = 10 + 2 + 2;
-        var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
-        var y = d3.scaleLinear().rangeRound([height, shift]);
+        const shift = 10 + 2 + 2;
+        const x = d3.scaleBand().rangeRound([0, config.width]).padding(0.1);
+        const y = d3.scaleLinear().rangeRound([config.height, shift]);
 
         this.list.sort((a, b) => d3[this.desc ? 'descending' : 'ascending'](a[this.sort], b[this.sort]));
         x.domain(this.list.map(d => d[this.x]));
@@ -263,7 +256,7 @@ Vue.component('app-chart-bar', {
             .attr('x', d => x(d[this.x]))
             .attr('y', d => y(d.num))
             .attr('width', x.bandwidth())
-            .attr('height', d => height - y(d.num));
+            .attr('height', d => config.height - y(d.num));
 
         svg.select('.values').selectAll('.value')
             .data(this.list)
@@ -276,7 +269,7 @@ Vue.component('app-chart-bar', {
             .text(d => d.num);
 
         svg.select('.legend')
-            .attr('transform', 'translate(0,' + height + ')')
+            .attr('transform', 'translate(0,' + config.height + ')')
             .call(d3.axisBottom(x))
             .selectAll('path').attr('display', 'none');
     }
@@ -308,11 +301,11 @@ new Vue({
                 this.addCountryGroup();
 
                 Vue.nextTick(function () {
-                    var h = location.hash;
-                    var u = location.href;
+                    const h = location.hash;
+                    const u = location.href;
 
                     if (h.length > 1) {
-                        var e = document.querySelector(h);
+                        const e = document.querySelector(h);
 
                         if (e) {
                             e.scrollIntoView();
@@ -324,7 +317,7 @@ new Vue({
                     config.hash = h.substr(1);
 
                     window.addEventListener('hashchange', () => {
-                        var h = location.hash;
+                        const h = location.hash;
                         config.hash = h.substr(1);
                         document.querySelector(h).scrollIntoView();
                     }, false);
@@ -354,7 +347,7 @@ new Vue({
             });
         },
         groupTable(code) {
-            var a = [];
+            let a = [];
 
             iter(code, this.data);
 
@@ -379,13 +372,13 @@ new Vue({
 
             a = d3.stratify()(a);
 
-            var b = [];
+            const b = [];
 
             a.descendants().forEach(d => {
                 if (d.parent) {
-                    var j = d.depth - 1;
+                    const j = d.depth - 1;
                     b[j] = b[j] || [];
-                    var l = d.leaves();
+                    const l = d.leaves();
                     d.span = l.length;
                     d.items = 0;
                     d.expanded = false;
@@ -394,8 +387,8 @@ new Vue({
                 }
             });
 
-            var c = [];
-            var ii = [];
+            const c = [];
+            const ii = [];
             b[b.length - 1].forEach((v, i) => {
                 b.forEach((v, j) => {
                     ii[j] = ii[j] || 0;
