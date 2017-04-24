@@ -71,6 +71,15 @@ Object.keys(dicOrdinal).forEach(k => delete dicOrdinal[k].json);
 makeParent();
 makeCldr();
 log();
+
+let usage = require('./languages');
+usage.push({
+    title: 'Official',
+    usage: true,
+    num: Object.keys(language).filter(d => d.indexOf('-') === -1).length,
+    source: 'http://www.unicode.org/cldr'
+});
+
 save({
     version: version,
     count: {
@@ -103,7 +112,7 @@ save({
     char: dicChar,
     // cldr: dicCldr,
     map: map,
-    usage: require('./languages')
+    usage: usage
 }, process.argv[2]);
 
 function getColor(country) {

@@ -8,9 +8,11 @@ win10	Windows 10	111		https://en.wikipedia.org/wiki/Windows_10	true
 android	Android	100		https://en.wikipedia.org/wiki/Android_(operating_system)	true			
 ios	iOS	40		https://en.wikipedia.org/wiki/IOS	true			
 extinct2050	Extinct by 2050	6300	living	https://en.wikipedia.org/wiki/Extinct_language		2050	true	true
+sign	Sign	137		https://en.wikipedia.org/wiki/Sign_language	true			
+spurious	Retired	318		https://en.wikipedia.org/wiki/Spurious_languages	true			
 living2050	Living by 2050	700	living	https://en.wikipedia.org/wiki/Extinct_language	true	2050		true
-extincted								
-extinct0		2	extincted			0	true	
+extincted				https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction				
+extinct0	Extincted	2	extincted	https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction		0	true	
 extinct100		9	extincted			100	true	
 extinct200		2	extincted			200	true	
 extinct300		4	extincted			300	true	
@@ -42,3 +44,4 @@ extinct-1200		2	extincted			-1200	true
 extinct-1300		1	extincted			-1300	true	
 extinct-1500		1	extincted			-1500	true	
 extinct-2000		2	extincted			-2000	true	
+	Official	199		http://www.unicode.org/cldr	true			

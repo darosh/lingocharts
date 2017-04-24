@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon.eot?nel85w');
+    src: url('../assets/fonts/icomoon.eot?nel85w#iefix') format('embedded-opentype'),
+    url('data:application/font-woff;base64,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') format('woff'),
+    url('../assets/fonts/icomoon.ttf?nel85w') format('truetype'),
+    url('../assets/fonts/icomoon.svg?nel85w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle:before {
+    content: "\e900";
+}
+
+body:after {
+    font-family: icomoon;
+    content: "\e900";
+    display: none;
+}
+
+.icon-chevron-right:before {
+    content: "\e901";
+}
+
+.icon-chevron-down:before {
+    content: "\e903";
+}
+
+.icon-external-link:before {
+    content: "\e905";
+}
+
+.icon-wikipedia-w:before {
+    content: "\e906";
+    position: relative;
+    top: 2px;
+}
+
+a.icon-wikipedia-w, a.icon-wikipedia-w:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 40px;
+    color: rgba(0, 0, 0, .87);
+    min-width: 1040px;
+}
+
+body, p, ul, li, td, th {
+    font-size: 16px;
+    ‑webkit‑text‑size‑adjust: 100%;
+}
+
+a {
+    color: #1a0dab;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+a:visited {
+    color: #609;
+}
+
+hr {
+    border: 0;
+    background: #e0e0e0;
+    height: 1px;
+    margin: 40px 0;
+}
+
+h1, h2, h3 {
+    padding: 2px 6px;
+}
+
+h3 > a, h3 > a:visited,
+h2 > a, h2 > a:visited,
+h1 > a, h1 > a:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+}
+
+h3 > a:hover, h2 > a:hover, h1 > a:hover {
+    text-decoration: underline;
+}
+
+p {
+    padding: 2px 8px;
+}
+
+tr > * {
+    text-align: left;
+    padding: 0 8px;
+    line-height: 24px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.merged {
+    border-bottom: 2px solid transparent;
+}
+
+tr:not(:last-child) > *,
+thead > tr > * {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody > tr:hover > * {
+    background-color: #f4f4f4;
+}
+
+.expanded + a {
+    background: #d0ffff;
+}
+
+tbody > tr:target > *, h3:target, h2:target, a:target {
+    background-color: #ffffc0;
+    outline: none;
+}
+
+.right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.double {
+    border-bottom: 3px double black;
+}
+
+.single {
+    border-bottom: 1px solid black;
+}
+
+.chars {
+    font-size: 14px;
+    line-height: 16px;
+    word-spacing: -1px;
+}
+
+.nowrap {
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.sample {
+    font-size: 20px;
+}
+
+a.noline {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a:not('.noline') {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.click:hover {
+    text-decoration: underline;
+}
+
+a.glot, a.eth {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    vertical-align: inherit;
+}
+
+.glot, .eth {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.glot:after {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: #fff;
+    padding: 0 2px;
+    content: '\0D17';
+}
+
+.eth:after {
+    padding: 0 4px;
+    background-color: #006599;
+    color: #fff;
+    content: 'E';
+}
+
+.family {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.family li {
+    padding: 0 0 0 10px;
+    margin: 0 0 0 12px;
+}
+
+.tree {
+    line-height: 22px;
+}
+
+.tree li {
+    border-left: 1px solid #e0e0e0;
+}
+
+.expander {
+    cursor: pointer;
+    line-height: 20px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+.expander:after {
+    font-family: icomoon;
+    content: '\e901';
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.expander.expanded:after {
+    content: '\e903';
+}
+
+.bullet {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    text-align: center;
+}
+
+.bullet:after {
+    font-family: icomoon;
+    content: '\e900';
+    line-height: 20px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+[target="_blank"]:not(.icon):after {
+    content: ' \e905';
+    font-family: icomoon;
+    font-style: normal;
+}
+
+.no-bold-th-body tbody th {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.items {
+    font-weight: normal;
+    font-size: 16px;
+}

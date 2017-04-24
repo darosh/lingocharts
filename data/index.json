@@ -10694,6 +10694,20 @@
       "source": "https://en.wikipedia.org/wiki/Extinct_language"
     },
     {
+      "id": "sign",
+      "title": "Sign",
+      "num": 137,
+      "source": "https://en.wikipedia.org/wiki/Sign_language",
+      "usage": true
+    },
+    {
+      "id": "spurious",
+      "title": "Retired",
+      "num": 318,
+      "source": "https://en.wikipedia.org/wiki/Spurious_languages",
+      "usage": true
+    },
+    {
       "id": "living2050",
       "title": "Living by 2050",
       "num": 700,
@@ -10703,8 +10717,19 @@
       "usage": true,
       "source": "https://en.wikipedia.org/wiki/Extinct_language"
     },
-    {"id": "extincted"},
-    {"id": "extinct0", "num": 2, "year": 0, "parentId": "extincted", "extinct": true},
+    {
+      "id": "extincted",
+      "source": "https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction"
+    },
+    {
+      "id": "extinct0",
+      "num": 2,
+      "year": 0,
+      "parentId": "extincted",
+      "extinct": true,
+      "source": "https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction",
+      "title": "Extincted"
+    },
     {"id": "extinct100", "num": 9, "year": 100, "parentId": "extincted", "extinct": true},
     {"id": "extinct200", "num": 2, "year": 200, "parentId": "extincted", "extinct": true},
     {"id": "extinct300", "num": 4, "year": 300, "parentId": "extincted", "extinct": true},
@@ -10735,7 +10760,8 @@
     {"id": "extinct-1200", "num": 2, "year": -1200, "parentId": "extincted", "extinct": true},
     {"id": "extinct-1300", "num": 1, "year": -1300, "parentId": "extincted", "extinct": true},
     {"id": "extinct-1500", "num": 1, "year": -1500, "parentId": "extincted", "extinct": true},
-    {"id": "extinct-2000", "num": 2, "year": -2000, "parentId": "extincted", "extinct": true}
+    {"id": "extinct-2000", "num": 2, "year": -2000, "parentId": "extincted", "extinct": true},
+    {"title": "Official", "usage": true, "num": 199, "source": "http://www.unicode.org/cldr"}
   ],
   "fields": [
     "api",

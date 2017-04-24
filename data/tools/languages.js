@@ -1,5 +1,7 @@
 const wex = require('../resources/wikipedia.org/extinct-languages.json');
 
+const extinctedSource = 'https://en.wikipedia.org/wiki/List_of_languages_by_time_of_extinction';
+
 module.exports = [
     {
         id: 'total'
@@ -65,6 +67,20 @@ module.exports = [
         source: 'https://en.wikipedia.org/wiki/Extinct_language'
     },
     {
+        id: 'sign',
+        title: 'Sign',
+        num: 137,
+        source: 'https://en.wikipedia.org/wiki/Sign_language',
+        usage: true
+    },
+    {
+        id: 'spurious',
+        title: 'Retired',
+        num: 318,
+        source: 'https://en.wikipedia.org/wiki/Spurious_languages',
+        usage: true
+    },
+    {
         id: 'living2050',
         title: 'Living by 2050',
         num: Math.round(7000 * 0.1),
@@ -75,7 +91,8 @@ module.exports = [
         source: 'https://en.wikipedia.org/wiki/Extinct_language'
     },
     {
-        id: 'extincted'
+        id: 'extincted',
+        source: extinctedSource
     }
 ];
 
@@ -95,13 +112,15 @@ all.forEach(d => {
     years[cent]++;
 });
 
-Object.keys(years).forEach(d => {
+Object.keys(years).forEach((d, i) => {
     module.exports.push({
         id: 'extinct' + d,
         num: years[d],
         year: parseInt(d),
         parentId: 'extincted',
-        extinct: true
+        extinct: true,
+        source: !i ? extinctedSource : undefined,
+        title: !i ? 'Extincted' : undefined
     });
 });
 
