@@ -223,8 +223,37 @@ Vue.component('app-map', {
             .attr('stroke-width', frameStroke);
 
         if (hasBottomLegend) {
-            colorScale.range([config.legendMargin, config.width - config.legendMargin]);
-            const axis = d3.axisBottom(colorScale).ticks(7, '.0s');
+            const c = colorScale.copy();
+            c.range([config.legendMargin, config.width - config.legendMargin]);
+
+            let ticks = c.ticks(7);
+            let data = [];
+
+            if (extent[0] !== ticks[0]) {
+                data.push([extent[0], ticks[0]]);
+            }
+
+            ticks.forEach((d, i) => {
+                if (i) {
+                    data.push([ticks[i - 1], ticks[i]]);
+                }
+            });
+
+            if (extent[1] !== ticks[ticks.length - 1]) {
+                data.push([ticks[ticks.length - 1], extent[1]]);
+            }
+
+            const axis = d3.axisBottom(c).ticks(7, '.0s');
+            const col = this.color.call ? d => this.color(colorScale(d)) : d => colorScale(d);
+            svg.select('.legend')
+                .selectAll('rect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr('fill', d => col(d[0]))
+                .attr('width', d => c(d[1]) - c(d[0]))
+                .attr('height', 6)
+                .attr('transform', d => 'translate(' + c(d[0]) + ',0)');
             svg.select('.legend')
                 .attr('transform', 'translate(0, ' + (config.height + config.legendMargin) + ')')
                 .call(axis);
