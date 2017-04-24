@@ -175,6 +175,7 @@
                         <th class="click" @click="props.sort('net', true)">Internet</th>
                         <th class="click" @click="props.sort('cell', true)">Mobile</th>
                         <th class="click" @click="props.sort('currency')">Currency</th>
+                        <th class="click" @click="props.sort(d=>(d._group[0]+''+d._group[1]))">Region</th>
                         <th class="nowrap">Language (population / literacy)
                             <br>
                             <small style="font-weight: normal">
@@ -202,6 +203,7 @@
                         <td class="right">{{i.net | percent}}</td>
                         <td class="right">{{i.cell | percent}}</td>
                         <td>{{i.currency}}</td>
+                        <td>{{data.group[i._group[1]].name}}</td>
                         <td class="nowrap">
                             <div v-for="(i, k) in i.language"><a :href="'#language-' + k"
                                                                  :class="{noline: 1, double: i.status === 0, single: i.status === 1, bold: i.cldr}">{{k}}</a>

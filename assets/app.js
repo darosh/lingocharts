@@ -286,19 +286,9 @@ new Vue({
                 config.flags = flags;
                 config.map = map;
                 config.data = data;
-                config.land = topojson.feature(map, map.objects.countries).features;
-                config.border = topojson.mesh(map, map.objects.countries);
+                initData(config);
                 this.data = data;
-
-                this.groups = {
-                    '001': this.groupTable('001'),
-                    '419': this.groupTable('419'),
-                    EU: this.groupTable('EU'),
-                    EZ: this.groupTable('EZ'),
-                    UN: this.groupTable('UN')
-                };
-
-                this.addCountryGroup();
+                this.groups = config.groups;
 
                 Vue.nextTick(function () {
                     const h = location.hash;
@@ -335,73 +325,6 @@ new Vue({
     methods: {
         items(o) {
             return Array.isArray(o) ? o.length : Object.keys(o).length;
-        },
-        addCountryGroup () {
-            config.data.group['001'].contains.forEach((c, i) => {
-                config.data.group[c].contains.forEach((d, j, a) => {
-                    config.data.group[d].contains.forEach(e => {
-                        config.data.country[e]._group = [c, d];
-                        config.data.country[e]._groupValue = [i, j / (a.length - 1)];
-                    });
-                });
-            });
-        },
-        groupTable(code) {
-            let a = [];
-
-            iter(code, this.data);
-
-            function iter(code, data, parent = null) {
-                a.push({
-                    id: code,
-                    parentId: parent
-                });
-
-                if (data.group[data.group[code].contains[0]]) {
-                    (data.group[code] ? data.group[code].contains : []).forEach(d => {
-                        iter(d, data, code);
-                    });
-                } else {
-                    a.push({
-                        id: code + '-group',
-                        parentId: code,
-                        group: data.group[code].contains
-                    });
-                }
-            }
-
-            a = d3.stratify()(a);
-
-            const b = [];
-
-            a.descendants().forEach(d => {
-                if (d.parent) {
-                    const j = d.depth - 1;
-                    b[j] = b[j] || [];
-                    const l = d.leaves();
-                    d.span = l.length;
-                    d.items = 0;
-                    d.expanded = false;
-                    l.forEach(e => d.items += e.data.group.length);
-                    b[j].push(d);
-                }
-            });
-
-            const c = [];
-            const ii = [];
-            b[b.length - 1].forEach((v, i) => {
-                b.forEach((v, j) => {
-                    ii[j] = ii[j] || 0;
-                    c[ii[j]] = c[ii[j]] || [];
-                    c[ii[j]][j] = b[j][i];
-                    ii[j] += b[j][i] ? b[j][i].span : 0;
-                });
-            });
-
-            c.items = 0;
-            (a.children || []).forEach(e => c.items += e.items);
-
-            return c;
         }
     }
 });
