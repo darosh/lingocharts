@@ -16,6 +16,7 @@ const config = {
     ],
     width: 960,
     height: 480,
+    heightSmall: 240,
     legendMargin: 12
 };
 
@@ -235,14 +236,13 @@ Vue.component('app-chart-bar', {
     template: '<div><svg style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="chart"></g><g class="values"></g><g class="legend"></g><g class="frame"></g></svg><div style="min-width: 240px; display: inline-block"><ul><li v-for="i in list" v-if="i.source"><a :href="i.source" target="_blank">{{i.title}}</a></li></ul></div><div style="clear: left"></div></div>',
     props: ['list', 'x', 'sort', 'desc'],
     mounted() {
-        const height = 240;
         const svg = d3.select(this.$el).select('svg');
         svg.attr('width', config.width)
-            .attr('height', config.height + config.legendHeight - 6 - 6);
+            .attr('height', config.heightSmall + config.legendHeight - 6 - 6);
 
         const shift = 10 + 2 + 2;
         const x = d3.scaleBand().rangeRound([0, config.width]).padding(0.1);
-        const y = d3.scaleLinear().rangeRound([config.height, shift]);
+        const y = d3.scaleLinear().rangeRound([config.heightSmall, shift]);
 
         this.list.sort((a, b) => d3[this.desc ? 'descending' : 'ascending'](a[this.sort], b[this.sort]));
         x.domain(this.list.map(d => d[this.x]));
@@ -256,7 +256,7 @@ Vue.component('app-chart-bar', {
             .attr('x', d => x(d[this.x]))
             .attr('y', d => y(d.num))
             .attr('width', x.bandwidth())
-            .attr('height', d => config.height - y(d.num));
+            .attr('height', d => config.heightSmall - y(d.num));
 
         svg.select('.values').selectAll('.value')
             .data(this.list)
@@ -269,7 +269,7 @@ Vue.component('app-chart-bar', {
             .text(d => d.num);
 
         svg.select('.legend')
-            .attr('transform', 'translate(0,' + config.height + ')')
+            .attr('transform', 'translate(0,' + config.heightSmall + ')')
             .call(d3.axisBottom(x))
             .selectAll('path').attr('display', 'none');
     }
