@@ -223,10 +223,11 @@ Vue.component('app-map', {
             .attr('stroke-width', frameStroke);
 
         if (hasBottomLegend) {
+            const ticksCount = 7;
             const c = colorScale.copy();
             c.range([config.legendMargin, config.width - config.legendMargin]);
 
-            let ticks = c.ticks(7);
+            let ticks = c.ticks(ticksCount);
             let data = [];
 
             if (extent[0] !== ticks[0]) {
@@ -243,7 +244,7 @@ Vue.component('app-map', {
                 data.push([ticks[ticks.length - 1], extent[1]]);
             }
 
-            const axis = d3.axisBottom(c).ticks(7, '.0s');
+            const axis = d3.axisBottom(c).ticks(ticksCount, '.0s').tickSize(7);
             const col = this.color.call ? d => this.color(colorScale(d)) : d => colorScale(d);
             svg.select('.legend')
                 .selectAll('rect')
