@@ -4,6 +4,7 @@ function initData(config) {
     config.land = topojson.feature(config.map, config.map.objects.countries).features;
     config.border = topojson.mesh(config.map, config.map.objects.countries);
     addCountryGroup(config);
+    addRank(config);
 
     config.groups = {
         '001': getGroupTable('001', config.data),
@@ -23,6 +24,17 @@ function addCountryGroup(config) {
             });
         });
     });
+}
+
+function addRank(config) {
+    const a = 'A'.charCodeAt(0);
+    const ms = getMultiScale();
+
+    Object.keys(config.data.language).forEach(k => {
+        let r = Math.floor(Math.log(config.data.language[k].population) / Math.LN10 / 2);
+        config.data.language[k]._rank = String.fromCharCode(a + r) + Math.min(9, Math.floor(config.data.language[k].literacy / 10));
+        config.data.language[k]._rankColor = ms[r](Math.min(9, Math.floor(config.data.language[k].literacy / 10)) / 9);
+    })
 }
 
 function getGroupTable(code, data) {
@@ -99,4 +111,16 @@ function getFlag(iso, flags) {
 
         return svg;
     }
+}
+
+function getMultiScale() {
+    const k = 0.15;
+
+    return [
+        d3.scaleLinear().domain([-k, 1]).range(['#fff', d3.schemeSet3[3]]),
+        d3.scaleLinear().domain([-k, 1]).range(['#fff', d3.schemeSet3[9]]),
+        d3.scaleLinear().domain([-k, 1]).range(['#fff', d3.schemeSet3[11]]),
+        d3.scaleLinear().domain([-k, 1]).range(['#fff', d3.schemeSet3[4]]),
+        d3.scaleLinear().domain([-k, 1]).range(['#fff', d3.schemeSet3[6]])
+    ];
 }

@@ -305,6 +305,80 @@ Vue.component('app-chart-bar', {
     }
 });
 
+Vue.component('app-chart-cloud', {
+    template: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="values"></g><g class="chart"></g><g class="legend-x"></g><g class="legend-y"></g><g class="frame"></g></svg>',
+    mounted() {
+        const svg = d3.select(this.$el);
+        svg.attr('width', config.width + config.legendHeight)
+            .attr('height', config.height + config.legendHeight);
+
+        const r = 5;
+
+        this.list = Object.keys(config.data.language).map(k => config.data.language[k]);
+
+        const x = d3.scaleLinear()
+            .rangeRound([r * 2, config.width - r])
+            .domain([100, 0]);
+
+        const y = d3.scaleLog()
+            .rangeRound([config.height - r, r])
+            .domain([1, 1e10]);
+
+        svg.select('.chart').selectAll('a')
+            .data(this.list)
+            .enter()
+            .append('a')
+            .attr('xlink:href', d => '#language-' + d.id)
+            .append('circle')
+            .attr('fill', 'rgba(0,0,0,0.2)')
+            .attr('cx', d => x(d.literacy))
+            .attr('cy', d => y(d.population))
+            .attr('r', r);
+
+        const axisX = d3.axisBottom(x).ticks(10, '.0s').tickSize(config.height);
+        const axisY = d3.axisRight(y).ticks(5, '.0s').tickSize(config.width);
+
+        const m = -1;
+        const ms = getMultiScale();
+
+        svg.select('.legend-x').call(axisX).select('.domain').attr('display', 'none');
+        svg.select('.legend-y').call(axisY).select('.domain').attr('display', 'none');
+
+        const w = x(90) - x(100);
+        const h = y(1) - y(100);
+
+        svg.select('.values').selectAll('rect').data(d3.range(5 * 10))
+            .enter()
+            .append('rect')
+            .attr('fill', d => this.list.filter(e => e._rank === (String.fromCharCode('A'.charCodeAt(0) + Math.floor(d / 10)) + (d % 10))).length ? ms[Math.floor(d / 10)]((d % 10) / 10) : 'none')
+            .attr('x', d => x(10 * (d % 10) + 10))
+            .attr('y', d => y(Math.pow(100, Math.floor(d / 10) + 1)))
+            .attr('width', w)
+            .attr('height', h);
+
+        svg.select('.values').selectAll('legend').data(d3.range(5 * 10))
+            .enter()
+            .append('text')
+            .attr('text-anchor', 'end')
+            .attr('font-size', 10)
+            .attr('transform', d => 'translate(' + [m + x(10 * (d % 10)), m + y(Math.pow(100, Math.floor(d / 10)))] + ')')
+            .text(d => String.fromCharCode('A'.charCodeAt(0) + Math.floor(d / 10)) + (d % 10));
+
+        svg.select('.values').selectAll('value').data(d3.range(5 * 10))
+            .enter()
+            .append('text')
+            .attr('fill', 'rgba(128,128,128,0.5)')
+            .attr('text-anchor', 'middle')
+            .attr('alignment-baseline', 'middle')
+            .attr('font-size', 20)
+            .attr('transform', d => 'translate(' + [
+                x(10 * (d % 10)) - w / 2,
+                y(Math.pow(100, Math.floor(d / 10))) - h / 2
+            ] + ')')
+            .text(d => this.list.filter(e => e._rank === (String.fromCharCode('A'.charCodeAt(0) + Math.floor(d / 10)) + (d % 10))).length);
+    }
+});
+
 new Vue({
     el: '#app',
     data() {

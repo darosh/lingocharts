@@ -20,6 +20,7 @@
                 <ol>
                     <li><a href="#chart-usage">Usage</a></li>
                     <li><a href="#chart-extincted">Extincted</a></li>
+                    <li><a href="#chart-literacy-population">Literacy &amp; population rank</a></li>
                 </ol>
             </li>
             <li>
@@ -76,6 +77,10 @@
         <hr>
         <h2 id="chart-extincted"><a href="#chart-extincted">Extincted</a></h2>
         <app-chart-bar x="year" sort="year" :list="config.data.usage.filter(d => d.extinct && !isNaN(d.year) && !d.future)"></app-chart-bar>
+
+        <hr>
+        <h2 id="chart-literacy-population"><a href="#chart-literacy-population">Literacy &amp; population rank</a></h2>
+        <app-chart-cloud></app-chart-cloud>
 
         <hr>
         <h2 id="map"><a href="#map">Map</a></h2>
@@ -234,6 +239,7 @@
                         <th class="click" @click="props.sort('cldr', true)">CLDR</th>
                         <th class="click" @click="props.sort('population', true)">Population</th>
                         <th class="click" @click="props.sort('literacy', true)">Literacy</th>
+                        <th class="click" @click="props.sort('_rank')">Rank</th>
                         <th>Plural</th>
                         <th></th>
                         <th>Ordinal</th>
@@ -263,6 +269,7 @@
                         <td>{{i.cldr | yes('CLDR')}}</td>
                         <td class="right">{{i.population | number}}</td>
                         <td class="right">{{i.literacy | percent}}</td>
+                        <td :style="{'border-left': '3px solid ' + i._rankColor}">{{i._rank}}</td>
                         <td class="right"><span v-if="i.plural >= 0">{{data.plural[i.plural].forms.length}}</span></td>
                         <td><a v-if="i.plural >= 0" :href="'#plural-'+(i.plural + 1)">p{{i.plural + 1}}</a></td>
                         <td class="right"><span v-if="i.ordinal >= 0">{{data.ordinal[i.ordinal].forms.length}}</span>
